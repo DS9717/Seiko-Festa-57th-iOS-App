@@ -22,8 +22,6 @@
     int imageNumber;
     int imageNumber2;
     
-    NSString *definition;
-    
     UIScrollView *mainScrollView;
     UIScrollView *scrollView1;
     UIScrollView *scrollView2;

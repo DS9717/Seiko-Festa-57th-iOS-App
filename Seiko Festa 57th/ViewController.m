@@ -21,8 +21,6 @@
     imageNumber = 0;
     imageNumber2 = 1;
     
-    definition = @"まだ通過していない";
-    
     organizationFeaturedImages = @[@"英語劇.png", @"ダンス.png", @"アプリ局.png"];
     
     featuredImageButton = [[UIButton alloc]initWithFrame:CGRectMake(320, 64, 320, 130)];
