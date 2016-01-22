@@ -17,6 +17,9 @@
 		7E4D55D51C4945DE00BFE19C /* ダンス.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4D55D41C4945DE00BFE19C /* ダンス.png */; };
 		7E4D55D71C495FEA00BFE19C /* アプリ局.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4D55D61C495FEA00BFE19C /* アプリ局.png */; };
 		7E4D55D91C4C007A00BFE19C /* お好み焼き.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E4D55D81C4C007900BFE19C /* お好み焼き.jpg */; };
+		7E7BA29A1C4FDCFB00A37940 /* アイコン 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7BA2991C4FDCFB00A37940 /* アイコン 2.png */; };
+		7E7BA29C1C4FE16500A37940 /* アイコン 2 300.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7BA29B1C4FE16500A37940 /* アイコン 2 300.png */; };
+		7E7BA29E1C4FE37F00A37940 /* アイコン 2 200.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7BA29D1C4FE37F00A37940 /* アイコン 2 200.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		7E4D55D41C4945DE00BFE19C /* ダンス.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ダンス.png"; sourceTree = "<group>"; };
 		7E4D55D61C495FEA00BFE19C /* アプリ局.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アプリ局.png"; sourceTree = "<group>"; };
 		7E4D55D81C4C007900BFE19C /* お好み焼き.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "お好み焼き.jpg"; sourceTree = "<group>"; };
+		7E7BA2991C4FDCFB00A37940 /* アイコン 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アイコン 2.png"; sourceTree = "<group>"; };
+		7E7BA29B1C4FE16500A37940 /* アイコン 2 300.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アイコン 2 300.png"; sourceTree = "<group>"; };
+		7E7BA29D1C4FE37F00A37940 /* アイコン 2 200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アイコン 2 200.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +138,9 @@
 				7E4D55D41C4945DE00BFE19C /* ダンス.png */,
 				7E4D55D61C495FEA00BFE19C /* アプリ局.png */,
 				7E4D55D81C4C007900BFE19C /* お好み焼き.jpg */,
+				7E7BA2991C4FDCFB00A37940 /* アイコン 2.png */,
+				7E7BA29B1C4FE16500A37940 /* アイコン 2 300.png */,
+				7E7BA29D1C4FE37F00A37940 /* アイコン 2 200.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -218,6 +227,9 @@
 			files = (
 				7E4D55D71C495FEA00BFE19C /* アプリ局.png in Resources */,
 				7E4D55D31C49453500BFE19C /* 英語劇.png in Resources */,
+				7E7BA29C1C4FE16500A37940 /* アイコン 2 300.png in Resources */,
+				7E7BA29E1C4FE37F00A37940 /* アイコン 2 200.png in Resources */,
+				7E7BA29A1C4FDCFB00A37940 /* アイコン 2.png in Resources */,
 				7E4D55B71C49315C00BFE19C /* Main.storyboard in Resources */,
 				7E4D55B91C49315C00BFE19C /* Images.xcassets in Resources */,
 				7E4D55D51C4945DE00BFE19C /* ダンス.png in Resources */,
@@ -428,6 +440,7 @@
 				7E4D55CD1C49315C00BFE19C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E4D55CE1C49315C00BFE19C /* Build configuration list for PBXNativeTarget "Seiko Festa 57thTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +449,7 @@
 				7E4D55D01C49315C00BFE19C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -94,6 +94,12 @@
     UILabel *buttonFive4Label;
     UILabel *buttonFive5Label;
     
+    UIButton *viewAllButton1;
+    UIButton *viewAllButton2;
+    UIButton *viewAllBUtton3;
+    UIButton *viewAllButton4;
+    UIButton *viewAllButton5;
+    
 }
 
 @end

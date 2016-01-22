@@ -48,6 +48,13 @@
     foodLabel.text = @"Food";
     [mainScrollView addSubview:foodLabel];
     
+    viewAllButton1 = [[UIButton alloc]initWithFrame:CGRectMake(240, 19, 64, 12)];
+    [viewAllButton1 setTitle:@"すべて見る" forState:UIControlStateNormal];
+     viewAllButton1.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:12];
+    [viewAllButton1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [viewAllButton1 addTarget:self action:@selector(viewAll1:) forControlEvents:UIControlEventTouchUpInside];
+    [mainScrollView addSubview:viewAllButton1];
+    
     scrollView1 = [[UIScrollView alloc]init];
     scrollView1.frame = CGRectMake(0, 50, self.view.bounds.size.width, 106);
     scrollView1.showsHorizontalScrollIndicator = NO;
@@ -652,6 +659,10 @@
 }
 
 -(void)buttonFive5Detail:(UIButton *)button{
+    
+}
+
+-(void)viewAll1:(UIButton *)button{
     
 }
 
