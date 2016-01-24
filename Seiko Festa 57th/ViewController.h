@@ -11,8 +11,6 @@
 
 @interface ViewController : UIViewController <UIApplicationDelegate, UIScrollViewDelegate>{
     
-    int a;
-    
     UIImage *featuredImage;
     UIImage *featuredImage2;
     
