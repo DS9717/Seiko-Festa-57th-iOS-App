@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "DetailView.h"
+#import "ListView.h"
 
-@interface ViewController : UIViewController <UIApplicationDelegate, UIScrollViewDelegate>{
+
+@interface ViewController : UIViewController <UIApplicationDelegate>{
     
     UIImage *featuredImage;
     UIImage *featuredImage2;
@@ -100,7 +103,11 @@
     UIButton *viewAllButton4;
     UIButton *viewAllButton5;
     
+    NSString *whichList;
+    
 }
+
+@property(nonatomic) int flag;
 
 @end
 
