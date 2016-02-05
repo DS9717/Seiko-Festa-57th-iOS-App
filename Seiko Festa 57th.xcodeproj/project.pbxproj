@@ -98,6 +98,10 @@
 				7E4D55B51C49315C00BFE19C /* Main.storyboard */,
 				7E4D55B21C49315C00BFE19C /* ViewController.h */,
 				7E4D55B31C49315C00BFE19C /* ViewController.m */,
+				FABB0BDD1C560EEC0009ABAA /* ListView.h */,
+				FABB0BDE1C560EEC0009ABAA /* ListView.m */,
+				FABB0BE01C560F040009ABAA /* DetailView.h */,
+				FABB0BE11C560F040009ABAA /* DetailView.m */,
 				7E4D55B81C49315C00BFE19C /* Images.xcassets */,
 				7E4D55D11C4944F300BFE19C /* Images */,
 				7E4D55AB1C49315B00BFE19C /* Supporting Files */,
@@ -136,6 +140,7 @@
 			children = (
 				7E4D55D41C4945DE00BFE19C /* ダンス.png */,
 				7E4D55D61C495FEA00BFE19C /* アプリ局.png */,
+				FABB0BE31C56116E0009ABAA /* ウータン.png */,
 				7E4D55D81C4C007900BFE19C /* お好み焼き.jpg */,
 				7E7BA2991C4FDCFB00A37940 /* アイコン 2.png */,
 				7E7BA29B1C4FE16500A37940 /* アイコン 2 300.png */,
@@ -225,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FABB0BE41C56116E0009ABAA /* ウータン.png in Resources */,
 				7E4D55D71C495FEA00BFE19C /* アプリ局.png in Resources */,
 				7E7BA29C1C4FE16500A37940 /* アイコン 2 300.png in Resources */,
 				7E7BA29E1C4FE37F00A37940 /* アイコン 2 200.png in Resources */,
@@ -251,7 +257,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FABB0BDF1C560EEC0009ABAA /* ListView.m in Sources */,
 				7E4D55B41C49315C00BFE19C /* ViewController.m in Sources */,
+				FABB0BE21C560F040009ABAA /* DetailView.m in Sources */,
 				7E4D55B11C49315C00BFE19C /* AppDelegate.m in Sources */,
 				7E4D55AE1C49315C00BFE19C /* main.m in Sources */,
 			);

@@ -13,6 +13,7 @@
 @end
 
 @implementation ViewController
+@synthesize flag;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -72,7 +73,7 @@
     [scrollView1 addSubview:buttonOne1];
     
     buttonOne2= [[UIButton alloc]initWithFrame:CGRectMake(106, 0, 70, 70)];
-    [buttonOne2 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
+    [buttonOne2 setImage:[UIImage imageNamed:@"ウータン.png"] forState:UIControlStateNormal];
     [buttonOne2 addTarget:self
                    action:@selector(buttonOne2Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne2];
@@ -104,7 +105,7 @@
     
     buttonOne2Label = [[UILabel alloc]initWithFrame:CGRectMake(106, 78, 70, 14)];
     buttonOne2Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonOne2Label.text = @"お好み焼き";
+    buttonOne2Label.text = @"英語劇";
     buttonOne2Label.textAlignment = NSTextAlignmentCenter;
     [scrollView1 addSubview:buttonOne2Label];
     
@@ -563,11 +564,13 @@
 }
 
 -(void)buttonOne1Detail:(UIButton *)button{
-    
+    flag = 1;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
 }
 
 -(void)buttonOne2Detail:(UIButton *)button{
-    
+    flag = 2;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
 }
 
 -(void)buttonOne3Detail:(UIButton *)button{
@@ -664,6 +667,13 @@
 
 -(void)viewAll1:(UIButton *)button{
     
+}
+
+#pragma mark -値を受け渡す
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    DetailView *detailView = [segue destinationViewController];
+    detailView.flag = flag;
 }
 
 @end
