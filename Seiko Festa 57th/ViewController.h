@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
-#import "DetailView.h"
-
 
 @interface ViewController : UIViewController <UIApplicationDelegate, UIScrollViewDelegate>{
     
@@ -103,8 +101,6 @@
     UIButton *viewAllButton5;
     
 }
-
-@property(nonatomic) int flag;
 
 @end
 
