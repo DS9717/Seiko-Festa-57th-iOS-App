@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import <QuartzCore/QuartzCore.h>
+#import <CoreGraphics/CoreGraphics.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface ViewController ()
 
@@ -65,30 +68,50 @@
     [mainScrollView addSubview:scrollView1];
     
     buttonOne1= [[UIButton alloc]initWithFrame:CGRectMake(16, 0, 72, 72)];
+    buttonOne1.clipsToBounds=YES;
+    buttonOne1.layer.cornerRadius=17.0;
+    buttonOne1.layer.borderWidth=0.5;
+    buttonOne1.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
     [buttonOne1 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
     [buttonOne1 addTarget:self
                 action:@selector(buttonOne1Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne1];
     
     buttonOne2= [[UIButton alloc]initWithFrame:CGRectMake(108, 0, 72, 72)];
+    buttonOne2.clipsToBounds=YES;
+    buttonOne2.layer.cornerRadius=17.0;
+    buttonOne2.layer.borderWidth=0.5;
+    buttonOne2.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
     [buttonOne2 setImage:[UIImage imageNamed:@"ウータン.png"] forState:UIControlStateNormal];
     [buttonOne2 addTarget:self
                    action:@selector(buttonOne2Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne2];
     
     buttonOne3= [[UIButton alloc]initWithFrame:CGRectMake(200, 0, 72, 72)];
-    [buttonOne3 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
+    buttonOne3.clipsToBounds=YES;
+    buttonOne3.layer.cornerRadius=17.0;
+    buttonOne3.layer.borderWidth=0.5;
+    buttonOne3.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
+    [buttonOne3 setImage:[UIImage imageNamed:@"講堂劇 アイコン.png"] forState:UIControlStateNormal];
     [buttonOne3 addTarget:self
                    action:@selector(buttonOne3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne3];
     
     buttonOne4= [[UIButton alloc]initWithFrame:CGRectMake(292, 0, 72, 72)];
+    buttonOne4.clipsToBounds=YES;
+    buttonOne4.layer.cornerRadius=17.0;
+    buttonOne4.layer.borderWidth=0.5;
+    buttonOne4.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
     [buttonOne4 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
     [buttonOne4 addTarget:self
                    action:@selector(buttonOne4Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne4];
     
     buttonOne5= [[UIButton alloc]initWithFrame:CGRectMake(384, 0, 72, 72)];
+    buttonOne5.clipsToBounds=YES;
+    buttonOne5.layer.cornerRadius=17.0;
+    buttonOne5.layer.borderWidth=0.5;
+    buttonOne5.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
     [buttonOne5 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
     [buttonOne5 addTarget:self
                     action:@selector(buttonOne5Detail:) forControlEvents:UIControlEventTouchUpInside];
@@ -153,30 +176,50 @@
     [mainScrollView addSubview:scrollView2];
     
     buttonTwo1= [[UIButton alloc]initWithFrame:CGRectMake(16, 0, 72, 72)];
+    buttonTwo1.clipsToBounds=YES;
+    buttonTwo1.layer.cornerRadius=17.0;
+    buttonTwo1.layer.borderWidth=0.5;
+    buttonTwo1.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
     [buttonTwo1 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
     [buttonTwo1 addTarget:self
                    action:@selector(buttonTwo1Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView2 addSubview:buttonTwo1];
     
     buttonTwo2= [[UIButton alloc]initWithFrame:CGRectMake(108, 0, 72, 72)];
+    buttonTwo2.clipsToBounds=YES;
+    buttonTwo2.layer.cornerRadius=17.0;
+    buttonTwo2.layer.borderWidth=0.5;
+    buttonTwo2.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
     [buttonTwo2 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
     [buttonTwo2 addTarget:self
                    action:@selector(buttonTwo2Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView2 addSubview:buttonTwo2];
     
     buttonTwo3= [[UIButton alloc]initWithFrame:CGRectMake(200, 0, 72, 72)];
+    buttonTwo3.clipsToBounds=YES;
+    buttonTwo3.layer.cornerRadius=17.0;
+    buttonTwo3.layer.borderWidth=0.5;
+    buttonTwo3.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
     [buttonTwo3 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
     [buttonTwo3 addTarget:self
                      action:@selector(buttonTwo3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView2 addSubview:buttonTwo3];
     
     buttonTwo4= [[UIButton alloc]initWithFrame:CGRectMake(292, 0, 72, 72)];
+    buttonTwo4.clipsToBounds=YES;
+    buttonTwo4.layer.cornerRadius=17.0;
+    buttonTwo4.layer.borderWidth=0.5;
+    buttonTwo4.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
     [buttonTwo4 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
     [buttonTwo4 addTarget:self
                     action:@selector(buttonTwo4Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView2 addSubview:buttonTwo4];
     
     buttonTwo5= [[UIButton alloc]initWithFrame:CGRectMake(384, 0, 72, 72)];
+    buttonTwo5.clipsToBounds=YES;
+    buttonTwo5.layer.cornerRadius=17.0;
+    buttonTwo5.layer.borderWidth=0.5;
+    buttonTwo5.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
     [buttonTwo5 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
     [buttonTwo5 addTarget:self
                     action:@selector(buttonTwo5Detail:) forControlEvents:UIControlEventTouchUpInside];
@@ -235,35 +278,55 @@
     scrollView3.showsHorizontalScrollIndicator = NO;
     scrollView3.userInteractionEnabled = YES;
     scrollView3.bounces = YES;
-    [scrollView3 setContentSize:CGSizeMake(462, 110)];
+    [scrollView3 setContentSize:CGSizeMake(472, 110)];
     scrollView3.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView3];
     
     buttonThree1= [[UIButton alloc]initWithFrame:CGRectMake(16, 0, 72, 72)];
+    buttonThree1.clipsToBounds=YES;
+    buttonThree1.layer.cornerRadius=17.0;
+    buttonThree1.layer.borderWidth=0.5;
+    buttonThree1.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
     [buttonThree1 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
     [buttonThree1 addTarget:self
                    action:@selector(buttonThree1Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView3 addSubview:buttonThree1];
     
     buttonThree2= [[UIButton alloc]initWithFrame:CGRectMake(108, 0, 72, 72)];
+    buttonThree2.clipsToBounds=YES;
+    buttonThree2.layer.cornerRadius=17.0;
+    buttonThree2.layer.borderWidth=0.5;
+    buttonThree2.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
     [buttonThree2 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
     [buttonThree2 addTarget:self
                    action:@selector(buttonThree2Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView3 addSubview:buttonThree2];
     
     buttonThree3= [[UIButton alloc]initWithFrame:CGRectMake(200, 0, 72, 72)];
+    buttonThree3.clipsToBounds=YES;
+    buttonThree3.layer.cornerRadius=17.0;
+    buttonThree3.layer.borderWidth=0.5;
+    buttonThree3.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
     [buttonThree3 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
     [buttonThree3 addTarget:self
                    action:@selector(buttonThree3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView3 addSubview:buttonThree3];
     
     buttonThree4= [[UIButton alloc]initWithFrame:CGRectMake(292, 0, 72, 72)];
+    buttonThree4.clipsToBounds=YES;
+    buttonThree4.layer.cornerRadius=17.0;
+    buttonThree4.layer.borderWidth=0.5;
+    buttonThree4.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
     [buttonThree4 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
     [buttonThree4 addTarget:self
                    action:@selector(buttonThree4Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView3 addSubview:buttonThree4];
     
     buttonThree5= [[UIButton alloc]initWithFrame:CGRectMake(384, 0, 72, 72)];
+    buttonThree5.clipsToBounds=YES;
+    buttonThree5.layer.cornerRadius=17.0;
+    buttonThree5.layer.borderWidth=0.5;
+    buttonThree5.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
     [buttonThree5 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
     [buttonThree5 addTarget:self
                    action:@selector(buttonThree5Detail:) forControlEvents:UIControlEventTouchUpInside];
@@ -322,35 +385,55 @@
     scrollView4.showsHorizontalScrollIndicator = NO;
     scrollView4.userInteractionEnabled = YES;
     scrollView4.bounces = YES;
-    [scrollView4 setContentSize:CGSizeMake(462, 110)];
+    [scrollView4 setContentSize:CGSizeMake(472, 110)];
     scrollView4.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView4];
     
     buttonFour1= [[UIButton alloc]initWithFrame:CGRectMake(16, 0, 72, 72)];
+    buttonFour1.clipsToBounds=YES;
+    buttonFour1.layer.cornerRadius=17.0;
+    buttonFour1.layer.borderWidth=0.5;
+    buttonFour1.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
     [buttonFour1 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
     [buttonFour1 addTarget:self
                      action:@selector(buttonFour1Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView4 addSubview:buttonFour1];
     
     buttonFour2= [[UIButton alloc]initWithFrame:CGRectMake(108, 0, 72, 72)];
+    buttonFour2.clipsToBounds=YES;
+    buttonFour2.layer.cornerRadius=17.0;
+    buttonFour2.layer.borderWidth=0.5;
+    buttonFour2.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
     [buttonFour2 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
     [buttonFour2 addTarget:self
                      action:@selector(buttonFour2Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView4 addSubview:buttonFour2];
     
     buttonFour3= [[UIButton alloc]initWithFrame:CGRectMake(200, 0, 72, 72)];
+    buttonFour3.clipsToBounds=YES;
+    buttonFour3.layer.cornerRadius=17.0;
+    buttonFour3.layer.borderWidth=0.5;
+    buttonFour3.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
     [buttonFour3 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
     [buttonFour3 addTarget:self
                      action:@selector(buttonFour3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView4 addSubview:buttonFour3];
     
     buttonFour4= [[UIButton alloc]initWithFrame:CGRectMake(292, 0, 72, 72)];
+    buttonFour4.clipsToBounds=YES;
+    buttonFour4.layer.cornerRadius=17.0;
+    buttonFour4.layer.borderWidth=0.5;
+    buttonFour4.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
     [buttonFour4 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
     [buttonFour4 addTarget:self
                      action:@selector(buttonFour4Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView4 addSubview:buttonFour4];
     
     buttonFour5= [[UIButton alloc]initWithFrame:CGRectMake(384, 0, 72, 72)];
+    buttonFour5.clipsToBounds=YES;
+    buttonFour5.layer.cornerRadius=17.0;
+    buttonFour5.layer.borderWidth=0.5;
+    buttonFour5.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
     [buttonFour5 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
     [buttonFour5 addTarget:self
                      action:@selector(buttonFour5Detail:) forControlEvents:UIControlEventTouchUpInside];
@@ -409,35 +492,55 @@
     scrollView5.showsHorizontalScrollIndicator = NO;
     scrollView5.userInteractionEnabled = YES;
     scrollView5.bounces = YES;
-    [scrollView5 setContentSize:CGSizeMake(462, 110)];
+    [scrollView5 setContentSize:CGSizeMake(472, 110)];
     scrollView5.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView5];
     
     buttonFive1= [[UIButton alloc]initWithFrame:CGRectMake(16, 0, 72, 72)];
+    buttonFive1.clipsToBounds=YES;
+    buttonFive1.layer.cornerRadius=17.0;
+    buttonFive1.layer.borderWidth=0.5;
+    buttonFive1.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
     [buttonFive1 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
     [buttonFive1 addTarget:self
                     action:@selector(buttonFive1Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView5 addSubview:buttonFive1];
     
     buttonFive2= [[UIButton alloc]initWithFrame:CGRectMake(108, 0, 72, 72)];
+    buttonFive2.clipsToBounds=YES;
+    buttonFive2.layer.cornerRadius=17.0;
+    buttonFive2.layer.borderWidth=0.5;
+    buttonFive2.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
     [buttonFive2 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
     [buttonFive2 addTarget:self
                     action:@selector(buttonFive2Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView5 addSubview:buttonFive2];
     
     buttonFive3= [[UIButton alloc]initWithFrame:CGRectMake(200, 0, 72, 72)];
+    buttonFive3.clipsToBounds=YES;
+    buttonFive3.layer.cornerRadius=17.0;
+    buttonFive3.layer.borderWidth=0.5;
+    buttonFive3.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
     [buttonFive3 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
     [buttonFive3 addTarget:self
                     action:@selector(buttonFive3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView5 addSubview:buttonFive3];
     
     buttonFive4= [[UIButton alloc]initWithFrame:CGRectMake(292, 0, 72, 72)];
+    buttonFive4.clipsToBounds=YES;
+    buttonFive4.layer.cornerRadius=17.0;
+    buttonFive4.layer.borderWidth=0.5;
+    buttonFive4.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
     [buttonFive4 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
     [buttonFive4 addTarget:self
                     action:@selector(buttonFive4Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView5 addSubview:buttonFive4];
     
     buttonFive5= [[UIButton alloc]initWithFrame:CGRectMake(384, 0, 72, 72)];
+    buttonFive5.clipsToBounds=YES;
+    buttonFive5.layer.cornerRadius=17.0;
+    buttonFive5.layer.borderWidth=0.5;
+    buttonFive5.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
     [buttonFive5 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
     [buttonFive5 addTarget:self
                     action:@selector(buttonFive5Detail:) forControlEvents:UIControlEventTouchUpInside];
@@ -496,6 +599,15 @@
     UIView *horizontal4 = [[UIView alloc] initWithFrame:CGRectMake(16, 704, self.view.bounds.size.width - 16, 0.5)];
     horizontal4.backgroundColor = [UIColor colorWithRed:140.0/255.0 green:140.0/255.0 blue:140.0/255.0 alpha:1.0];
     [mainScrollView addSubview:horizontal4];
+    
+    UIView *horizontal5= [[UIView alloc] initWithFrame:CGRectMake(0, 516, self.view.bounds.size.width, 3)];
+    horizontal5.backgroundColor = [UIColor orangeColor];
+    [self.view addSubview:horizontal5];
+    
+    self.navigationController.navigationBar.tintColor=[UIColor orangeColor];
+    self.tabBarController.tabBar.barTintColor = [UIColor blackColor];
+    self.tabBarController.tabBar.tintColor = [UIColor whiteColor];
+  
     
 }
 

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7E0498D41C647ED800C244AD /* 英語劇.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0498D31C647ED800C244AD /* 英語劇.png */; };
+		7E3EB4661C79BC4A00F3B2A0 /* 講堂劇 アイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E3EB4651C79BC4A00F3B2A0 /* 講堂劇 アイコン.png */; };
+		7E3EB4781C79D97200F3B2A0 /* 英語劇-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E3EB4771C79D97200F3B2A0 /* 英語劇-タイムテーブル.png */; };
+		7E3EB47B1C79DAB900F3B2A0 /* TimetableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3EB47A1C79DAB900F3B2A0 /* TimetableViewController.m */; };
 		7E4D55AE1C49315C00BFE19C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4D55AD1C49315C00BFE19C /* main.m */; };
 		7E4D55B11C49315C00BFE19C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4D55B01C49315C00BFE19C /* AppDelegate.m */; };
 		7E4D55B41C49315C00BFE19C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4D55B31C49315C00BFE19C /* ViewController.m */; };
@@ -17,6 +20,9 @@
 		7E4D55D51C4945DE00BFE19C /* ダンス.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4D55D41C4945DE00BFE19C /* ダンス.png */; };
 		7E4D55D71C495FEA00BFE19C /* アプリ局.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4D55D61C495FEA00BFE19C /* アプリ局.png */; };
 		7E4D55D91C4C007A00BFE19C /* お好み焼き.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E4D55D81C4C007900BFE19C /* お好み焼き.jpg */; };
+		7ED21AB61C79986D00AA9E83 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED21AB51C79986D00AA9E83 /* QuartzCore.framework */; };
+		7ED21AB81C7998B900AA9E83 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED21AB71C7998B900AA9E83 /* CoreGraphics.framework */; };
+		7ED21ABB1C79998200AA9E83 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED21ABA1C79998200AA9E83 /* AVFoundation.framework */; };
 		FABB0BDF1C560EEC0009ABAA /* ListView.m in Sources */ = {isa = PBXBuildFile; fileRef = FABB0BDE1C560EEC0009ABAA /* ListView.m */; };
 		FABB0BE21C560F040009ABAA /* DetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = FABB0BE11C560F040009ABAA /* DetailView.m */; };
 		FABB0BE41C56116E0009ABAA /* ウータン.png in Resources */ = {isa = PBXBuildFile; fileRef = FABB0BE31C56116E0009ABAA /* ウータン.png */; };
@@ -34,6 +40,10 @@
 
 /* Begin PBXFileReference section */
 		7E0498D31C647ED800C244AD /* 英語劇.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "英語劇.png"; sourceTree = "<group>"; };
+		7E3EB4651C79BC4A00F3B2A0 /* 講堂劇 アイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "講堂劇 アイコン.png"; sourceTree = "<group>"; };
+		7E3EB4771C79D97200F3B2A0 /* 英語劇-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "英語劇-タイムテーブル.png"; sourceTree = "<group>"; };
+		7E3EB4791C79DAB900F3B2A0 /* TimetableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimetableViewController.h; path = ../TimetableViewController.h; sourceTree = "<group>"; };
+		7E3EB47A1C79DAB900F3B2A0 /* TimetableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimetableViewController.m; path = ../TimetableViewController.m; sourceTree = "<group>"; };
 		7E4D55A81C49315B00BFE19C /* Seiko Festa 57th.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Seiko Festa 57th.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4D55AC1C49315C00BFE19C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E4D55AD1C49315C00BFE19C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -49,6 +59,9 @@
 		7E4D55D41C4945DE00BFE19C /* ダンス.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ダンス.png"; sourceTree = "<group>"; };
 		7E4D55D61C495FEA00BFE19C /* アプリ局.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アプリ局.png"; sourceTree = "<group>"; };
 		7E4D55D81C4C007900BFE19C /* お好み焼き.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "お好み焼き.jpg"; sourceTree = "<group>"; };
+		7ED21AB51C79986D00AA9E83 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7ED21AB71C7998B900AA9E83 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7ED21ABA1C79998200AA9E83 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		FABB0BDD1C560EEC0009ABAA /* ListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListView.h; sourceTree = "<group>"; };
 		FABB0BDE1C560EEC0009ABAA /* ListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListView.m; sourceTree = "<group>"; };
 		FABB0BE01C560F040009ABAA /* DetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailView.h; sourceTree = "<group>"; };
@@ -61,6 +74,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ED21ABB1C79998200AA9E83 /* AVFoundation.framework in Frameworks */,
+				7ED21AB81C7998B900AA9E83 /* CoreGraphics.framework in Frameworks */,
+				7ED21AB61C79986D00AA9E83 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +95,7 @@
 			children = (
 				7E4D55AA1C49315B00BFE19C /* Seiko Festa 57th */,
 				7E4D55C41C49315C00BFE19C /* Seiko Festa 57thTests */,
+				7ED21AB91C7998CE00AA9E83 /* Frameworks */,
 				7E4D55A91C49315B00BFE19C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -104,6 +121,8 @@
 				FABB0BDE1C560EEC0009ABAA /* ListView.m */,
 				FABB0BE01C560F040009ABAA /* DetailView.h */,
 				FABB0BE11C560F040009ABAA /* DetailView.m */,
+				7E3EB4791C79DAB900F3B2A0 /* TimetableViewController.h */,
+				7E3EB47A1C79DAB900F3B2A0 /* TimetableViewController.m */,
 				7E4D55B81C49315C00BFE19C /* Images.xcassets */,
 				7E4D55D11C4944F300BFE19C /* Images */,
 				7E4D55AB1C49315B00BFE19C /* Supporting Files */,
@@ -145,8 +164,20 @@
 				7E4D55D61C495FEA00BFE19C /* アプリ局.png */,
 				FABB0BE31C56116E0009ABAA /* ウータン.png */,
 				7E4D55D81C4C007900BFE19C /* お好み焼き.jpg */,
+				7E3EB4651C79BC4A00F3B2A0 /* 講堂劇 アイコン.png */,
+				7E3EB4771C79D97200F3B2A0 /* 英語劇-タイムテーブル.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		7ED21AB91C7998CE00AA9E83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7ED21ABA1C79998200AA9E83 /* AVFoundation.framework */,
+				7ED21AB71C7998B900AA9E83 /* CoreGraphics.framework */,
+				7ED21AB51C79986D00AA9E83 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +264,8 @@
 				7E4D55D71C495FEA00BFE19C /* アプリ局.png in Resources */,
 				7E0498D41C647ED800C244AD /* 英語劇.png in Resources */,
 				7E4D55B71C49315C00BFE19C /* Main.storyboard in Resources */,
+				7E3EB4661C79BC4A00F3B2A0 /* 講堂劇 アイコン.png in Resources */,
+				7E3EB4781C79D97200F3B2A0 /* 英語劇-タイムテーブル.png in Resources */,
 				7E4D55B91C49315C00BFE19C /* Images.xcassets in Resources */,
 				7E4D55D51C4945DE00BFE19C /* ダンス.png in Resources */,
 				7E4D55D91C4C007A00BFE19C /* お好み焼き.jpg in Resources */,
@@ -255,6 +288,7 @@
 			files = (
 				FABB0BDF1C560EEC0009ABAA /* ListView.m in Sources */,
 				7E4D55B41C49315C00BFE19C /* ViewController.m in Sources */,
+				7E3EB47B1C79DAB900F3B2A0 /* TimetableViewController.m in Sources */,
 				FABB0BE21C560F040009ABAA /* DetailView.m in Sources */,
 				7E4D55B11C49315C00BFE19C /* AppDelegate.m in Sources */,
 				7E4D55AE1C49315C00BFE19C /* main.m in Sources */,

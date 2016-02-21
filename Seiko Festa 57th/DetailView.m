@@ -172,6 +172,8 @@
         
     }
     
+    self.navigationController.navigationBar.tintColor=[UIColor orangeColor];
+ 
     
 }
 

@@ -29,6 +29,26 @@
             </objects>
             <point key="canvasLocation" x="3540" y="281"/>
         </scene>
+        <!--Timetable View Controller-->
+        <scene sceneID="BIx-5V-yqr">
+            <objects>
+                <viewController id="iE3-Fi-Aau" customClass="TimetableViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lmo-e4-ggQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="jCl-2V-Upl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wa8-El-Wti">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="n0g-Mf-VGS"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7bY-dD-XE8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3540" y="1028"/>
+        </scene>
         <!--List View-->
         <scene sceneID="0S7-Y0-PJv">
             <objects>
@@ -209,11 +229,32 @@
                     </tabBar>
                     <connections>
                         <segue destination="I9R-Li-dhV" kind="relationship" relationship="viewControllers" id="GUg-Bn-aOG"/>
+                        <segue destination="J7F-Uo-pEd" kind="relationship" relationship="viewControllers" id="g4e-77-Obb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CIy-l8-4tj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2140.5" y="281.25"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TRv-5T-wDz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J7F-Uo-pEd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" systemItem="mostRecent" id="jFn-JB-Ugd"/>
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bgN-U6-lZH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iE3-Fi-Aau" kind="relationship" relationship="rootViewController" id="oOQ-sh-qsY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mch-He-6cW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2830" y="1028"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

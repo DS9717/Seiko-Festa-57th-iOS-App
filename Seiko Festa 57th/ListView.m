@@ -20,7 +20,20 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.height-113)];
+    //iOSのバージョンで分岐
+    float iOSVersion = [[[UIDevice currentDevice] systemVersion] floatValue];
+    
+    //iOS8以降
+    if(iOSVersion >= 8.0f){
+        
+        scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height-49)];
+        
+    }else{
+        
+        scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.height-113)];
+        
+    }
+    
     //横スクロールのインジケータを非表示にする
     scrollView.showsHorizontalScrollIndicator = NO;
     
@@ -39,7 +52,7 @@
         self.navigationItem.title = @"Food";
         
         button1= [[UIButton alloc]initWithFrame:CGRectMake(16, 16, 128, 128)];
-        [button1 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
+        [button1 setImage:[UIImage imageNamed:@"講堂劇 アイコン.png"] forState:UIControlStateNormal];
         [button1 addTarget:self
                        action:@selector(buttonOne1Detail:) forControlEvents:UIControlEventTouchUpInside];
         [scrollView addSubview:button1];
@@ -295,6 +308,26 @@
         [scrollView addSubview:label4];
         
     }
+    
+    button1.clipsToBounds=YES;
+    button1.layer.cornerRadius=27.0;
+    button1.layer.borderWidth=0.7;
+    button1.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
+    button2.clipsToBounds=YES;
+    button2.layer.cornerRadius=27.0;
+    button2.layer.borderWidth=0.7;
+    button2.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
+    button3.clipsToBounds=YES;
+    button3.layer.cornerRadius=27.0;
+    button3.layer.borderWidth=0.7;
+    button3.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
+    button4.clipsToBounds=YES;
+    button4.layer.cornerRadius=27.0;
+    button4.layer.borderWidth=0.7;
+    button4.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
+    
+    self.navigationController.navigationBar.tintColor=[UIColor orangeColor];
+
     
 }
 
