@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 #import "DetailView.h"
+#import "ListView.h"
 
 
-@interface ViewController : UIViewController <UIApplicationDelegate, UIScrollViewDelegate>{
+@interface ViewController : UIViewController <UIApplicationDelegate>{
     
     UIImage *featuredImage;
     UIImage *featuredImage2;
@@ -101,6 +102,8 @@
     UIButton *viewAllBUtton3;
     UIButton *viewAllButton4;
     UIButton *viewAllButton5;
+    
+    NSString *whichList;
     
 }
 

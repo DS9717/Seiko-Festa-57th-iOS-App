@@ -10,11 +10,16 @@
 #import "ViewController.h"
 #import "ListView.h"
 
-@interface DetailView : UIViewController
+@interface DetailView : UIViewController{
+    
+    NSString *_whatList;
+    
+}
 @property(nonatomic) int flag;
 @property (weak, nonatomic) IBOutlet UINavigationItem *navigationBar;
 @property (weak, nonatomic) IBOutlet UIImageView *detailImage;
 @property (weak, nonatomic) IBOutlet UILabel *detailTitle;
 @property (weak, nonatomic) IBOutlet UILabel *explainSentence;
+@property(nonatomic) NSString *whatList;
 
 @end
