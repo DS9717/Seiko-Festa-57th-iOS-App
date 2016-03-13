@@ -13,11 +13,17 @@
 @interface DetailView : UIViewController{
     
     NSString *_whatList;
+    UIScrollView *imageScroll;
+    UIImage *detailImage;
+    UIImageView *detailImageview;
+    UIImage *mapImage;
+    UIImageView *mapImageview;
+    UIButton *right;
+    UIButton *left;
     
 }
 @property(nonatomic) int flag;
 @property (weak, nonatomic) IBOutlet UINavigationItem *navigationBar;
-@property (weak, nonatomic) IBOutlet UIImageView *detailImage;
 @property (weak, nonatomic) IBOutlet UILabel *detailTitle;
 @property (weak, nonatomic) IBOutlet UILabel *explainSentence;
 @property(nonatomic) NSString *whatList;

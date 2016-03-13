@@ -69,6 +69,7 @@
     
     buttonOne1= [[UIButton alloc]initWithFrame:CGRectMake(16, 0, 72, 72)];
     buttonOne1.clipsToBounds=YES;
+    //角丸にする
     buttonOne1.layer.cornerRadius=17.0;
     buttonOne1.layer.borderWidth=0.5;
     buttonOne1.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
