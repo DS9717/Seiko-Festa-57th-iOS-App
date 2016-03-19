@@ -25,7 +25,7 @@
     imageNumber = 0;
     imageNumber2 = 1;
     
-    organizationFeaturedImages = @[@"英語劇 バナー1.png", @"ボールぽこぽこ バナー.jpg", @"ミュージックサロン バナー.JPG"];
+    organizationFeaturedImages = @[@"Flat Flight バナー1.jpg", @"ボールぽこぽこ バナー.jpg", @"ミュージックサロン バナー.JPG"];
     
     featuredImageButton = [[UIButton alloc]initWithFrame:CGRectMake(320, 64, 320, 130)];
     featuredImageButton2 = [[UIButton alloc]initWithFrame:CGRectMake(320, 64, 320, 130)];
@@ -78,12 +78,12 @@
     scrollView1.showsHorizontalScrollIndicator = NO;
     scrollView1.userInteractionEnabled = YES;
     scrollView1.bounces = YES;
-    [scrollView1 setContentSize:CGSizeMake(564, 106)];
+    [scrollView1 setContentSize:CGSizeMake(1304, 106)];
     scrollView1.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView1];
     
     buttonOne1= [[UIButton alloc]initWithFrame:CGRectMake(16, 0, 72, 72)];
-    [buttonOne1 setImage:[UIImage imageNamed:@"麺☆恋.png"] forState:UIControlStateNormal];
+    [buttonOne1 setImage:[UIImage imageNamed:@"鉄板職人.jpg"] forState:UIControlStateNormal];
     [buttonOne1 addTarget:self
                    action:@selector(buttonOne1Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne1];
@@ -95,7 +95,7 @@
     [scrollView1 addSubview:buttonOne2];
     
     buttonOne3= [[UIButton alloc]initWithFrame:CGRectMake(200, 0, 72, 72)];
-    [buttonOne3 setImage:[UIImage imageNamed:@"鉄板職人.jpg"] forState:UIControlStateNormal];
+    [buttonOne3 setImage:[UIImage imageNamed:@"麺☆恋.png"] forState:UIControlStateNormal];
     [buttonOne3 addTarget:self
                    action:@selector(buttonOne3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne3];
@@ -107,20 +107,69 @@
     [scrollView1 addSubview:buttonOne4];
     
     buttonOne5= [[UIButton alloc]initWithFrame:CGRectMake(384, 0, 72, 72)];
-    [buttonOne5 setImage:[UIImage imageNamed:@"クレープブレーク.png"] forState:UIControlStateNormal];
+    [buttonOne5 setImage:[UIImage imageNamed:@"鳥角.png"] forState:UIControlStateNormal];
     [buttonOne5 addTarget:self
                    action:@selector(buttonOne5Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne5];
     
     buttonOne6= [[UIButton alloc]initWithFrame:CGRectMake(476, 0, 72, 72)];
-    [buttonOne6 setImage:[UIImage imageNamed:@"Flapjack.png"] forState:UIControlStateNormal];
+    [buttonOne6 setImage:[UIImage imageNamed:@"クレープブレーク.png"] forState:UIControlStateNormal];
     [buttonOne6 addTarget:self
                    action:@selector(buttonOne6Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne6];
     
+    buttonOne7= [[UIButton alloc]initWithFrame:CGRectMake(568, 0, 72, 72)];
+    [buttonOne7 setImage:[UIImage imageNamed:@"Flapjack.png"] forState:UIControlStateNormal];
+    [buttonOne7 addTarget:self
+                   action:@selector(buttonOne7Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView1 addSubview:buttonOne7];
+    
+    buttonOne8= [[UIButton alloc]initWithFrame:CGRectMake(660, 0, 72, 72)];
+    [buttonOne8 setImage:[UIImage imageNamed:@"chocolat-π.png"] forState:UIControlStateNormal];
+    [buttonOne8 addTarget:self
+                   action:@selector(buttonOne8Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView1 addSubview:buttonOne8];
+    
+    buttonOne9= [[UIButton alloc]initWithFrame:CGRectMake(752, 0, 72, 72)];
+    [buttonOne9 setImage:[UIImage imageNamed:@"Juicy-Juicer.png"] forState:UIControlStateNormal];
+    [buttonOne9 addTarget:self
+                   action:@selector(buttonOne9Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView1 addSubview:buttonOne9];
+    
+    buttonOne10= [[UIButton alloc]initWithFrame:CGRectMake(844, 0, 72, 72)];
+    [buttonOne10 setImage:[UIImage imageNamed:@"綿's-candy.png"] forState:UIControlStateNormal];
+    [buttonOne10 addTarget:self
+                   action:@selector(buttonOne10Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView1 addSubview:buttonOne10];
+    
+    buttonOne11= [[UIButton alloc]initWithFrame:CGRectMake(936, 0, 72, 72)];
+    [buttonOne11 setImage:[UIImage imageNamed:@"氷菓.png"] forState:UIControlStateNormal];
+    [buttonOne11 addTarget:self
+                   action:@selector(buttonOne11Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView1 addSubview:buttonOne11];
+    
+    buttonOne12= [[UIButton alloc]initWithFrame:CGRectMake(1028, 0, 72, 72)];
+    [buttonOne12 setImage:[UIImage imageNamed:@"山手の泉.png"] forState:UIControlStateNormal];
+    [buttonOne12 addTarget:self
+                   action:@selector(buttonOne12Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView1 addSubview:buttonOne12];
+    
+    buttonOne13= [[UIButton alloc]initWithFrame:CGRectMake(1120, 0, 72, 72)];
+    [buttonOne13 setImage:[UIImage imageNamed:@"題名のない音楽喫茶.png"] forState:UIControlStateNormal];
+    [buttonOne13 addTarget:self
+                   action:@selector(buttonOne13Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView1 addSubview:buttonOne13];
+    
+    buttonOne14= [[UIButton alloc]initWithFrame:CGRectMake(1212, 0, 72, 72)];
+    [buttonOne14 setImage:[UIImage imageNamed:@"駅弁.png"] forState:UIControlStateNormal];
+    [buttonOne14 addTarget:self
+                   action:@selector(buttonOne14Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView1 addSubview:buttonOne14];
+    
+    
     buttonOne1Label = [[UILabel alloc]initWithFrame:CGRectMake(16, 80, 72, 14)];
     buttonOne1Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonOne1Label.text = @"麺☆恋";
+    buttonOne1Label.text = @"鉄板職人";
     buttonOne1Label.numberOfLines = 0;
     [buttonOne1Label sizeToFit];
     [scrollView1 addSubview:buttonOne1Label];
@@ -134,7 +183,7 @@
     
     buttonOne3Label = [[UILabel alloc]initWithFrame:CGRectMake(200, 80, 72, 14)];
     buttonOne3Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonOne3Label.text = @"鉄板職人";
+    buttonOne3Label.text = @"麺☆恋";
     buttonOne3Label.numberOfLines = 0;
     [buttonOne3Label sizeToFit];
     [scrollView1 addSubview:buttonOne3Label];
@@ -148,17 +197,74 @@
     
     buttonOne5Label = [[UILabel alloc]initWithFrame:CGRectMake(384, 80, 72, 14)];
     buttonOne5Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonOne5Label.text = @"クレープブレーク";
+    buttonOne5Label.text = @"鳥角";
     buttonOne5Label.numberOfLines = 0;
     [buttonOne5Label sizeToFit];
     [scrollView1 addSubview:buttonOne5Label];
     
     buttonOne6Label = [[UILabel alloc]initWithFrame:CGRectMake(476, 80, 72, 14)];
     buttonOne6Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonOne6Label.text = @"Flapjack";
+    buttonOne6Label.text = @"クレープブレーク";
     buttonOne6Label.numberOfLines = 0;
     [buttonOne6Label sizeToFit];
     [scrollView1 addSubview:buttonOne6Label];
+    
+    buttonOne7Label = [[UILabel alloc]initWithFrame:CGRectMake(568, 80, 72, 14)];
+    buttonOne7Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonOne7Label.text = @"Flapjack";
+    buttonOne7Label.numberOfLines = 0;
+    [buttonOne7Label sizeToFit];
+    [scrollView1 addSubview:buttonOne7Label];
+    
+    buttonOne8Label = [[UILabel alloc]initWithFrame:CGRectMake(660, 80, 72, 14)];
+    buttonOne8Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonOne8Label.text = @"chocolat π";
+    buttonOne8Label.numberOfLines = 0;
+    [buttonOne8Label sizeToFit];
+    [scrollView1 addSubview:buttonOne8Label];
+    
+    buttonOne9Label = [[UILabel alloc]initWithFrame:CGRectMake(752, 80, 72, 14)];
+    buttonOne9Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonOne9Label.text = @"Juicy Juicer";
+    buttonOne9Label.numberOfLines = 0;
+    [buttonOne9Label sizeToFit];
+    [scrollView1 addSubview:buttonOne9Label];
+    
+    buttonOne10Label = [[UILabel alloc]initWithFrame:CGRectMake(844, 80, 72, 14)];
+    buttonOne10Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonOne10Label.text = @"綿's Candy";
+    buttonOne10Label.numberOfLines = 0;
+    [buttonOne10Label sizeToFit];
+    [scrollView1 addSubview:buttonOne10Label];
+    
+    buttonOne11Label = [[UILabel alloc]initWithFrame:CGRectMake(936, 80, 72, 14)];
+    buttonOne11Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonOne11Label.text = @"氷菓";
+    buttonOne11Label.numberOfLines = 0;
+    [buttonOne11Label sizeToFit];
+    [scrollView1 addSubview:buttonOne11Label];
+    
+    buttonOne12Label = [[UILabel alloc]initWithFrame:CGRectMake(1028, 80, 72, 14)];
+    buttonOne12Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonOne12Label.text = @"山手の泉";
+    buttonOne12Label.numberOfLines = 0;
+    [buttonOne12Label sizeToFit];
+    [scrollView1 addSubview:buttonOne12Label];
+    
+    buttonOne13Label = [[UILabel alloc]initWithFrame:CGRectMake(1120, 80, 72, 14)];
+    buttonOne13Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonOne13Label.text = @"題名のない音楽喫茶";
+    buttonOne13Label.numberOfLines = 0;
+    [buttonOne13Label sizeToFit];
+    [scrollView1 addSubview:buttonOne13Label];
+    
+    buttonOne14Label = [[UILabel alloc]initWithFrame:CGRectMake(1212, 80, 72, 14)];
+    buttonOne14Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonOne14Label.text = @"駅弁";
+    buttonOne14Label.numberOfLines = 0;
+    [buttonOne14Label sizeToFit];
+    [scrollView1 addSubview:buttonOne14Label];
+    
     
     
     
@@ -702,7 +808,7 @@
     
     if (featuredImageButton.tag == 0) {
         flag = 2;
-        whichList = @"performance";
+        whichList = @"band";
     }else if (featuredImageButton.tag == 1) {
         flag = 3;
         whichList = @"performance";
@@ -719,7 +825,7 @@
     
     if (featuredImageButton2.tag == 0) {
         flag = 2;
-        whichList = @"performance";
+        whichList = @"band";
     }else if (featuredImageButton2.tag == 1) {
         flag = 3;
         whichList = @"performance";
@@ -765,6 +871,54 @@
 -(void)buttonOne6Detail:(UIButton *)button{
     whichList = @"food";
     flag = 6;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonOne7Detail:(UIButton *)button{
+    whichList = @"food";
+    flag = 7;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonOne8Detail:(UIButton *)button{
+    whichList = @"food";
+    flag = 8;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonOne9Detail:(UIButton *)button{
+    whichList = @"food";
+    flag = 9;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonOne10Detail:(UIButton *)button{
+    whichList = @"food";
+    flag = 10;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonOne11Detail:(UIButton *)button{
+    whichList = @"food";
+    flag = 11;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonOne12Detail:(UIButton *)button{
+    whichList = @"food";
+    flag = 12;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonOne13Detail:(UIButton *)button{
+    whichList = @"food";
+    flag = 13;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonOne14Detail:(UIButton *)button{
+    whichList = @"food";
+    flag = 14;
     [self performSegueWithIdentifier:@"showDirect" sender:self];
 }
 

@@ -40,11 +40,11 @@
         
         if (flag == 1) {
             
-            detailImage = [UIImage imageNamed:@"麺☆恋.png"];
+            detailImage = [UIImage imageNamed:@"鉄板職人.jpg"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
-            _detailTitle.text = @"麺☆恋";
+            _detailTitle.text = @"鉄板職人";
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
-            _explainSentence.text = @"美味しいソース焼きそばです！";
+            _explainSentence.text = @"";
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
         else if (flag == 2) {
@@ -52,15 +52,15 @@
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"麺’sRUNRUN";
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
-            _explainSentence.text = @"美味しい塩焼きそばです！";
+            _explainSentence.text = @"";
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
         else if (flag == 3) {
-            detailImage = [UIImage imageNamed:@"鉄板職人.jpg"];
+            detailImage = [UIImage imageNamed:@"麺☆恋.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
-            _detailTitle.text = @"鉄板職人";
+            _detailTitle.text = @"麺☆恋";
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
-            _explainSentence.text = @"美味しいお好み焼きです!";
+            _explainSentence.text = @"";
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
         else if (flag == 4) {
@@ -68,23 +68,87 @@
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"俺のケバブ";
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
-            _explainSentence.text = @"美味しいケバブです！";
+            _explainSentence.text = @"";
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
         else if (flag == 5) {
-            detailImage = [UIImage imageNamed:@"クレープブレーク.png"];
+            detailImage = [UIImage imageNamed:@"鳥角.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
-            _detailTitle.text = @"クレープブレーク";
+            _detailTitle.text = @"鳥角";
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
-            _explainSentence.text = @"美味しいクレープです!";
+            _explainSentence.text = @"";
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
         else if (flag == 6) {
+            detailImage = [UIImage imageNamed:@"クレープブレーク.png"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"クレープブレーク";
+            _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+            _explainSentence.text = @"";
+            _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        }
+        else if (flag == 7) {
             detailImage = [UIImage imageNamed:@"Flapjack.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"Flapjack";
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
-            _explainSentence.text = @"美味しいパンケーキです!";
+            _explainSentence.text = @"";
+            _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        }
+        else if (flag == 8) {
+            detailImage = [UIImage imageNamed:@"chocolat-π.png"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"chocolat π";
+            _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+            _explainSentence.text = @"";
+            _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        }
+        else if (flag == 9) {
+            detailImage = [UIImage imageNamed:@"Juicy-Juicer.png"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"Juicy Juicer";
+            _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+            _explainSentence.text = @"";
+            _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        }
+        else if (flag == 10) {
+            detailImage = [UIImage imageNamed:@"綿's-candy.png"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"綿's Candy";
+            _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+            _explainSentence.text = @"";
+            _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        }
+        else if (flag == 11) {
+            detailImage = [UIImage imageNamed:@"氷菓.png"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"氷菓";
+            _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+            _explainSentence.text = @"";
+            _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        }
+        else if (flag == 12) {
+            detailImage = [UIImage imageNamed:@"山手の泉.png"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"山手の泉";
+            _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+            _explainSentence.text = @"";
+            _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        }
+        else if (flag == 13) {
+            detailImage = [UIImage imageNamed:@"題名のない音楽喫茶.png"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"題名のない音楽喫茶";
+            _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+            _explainSentence.text = @"";
+            _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        }
+        else if (flag == 14) {
+            detailImage = [UIImage imageNamed:@"駅弁.png"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"駅弁";
+            _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+            _explainSentence.text = @"";
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
         
@@ -123,6 +187,48 @@
             _explainSentence.text = @"素晴らしいマジックです!";
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        }
+        else if (flag == 5) {
+            detailImage = [UIImage imageNamed:@"インターアクト.JPG"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"インターアクトクラブ";
+            _explainSentence.text = @"素晴らしいインターアクトクラブです!";
+        }
+        else if (flag == 5) {
+            detailImage = [UIImage imageNamed:@"インターアクト.JPG"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"インターアクトクラブ";
+            _explainSentence.text = @"素晴らしいインターアクトクラブです!";
+        }
+        else if (flag == 5) {
+            detailImage = [UIImage imageNamed:@"インターアクト.JPG"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"インターアクトクラブ";
+            _explainSentence.text = @"素晴らしいインターアクトクラブです!";
+        }
+        else if (flag == 5) {
+            detailImage = [UIImage imageNamed:@"インターアクト.JPG"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"インターアクトクラブ";
+            _explainSentence.text = @"素晴らしいインターアクトクラブです!";
+        }
+        else if (flag == 5) {
+            detailImage = [UIImage imageNamed:@"インターアクト.JPG"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"インターアクトクラブ";
+            _explainSentence.text = @"素晴らしいインターアクトクラブです!";
+        }
+        else if (flag == 5) {
+            detailImage = [UIImage imageNamed:@"インターアクト.JPG"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"インターアクトクラブ";
+            _explainSentence.text = @"素晴らしいインターアクトクラブです!";
+        }
+        else if (flag == 5) {
+            detailImage = [UIImage imageNamed:@"インターアクト.JPG"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"インターアクトクラブ";
+            _explainSentence.text = @"素晴らしいインターアクトクラブです!";
         }
         else if (flag == 5) {
             detailImage = [UIImage imageNamed:@"インターアクト.JPG"];

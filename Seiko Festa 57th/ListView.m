@@ -41,10 +41,6 @@
     scrollView.directionalLockEnabled = YES;
     scrollView.bounces = YES;
     scrollView.backgroundColor = [UIColor clearColor];
-    //スクロールの範囲を設定
-    [scrollView setContentSize:CGSizeMake(self.view.bounds.size.width, 556)];
-    
-    [self.view addSubview:scrollView];
     
     
     if ([_whatList isEqualToString:@"food"]) {
@@ -52,14 +48,14 @@
         self.navigationItem.title = @"Food";
         
         button1= [[UIButton alloc]initWithFrame:CGRectMake(16, 16, 128, 128)];
-        [button1 setImage:[UIImage imageNamed:@"麺☆恋.png"] forState:UIControlStateNormal];
+        [button1 setImage:[UIImage imageNamed:@"鉄板職人.jpg"] forState:UIControlStateNormal];
         [button1 addTarget:self
                        action:@selector(buttonOne1Detail:) forControlEvents:UIControlEventTouchUpInside];
         [scrollView addSubview:button1];
         
         label1 = [[UILabel alloc]initWithFrame:CGRectMake(16, 152, 128, 20)];
         label1.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
-        label1.text = @"麺☆恋";
+        label1.text = @"鉄板職人";
         label1.textAlignment = NSTextAlignmentCenter;
         [scrollView addSubview:label1];
         
@@ -76,14 +72,14 @@
         [scrollView addSubview:label2];
         
         button3= [[UIButton alloc]initWithFrame:CGRectMake(16, 196, 128, 128)];
-        [button3 setImage:[UIImage imageNamed:@"鉄板職人.jpg"] forState:UIControlStateNormal];
+        [button3 setImage:[UIImage imageNamed:@"麺☆恋.png"] forState:UIControlStateNormal];
         [button3 addTarget:self
                     action:@selector(buttonOne3Detail:) forControlEvents:UIControlEventTouchUpInside];
         [scrollView addSubview:button3];
         
         label3 = [[UILabel alloc]initWithFrame:CGRectMake(16, 332, 128, 20)];
         label3.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
-        label3.text = @"鉄板職人";
+        label3.text = @"麺☆恋";
         label3.textAlignment = NSTextAlignmentCenter;
         [scrollView addSubview:label3];
         
@@ -100,28 +96,127 @@
         [scrollView addSubview:label4];
         
         button5= [[UIButton alloc]initWithFrame:CGRectMake(16, 376, 128, 128)];
-        [button5 setImage:[UIImage imageNamed:@"クレープブレーク.png"] forState:UIControlStateNormal];
+        [button5 setImage:[UIImage imageNamed:@"鳥角.png"] forState:UIControlStateNormal];
         [button5 addTarget:self
                     action:@selector(buttonOne5Detail:) forControlEvents:UIControlEventTouchUpInside];
         [scrollView addSubview:button5];
         
         label5 = [[UILabel alloc]initWithFrame:CGRectMake(16, 512, 128, 20)];
         label5.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
-        label5.text = @"クレープブレーク";
+        label5.text = @"鳥角";
         label5.textAlignment = NSTextAlignmentCenter;
         [scrollView addSubview:label5];
         
         button6= [[UIButton alloc]initWithFrame:CGRectMake(176, 376, 128, 128)];
-        [button6 setImage:[UIImage imageNamed:@"Flapjack.png"] forState:UIControlStateNormal];
+        [button6 setImage:[UIImage imageNamed:@"クレープブレーク.png"] forState:UIControlStateNormal];
         [button6 addTarget:self
                     action:@selector(buttonOne6Detail:) forControlEvents:UIControlEventTouchUpInside];
         [scrollView addSubview:button6];
         
         label6 = [[UILabel alloc]initWithFrame:CGRectMake(176, 512, 128, 20)];
         label6.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
-        label6.text = @"Flapjack";
+        label6.text = @"クレープブレーク";
         label6.textAlignment = NSTextAlignmentCenter;
         [scrollView addSubview:label6];
+        
+        button7= [[UIButton alloc]initWithFrame:CGRectMake(16, 556, 128, 128)];
+        [button7 setImage:[UIImage imageNamed:@"Flapjack.png"] forState:UIControlStateNormal];
+        [button7 addTarget:self
+                    action:@selector(buttonOne7Detail:) forControlEvents:UIControlEventTouchUpInside];
+        [scrollView addSubview:button7];
+        
+        label7 = [[UILabel alloc]initWithFrame:CGRectMake(16, 692, 128, 20)];
+        label7.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        label7.text = @"Flapjack";
+        label7.textAlignment = NSTextAlignmentCenter;
+        [scrollView addSubview:label7];
+        
+        button8= [[UIButton alloc]initWithFrame:CGRectMake(176, 556, 128, 128)];
+        [button8 setImage:[UIImage imageNamed:@"chocolat-π.png"] forState:UIControlStateNormal];
+        [button8 addTarget:self
+                    action:@selector(buttonOne8Detail:) forControlEvents:UIControlEventTouchUpInside];
+        [scrollView addSubview:button8];
+        
+        label8 = [[UILabel alloc]initWithFrame:CGRectMake(176, 692, 128, 20)];
+        label8.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        label8.text = @"chocolat π";
+        label8.textAlignment = NSTextAlignmentCenter;
+        [scrollView addSubview:label8];
+        
+        button9= [[UIButton alloc]initWithFrame:CGRectMake(16, 736, 128, 128)];
+        [button9 setImage:[UIImage imageNamed:@"Juicy-Juicer.png"] forState:UIControlStateNormal];
+        [button9 addTarget:self
+                    action:@selector(buttonOne9Detail:) forControlEvents:UIControlEventTouchUpInside];
+        [scrollView addSubview:button9];
+        
+        label9 = [[UILabel alloc]initWithFrame:CGRectMake(16, 872, 128, 20)];
+        label9.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        label9.text = @"Juicy Juicer";
+        label9.textAlignment = NSTextAlignmentCenter;
+        [scrollView addSubview:label9];
+        
+        button10= [[UIButton alloc]initWithFrame:CGRectMake(176, 736, 128, 128)];
+        [button10 setImage:[UIImage imageNamed:@"綿's-candy.png"] forState:UIControlStateNormal];
+        [button10 addTarget:self
+                    action:@selector(buttonOne10Detail:) forControlEvents:UIControlEventTouchUpInside];
+        [scrollView addSubview:button10];
+        
+        label10 = [[UILabel alloc]initWithFrame:CGRectMake(176, 872, 128, 20)];
+        label10.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        label10.text = @"綿's Candy";
+        label10.textAlignment = NSTextAlignmentCenter;
+        [scrollView addSubview:label10];
+        
+        button11= [[UIButton alloc]initWithFrame:CGRectMake(16, 916, 128, 128)];
+        [button11 setImage:[UIImage imageNamed:@"氷菓.png"] forState:UIControlStateNormal];
+        [button11 addTarget:self
+                    action:@selector(buttonOne11Detail:) forControlEvents:UIControlEventTouchUpInside];
+        [scrollView addSubview:button11];
+        
+        label11 = [[UILabel alloc]initWithFrame:CGRectMake(16, 1052, 128, 20)];
+        label11.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        label11.text = @"氷菓";
+        label11.textAlignment = NSTextAlignmentCenter;
+        [scrollView addSubview:label11];
+        
+        button12= [[UIButton alloc]initWithFrame:CGRectMake(176, 916, 128, 128)];
+        [button12 setImage:[UIImage imageNamed:@"山手の泉.png"] forState:UIControlStateNormal];
+        [button12 addTarget:self
+                    action:@selector(buttonOne12Detail:) forControlEvents:UIControlEventTouchUpInside];
+        [scrollView addSubview:button12];
+        
+        label12 = [[UILabel alloc]initWithFrame:CGRectMake(176, 1052, 128, 20)];
+        label12.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        label12.text = @"山手の泉";
+        label12.textAlignment = NSTextAlignmentCenter;
+        [scrollView addSubview:label12];
+        
+        button13= [[UIButton alloc]initWithFrame:CGRectMake(16, 1096, 128, 128)];
+        [button13 setImage:[UIImage imageNamed:@"題名のない音楽喫茶.png"] forState:UIControlStateNormal];
+        [button13 addTarget:self
+                    action:@selector(buttonOne13Detail:) forControlEvents:UIControlEventTouchUpInside];
+        [scrollView addSubview:button13];
+        
+        label13 = [[UILabel alloc]initWithFrame:CGRectMake(16, 1232, 128, 20)];
+        label13.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        label13.text = @"題名のない音楽喫茶";
+        label13.textAlignment = NSTextAlignmentCenter;
+        [scrollView addSubview:label13];
+        
+        button14= [[UIButton alloc]initWithFrame:CGRectMake(176, 1096, 128, 128)];
+        [button14 setImage:[UIImage imageNamed:@"駅弁.png"] forState:UIControlStateNormal];
+        [button14 addTarget:self
+                    action:@selector(buttonOne14Detail:) forControlEvents:UIControlEventTouchUpInside];
+        [scrollView addSubview:button14];
+        
+        label14 = [[UILabel alloc]initWithFrame:CGRectMake(176, 1232, 128, 20)];
+        label14.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        label14.text = @"駅弁";
+        label14.textAlignment = NSTextAlignmentCenter;
+        [scrollView addSubview:label14];
+        
+        //スクロールの範囲を設定
+        [scrollView setContentSize:CGSizeMake(self.view.bounds.size.width, 1276)];
         
     }else if ([_whatList isEqualToString:@"display"]) {
         
@@ -186,6 +281,11 @@
         label5.text = @"インターアクトクラブ";
         label5.textAlignment = NSTextAlignmentCenter;
         [scrollView addSubview:label5];
+        
+        //スクロールの範囲を設定
+        [scrollView setContentSize:CGSizeMake(self.view.bounds.size.width, 556)];
+        
+        
         
     }else if ([_whatList isEqualToString:@"band"]) {
         
@@ -263,6 +363,11 @@
         label6.textAlignment = NSTextAlignmentCenter;
         [scrollView addSubview:label6];
         
+        //スクロールの範囲を設定
+        [scrollView setContentSize:CGSizeMake(self.view.bounds.size.width, 556)];
+        
+        
+        
     }else if ([_whatList isEqualToString:@"performance"]) {
         
         self.navigationItem.title = @"Performance";
@@ -339,6 +444,11 @@
         label6.textAlignment = NSTextAlignmentCenter;
         [scrollView addSubview:label6];
         
+        //スクロールの範囲を設定
+        [scrollView setContentSize:CGSizeMake(self.view.bounds.size.width, 556)];
+        
+        
+        
     }else if ([_whatList isEqualToString:@"stage"]) {
         
         self.navigationItem.title = @"Stage";
@@ -414,9 +524,12 @@
         label6.text = @"替え歌選手権";
         label6.textAlignment = NSTextAlignmentCenter;
         [scrollView addSubview:label6];
+        
+        //スクロールの範囲を設定
+        [scrollView setContentSize:CGSizeMake(self.view.bounds.size.width, 556)];
     }
     
-    
+    [self.view addSubview:scrollView];
     self.navigationController.navigationBar.tintColor=[UIColor orangeColor];
 
     
@@ -463,6 +576,54 @@
     [self performSegueWithIdentifier:@"showDetail" sender:self];
 }
 
+-(void)buttonOne7Detail:(UIButton *)button{
+    whichList = @"food";
+    flag = 7;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonOne8Detail:(UIButton *)button{
+    whichList = @"food";
+    flag = 8;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonOne9Detail:(UIButton *)button{
+    whichList = @"food";
+    flag = 9;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonOne10Detail:(UIButton *)button{
+    whichList = @"food";
+    flag = 10;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonOne11Detail:(UIButton *)button{
+    whichList = @"food";
+    flag = 11;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonOne12Detail:(UIButton *)button{
+    whichList = @"food";
+    flag = 12;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonOne13Detail:(UIButton *)button{
+    whichList = @"food";
+    flag = 13;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonOne14Detail:(UIButton *)button{
+    whichList = @"food";
+    flag = 14;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
 -(void)buttonTwo1Detail:(UIButton *)button{
     whichList = @"display";
     flag = 1;
@@ -495,7 +656,7 @@
 
 -(void)buttonTwo6Detail:(UIButton *)button{
     whichList = @"display";
-    flag = 5;
+    flag = 6;
     [self performSegueWithIdentifier:@"showDetail" sender:self];
 }
 

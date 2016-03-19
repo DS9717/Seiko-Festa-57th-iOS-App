@@ -33,12 +33,20 @@
     UIScrollView *scrollView5;
     
     //食品
-    UIButton *buttonOne1;
-    UIButton *buttonOne2;
-    UIButton *buttonOne3;
-    UIButton *buttonOne4;
-    UIButton *buttonOne5;
-    UIButton *buttonOne6;
+    UIButton *buttonOne1;   //鉄板職人
+    UIButton *buttonOne2;   //麺'sRUNRUN
+    UIButton *buttonOne3;   //麺☆恋
+    UIButton *buttonOne4;   //俺のケバブ
+    UIButton *buttonOne5;   //鳥角
+    UIButton *buttonOne6;   //クレープブレーク
+    UIButton *buttonOne7;   //Flapjack
+    UIButton *buttonOne8;   //chocolat π
+    UIButton *buttonOne9;   //Juicy Juicer
+    UIButton *buttonOne10;  //綿's candy
+    UIButton *buttonOne11;  //氷菓
+    UIButton *buttonOne12;  //山手の泉
+    UIButton *buttonOne13;  //題名のない音楽喫茶
+    UIButton *buttonOne14;  //駅弁
     
     UILabel *foodLabel;
     UILabel *buttonOne1Label;
@@ -47,6 +55,14 @@
     UILabel *buttonOne4Label;
     UILabel *buttonOne5Label;
     UILabel *buttonOne6Label;
+    UILabel *buttonOne7Label;
+    UILabel *buttonOne8Label;
+    UILabel *buttonOne9Label;
+    UILabel *buttonOne10Label;
+    UILabel *buttonOne11Label;
+    UILabel *buttonOne12Label;
+    UILabel *buttonOne13Label;
+    UILabel *buttonOne14Label;
     
     //趣味研
     UIButton *buttonTwo1;
