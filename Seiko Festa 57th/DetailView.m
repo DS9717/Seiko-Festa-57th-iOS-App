@@ -32,6 +32,7 @@
     imageScroll.backgroundColor = [UIColor clearColor];
     //スクロールの範囲を設定
     [imageScroll setContentSize:CGSizeMake(640, 220)];
+
     
     if ([_whatList isEqualToString:@"food"]) {
         
