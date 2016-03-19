@@ -586,6 +586,7 @@
     [featuredImageButton setImage:featuredImage forState:UIControlStateNormal];
     [featuredImageButton addTarget:self
                             action:@selector(featuredDetail:) forControlEvents:UIControlEventTouchUpInside];
+    featuredImageButton.tag = imageNumber;
     
     [self.view addSubview:featuredImageButton];
     
@@ -643,6 +644,7 @@
     [featuredImageButton2 setImage:featuredImage2 forState:UIControlStateNormal];
     [featuredImageButton2 addTarget:self
                             action:@selector(featuredDetail2:) forControlEvents:UIControlEventTouchUpInside];
+    featuredImageButton2.tag = imageNumber2;
     
     [self.view addSubview:featuredImageButton2];
     
@@ -686,13 +688,13 @@
 
 -(void)featuredDetail:(UIButton *)button{
     
-    if (featuredImage == [UIImage imageNamed:@"英語劇 バナー1.png"]) {
+    if (featuredImageButton.tag == 0) {
         flag = 2;
         whichList = @"performance";
-    }else if (featuredImage == [UIImage imageNamed:@"ボールぽこぽこ バナー.jpg"]) {
+    }else if (featuredImageButton.tag == 1) {
         flag = 3;
         whichList = @"performance";
-    }else if (featuredImage == [UIImage imageNamed:@"ミュージックサロン バナー.JPG"]) {
+    }else if (featuredImageButton.tag == 2) {
         flag = 5;
         whichList = @"performance";
     }
@@ -703,13 +705,13 @@
 
 -(void)featuredDetail2:(UIButton *)button{
     
-    if (featuredImage2 == [UIImage imageNamed:@"英語劇 バナー1.png"]) {
+    if (featuredImageButton2.tag == 0) {
         flag = 2;
         whichList = @"performance";
-    }else if (featuredImage2 == [UIImage imageNamed:@"ボールぽこぽこ バナー.jpg"]) {
+    }else if (featuredImageButton2.tag == 1) {
         flag = 3;
         whichList = @"performance";
-    }else if (featuredImage2 == [UIImage imageNamed:@"ミュージックサロン バナー.JPG"]) {
+    }else if (featuredImageButton2.tag == 2) {
         flag = 5;
         whichList = @"performance";
     }
