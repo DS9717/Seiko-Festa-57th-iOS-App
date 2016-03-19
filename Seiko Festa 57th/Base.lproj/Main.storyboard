@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HNp-Pa-RlB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HNp-Pa-RlB">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--Home-->
@@ -196,7 +196,7 @@
         <scene sceneID="ojU-gv-U6K">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I9R-Li-dhV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="featured" id="zgH-Qv-don"/>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="zgH-Qv-don"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ub2-49-M36">
@@ -236,7 +236,7 @@
         <scene sceneID="TRv-5T-wDz">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J7F-Uo-pEd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" systemItem="mostRecent" id="jFn-JB-Ugd"/>
+                    <tabBarItem key="tabBarItem" title="" systemItem="more" id="jFn-JB-Ugd"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bgN-U6-lZH">

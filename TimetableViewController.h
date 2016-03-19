@@ -17,6 +17,7 @@
     UIScrollView *scrollView4;
     UIScrollView *scrollView5;
     UIScrollView *scrollView6;
+    UIScrollView *scrollView7;
     
     UIPageControl *pageControl;
     
@@ -24,13 +25,16 @@
     UIButton *buttonOne2;
     UIButton *buttonOne3;
     UIButton *buttonOne4;
-    UIButton *buttonOne5;
     
     UIButton *buttonTwo1;
     UIButton *buttonTwo2;
     UIButton *buttonTwo3;
     UIButton *buttonTwo4;
     UIButton *buttonTwo5;
+    UIButton *buttonTwo6;
+    UIButton *buttonTwo7;
+    UIButton *buttonTwo8;
+    UIButton *buttonTwo9;
     
     UIButton *buttonThree1;
     UIButton *buttonThree2;

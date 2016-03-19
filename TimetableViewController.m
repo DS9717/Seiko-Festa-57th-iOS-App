@@ -46,7 +46,7 @@
     mainScrollView.directionalLockEnabled = YES;
     mainScrollView.bounces = NO;
     mainScrollView.backgroundColor = [UIColor clearColor];
-    [mainScrollView setContentSize:CGSizeMake(6*(self.view.bounds.size.width), self.view.bounds.size.height-113)];
+    [mainScrollView setContentSize:CGSizeMake(7*(self.view.bounds.size.width), self.view.bounds.size.height-113)];
     
     scrollView1 = [[UIScrollView alloc]init];
     scrollView1.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height-113);
@@ -56,7 +56,7 @@
     scrollView1.delegate = self;
     scrollView1.directionalLockEnabled = YES;
     scrollView1.bounces = YES;
-    [scrollView1 setContentSize:CGSizeMake(self.view.bounds.size.width, 950)];
+    [scrollView1 setContentSize:CGSizeMake(self.view.bounds.size.width, 750)];
     scrollView1.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView1];
     
@@ -68,7 +68,7 @@
     scrollView2.delegate = self;
     scrollView2.directionalLockEnabled = YES;
     scrollView2.bounces = YES;
-    [scrollView2 setContentSize:CGSizeMake(self.view.bounds.size.width, 950)];
+    [scrollView2 setContentSize:CGSizeMake(self.view.bounds.size.width, 1700)];
     scrollView2.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView2];
     
@@ -80,7 +80,7 @@
     scrollView3.delegate = self;
     scrollView3.directionalLockEnabled = YES;
     scrollView3.bounces = YES;
-    [scrollView3 setContentSize:CGSizeMake(self.view.bounds.size.width, 950)];
+    [scrollView3 setContentSize:CGSizeMake(self.view.bounds.size.width, 750)];
     scrollView3.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView3];
     
@@ -92,7 +92,7 @@
     scrollView4.delegate = self;
     scrollView4.directionalLockEnabled = YES;
     scrollView4.bounces = YES;
-    [scrollView4 setContentSize:CGSizeMake(self.view.bounds.size.width, 950)];
+    [scrollView4 setContentSize:CGSizeMake(self.view.bounds.size.width, 940)];
     scrollView4.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView4];
     
@@ -104,7 +104,7 @@
     scrollView5.delegate = self;
     scrollView5.directionalLockEnabled = YES;
     scrollView5.bounces = YES;
-    [scrollView5 setContentSize:CGSizeMake(self.view.bounds.size.width, 950)];
+    [scrollView5 setContentSize:CGSizeMake(self.view.bounds.size.width, 750)];
     scrollView5.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView5];
     
@@ -116,9 +116,21 @@
     scrollView6.delegate = self;
     scrollView6.directionalLockEnabled = YES;
     scrollView6.bounces = YES;
-    [scrollView6 setContentSize:CGSizeMake(self.view.bounds.size.width, 950)];
+    [scrollView6 setContentSize:CGSizeMake(self.view.bounds.size.width, 180)];
     scrollView6.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView6];
+    
+    scrollView7 = [[UIScrollView alloc]init];
+    scrollView7.frame = CGRectMake(1920, 0, self.view.bounds.size.width, self.view.bounds.size.height-113);
+    scrollView7.showsHorizontalScrollIndicator = NO;
+    scrollView7.pagingEnabled = NO;
+    scrollView7.userInteractionEnabled = YES;
+    scrollView7.delegate = self;
+    scrollView7.directionalLockEnabled = YES;
+    scrollView7.bounces = YES;
+    [scrollView7 setContentSize:CGSizeMake(self.view.bounds.size.width, 180)];
+    scrollView7.backgroundColor=[UIColor clearColor];
+    [mainScrollView addSubview:scrollView7];
     
     [self.view addSubview:mainScrollView];
     
@@ -129,7 +141,7 @@
     pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
     pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
     // ページ数を設定
-   pageControl.numberOfPages = 6;
+   pageControl.numberOfPages = 7;
     //現在のページを設定
     pageControl.currentPage = 0;
     //ページコントロールをタップされたときに呼ばれるメソッドを設定
@@ -143,67 +155,168 @@
     self.navigationItem.title=@"講堂";
     
     buttonOne1= [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 320, 190)];
-    [buttonOne1 setImage:[UIImage imageNamed:@"英語劇-タイムテーブル.png"] forState:UIControlStateNormal];
+    [buttonOne1 setImage:[UIImage imageNamed:@"中1コーラス-タイムテーブル.png"] forState:UIControlStateNormal];
     [buttonOne1 addTarget:self
                  action:@selector(buttonOne1Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne1];
     
     buttonOne2= [[UIButton alloc]initWithFrame:CGRectMake(0, 190, 320, 190)];
-    [buttonOne2 setImage:[UIImage imageNamed:@"英語劇-タイムテーブル.png"] forState:UIControlStateNormal];
+    [buttonOne2 setImage:[UIImage imageNamed:@"ミュージックサロン-タイムテーブル.png"] forState:UIControlStateNormal];
     [buttonOne2 addTarget:self
                    action:@selector(buttonOne2Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne2];
     
     buttonOne3= [[UIButton alloc]initWithFrame:CGRectMake(0, 380, 320, 190)];
-    [buttonOne3 setImage:[UIImage imageNamed:@"英語劇-タイムテーブル.png"] forState:UIControlStateNormal];
+    [buttonOne3 setImage:[UIImage imageNamed:@"ボールぽこぽこ-タイムテーブル.png"] forState:UIControlStateNormal];
     [buttonOne3 addTarget:self
                    action:@selector(buttonOne3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne3];
     
-    buttonOne4= [[UIButton alloc]initWithFrame:CGRectMake(0, 570, 320, 190)];
+    buttonOne4= [[UIButton alloc]initWithFrame:CGRectMake(0, 570, 320, 180)];
     [buttonOne4 setImage:[UIImage imageNamed:@"英語劇-タイムテーブル.png"] forState:UIControlStateNormal];
     [buttonOne4 addTarget:self
                    action:@selector(buttonOne4Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne4];
     
-    buttonOne5= [[UIButton alloc]initWithFrame:CGRectMake(0, 760, 320, 190)];
-    [buttonOne5 setImage:[UIImage imageNamed:@"英語劇-タイムテーブル.png"] forState:UIControlStateNormal];
-    [buttonOne5 addTarget:self
-                   action:@selector(buttonOne5Detail:) forControlEvents:UIControlEventTouchUpInside];
-    [scrollView1 addSubview:buttonOne5];
-    
     buttonTwo1= [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 320, 190)];
-    [buttonTwo1 setImage:[UIImage imageNamed:@"英語劇-タイムテーブル.png"] forState:UIControlStateNormal];
+    [buttonTwo1 setImage:[UIImage imageNamed:@"S-O-S-タイムテーブル.png"] forState:UIControlStateNormal];
     [buttonTwo1 addTarget:self
                    action:@selector(buttonTwo1Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView2 addSubview:buttonTwo1];
     
     buttonTwo2= [[UIButton alloc]initWithFrame:CGRectMake(0, 190, 320, 190)];
-    [buttonTwo2 setImage:[UIImage imageNamed:@"英語劇-タイムテーブル.png"] forState:UIControlStateNormal];
+    [buttonTwo2 setImage:[UIImage imageNamed:@"ギネスに挑戦！！-タイムテーブル.png"] forState:UIControlStateNormal];
     [buttonTwo2 addTarget:self
                    action:@selector(buttonTwo2Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView2 addSubview:buttonTwo2];
     
     buttonTwo3= [[UIButton alloc]initWithFrame:CGRectMake(0, 380, 320, 190)];
-    [buttonTwo3 setImage:[UIImage imageNamed:@"英語劇-タイムテーブル.png"] forState:UIControlStateNormal];
+    [buttonTwo3 setImage:[UIImage imageNamed:@"替え歌選手権！！-タイムテーブル.png"] forState:UIControlStateNormal];
     [buttonTwo3 addTarget:self
                    action:@selector(buttonTwo3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView2 addSubview:buttonTwo3];
     
     buttonTwo4= [[UIButton alloc]initWithFrame:CGRectMake(0, 570, 320, 190)];
-    [buttonTwo4 setImage:[UIImage imageNamed:@"英語劇-タイムテーブル.png"] forState:UIControlStateNormal];
+    [buttonTwo4 setImage:[UIImage imageNamed:@"The 笑-1 GP-タイムテーブル.png"] forState:UIControlStateNormal];
     [buttonTwo4 addTarget:self
                    action:@selector(buttonTwo4Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView2 addSubview:buttonTwo4];
     
     buttonTwo5= [[UIButton alloc]initWithFrame:CGRectMake(0, 760, 320, 190)];
-    [buttonTwo5 setImage:[UIImage imageNamed:@"英語劇-タイムテーブル.png"] forState:UIControlStateNormal];
+    [buttonTwo5 setImage:[UIImage imageNamed:@"コミュ力の窓-タイムテーブル.png"] forState:UIControlStateNormal];
     [buttonTwo5 addTarget:self
                    action:@selector(buttonTwo5Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView2 addSubview:buttonTwo5];
-    
-    self.navigationController.navigationBar.tintColor=[UIColor orangeColor];
 
+    buttonTwo6= [[UIButton alloc]initWithFrame:CGRectMake(0, 950, 320, 190)];
+    [buttonTwo6 setImage:[UIImage imageNamed:@"○○男子No.1決定戦-タイムテーブル.png"] forState:UIControlStateNormal];
+    [buttonTwo6 addTarget:self
+                   action:@selector(buttonTwo6Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo6];
+
+    buttonTwo7= [[UIButton alloc]initWithFrame:CGRectMake(0, 1140, 320, 190)];
+    [buttonTwo7 setImage:[UIImage imageNamed:@"のど自慢-タイムテーブル.png"] forState:UIControlStateNormal];
+    [buttonTwo7 addTarget:self
+                   action:@selector(buttonTwo7Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo7];
+
+    buttonTwo8= [[UIButton alloc]initWithFrame:CGRectMake(0, 1330, 320, 190)];
+    [buttonTwo8 setImage:[UIImage imageNamed:@"Mr.聖光-タイムテーブル.png"] forState:UIControlStateNormal];
+    [buttonTwo8 addTarget:self
+                   action:@selector(buttonTwo8Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo8];
+
+    buttonTwo9= [[UIButton alloc]initWithFrame:CGRectMake(0, 1520, 320, 180)];
+    [buttonTwo9 setImage:[UIImage imageNamed:@"春夜祭-タイムテーブル.png"] forState:UIControlStateNormal];
+    [buttonTwo9 addTarget:self
+                   action:@selector(buttonTwo9Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo9];
+    
+    buttonThree1= [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 320, 190)];
+    [buttonThree1 setImage:[UIImage imageNamed:@"Flat-Flight-タイムテーブル.png"] forState:UIControlStateNormal];
+    [buttonThree1 addTarget:self
+                   action:@selector(buttonThree1Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView3 addSubview:buttonThree1];
+    
+    buttonThree2= [[UIButton alloc]initWithFrame:CGRectMake(0, 190, 320, 190)];
+    [buttonThree2 setImage:[UIImage imageNamed:@"M&A-タイムテーブル.png"] forState:UIControlStateNormal];
+    [buttonThree2 addTarget:self
+                   action:@selector(buttonThree2Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView3 addSubview:buttonThree2];
+    
+    buttonThree3= [[UIButton alloc]initWithFrame:CGRectMake(0, 380, 320, 190)];
+    [buttonThree3 setImage:[UIImage imageNamed:@"蜃気楼-タイムテーブル.png"] forState:UIControlStateNormal];
+    [buttonThree3 addTarget:self
+                   action:@selector(buttonThree3Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView3 addSubview:buttonThree3];
+    
+    buttonThree4= [[UIButton alloc]initWithFrame:CGRectMake(0, 570, 320, 180)];
+    [buttonThree4 setImage:[UIImage imageNamed:@"ぽんでっくす-タイムテーブル.png"] forState:UIControlStateNormal];
+    [buttonThree4 addTarget:self
+                   action:@selector(buttonThree4Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView3 addSubview:buttonThree4];
+    
+    buttonFour1= [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 320, 190)];
+    [buttonFour1 setImage:[UIImage imageNamed:@"Chaos-Illusion-タイムテーブル.png"] forState:UIControlStateNormal];
+    [buttonFour1 addTarget:self
+                     action:@selector(buttonFour1Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView4 addSubview:buttonFour1];
+    
+    buttonFour2= [[UIButton alloc]initWithFrame:CGRectMake(0, 190, 320, 190)];
+    [buttonFour2 setImage:[UIImage imageNamed:@"WEAK-END-タイムテーブル.png"] forState:UIControlStateNormal];
+    [buttonFour2 addTarget:self
+                     action:@selector(buttonFour2Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView4 addSubview:buttonFour2];
+    
+    buttonFour3= [[UIButton alloc]initWithFrame:CGRectMake(0, 380, 320, 190)];
+    [buttonFour3 setImage:[UIImage imageNamed:@"Яooz-Leef-タイムテーブル.png"] forState:UIControlStateNormal];
+    [buttonFour3 addTarget:self
+                     action:@selector(buttonFour3Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView4 addSubview:buttonFour3];
+    
+    buttonFour4= [[UIButton alloc]initWithFrame:CGRectMake(0, 570, 320, 180)];
+    [buttonFour4 setImage:[UIImage imageNamed:@"エストレーラ-タイムテーブル.png"] forState:UIControlStateNormal];
+    [buttonFour4 addTarget:self
+                     action:@selector(buttonFour4Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView4 addSubview:buttonFour4];
+    
+    buttonFour5= [[UIButton alloc]initWithFrame:CGRectMake(0, 760, 320, 180)];
+    [buttonFour5 setImage:[UIImage imageNamed:@"奴等-タイムテーブル.png"] forState:UIControlStateNormal];
+    [buttonFour5 addTarget:self
+                    action:@selector(buttonFour5Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView4 addSubview:buttonFour5];
+    
+    buttonFive1= [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 320, 190)];
+    [buttonFive1 setImage:[UIImage imageNamed:@"恋愛偏差値-タイムテーブル.png"] forState:UIControlStateNormal];
+    [buttonFive1 addTarget:self
+                    action:@selector(buttonFive1Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView5 addSubview:buttonFive1];
+    
+    buttonFive2= [[UIButton alloc]initWithFrame:CGRectMake(0, 190, 320, 190)];
+    [buttonFive2 setImage:[UIImage imageNamed:@"校長対談-タイムテーブル.png"] forState:UIControlStateNormal];
+    [buttonFive2 addTarget:self
+                    action:@selector(buttonFive2Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView5 addSubview:buttonFive2];
+    
+    buttonFive3= [[UIButton alloc]initWithFrame:CGRectMake(0, 380, 320, 190)];
+    [buttonFive3 setImage:[UIImage imageNamed:@"数学研究会模擬講義-タイムテーブル.png"] forState:UIControlStateNormal];
+    [buttonFive3 addTarget:self
+                    action:@selector(buttonFive3Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView5 addSubview:buttonFive3];
+    
+    buttonFive4= [[UIButton alloc]initWithFrame:CGRectMake(0, 570, 320, 180)];
+    [buttonFive4 setImage:[UIImage imageNamed:@"ミュージックサロン-タイムテーブル小講堂.png"] forState:UIControlStateNormal];
+    [buttonFive4 addTarget:self
+                    action:@selector(buttonFive4Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView5 addSubview:buttonFive4];
+    
+    
+    UIView *horizontal5= [[UIView alloc] initWithFrame:CGRectMake(0, 516, self.view.bounds.size.width, 3)];
+    horizontal5.backgroundColor = [UIColor orangeColor];
+    [self.view addSubview:horizontal5];
+    
+
+    self.navigationController.navigationBar.tintColor=[UIColor orangeColor];
     
 }
 
@@ -244,7 +357,9 @@
     }else if (pageControl.currentPage==4) {
         self.navigationItem.title=@"小講堂";
     }else if (pageControl.currentPage==5) {
-        self.navigationItem.title=@"体育館・武道場";
+        self.navigationItem.title=@"体育館";
+    }else if (pageControl.currentPage==6) {
+        self.navigationItem.title=@"武道場";
     }
     
 }
