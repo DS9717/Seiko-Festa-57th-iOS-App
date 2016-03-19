@@ -32,12 +32,27 @@
     
     [self featuredImageIn];
     
+    self.navigationController.navigationBar.tintColor=[UIColor orangeColor];
+    self.tabBarController.tabBar.barTintColor = [UIColor blackColor];
+    self.tabBarController.tabBar.tintColor = [UIColor whiteColor];
+  
+    
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
     // UIScrollViewのインスタンス化
     mainScrollView = [[UIScrollView alloc]init];
     mainScrollView.frame = CGRectMake(0, 192, self.view.bounds.size.width, 327);
     //横スクロールのインジケータを非表示にする
     mainScrollView.showsHorizontalScrollIndicator = NO;
-
+    
     mainScrollView.userInteractionEnabled = YES;
     mainScrollView.directionalLockEnabled = YES;
     mainScrollView.bounces = YES;
@@ -53,7 +68,7 @@
     
     viewAllButton1 = [[UIButton alloc]initWithFrame:CGRectMake(240, 19, 64, 12)];
     [viewAllButton1 setTitle:@"すべて見る" forState:UIControlStateNormal];
-     viewAllButton1.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:12];
+    viewAllButton1.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:12];
     [viewAllButton1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [viewAllButton1 addTarget:self action:@selector(viewAll1:) forControlEvents:UIControlEventTouchUpInside];
     [mainScrollView addSubview:viewAllButton1];
@@ -70,7 +85,7 @@
     buttonOne1= [[UIButton alloc]initWithFrame:CGRectMake(16, 0, 72, 72)];
     [buttonOne1 setImage:[UIImage imageNamed:@"麺☆恋.png"] forState:UIControlStateNormal];
     [buttonOne1 addTarget:self
-                action:@selector(buttonOne1Detail:) forControlEvents:UIControlEventTouchUpInside];
+                   action:@selector(buttonOne1Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne1];
     
     buttonOne2= [[UIButton alloc]initWithFrame:CGRectMake(108, 0, 72, 72)];
@@ -94,7 +109,7 @@
     buttonOne5= [[UIButton alloc]initWithFrame:CGRectMake(384, 0, 72, 72)];
     [buttonOne5 setImage:[UIImage imageNamed:@"クレープブレーク.png"] forState:UIControlStateNormal];
     [buttonOne5 addTarget:self
-                    action:@selector(buttonOne5Detail:) forControlEvents:UIControlEventTouchUpInside];
+                   action:@selector(buttonOne5Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne5];
     
     buttonOne6= [[UIButton alloc]initWithFrame:CGRectMake(476, 0, 72, 72)];
@@ -183,19 +198,19 @@
     buttonTwo3= [[UIButton alloc]initWithFrame:CGRectMake(200, 0, 72, 72)];
     [buttonTwo3 setImage:[UIImage imageNamed:@"迷いの国のアリス.png"] forState:UIControlStateNormal];
     [buttonTwo3 addTarget:self
-                     action:@selector(buttonTwo3Detail:) forControlEvents:UIControlEventTouchUpInside];
+                   action:@selector(buttonTwo3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView2 addSubview:buttonTwo3];
     
     buttonTwo4= [[UIButton alloc]initWithFrame:CGRectMake(292, 0, 72, 72)];
     [buttonTwo4 setImage:[UIImage imageNamed:@"Trick×Hark.jpg"] forState:UIControlStateNormal];
     [buttonTwo4 addTarget:self
-                    action:@selector(buttonTwo4Detail:) forControlEvents:UIControlEventTouchUpInside];
+                   action:@selector(buttonTwo4Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView2 addSubview:buttonTwo4];
     
     buttonTwo5= [[UIButton alloc]initWithFrame:CGRectMake(384, 0, 72, 72)];
     [buttonTwo5 setImage:[UIImage imageNamed:@"インターアクト.png"] forState:UIControlStateNormal];
     [buttonTwo5 addTarget:self
-                    action:@selector(buttonTwo5Detail:) forControlEvents:UIControlEventTouchUpInside];
+                   action:@selector(buttonTwo5Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView2 addSubview:buttonTwo5];
     
     buttonTwo1Label = [[UILabel alloc]initWithFrame:CGRectMake(16, 80, 72, 14)];
@@ -258,31 +273,31 @@
     buttonThree1= [[UIButton alloc]initWithFrame:CGRectMake(16, 0, 72, 72)];
     [buttonThree1 setImage:[UIImage imageNamed:@"Chaos-illusion.png"] forState:UIControlStateNormal];
     [buttonThree1 addTarget:self
-                   action:@selector(buttonThree1Detail:) forControlEvents:UIControlEventTouchUpInside];
+                     action:@selector(buttonThree1Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView3 addSubview:buttonThree1];
     
     buttonThree2= [[UIButton alloc]initWithFrame:CGRectMake(108, 0, 72, 72)];
     [buttonThree2 setImage:[UIImage imageNamed:@"Flat-Flight.png"] forState:UIControlStateNormal];
     [buttonThree2 addTarget:self
-                   action:@selector(buttonThree2Detail:) forControlEvents:UIControlEventTouchUpInside];
+                     action:@selector(buttonThree2Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView3 addSubview:buttonThree2];
     
     buttonThree3= [[UIButton alloc]initWithFrame:CGRectMake(200, 0, 72, 72)];
     [buttonThree3 setImage:[UIImage imageNamed:@"M&A.png"] forState:UIControlStateNormal];
     [buttonThree3 addTarget:self
-                   action:@selector(buttonThree3Detail:) forControlEvents:UIControlEventTouchUpInside];
+                     action:@selector(buttonThree3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView3 addSubview:buttonThree3];
     
     buttonThree4= [[UIButton alloc]initWithFrame:CGRectMake(292, 0, 72, 72)];
     [buttonThree4 setImage:[UIImage imageNamed:@"WEAK-END.png"] forState:UIControlStateNormal];
     [buttonThree4 addTarget:self
-                   action:@selector(buttonThree4Detail:) forControlEvents:UIControlEventTouchUpInside];
+                     action:@selector(buttonThree4Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView3 addSubview:buttonThree4];
     
     buttonThree5= [[UIButton alloc]initWithFrame:CGRectMake(384, 0, 72, 72)];
     [buttonThree5 setImage:[UIImage imageNamed:@"エストレーラ.png"] forState:UIControlStateNormal];
     [buttonThree5 addTarget:self
-                   action:@selector(buttonThree5Detail:) forControlEvents:UIControlEventTouchUpInside];
+                     action:@selector(buttonThree5Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView3 addSubview:buttonThree5];
     
     buttonThree6= [[UIButton alloc]initWithFrame:CGRectMake(476, 0, 72, 72)];
@@ -359,31 +374,31 @@
     buttonFour1= [[UIButton alloc]initWithFrame:CGRectMake(16, 0, 72, 72)];
     [buttonFour1 setImage:[UIImage imageNamed:@"Grand-Finale.png"] forState:UIControlStateNormal];
     [buttonFour1 addTarget:self
-                     action:@selector(buttonFour1Detail:) forControlEvents:UIControlEventTouchUpInside];
+                    action:@selector(buttonFour1Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView4 addSubview:buttonFour1];
     
     buttonFour2= [[UIButton alloc]initWithFrame:CGRectMake(108, 0, 72, 72)];
     [buttonFour2 setImage:[UIImage imageNamed:@"英語劇講堂劇.png"] forState:UIControlStateNormal];
     [buttonFour2 addTarget:self
-                     action:@selector(buttonFour2Detail:) forControlEvents:UIControlEventTouchUpInside];
+                    action:@selector(buttonFour2Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView4 addSubview:buttonFour2];
     
     buttonFour3= [[UIButton alloc]initWithFrame:CGRectMake(200, 0, 72, 72)];
     [buttonFour3 setImage:[UIImage imageNamed:@"ボールぽこぽこ.png"] forState:UIControlStateNormal];
     [buttonFour3 addTarget:self
-                     action:@selector(buttonFour3Detail:) forControlEvents:UIControlEventTouchUpInside];
+                    action:@selector(buttonFour3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView4 addSubview:buttonFour3];
     
     buttonFour4= [[UIButton alloc]initWithFrame:CGRectMake(292, 0, 72, 72)];
     [buttonFour4 setImage:[UIImage imageNamed:@"校長対談.png"] forState:UIControlStateNormal];
     [buttonFour4 addTarget:self
-                     action:@selector(buttonFour4Detail:) forControlEvents:UIControlEventTouchUpInside];
+                    action:@selector(buttonFour4Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView4 addSubview:buttonFour4];
     
     buttonFour5= [[UIButton alloc]initWithFrame:CGRectMake(384, 0, 72, 72)];
     [buttonFour5 setImage:[UIImage imageNamed:@"ミュージックサロン.png"] forState:UIControlStateNormal];
     [buttonFour5 addTarget:self
-                     action:@selector(buttonFour5Detail:) forControlEvents:UIControlEventTouchUpInside];
+                    action:@selector(buttonFour5Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView4 addSubview:buttonFour5];
     
     buttonFour6= [[UIButton alloc]initWithFrame:CGRectMake(476, 0, 72, 72)];
@@ -558,16 +573,13 @@
     horizontal5.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:horizontal5];
     
-    self.navigationController.navigationBar.tintColor=[UIColor orangeColor];
-    self.tabBarController.tabBar.barTintColor = [UIColor blackColor];
-    self.tabBarController.tabBar.tintColor = [UIColor whiteColor];
-  
-    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)viewDidDisappear:(BOOL)animated {
+    
+    [super viewWillDisappear:animated];
+    [mainScrollView setHidden:YES];
+    
 }
 
 -(void)featuredImageIn{
