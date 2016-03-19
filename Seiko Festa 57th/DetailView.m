@@ -34,9 +34,6 @@
     [imageScroll setContentSize:CGSizeMake(640, 220)];
     
     
-    NSLog(@"imageView作成");
-    
-    
     if ([_whatList isEqualToString:@"food"]) {
         
         _navigationBar.title = @"Food";
