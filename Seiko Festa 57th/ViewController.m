@@ -689,6 +689,7 @@
     if (featuredImage == [UIImage imageNamed:@"英語劇 バナー1.png"]) {
         flag = 2;
         whichList = @"performance";
+        NSLog(@"a");
     }else if (featuredImage == [UIImage imageNamed:@"ボールぽこぽこ バナー.jpg"]) {
         flag = 3;
         whichList = @"performance";
