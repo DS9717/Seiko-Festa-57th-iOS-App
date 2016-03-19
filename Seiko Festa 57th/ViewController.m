@@ -25,7 +25,7 @@
     imageNumber = 0;
     imageNumber2 = 1;
     
-    organizationFeaturedImages = @[@"英語劇.png", @"ダンス.png", @"アプリ局.png"];
+    organizationFeaturedImages = @[@"英語劇 バナー1.png", @"ダンス.png", @"アプリ局.png"];
     
     featuredImageButton = [[UIButton alloc]initWithFrame:CGRectMake(320, 64, 320, 130)];
     featuredImageButton2 = [[UIButton alloc]initWithFrame:CGRectMake(320, 64, 320, 130)];
@@ -63,85 +63,88 @@
     scrollView1.showsHorizontalScrollIndicator = NO;
     scrollView1.userInteractionEnabled = YES;
     scrollView1.bounces = YES;
-    [scrollView1 setContentSize:CGSizeMake(472, 106)];
+    [scrollView1 setContentSize:CGSizeMake(564, 106)];
     scrollView1.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView1];
     
     buttonOne1= [[UIButton alloc]initWithFrame:CGRectMake(16, 0, 72, 72)];
-    buttonOne1.clipsToBounds=YES;
-    //角丸にする
-    buttonOne1.layer.cornerRadius=17.0;
-    buttonOne1.layer.borderWidth=0.5;
-    buttonOne1.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
-    [buttonOne1 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
+    [buttonOne1 setImage:[UIImage imageNamed:@"麺☆恋.png"] forState:UIControlStateNormal];
     [buttonOne1 addTarget:self
                 action:@selector(buttonOne1Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne1];
     
     buttonOne2= [[UIButton alloc]initWithFrame:CGRectMake(108, 0, 72, 72)];
-    buttonOne2.clipsToBounds=YES;
-    buttonOne2.layer.cornerRadius=17.0;
-    buttonOne2.layer.borderWidth=0.5;
-    buttonOne2.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
-    [buttonOne2 setImage:[UIImage imageNamed:@"ウータン.png"] forState:UIControlStateNormal];
+    [buttonOne2 setImage:[UIImage imageNamed:@"塩焼きそば　麺’sRUNRUN.png"] forState:UIControlStateNormal];
     [buttonOne2 addTarget:self
                    action:@selector(buttonOne2Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne2];
     
     buttonOne3= [[UIButton alloc]initWithFrame:CGRectMake(200, 0, 72, 72)];
-    buttonOne3.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
-    [buttonOne3 setImage:[UIImage imageNamed:@"英語劇 アイコン.png"] forState:UIControlStateNormal];
+    [buttonOne3 setImage:[UIImage imageNamed:@"鉄板職人.jpg"] forState:UIControlStateNormal];
     [buttonOne3 addTarget:self
                    action:@selector(buttonOne3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne3];
     
     buttonOne4= [[UIButton alloc]initWithFrame:CGRectMake(292, 0, 72, 72)];
-    [buttonOne4 setImage:[UIImage imageNamed:@"校長対談.png"] forState:UIControlStateNormal];
+    [buttonOne4 setImage:[UIImage imageNamed:@"俺のケバブ.jpg"] forState:UIControlStateNormal];
     [buttonOne4 addTarget:self
                    action:@selector(buttonOne4Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne4];
     
     buttonOne5= [[UIButton alloc]initWithFrame:CGRectMake(384, 0, 72, 72)];
-    [buttonOne5 setImage:[UIImage imageNamed:@"グリークラブ.png"] forState:UIControlStateNormal];
+    [buttonOne5 setImage:[UIImage imageNamed:@"クレープブレーク.png"] forState:UIControlStateNormal];
     [buttonOne5 addTarget:self
                     action:@selector(buttonOne5Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne5];
     
+    buttonOne6= [[UIButton alloc]initWithFrame:CGRectMake(476, 0, 72, 72)];
+    [buttonOne6 setImage:[UIImage imageNamed:@"Flapjack.png"] forState:UIControlStateNormal];
+    [buttonOne6 addTarget:self
+                   action:@selector(buttonOne6Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView1 addSubview:buttonOne6];
     
     buttonOne1Label = [[UILabel alloc]initWithFrame:CGRectMake(16, 80, 72, 14)];
     buttonOne1Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonOne1Label.text = @"AyjDEFGHyjjyjyjyy";
+    buttonOne1Label.text = @"麺☆恋";
     buttonOne1Label.numberOfLines = 0;
     [buttonOne1Label sizeToFit];
     [scrollView1 addSubview:buttonOne1Label];
     
     buttonOne2Label = [[UILabel alloc]initWithFrame:CGRectMake(108, 80, 72, 14)];
     buttonOne2Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonOne2Label.text = @"英語劇";
+    buttonOne2Label.text = @"麺’sRUNRUN";
     buttonOne2Label.numberOfLines = 0;
     [buttonOne2Label sizeToFit];
     [scrollView1 addSubview:buttonOne2Label];
     
     buttonOne3Label = [[UILabel alloc]initWithFrame:CGRectMake(200, 80, 72, 14)];
     buttonOne3Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonOne3Label.text = @"お好み焼き";
+    buttonOne3Label.text = @"鉄板職人";
     buttonOne3Label.numberOfLines = 0;
     [buttonOne3Label sizeToFit];
     [scrollView1 addSubview:buttonOne3Label];
     
     buttonOne4Label = [[UILabel alloc]initWithFrame:CGRectMake(292, 80, 72, 14)];
     buttonOne4Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonOne4Label.text = @"お好み焼き";
+    buttonOne4Label.text = @"俺のケバブ";
     buttonOne4Label.numberOfLines = 0;
     [buttonOne4Label sizeToFit];
     [scrollView1 addSubview:buttonOne4Label];
     
     buttonOne5Label = [[UILabel alloc]initWithFrame:CGRectMake(384, 80, 72, 14)];
     buttonOne5Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonOne5Label.text = @"お好み焼き";
+    buttonOne5Label.text = @"クレープブレーク";
     buttonOne5Label.numberOfLines = 0;
     [buttonOne5Label sizeToFit];
     [scrollView1 addSubview:buttonOne5Label];
+    
+    buttonOne6Label = [[UILabel alloc]initWithFrame:CGRectMake(476, 80, 72, 14)];
+    buttonOne6Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonOne6Label.text = @"Flapjack";
+    buttonOne6Label.numberOfLines = 0;
+    [buttonOne6Label sizeToFit];
+    [scrollView1 addSubview:buttonOne6Label];
+    
     
     
     displayLabel = [[UILabel alloc]initWithFrame:CGRectMake(16,192, 60, 22)];
@@ -166,86 +169,66 @@
     [mainScrollView addSubview:scrollView2];
     
     buttonTwo1= [[UIButton alloc]initWithFrame:CGRectMake(16, 0, 72, 72)];
-    buttonTwo1.clipsToBounds=YES;
-    buttonTwo1.layer.cornerRadius=17.0;
-    buttonTwo1.layer.borderWidth=0.5;
-    buttonTwo1.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
-    [buttonTwo1 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
+    [buttonTwo1 setImage:[UIImage imageNamed:@"英語劇.png"] forState:UIControlStateNormal];
     [buttonTwo1 addTarget:self
                    action:@selector(buttonTwo1Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView2 addSubview:buttonTwo1];
     
     buttonTwo2= [[UIButton alloc]initWithFrame:CGRectMake(108, 0, 72, 72)];
-    buttonTwo2.clipsToBounds=YES;
-    buttonTwo2.layer.cornerRadius=17.0;
-    buttonTwo2.layer.borderWidth=0.5;
-    buttonTwo2.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
-    [buttonTwo2 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
+    [buttonTwo2 setImage:[UIImage imageNamed:@"高3英語劇.png"] forState:UIControlStateNormal];
     [buttonTwo2 addTarget:self
                    action:@selector(buttonTwo2Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView2 addSubview:buttonTwo2];
     
     buttonTwo3= [[UIButton alloc]initWithFrame:CGRectMake(200, 0, 72, 72)];
-    buttonTwo3.clipsToBounds=YES;
-    buttonTwo3.layer.cornerRadius=17.0;
-    buttonTwo3.layer.borderWidth=0.5;
-    buttonTwo3.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
-    [buttonTwo3 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
+    [buttonTwo3 setImage:[UIImage imageNamed:@"迷いの国のアリス.png"] forState:UIControlStateNormal];
     [buttonTwo3 addTarget:self
                      action:@selector(buttonTwo3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView2 addSubview:buttonTwo3];
     
     buttonTwo4= [[UIButton alloc]initWithFrame:CGRectMake(292, 0, 72, 72)];
-    buttonTwo4.clipsToBounds=YES;
-    buttonTwo4.layer.cornerRadius=17.0;
-    buttonTwo4.layer.borderWidth=0.5;
-    buttonTwo4.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
-    [buttonTwo4 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
+    [buttonTwo4 setImage:[UIImage imageNamed:@"Trick×Hark.jpg"] forState:UIControlStateNormal];
     [buttonTwo4 addTarget:self
                     action:@selector(buttonTwo4Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView2 addSubview:buttonTwo4];
     
     buttonTwo5= [[UIButton alloc]initWithFrame:CGRectMake(384, 0, 72, 72)];
-    buttonTwo5.clipsToBounds=YES;
-    buttonTwo5.layer.cornerRadius=17.0;
-    buttonTwo5.layer.borderWidth=0.5;
-    buttonTwo5.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
-    [buttonTwo5 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
+    [buttonTwo5 setImage:[UIImage imageNamed:@"インターアクト.png"] forState:UIControlStateNormal];
     [buttonTwo5 addTarget:self
                     action:@selector(buttonTwo5Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView2 addSubview:buttonTwo5];
     
     buttonTwo1Label = [[UILabel alloc]initWithFrame:CGRectMake(16, 80, 72, 14)];
     buttonTwo1Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonTwo1Label.text = @"お好み焼き";
+    buttonTwo1Label.text = @"英語劇";
     buttonTwo1Label.numberOfLines = 0;
     [buttonTwo1Label sizeToFit];
     [scrollView2 addSubview:buttonTwo1Label];
     
     buttonTwo2Label = [[UILabel alloc]initWithFrame:CGRectMake(108, 80, 72, 14)];
     buttonTwo2Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonTwo2Label.text = @"お好み焼き";
+    buttonTwo2Label.text = @"高3英語劇";
     buttonTwo2Label.numberOfLines = 0;
     [buttonTwo2Label sizeToFit];
     [scrollView2 addSubview:buttonTwo2Label];
     
     buttonTwo3Label = [[UILabel alloc]initWithFrame:CGRectMake(200, 80, 72, 14)];
     buttonTwo3Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonTwo3Label.text = @"お好み焼き";
+    buttonTwo3Label.text = @"迷いの国のアリス";
     buttonTwo3Label.numberOfLines = 0;
     [buttonTwo3Label sizeToFit];
     [scrollView2 addSubview:buttonTwo3Label];
     
     buttonTwo4Label = [[UILabel alloc]initWithFrame:CGRectMake(292, 80, 72, 14)];
     buttonTwo4Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonTwo4Label.text = @"お好み焼き";
+    buttonTwo4Label.text = @"Trick×Hark";
     buttonTwo4Label.numberOfLines = 0;
     [buttonTwo4Label sizeToFit];
     [scrollView2 addSubview:buttonTwo4Label];
     
     buttonTwo5Label = [[UILabel alloc]initWithFrame:CGRectMake(384, 80, 72, 14)];
     buttonTwo5Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonTwo5Label.text = @"お好み焼き";
+    buttonTwo5Label.text = @"インターアクトクラブ";
     buttonTwo5Label.numberOfLines = 0;
     [buttonTwo5Label sizeToFit];
     [scrollView2 addSubview:buttonTwo5Label];
@@ -268,94 +251,88 @@
     scrollView3.showsHorizontalScrollIndicator = NO;
     scrollView3.userInteractionEnabled = YES;
     scrollView3.bounces = YES;
-    [scrollView3 setContentSize:CGSizeMake(472, 110)];
+    [scrollView3 setContentSize:CGSizeMake(564, 110)];
     scrollView3.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView3];
     
     buttonThree1= [[UIButton alloc]initWithFrame:CGRectMake(16, 0, 72, 72)];
-    buttonThree1.clipsToBounds=YES;
-    buttonThree1.layer.cornerRadius=17.0;
-    buttonThree1.layer.borderWidth=0.5;
-    buttonThree1.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
-    [buttonThree1 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
+    [buttonThree1 setImage:[UIImage imageNamed:@"Chaos-illusion.png"] forState:UIControlStateNormal];
     [buttonThree1 addTarget:self
                    action:@selector(buttonThree1Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView3 addSubview:buttonThree1];
     
     buttonThree2= [[UIButton alloc]initWithFrame:CGRectMake(108, 0, 72, 72)];
-    buttonThree2.clipsToBounds=YES;
-    buttonThree2.layer.cornerRadius=17.0;
-    buttonThree2.layer.borderWidth=0.5;
-    buttonThree2.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
-    [buttonThree2 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
+    [buttonThree2 setImage:[UIImage imageNamed:@"Flat-Flight.png"] forState:UIControlStateNormal];
     [buttonThree2 addTarget:self
                    action:@selector(buttonThree2Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView3 addSubview:buttonThree2];
     
     buttonThree3= [[UIButton alloc]initWithFrame:CGRectMake(200, 0, 72, 72)];
-    buttonThree3.clipsToBounds=YES;
-    buttonThree3.layer.cornerRadius=17.0;
-    buttonThree3.layer.borderWidth=0.5;
-    buttonThree3.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
-    [buttonThree3 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
+    [buttonThree3 setImage:[UIImage imageNamed:@"M&A.png"] forState:UIControlStateNormal];
     [buttonThree3 addTarget:self
                    action:@selector(buttonThree3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView3 addSubview:buttonThree3];
     
     buttonThree4= [[UIButton alloc]initWithFrame:CGRectMake(292, 0, 72, 72)];
-    buttonThree4.clipsToBounds=YES;
-    buttonThree4.layer.cornerRadius=17.0;
-    buttonThree4.layer.borderWidth=0.5;
-    buttonThree4.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
-    [buttonThree4 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
+    [buttonThree4 setImage:[UIImage imageNamed:@"WEAK-END.png"] forState:UIControlStateNormal];
     [buttonThree4 addTarget:self
                    action:@selector(buttonThree4Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView3 addSubview:buttonThree4];
     
     buttonThree5= [[UIButton alloc]initWithFrame:CGRectMake(384, 0, 72, 72)];
-    buttonThree5.clipsToBounds=YES;
-    buttonThree5.layer.cornerRadius=17.0;
-    buttonThree5.layer.borderWidth=0.5;
-    buttonThree5.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
-    [buttonThree5 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
+    [buttonThree5 setImage:[UIImage imageNamed:@"エストレーラ.png"] forState:UIControlStateNormal];
     [buttonThree5 addTarget:self
                    action:@selector(buttonThree5Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView3 addSubview:buttonThree5];
     
+    buttonThree6= [[UIButton alloc]initWithFrame:CGRectMake(476, 0, 72, 72)];
+    [buttonThree6 setImage:[UIImage imageNamed:@"蜃気楼.png"] forState:UIControlStateNormal];
+    [buttonThree6 addTarget:self
+                     action:@selector(buttonThree6Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView3 addSubview:buttonThree6];
+    
     buttonThree1Label = [[UILabel alloc]initWithFrame:CGRectMake(16, 80, 72, 14)];
     buttonThree1Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonThree1Label.text = @"お好み焼き";
+    buttonThree1Label.text = @"Chaos-illusion";
     buttonThree1Label.numberOfLines = 0;
     [buttonThree1Label sizeToFit];
     [scrollView3 addSubview:buttonThree1Label];
     
     buttonThree2Label = [[UILabel alloc]initWithFrame:CGRectMake(108, 80, 72, 14)];
     buttonThree2Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonThree2Label.text = @"お好み焼き";
+    buttonThree2Label.text = @"Flat-Flight";
     buttonThree2Label.numberOfLines = 0;
     [buttonThree2Label sizeToFit];
     [scrollView3 addSubview:buttonThree2Label];
     
     buttonThree3Label = [[UILabel alloc]initWithFrame:CGRectMake(200, 80, 72, 14)];
     buttonThree3Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonThree3Label.text = @"お好み焼き";
+    buttonThree3Label.text = @"M&A";
     buttonThree3Label.numberOfLines = 0;
     [buttonThree3Label sizeToFit];
     [scrollView3 addSubview:buttonThree3Label];
     
     buttonThree4Label = [[UILabel alloc]initWithFrame:CGRectMake(292, 80, 72, 14)];
     buttonThree4Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonThree4Label.text = @"お好み焼き";
+    buttonThree4Label.text = @"WEAK-END";
     buttonThree4Label.numberOfLines = 0;
     [buttonThree4Label sizeToFit];
     [scrollView3 addSubview:buttonThree4Label];
     
     buttonThree5Label = [[UILabel alloc]initWithFrame:CGRectMake(384, 80, 72, 14)];
     buttonThree5Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonThree5Label.text = @"お好み焼き";
+    buttonThree5Label.text = @"エストレーラ";
     buttonThree5Label.numberOfLines = 0;
     [buttonThree5Label sizeToFit];
     [scrollView3 addSubview:buttonThree5Label];
+    
+    buttonThree6Label = [[UILabel alloc]initWithFrame:CGRectMake(476, 80, 72, 14)];
+    buttonThree6Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonThree6Label.text = @"蜃気楼";
+    buttonThree6Label.numberOfLines = 0;
+    [buttonThree6Label sizeToFit];
+    [scrollView3 addSubview:buttonThree6Label];
+    
     
     
     performanceLabel = [[UILabel alloc]initWithFrame:CGRectMake(16,544, 100, 22)];
@@ -375,94 +352,88 @@
     scrollView4.showsHorizontalScrollIndicator = NO;
     scrollView4.userInteractionEnabled = YES;
     scrollView4.bounces = YES;
-    [scrollView4 setContentSize:CGSizeMake(472, 110)];
+    [scrollView4 setContentSize:CGSizeMake(564, 110)];
     scrollView4.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView4];
     
     buttonFour1= [[UIButton alloc]initWithFrame:CGRectMake(16, 0, 72, 72)];
-    buttonFour1.clipsToBounds=YES;
-    buttonFour1.layer.cornerRadius=17.0;
-    buttonFour1.layer.borderWidth=0.5;
-    buttonFour1.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
-    [buttonFour1 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
+    [buttonFour1 setImage:[UIImage imageNamed:@"Grand-Finale.png"] forState:UIControlStateNormal];
     [buttonFour1 addTarget:self
                      action:@selector(buttonFour1Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView4 addSubview:buttonFour1];
     
     buttonFour2= [[UIButton alloc]initWithFrame:CGRectMake(108, 0, 72, 72)];
-    buttonFour2.clipsToBounds=YES;
-    buttonFour2.layer.cornerRadius=17.0;
-    buttonFour2.layer.borderWidth=0.5;
-    buttonFour2.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
-    [buttonFour2 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
+    [buttonFour2 setImage:[UIImage imageNamed:@"英語劇講堂劇.png"] forState:UIControlStateNormal];
     [buttonFour2 addTarget:self
                      action:@selector(buttonFour2Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView4 addSubview:buttonFour2];
     
     buttonFour3= [[UIButton alloc]initWithFrame:CGRectMake(200, 0, 72, 72)];
-    buttonFour3.clipsToBounds=YES;
-    buttonFour3.layer.cornerRadius=17.0;
-    buttonFour3.layer.borderWidth=0.5;
-    buttonFour3.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
-    [buttonFour3 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
+    [buttonFour3 setImage:[UIImage imageNamed:@"ボールぽこぽこ.png"] forState:UIControlStateNormal];
     [buttonFour3 addTarget:self
                      action:@selector(buttonFour3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView4 addSubview:buttonFour3];
     
     buttonFour4= [[UIButton alloc]initWithFrame:CGRectMake(292, 0, 72, 72)];
-    buttonFour4.clipsToBounds=YES;
-    buttonFour4.layer.cornerRadius=17.0;
-    buttonFour4.layer.borderWidth=0.5;
-    buttonFour4.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
-    [buttonFour4 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
+    [buttonFour4 setImage:[UIImage imageNamed:@"校長対談.png"] forState:UIControlStateNormal];
     [buttonFour4 addTarget:self
                      action:@selector(buttonFour4Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView4 addSubview:buttonFour4];
     
     buttonFour5= [[UIButton alloc]initWithFrame:CGRectMake(384, 0, 72, 72)];
-    buttonFour5.clipsToBounds=YES;
-    buttonFour5.layer.cornerRadius=17.0;
-    buttonFour5.layer.borderWidth=0.5;
-    buttonFour5.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
-    [buttonFour5 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
+    [buttonFour5 setImage:[UIImage imageNamed:@"ミュージックサロン.png"] forState:UIControlStateNormal];
     [buttonFour5 addTarget:self
                      action:@selector(buttonFour5Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView4 addSubview:buttonFour5];
     
+    buttonFour6= [[UIButton alloc]initWithFrame:CGRectMake(476, 0, 72, 72)];
+    [buttonFour6 setImage:[UIImage imageNamed:@"グリークラブ.png"] forState:UIControlStateNormal];
+    [buttonFour6 addTarget:self
+                    action:@selector(buttonFour6Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView4 addSubview:buttonFour6];
+    
     buttonFour1Label = [[UILabel alloc]initWithFrame:CGRectMake(16, 80, 72, 14)];
     buttonFour1Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonFour1Label.text = @"お好み焼き";
+    buttonFour1Label.text = @"Grand-Finale";
     buttonFour1Label.numberOfLines = 0;
     [buttonFour1Label sizeToFit];
     [scrollView4 addSubview:buttonFour1Label];
     
     buttonFour2Label = [[UILabel alloc]initWithFrame:CGRectMake(108, 80, 72, 14)];
     buttonFour2Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonFour2Label.text = @"お好み焼き";
+    buttonFour2Label.text = @"英語劇";
     buttonFour2Label.numberOfLines = 0;
     [buttonFour2Label sizeToFit];
     [scrollView4 addSubview:buttonFour2Label];
     
     buttonFour3Label = [[UILabel alloc]initWithFrame:CGRectMake(200, 80, 72, 14)];
     buttonFour3Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonFour3Label.text = @"お好み焼き";
+    buttonFour3Label.text = @"ボールぽこぽこ";
     buttonFour3Label.numberOfLines = 0;
     [buttonFour3Label sizeToFit];
     [scrollView4 addSubview:buttonFour3Label];
     
     buttonFour4Label = [[UILabel alloc]initWithFrame:CGRectMake(292, 80, 72, 14)];
     buttonFour4Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonFour4Label.text = @"お好み焼き";
+    buttonFour4Label.text = @"校長対談";
     buttonFour4Label.numberOfLines = 0;
     [buttonFour4Label sizeToFit];
     [scrollView4 addSubview:buttonFour4Label];
     
     buttonFour5Label = [[UILabel alloc]initWithFrame:CGRectMake(384, 80, 72, 14)];
     buttonFour5Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonFour5Label.text = @"お好み焼き";
+    buttonFour5Label.text = @"ミュージックサロン";
     buttonFour5Label.numberOfLines = 0;
     [buttonFour5Label sizeToFit];
     [scrollView4 addSubview:buttonFour5Label];
+    
+    buttonFour6Label = [[UILabel alloc]initWithFrame:CGRectMake(476, 80, 72, 14)];
+    buttonFour6Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonFour6Label.text = @"グリークラブ";
+    buttonFour6Label.numberOfLines = 0;
+    [buttonFour6Label sizeToFit];
+    [scrollView4 addSubview:buttonFour6Label];
+    
     
     
     stageLabel = [[UILabel alloc]initWithFrame:CGRectMake(16,720, 50, 22)];
@@ -482,94 +453,87 @@
     scrollView5.showsHorizontalScrollIndicator = NO;
     scrollView5.userInteractionEnabled = YES;
     scrollView5.bounces = YES;
-    [scrollView5 setContentSize:CGSizeMake(472, 110)];
+    [scrollView5 setContentSize:CGSizeMake(564, 110)];
     scrollView5.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView5];
     
     buttonFive1= [[UIButton alloc]initWithFrame:CGRectMake(16, 0, 72, 72)];
-    buttonFive1.clipsToBounds=YES;
-    buttonFive1.layer.cornerRadius=17.0;
-    buttonFive1.layer.borderWidth=0.5;
-    buttonFive1.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
-    [buttonFive1 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
+    [buttonFive1 setImage:[UIImage imageNamed:@"春夜祭.png"] forState:UIControlStateNormal];
     [buttonFive1 addTarget:self
                     action:@selector(buttonFive1Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView5 addSubview:buttonFive1];
     
     buttonFive2= [[UIButton alloc]initWithFrame:CGRectMake(108, 0, 72, 72)];
-    buttonFive2.clipsToBounds=YES;
-    buttonFive2.layer.cornerRadius=17.0;
-    buttonFive2.layer.borderWidth=0.5;
-    buttonFive2.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
-    [buttonFive2 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
+    [buttonFive2 setImage:[UIImage imageNamed:@"フォークダンス.png"] forState:UIControlStateNormal];
     [buttonFive2 addTarget:self
                     action:@selector(buttonFive2Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView5 addSubview:buttonFive2];
     
     buttonFive3= [[UIButton alloc]initWithFrame:CGRectMake(200, 0, 72, 72)];
-    buttonFive3.clipsToBounds=YES;
-    buttonFive3.layer.cornerRadius=17.0;
-    buttonFive3.layer.borderWidth=0.5;
-    buttonFive3.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
-    [buttonFive3 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
+    [buttonFive3 setImage:[UIImage imageNamed:@"○○男子No.1決定戦.png"] forState:UIControlStateNormal];
     [buttonFive3 addTarget:self
                     action:@selector(buttonFive3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView5 addSubview:buttonFive3];
     
     buttonFive4= [[UIButton alloc]initWithFrame:CGRectMake(292, 0, 72, 72)];
-    buttonFive4.clipsToBounds=YES;
-    buttonFive4.layer.cornerRadius=17.0;
-    buttonFive4.layer.borderWidth=0.5;
-    buttonFive4.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
-    [buttonFive4 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
+    [buttonFive4 setImage:[UIImage imageNamed:@"Mr.聖光.png"] forState:UIControlStateNormal];
     [buttonFive4 addTarget:self
                     action:@selector(buttonFive4Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView5 addSubview:buttonFive4];
     
     buttonFive5= [[UIButton alloc]initWithFrame:CGRectMake(384, 0, 72, 72)];
-    buttonFive5.clipsToBounds=YES;
-    buttonFive5.layer.cornerRadius=17.0;
-    buttonFive5.layer.borderWidth=0.5;
-    buttonFive5.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
-    [buttonFive5 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
+    [buttonFive5 setImage:[UIImage imageNamed:@"S-O-S.png"] forState:UIControlStateNormal];
     [buttonFive5 addTarget:self
                     action:@selector(buttonFive5Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView5 addSubview:buttonFive5];
     
+    buttonFive6= [[UIButton alloc]initWithFrame:CGRectMake(476, 0, 72, 72)];
+    [buttonFive6 setImage:[UIImage imageNamed:@"替え歌選手権.png"] forState:UIControlStateNormal];
+    [buttonFive6 addTarget:self
+                    action:@selector(buttonFive6Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView5 addSubview:buttonFive6];
+    
     buttonFive1Label = [[UILabel alloc]initWithFrame:CGRectMake(16, 80, 72, 14)];
     buttonFive1Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonFive1Label.text = @"お好み焼き";
+    buttonFive1Label.text = @"春夜祭";
     buttonFive1Label.numberOfLines = 0;
     [buttonFive1Label sizeToFit];
     [scrollView5 addSubview:buttonFive1Label];
     
     buttonFive2Label = [[UILabel alloc]initWithFrame:CGRectMake(108, 80, 72, 14)];
     buttonFive2Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonFive2Label.text = @"お好み焼き";
-    buttonFive1Label.numberOfLines = 0;
-    [buttonFive1Label sizeToFit];
+    buttonFive2Label.text = @"フォークダンス";
+    buttonFive2Label.numberOfLines = 0;
+    [buttonFive2Label sizeToFit];
     [scrollView5 addSubview:buttonFive2Label];
     
     buttonFive3Label = [[UILabel alloc]initWithFrame:CGRectMake(200, 80, 72, 14)];
     buttonFive3Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonFive3Label.text = @"お好み焼き";
+    buttonFive3Label.text = @"○○男子No.1決定戦";
     buttonFive3Label.numberOfLines = 0;
     [buttonFive3Label sizeToFit];
     [scrollView5 addSubview:buttonFive3Label];
     
     buttonFive4Label = [[UILabel alloc]initWithFrame:CGRectMake(292, 80, 72, 14)];
     buttonFive4Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonFive4Label.text = @"お好み焼き";
+    buttonFive4Label.text = @"Mr.聖光";
     buttonFive4Label.numberOfLines = 0;
     [buttonFive4Label sizeToFit];
     [scrollView5 addSubview:buttonFive4Label];
     
     buttonFive5Label = [[UILabel alloc]initWithFrame:CGRectMake(384, 80, 72, 14)];
     buttonFive5Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
-    buttonFive5Label.text = @"お好み焼き";
+    buttonFive5Label.text = @"S-O-S";
     buttonFive5Label.numberOfLines = 0;
     [buttonFive5Label sizeToFit];
     [scrollView5 addSubview:buttonFive5Label];
+    
+    buttonFive6Label = [[UILabel alloc]initWithFrame:CGRectMake(476, 80, 72, 14)];
+    buttonFive6Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonFive6Label.text = @"替え歌選手権";
+    buttonFive6Label.numberOfLines = 0;
+    [buttonFive6Label sizeToFit];
+    [scrollView5 addSubview:buttonFive6Label];
     
     [self.view addSubview:mainScrollView];
     
@@ -765,6 +729,12 @@
     [self performSegueWithIdentifier:@"showDirect" sender:self];
 }
 
+-(void)buttonOne6Detail:(UIButton *)button{
+    whichList = @"food";
+    flag = 6;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
 -(void)buttonTwo1Detail:(UIButton *)button{
     whichList = @"display";
     flag = 1;
@@ -826,6 +796,12 @@
     [self performSegueWithIdentifier:@"showDirect" sender:self];
 }
 
+-(void)buttonThree6Detail:(UIButton *)button{
+    whichList = @"band";
+    flag = 6;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
 -(void)buttonFour1Detail:(UIButton *)button{
     whichList = @"performance";
     flag = 1;
@@ -856,6 +832,12 @@
     [self performSegueWithIdentifier:@"showDirect" sender:self];
 }
 
+-(void)buttonFour6Detail:(UIButton *)button{
+    whichList = @"performance";
+    flag = 6;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
 -(void)buttonFive1Detail:(UIButton *)button{
     whichList = @"stage";
     flag = 1;
@@ -864,25 +846,31 @@
 
 -(void)buttonFive2Detail:(UIButton *)button{
     whichList = @"stage";
-    flag = 1;
+    flag = 2;
     [self performSegueWithIdentifier:@"showDirect" sender:self];
 }
 
 -(void)buttonFive3Detail:(UIButton *)button{
     whichList = @"stage";
-    flag = 1;
+    flag = 3;
     [self performSegueWithIdentifier:@"showDirect" sender:self];
 }
 
 -(void)buttonFive4Detail:(UIButton *)button{
     whichList = @"stage";
-    flag = 1;
+    flag = 4;
     [self performSegueWithIdentifier:@"showDirect" sender:self];
 }
 
 -(void)buttonFive5Detail:(UIButton *)button{
     whichList = @"stage";
-    flag = 1;
+    flag = 5;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonFive6Detail:(UIButton *)button{
+    whichList = @"stage";
+    flag = 6;
     [self performSegueWithIdentifier:@"showDirect" sender:self];
 }
 
