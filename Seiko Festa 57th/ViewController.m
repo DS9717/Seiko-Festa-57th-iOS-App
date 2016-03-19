@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+        
     imageNumber = 0;
     imageNumber2 = 1;
     
@@ -35,7 +35,7 @@
     self.navigationController.navigationBar.tintColor=[UIColor orangeColor];
     self.tabBarController.tabBar.barTintColor = [UIColor blackColor];
     self.tabBarController.tabBar.tintColor = [UIColor whiteColor];
-  
+    
 }
 
 - (void)didReceiveMemoryWarning {
