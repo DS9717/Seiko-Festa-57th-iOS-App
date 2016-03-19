@@ -20,6 +20,10 @@
 		7E4D55D51C4945DE00BFE19C /* ダンス.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4D55D41C4945DE00BFE19C /* ダンス.png */; };
 		7E4D55D71C495FEA00BFE19C /* アプリ局.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4D55D61C495FEA00BFE19C /* アプリ局.png */; };
 		7E4D55D91C4C007A00BFE19C /* お好み焼き.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E4D55D81C4C007900BFE19C /* お好み焼き.jpg */; };
+		7ED1CBF81C983AB300D4F038 /* 男子No.1決定戦2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED1CBF71C983AB300D4F038 /* 男子No.1決定戦2.png */; };
+		7ED1CBFC1C9842A900D4F038 /* 校長対談.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED1CBFB1C9842A900D4F038 /* 校長対談.png */; };
+		7ED1CBFE1C98432500D4F038 /* 英語劇 アイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED1CBFD1C98432500D4F038 /* 英語劇 アイコン.png */; };
+		7ED1CC001C9845CA00D4F038 /* グリークラブ.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED1CBFF1C9845CA00D4F038 /* グリークラブ.png */; };
 		7ED21AB61C79986D00AA9E83 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED21AB51C79986D00AA9E83 /* QuartzCore.framework */; };
 		7ED21AB81C7998B900AA9E83 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED21AB71C7998B900AA9E83 /* CoreGraphics.framework */; };
 		7ED21ABB1C79998200AA9E83 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED21ABA1C79998200AA9E83 /* AVFoundation.framework */; };
@@ -62,6 +66,10 @@
 		7E4D55D41C4945DE00BFE19C /* ダンス.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ダンス.png"; sourceTree = "<group>"; };
 		7E4D55D61C495FEA00BFE19C /* アプリ局.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アプリ局.png"; sourceTree = "<group>"; };
 		7E4D55D81C4C007900BFE19C /* お好み焼き.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "お好み焼き.jpg"; sourceTree = "<group>"; };
+		7ED1CBF71C983AB300D4F038 /* 男子No.1決定戦2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "男子No.1決定戦2.png"; sourceTree = "<group>"; };
+		7ED1CBFB1C9842A900D4F038 /* 校長対談.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "校長対談.png"; sourceTree = "<group>"; };
+		7ED1CBFD1C98432500D4F038 /* 英語劇 アイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "英語劇 アイコン.png"; sourceTree = "<group>"; };
+		7ED1CBFF1C9845CA00D4F038 /* グリークラブ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "グリークラブ.png"; sourceTree = "<group>"; };
 		7ED21AB51C79986D00AA9E83 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7ED21AB71C7998B900AA9E83 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7ED21ABA1C79998200AA9E83 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -171,7 +179,11 @@
 				FABB0BE31C56116E0009ABAA /* ウータン.png */,
 				7E4D55D81C4C007900BFE19C /* お好み焼き.jpg */,
 				7E3EB4651C79BC4A00F3B2A0 /* 講堂劇 アイコン.png */,
+				7ED1CBFD1C98432500D4F038 /* 英語劇 アイコン.png */,
 				7E3EB4771C79D97200F3B2A0 /* 英語劇-タイムテーブル.png */,
+				7ED1CBF71C983AB300D4F038 /* 男子No.1決定戦2.png */,
+				7ED1CBFF1C9845CA00D4F038 /* グリークラブ.png */,
+				7ED1CBFB1C9842A900D4F038 /* 校長対談.png */,
 				FA09ECC71C955C6700D8925B /* map.jpg */,
 				FA6605B61C959A5900EC4011 /* Right.png */,
 				FA6605B71C959A5900EC4011 /* Left.png */,
@@ -238,6 +250,7 @@
 				TargetAttributes = {
 					7E4D55A71C49315B00BFE19C = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = TAE9KC7SWK;
 					};
 					7E4D55C01C49315C00BFE19C = {
 						CreatedOnToolsVersion = 6.2;
@@ -269,13 +282,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ED1CBFE1C98432500D4F038 /* 英語劇 アイコン.png in Resources */,
 				FABB0BE41C56116E0009ABAA /* ウータン.png in Resources */,
 				7E4D55D71C495FEA00BFE19C /* アプリ局.png in Resources */,
+				7ED1CC001C9845CA00D4F038 /* グリークラブ.png in Resources */,
+				7ED1CBF81C983AB300D4F038 /* 男子No.1決定戦2.png in Resources */,
 				7E0498D41C647ED800C244AD /* 英語劇.png in Resources */,
 				7E4D55B71C49315C00BFE19C /* Main.storyboard in Resources */,
 				FA09ECC81C955C6700D8925B /* map.jpg in Resources */,
 				7E3EB4661C79BC4A00F3B2A0 /* 講堂劇 アイコン.png in Resources */,
 				FA6605B91C959A5900EC4011 /* Left.png in Resources */,
+				7ED1CBFC1C9842A900D4F038 /* 校長対談.png in Resources */,
 				7E3EB4781C79D97200F3B2A0 /* 英語劇-タイムテーブル.png in Resources */,
 				7E4D55B91C49315C00BFE19C /* Images.xcassets in Resources */,
 				7E4D55D51C4945DE00BFE19C /* ダンス.png in Resources */,

@@ -34,7 +34,7 @@
     
     // UIScrollViewのインスタンス化
     mainScrollView = [[UIScrollView alloc]init];
-    mainScrollView.frame = CGRectMake(0, 192, self.view.bounds.size.width, self.view.bounds.size.height-241);
+    mainScrollView.frame = CGRectMake(0, 192, self.view.bounds.size.width, 327);
     //横スクロールのインジケータを非表示にする
     mainScrollView.showsHorizontalScrollIndicator = NO;
 
@@ -89,31 +89,20 @@
     [scrollView1 addSubview:buttonOne2];
     
     buttonOne3= [[UIButton alloc]initWithFrame:CGRectMake(200, 0, 72, 72)];
-    buttonOne3.clipsToBounds=YES;
-    buttonOne3.layer.cornerRadius=17.0;
-    buttonOne3.layer.borderWidth=0.5;
     buttonOne3.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
-    [buttonOne3 setImage:[UIImage imageNamed:@"講堂劇 アイコン.png"] forState:UIControlStateNormal];
+    [buttonOne3 setImage:[UIImage imageNamed:@"英語劇 アイコン.png"] forState:UIControlStateNormal];
     [buttonOne3 addTarget:self
                    action:@selector(buttonOne3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne3];
     
     buttonOne4= [[UIButton alloc]initWithFrame:CGRectMake(292, 0, 72, 72)];
-    buttonOne4.clipsToBounds=YES;
-    buttonOne4.layer.cornerRadius=17.0;
-    buttonOne4.layer.borderWidth=0.5;
-    buttonOne4.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
-    [buttonOne4 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
+    [buttonOne4 setImage:[UIImage imageNamed:@"校長対談.png"] forState:UIControlStateNormal];
     [buttonOne4 addTarget:self
                    action:@selector(buttonOne4Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne4];
     
     buttonOne5= [[UIButton alloc]initWithFrame:CGRectMake(384, 0, 72, 72)];
-    buttonOne5.clipsToBounds=YES;
-    buttonOne5.layer.cornerRadius=17.0;
-    buttonOne5.layer.borderWidth=0.5;
-    buttonOne5.layer.borderColor=[UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0].CGColor;
-    [buttonOne5 setImage:[UIImage imageNamed:@"お好み焼き.jpg"] forState:UIControlStateNormal];
+    [buttonOne5 setImage:[UIImage imageNamed:@"グリークラブ.png"] forState:UIControlStateNormal];
     [buttonOne5 addTarget:self
                     action:@selector(buttonOne5Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne5];
@@ -617,6 +606,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    
+    [super viewWillAppear:animated];
+    
+    NSLog(@"%f", mainScrollView.frame.size.height);
+
+
+    
+}
 
 
 -(void)featuredImageIn{
