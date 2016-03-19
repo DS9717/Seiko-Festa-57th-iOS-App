@@ -15,10 +15,6 @@
 		7E4D55B71C49315C00BFE19C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4D55B51C49315C00BFE19C /* Main.storyboard */; };
 		7E4D55B91C49315C00BFE19C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E4D55B81C49315C00BFE19C /* Images.xcassets */; };
 		7E4D55C81C49315C00BFE19C /* Seiko_Festa_57thTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4D55C71C49315C00BFE19C /* Seiko_Festa_57thTests.m */; };
-		7E4D55D51C4945DE00BFE19C /* ダンス.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4D55D41C4945DE00BFE19C /* ダンス.png */; };
-		7E4D55D71C495FEA00BFE19C /* アプリ局.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4D55D61C495FEA00BFE19C /* アプリ局.png */; };
-		7E4D55D91C4C007A00BFE19C /* お好み焼き.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E4D55D81C4C007900BFE19C /* お好み焼き.jpg */; };
-		7ED1CBF81C983AB300D4F038 /* 男子No.1決定戦2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED1CBF71C983AB300D4F038 /* 男子No.1決定戦2.png */; };
 		7ED1CBFC1C9842A900D4F038 /* 校長対談.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED1CBFB1C9842A900D4F038 /* 校長対談.png */; };
 		7ED1CC001C9845CA00D4F038 /* グリークラブ.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED1CBFF1C9845CA00D4F038 /* グリークラブ.png */; };
 		7ED21AB61C79986D00AA9E83 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED21AB51C79986D00AA9E83 /* QuartzCore.framework */; };
@@ -59,9 +55,10 @@
 		FAA39B401C9D22FF00A1B697 /* フォークダンス.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA39B371C9D22FF00A1B697 /* フォークダンス.png */; };
 		FAA39B411C9D22FF00A1B697 /* 春夜祭.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA39B381C9D22FF00A1B697 /* 春夜祭.png */; };
 		FAA39B421C9D22FF00A1B697 /* 替え歌選手権.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA39B391C9D22FF00A1B697 /* 替え歌選手権.png */; };
+		FAA39B471C9D2D9300A1B697 /* ボールぽこぽこ バナー.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAA39B451C9D2D9300A1B697 /* ボールぽこぽこ バナー.jpg */; };
+		FAA39B481C9D2D9300A1B697 /* ミュージックサロン バナー.JPG in Resources */ = {isa = PBXBuildFile; fileRef = FAA39B461C9D2D9300A1B697 /* ミュージックサロン バナー.JPG */; };
 		FABB0BDF1C560EEC0009ABAA /* ListView.m in Sources */ = {isa = PBXBuildFile; fileRef = FABB0BDE1C560EEC0009ABAA /* ListView.m */; };
 		FABB0BE21C560F040009ABAA /* DetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = FABB0BE11C560F040009ABAA /* DetailView.m */; };
-		FABB0BE41C56116E0009ABAA /* ウータン.png in Resources */ = {isa = PBXBuildFile; fileRef = FABB0BE31C56116E0009ABAA /* ウータン.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,10 +87,6 @@
 		7E4D55C11C49315C00BFE19C /* Seiko Festa 57thTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Seiko Festa 57thTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4D55C61C49315C00BFE19C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E4D55C71C49315C00BFE19C /* Seiko_Festa_57thTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Seiko_Festa_57thTests.m; sourceTree = "<group>"; };
-		7E4D55D41C4945DE00BFE19C /* ダンス.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ダンス.png"; sourceTree = "<group>"; };
-		7E4D55D61C495FEA00BFE19C /* アプリ局.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アプリ局.png"; sourceTree = "<group>"; };
-		7E4D55D81C4C007900BFE19C /* お好み焼き.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "お好み焼き.jpg"; sourceTree = "<group>"; };
-		7ED1CBF71C983AB300D4F038 /* 男子No.1決定戦2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "男子No.1決定戦2.png"; sourceTree = "<group>"; };
 		7ED1CBFB1C9842A900D4F038 /* 校長対談.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "校長対談.png"; sourceTree = "<group>"; };
 		7ED1CBFF1C9845CA00D4F038 /* グリークラブ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "グリークラブ.png"; sourceTree = "<group>"; };
 		7ED21AB51C79986D00AA9E83 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -134,11 +127,12 @@
 		FAA39B371C9D22FF00A1B697 /* フォークダンス.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "フォークダンス.png"; sourceTree = "<group>"; };
 		FAA39B381C9D22FF00A1B697 /* 春夜祭.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "春夜祭.png"; sourceTree = "<group>"; };
 		FAA39B391C9D22FF00A1B697 /* 替え歌選手権.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "替え歌選手権.png"; sourceTree = "<group>"; };
+		FAA39B451C9D2D9300A1B697 /* ボールぽこぽこ バナー.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ボールぽこぽこ バナー.jpg"; sourceTree = "<group>"; };
+		FAA39B461C9D2D9300A1B697 /* ミュージックサロン バナー.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ミュージックサロン バナー.JPG"; sourceTree = "<group>"; };
 		FABB0BDD1C560EEC0009ABAA /* ListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListView.h; sourceTree = "<group>"; };
 		FABB0BDE1C560EEC0009ABAA /* ListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListView.m; sourceTree = "<group>"; };
 		FABB0BE01C560F040009ABAA /* DetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailView.h; sourceTree = "<group>"; };
 		FABB0BE11C560F040009ABAA /* DetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailView.m; sourceTree = "<group>"; };
-		FABB0BE31C56116E0009ABAA /* ウータン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ウータン.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,13 +225,8 @@
 		7E4D55D11C4944F300BFE19C /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				FAA39B021C9D12CA00A1B697 /* 英語劇 バナー1.png */,
-				7E4D55D41C4945DE00BFE19C /* ダンス.png */,
-				7E4D55D61C495FEA00BFE19C /* アプリ局.png */,
-				FABB0BE31C56116E0009ABAA /* ウータン.png */,
-				7E4D55D81C4C007900BFE19C /* お好み焼き.jpg */,
 				7E3EB4771C79D97200F3B2A0 /* 英語劇-タイムテーブル.png */,
-				7ED1CBF71C983AB300D4F038 /* 男子No.1決定戦2.png */,
+				FAA39B441C9D2D0400A1B697 /* バナー */,
 				FAA39B001C9D093200A1B697 /* 角丸 */,
 				FA6605B61C959A5900EC4011 /* Right.png */,
 				FA6605B71C959A5900EC4011 /* Left.png */,
@@ -336,6 +325,16 @@
 			name = Stage;
 			sourceTree = "<group>";
 		};
+		FAA39B441C9D2D0400A1B697 /* バナー */ = {
+			isa = PBXGroup;
+			children = (
+				FAA39B021C9D12CA00A1B697 /* 英語劇 バナー1.png */,
+				FAA39B451C9D2D9300A1B697 /* ボールぽこぽこ バナー.jpg */,
+				FAA39B461C9D2D9300A1B697 /* ミュージックサロン バナー.JPG */,
+			);
+			name = "バナー";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -420,15 +419,13 @@
 				FAA39B2C1C9D1EAB00A1B697 /* ボールぽこぽこ.png in Resources */,
 				FAA39B211C9D18CA00A1B697 /* ぽんでっくす.png in Resources */,
 				FAA39AFB1C9D089C00A1B697 /* クレープブレーク.png in Resources */,
-				FABB0BE41C56116E0009ABAA /* ウータン.png in Resources */,
 				FAA39B3A1C9D22FF00A1B697 /* ○○男子No.1決定戦.png in Resources */,
-				7E4D55D71C495FEA00BFE19C /* アプリ局.png in Resources */,
 				FAA39B1E1C9D18CA00A1B697 /* Flat-Flight.png in Resources */,
 				FAA39B2A1C9D1EA000A1B697 /* 英語劇講堂劇.png in Resources */,
 				FAA39B3D1C9D22FF00A1B697 /* ギネスに挑戦！！.png in Resources */,
+				FAA39B481C9D2D9300A1B697 /* ミュージックサロン バナー.JPG in Resources */,
 				7ED1CC001C9845CA00D4F038 /* グリークラブ.png in Resources */,
 				FAA39B421C9D22FF00A1B697 /* 替え歌選手権.png in Resources */,
-				7ED1CBF81C983AB300D4F038 /* 男子No.1決定戦2.png in Resources */,
 				FAA39B3C1C9D22FF00A1B697 /* S-O-S.png in Resources */,
 				FAA39AFF1C9D089C00A1B697 /* 麺☆恋.png in Resources */,
 				7E4D55B71C49315C00BFE19C /* Main.storyboard in Resources */,
@@ -444,6 +441,7 @@
 				7ED1CBFC1C9842A900D4F038 /* 校長対談.png in Resources */,
 				7E3EB4781C79D97200F3B2A0 /* 英語劇-タイムテーブル.png in Resources */,
 				FAA39B401C9D22FF00A1B697 /* フォークダンス.png in Resources */,
+				FAA39B471C9D2D9300A1B697 /* ボールぽこぽこ バナー.jpg in Resources */,
 				FAA39B181C9D172200A1B697 /* 迷いの国のアリス.png in Resources */,
 				FAA39B171C9D172200A1B697 /* 高3英語劇.png in Resources */,
 				7E4D55B91C49315C00BFE19C /* Images.xcassets in Resources */,
@@ -451,12 +449,10 @@
 				FAA39B301C9D1F1400A1B697 /* ミュージックサロン.png in Resources */,
 				FAA39AFC1C9D089C00A1B697 /* 塩焼きそば　麺’sRUNRUN.png in Resources */,
 				FAA39B411C9D22FF00A1B697 /* 春夜祭.png in Resources */,
-				7E4D55D51C4945DE00BFE19C /* ダンス.png in Resources */,
 				FAA39AFD1C9D089C00A1B697 /* 俺のケバブ.jpg in Resources */,
 				FAA39AFE1C9D089C00A1B697 /* 鉄板職人.jpg in Resources */,
 				FAA39B3B1C9D22FF00A1B697 /* Mr.聖光.png in Resources */,
 				FA6605B81C959A5900EC4011 /* Right.png in Resources */,
-				7E4D55D91C4C007A00BFE19C /* お好み焼き.jpg in Resources */,
 				FAA39B2E1C9D1EB100A1B697 /* Grand-Finale.png in Resources */,
 				FAA39B161C9D172200A1B697 /* 英語劇.png in Resources */,
 				FAA39B201C9D18CA00A1B697 /* エストレーラ.png in Resources */,

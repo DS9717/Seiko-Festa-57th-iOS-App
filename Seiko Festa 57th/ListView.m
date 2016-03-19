@@ -368,14 +368,14 @@
         [scrollView addSubview:label2];
         
         button3= [[UIButton alloc]initWithFrame:CGRectMake(16, 196, 128, 128)];
-        [button3 setImage:[UIImage imageNamed:@"○○男子No.1選手権.png"] forState:UIControlStateNormal];
+        [button3 setImage:[UIImage imageNamed:@"○○男子No.1決定戦.png"] forState:UIControlStateNormal];
         [button3 addTarget:self
                     action:@selector(buttonFive3Detail:) forControlEvents:UIControlEventTouchUpInside];
         [scrollView addSubview:button3];
         
         label3 = [[UILabel alloc]initWithFrame:CGRectMake(16, 332, 128, 20)];
         label3.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
-        label3.text = @"○○男子No.1選手権";
+        label3.text = @"○○男子No.1決定戦";
         label3.textAlignment = NSTextAlignmentCenter;
         [scrollView addSubview:label3];
         
