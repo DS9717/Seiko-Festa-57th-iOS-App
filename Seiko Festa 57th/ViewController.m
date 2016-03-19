@@ -930,6 +930,7 @@
     
 }
 
+
 #pragma mark -値を受け渡す
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
