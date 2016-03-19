@@ -23,6 +23,12 @@
     UIButton *button6;
     UIButton *button7;
     UIButton *button8;
+    UIButton *button9;
+    UIButton *button10;
+    UIButton *button11;
+    UIButton *button12;
+    UIButton *button13;
+    UIButton *button14;
     
     UILabel *label1;
     UILabel *label2;
@@ -32,6 +38,12 @@
     UILabel *label6;
     UILabel *label7;
     UILabel *label8;
+    UILabel *label9;
+    UILabel *label10;
+    UILabel *label11;
+    UILabel *label12;
+    UILabel *label13;
+    UILabel *label14;
     
     NSString *whichList;
     
