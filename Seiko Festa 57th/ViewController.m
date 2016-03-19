@@ -36,7 +36,6 @@
     self.tabBarController.tabBar.barTintColor = [UIColor blackColor];
     self.tabBarController.tabBar.tintColor = [UIColor whiteColor];
   
-    
 }
 
 - (void)didReceiveMemoryWarning {
