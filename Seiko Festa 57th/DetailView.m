@@ -32,7 +32,7 @@
     imageScroll.backgroundColor = [UIColor clearColor];
     //スクロールの範囲を設定
     [imageScroll setContentSize:CGSizeMake(640, 220)];
-    
+
     
     if ([_whatList isEqualToString:@"food"]) {
         
@@ -258,9 +258,9 @@
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
         else if (flag == 3) {
-            detailImage = [UIImage imageNamed:@"○○男子No.1選手権.png"];
+            detailImage = [UIImage imageNamed:@"○○男子No.1決定戦.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
-            _detailTitle.text = @"○○男子No.1選手権";
+            _detailTitle.text = @"○○男子No.1決定戦";
             _explainSentence.text = @"○○男子No.1は誰だ!?";
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];

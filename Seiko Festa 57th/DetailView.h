@@ -18,9 +18,8 @@
     UIImageView *detailImageview;
     UIImage *mapImage;
     UIImageView *mapImageview;
-    UIButton *right;
     UIButton *left;
-    
+    UIButton *right;
 }
 @property(nonatomic) int flag;
 @property (weak, nonatomic) IBOutlet UINavigationItem *navigationBar;

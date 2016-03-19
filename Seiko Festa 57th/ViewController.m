@@ -25,7 +25,7 @@
     imageNumber = 0;
     imageNumber2 = 1;
     
-    organizationFeaturedImages = @[@"英語劇 バナー1.png", @"ダンス.png", @"アプリ局.png"];
+    organizationFeaturedImages = @[@"英語劇 バナー1.png", @"ボールぽこぽこ バナー.jpg", @"ミュージックサロン バナー.JPG"];
     
     featuredImageButton = [[UIButton alloc]initWithFrame:CGRectMake(320, 64, 320, 130)];
     featuredImageButton2 = [[UIButton alloc]initWithFrame:CGRectMake(320, 64, 320, 130)];
@@ -569,17 +569,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
--(void)viewWillAppear:(BOOL)animated{
-    
-    [super viewWillAppear:animated];
-    
-    NSLog(@"%f", mainScrollView.frame.size.height);
-
-
-    
-}
-
 
 -(void)featuredImageIn{
     
