@@ -642,7 +642,7 @@
     featuredImage2 = [UIImage imageNamed:[NSString stringWithFormat:@"%@", organizationFeaturedImages[imageNumber2]]];
     [featuredImageButton2 setImage:featuredImage2 forState:UIControlStateNormal];
     [featuredImageButton2 addTarget:self
-                            action:@selector(featuredDetail:) forControlEvents:UIControlEventTouchUpInside];
+                            action:@selector(featuredDetail2:) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:featuredImageButton2];
     
@@ -685,6 +685,36 @@
 }
 
 -(void)featuredDetail:(UIButton *)button{
+    
+    if (featuredImage == [UIImage imageNamed:@"英語劇 バナー1.png"]) {
+        flag = 2;
+        whichList = @"performance";
+    }else if (featuredImage == [UIImage imageNamed:@"ボールぽこぽこ バナー.jpg"]) {
+        flag = 3;
+        whichList = @"performance";
+    }else if (featuredImage == [UIImage imageNamed:@"ミュージックサロン バナー.JPG"]) {
+        flag = 5;
+        whichList = @"performance";
+    }
+    
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+    
+}
+
+-(void)featuredDetail2:(UIButton *)button{
+    
+    if (featuredImage2 == [UIImage imageNamed:@"英語劇 バナー1.png"]) {
+        flag = 2;
+        whichList = @"performance";
+    }else if (featuredImage2 == [UIImage imageNamed:@"ボールぽこぽこ バナー.jpg"]) {
+        flag = 3;
+        whichList = @"performance";
+    }else if (featuredImage2 == [UIImage imageNamed:@"ミュージックサロン バナー.JPG"]) {
+        flag = 5;
+        whichList = @"performance";
+    }
+    
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
     
 }
 
