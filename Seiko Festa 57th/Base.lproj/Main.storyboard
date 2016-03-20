@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HNp-Pa-RlB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HNp-Pa-RlB">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--Home-->
@@ -44,6 +44,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="n0g-Mf-VGS"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="G5V-YZ-OeK" kind="show" identifier="fromTimeTable" id="hmj-UO-meY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bY-dD-XE8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -69,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6fd-bM-Dcb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4149" y="-460"/>
+            <point key="canvasLocation" x="3961" y="281"/>
         </scene>
         <!--Title-->
         <scene sceneID="DXe-hW-d3K">
@@ -108,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wyk-aa-Qzr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4149" y="281"/>
+            <point key="canvasLocation" x="3961" y="1028"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1nK-dn-tTk">
@@ -190,7 +193,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oAE-q1-dRJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4623" y="-473"/>
+            <point key="canvasLocation" x="2692" y="1028"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ojU-gv-U6K">
@@ -210,7 +213,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I6N-p5-Int" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2830" y="281"/>
+            <point key="canvasLocation" x="3122" y="281"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="rGi-oJ-J9S">
@@ -230,7 +233,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CIy-l8-4tj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2140.5" y="281.25"/>
+            <point key="canvasLocation" x="2692" y="287"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TRv-5T-wDz">
@@ -250,10 +253,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mch-He-6cW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2830" y="1028"/>
+            <point key="canvasLocation" x="3122" y="1028"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="7qL-oO-efD"/>
+        <segue reference="wgY-w8-4fA"/>
     </inferredMetricsTieBreakers>
 </document>
