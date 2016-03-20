@@ -33,6 +33,8 @@
 		7E4D55B71C49315C00BFE19C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4D55B51C49315C00BFE19C /* Main.storyboard */; };
 		7E4D55B91C49315C00BFE19C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E4D55B81C49315C00BFE19C /* Images.xcassets */; };
 		7E4D55C81C49315C00BFE19C /* Seiko_Festa_57thTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4D55C71C49315C00BFE19C /* Seiko_Festa_57thTests.m */; };
+		7EB711871C9EDEF300E0F691 /* 奴等-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB711861C9EDEF300E0F691 /* 奴等-タイムテーブル.png */; };
+		7ECB09CE1C9DACF9008DECDD /* 天使の歌声-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ECB09CD1C9DACF9008DECDD /* 天使の歌声-タイムテーブル.png */; };
 		7ED1CBFC1C9842A900D4F038 /* 校長対談.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED1CBFB1C9842A900D4F038 /* 校長対談.png */; };
 		7ED1CC001C9845CA00D4F038 /* グリークラブ.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED1CBFF1C9845CA00D4F038 /* グリークラブ.png */; };
 		7ED21AB61C79986D00AA9E83 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED21AB51C79986D00AA9E83 /* QuartzCore.framework */; };
@@ -145,6 +147,8 @@
 		7E4D55C11C49315C00BFE19C /* Seiko Festa 57thTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Seiko Festa 57thTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4D55C61C49315C00BFE19C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E4D55C71C49315C00BFE19C /* Seiko_Festa_57thTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Seiko_Festa_57thTests.m; sourceTree = "<group>"; };
+		7EB711861C9EDEF300E0F691 /* 奴等-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "奴等-タイムテーブル.png"; sourceTree = "<group>"; };
+		7ECB09CD1C9DACF9008DECDD /* 天使の歌声-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天使の歌声-タイムテーブル.png"; sourceTree = "<group>"; };
 		7ED1CBFB1C9842A900D4F038 /* 校長対談.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "校長対談.png"; sourceTree = "<group>"; };
 		7ED1CBFF1C9845CA00D4F038 /* グリークラブ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "グリークラブ.png"; sourceTree = "<group>"; };
 		7ED21AB51C79986D00AA9E83 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -287,7 +291,6 @@
 				7E4D55B81C49315C00BFE19C /* Images.xcassets */,
 				7E4D55D11C4944F300BFE19C /* Images */,
 				7E0DC8BA1C9D7E5900B45F37 /* Icons */,
-				7EF2D8C81C9D4E6B008F76E8 /* タイムテーブル */,
 				7E4D55AB1C49315B00BFE19C /* Supporting Files */,
 			);
 			path = "Seiko Festa 57th";
@@ -327,8 +330,9 @@
 				FAA39B491C9D330E00A1B697 /* Left.png */,
 				FAA39B4A1C9D330E00A1B697 /* map.jpg */,
 				FAA39B4B1C9D330E00A1B697 /* Right.png */,
-				FAA39B441C9D2D0400A1B697 /* バナー */,
 				FAA39B001C9D093200A1B697 /* 角丸アイコン */,
+				FAA39B441C9D2D0400A1B697 /* バナー */,
+				7EF2D8C81C9D4E6B008F76E8 /* タイムテーブル */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -354,6 +358,7 @@
 		7EF2D8C91C9D4E77008F76E8 /* 講堂 */ = {
 			isa = PBXGroup;
 			children = (
+				7ECB09CD1C9DACF9008DECDD /* 天使の歌声-タイムテーブル.png */,
 				7EF2D8D91C9D4FAB008F76E8 /* ボールぽこぽこ-タイムテーブル.png */,
 				7EF2D8DA1C9D4FAB008F76E8 /* ミュージックサロン-タイムテーブル.png */,
 				7EF2D8DB1C9D4FAB008F76E8 /* 英語劇-タイムテーブル.png */,
@@ -405,6 +410,7 @@
 				7E0DC8A61C9D63F700B45F37 /* WEAK-END-タイムテーブル.png */,
 				7EF2D8FC1C9D5A11008F76E8 /* エストレーラ-タイムテーブル.png */,
 				7E0DC8A01C9D60EF00B45F37 /* Яooz-Leef-タイムテーブル.png */,
+				7EB711861C9EDEF300E0F691 /* 奴等-タイムテーブル.png */,
 			);
 			name = "ライブハウス2";
 			sourceTree = "<group>";
@@ -680,6 +686,7 @@
 				FAA39B411C9D22FF00A1B697 /* 春夜祭.png in Resources */,
 				FAA39B5C1C9D458600A1B697 /* Juicy-Juicer.png in Resources */,
 				FAA39B5D1C9D458600A1B697 /* 駅弁.png in Resources */,
+				7ECB09CE1C9DACF9008DECDD /* 天使の歌声-タイムテーブル.png in Resources */,
 				FAA39AFD1C9D089C00A1B697 /* 俺のケバブ.jpg in Resources */,
 				FAA39B521C9D433900A1B697 /* Flat Flight バナー1.jpg in Resources */,
 				FAA39AFE1C9D089C00A1B697 /* 鉄板職人.jpg in Resources */,
@@ -698,6 +705,7 @@
 				FAA39B271C9D190700A1B697 /* WEAK-END.png in Resources */,
 				7E0DC8A51C9D631300B45F37 /* Chaos-Illusion-タイムテーブル.png in Resources */,
 				7E0DC8A71C9D63F700B45F37 /* WEAK-END-タイムテーブル.png in Resources */,
+				7EB711871C9EDEF300E0F691 /* 奴等-タイムテーブル.png in Resources */,
 				FAA39B5F1C9D458600A1B697 /* 題名のない音楽喫茶.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
