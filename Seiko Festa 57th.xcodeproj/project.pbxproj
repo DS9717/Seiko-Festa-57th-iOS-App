@@ -54,6 +54,13 @@
 		7EF2D8F61C9D57CE008F76E8 /* M&A-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EF2D8F21C9D57CE008F76E8 /* M&A-タイムテーブル.png */; };
 		7EF2D8F81C9D57CE008F76E8 /* 蜃気楼-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EF2D8F41C9D57CE008F76E8 /* 蜃気楼-タイムテーブル.png */; };
 		7EF2D9011C9D5A11008F76E8 /* エストレーラ-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EF2D8FC1C9D5A11008F76E8 /* エストレーラ-タイムテーブル.png */; };
+		FA0F10E11C9E7F0300AF0155 /* 弦楽オーケストラ部.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0F10DE1C9E7F0300AF0155 /* 弦楽オーケストラ部.png */; };
+		FA0F10E21C9E7F0300AF0155 /* 吹奏楽部.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0F10DF1C9E7F0300AF0155 /* 吹奏楽部.png */; };
+		FA0F10E31C9E7F0300AF0155 /* 天使の歌声.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0F10E01C9E7F0300AF0155 /* 天使の歌声.png */; };
+		FA0F10E61C9E7F1200AF0155 /* 数学研究会模擬講義.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0F10E41C9E7F1200AF0155 /* 数学研究会模擬講義.png */; };
+		FA0F10E71C9E7F1200AF0155 /* 恋愛偏差値.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0F10E51C9E7F1200AF0155 /* 恋愛偏差値.png */; };
+		FA0F10E91C9E7F2500AF0155 /* 少林寺憲法部演武会.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0F10E81C9E7F2500AF0155 /* 少林寺憲法部演武会.png */; };
+		FA0F10EB1C9E7F3100AF0155 /* 剣道部.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0F10EA1C9E7F3100AF0155 /* 剣道部.png */; };
 		FAA39AFA1C9D089C00A1B697 /* Flapjack.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA39AF41C9D089C00A1B697 /* Flapjack.png */; };
 		FAA39AFB1C9D089C00A1B697 /* クレープブレーク.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA39AF51C9D089C00A1B697 /* クレープブレーク.png */; };
 		FAA39AFC1C9D089C00A1B697 /* 塩焼きそば　麺’sRUNRUN.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA39AF61C9D089C00A1B697 /* 塩焼きそば　麺’sRUNRUN.png */; };
@@ -168,6 +175,13 @@
 		7EF2D8F21C9D57CE008F76E8 /* M&A-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "M&A-タイムテーブル.png"; sourceTree = "<group>"; };
 		7EF2D8F41C9D57CE008F76E8 /* 蜃気楼-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蜃気楼-タイムテーブル.png"; sourceTree = "<group>"; };
 		7EF2D8FC1C9D5A11008F76E8 /* エストレーラ-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "エストレーラ-タイムテーブル.png"; sourceTree = "<group>"; };
+		FA0F10DE1C9E7F0300AF0155 /* 弦楽オーケストラ部.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "弦楽オーケストラ部.png"; sourceTree = "<group>"; };
+		FA0F10DF1C9E7F0300AF0155 /* 吹奏楽部.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "吹奏楽部.png"; sourceTree = "<group>"; };
+		FA0F10E01C9E7F0300AF0155 /* 天使の歌声.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天使の歌声.png"; sourceTree = "<group>"; };
+		FA0F10E41C9E7F1200AF0155 /* 数学研究会模擬講義.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "数学研究会模擬講義.png"; sourceTree = "<group>"; };
+		FA0F10E51C9E7F1200AF0155 /* 恋愛偏差値.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "恋愛偏差値.png"; sourceTree = "<group>"; };
+		FA0F10E81C9E7F2500AF0155 /* 少林寺憲法部演武会.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "少林寺憲法部演武会.png"; sourceTree = "<group>"; };
+		FA0F10EA1C9E7F3100AF0155 /* 剣道部.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "剣道部.png"; sourceTree = "<group>"; };
 		FAA39AF41C9D089C00A1B697 /* Flapjack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flapjack.png; sourceTree = "<group>"; };
 		FAA39AF51C9D089C00A1B697 /* クレープブレーク.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "クレープブレーク.png"; sourceTree = "<group>"; };
 		FAA39AF61C9D089C00A1B697 /* 塩焼きそば　麺’sRUNRUN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "塩焼きそば　麺’sRUNRUN.png"; sourceTree = "<group>"; };
@@ -506,11 +520,18 @@
 			isa = PBXGroup;
 			children = (
 				FAA39B2D1C9D1EB100A1B697 /* Grand-Finale.png */,
-				FAA39B291C9D1EA000A1B697 /* 英語劇講堂劇.png */,
-				FAA39B2B1C9D1EAB00A1B697 /* ボールぽこぽこ.png */,
-				7ED1CBFB1C9842A900D4F038 /* 校長対談.png */,
-				FAA39B2F1C9D1F1400A1B697 /* ミュージックサロン.png */,
 				7ED1CBFF1C9845CA00D4F038 /* グリークラブ.png */,
+				FAA39B2B1C9D1EAB00A1B697 /* ボールぽこぽこ.png */,
+				FAA39B2F1C9D1F1400A1B697 /* ミュージックサロン.png */,
+				FA0F10DE1C9E7F0300AF0155 /* 弦楽オーケストラ部.png */,
+				FA0F10DF1C9E7F0300AF0155 /* 吹奏楽部.png */,
+				FA0F10E01C9E7F0300AF0155 /* 天使の歌声.png */,
+				FAA39B291C9D1EA000A1B697 /* 英語劇講堂劇.png */,
+				7ED1CBFB1C9842A900D4F038 /* 校長対談.png */,
+				FA0F10E41C9E7F1200AF0155 /* 数学研究会模擬講義.png */,
+				FA0F10E51C9E7F1200AF0155 /* 恋愛偏差値.png */,
+				FA0F10E81C9E7F2500AF0155 /* 少林寺憲法部演武会.png */,
+				FA0F10EA1C9E7F3100AF0155 /* 剣道部.png */,
 			);
 			name = Performance;
 			sourceTree = "<group>";
@@ -590,7 +611,7 @@
 				TargetAttributes = {
 					7E4D55A71C49315B00BFE19C = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = TAE9KC7SWK;
+						DevelopmentTeam = 3GKM8LRN87;
 					};
 					7E4D55C01C49315C00BFE19C = {
 						CreatedOnToolsVersion = 6.2;
@@ -631,11 +652,13 @@
 				FAA39AFB1C9D089C00A1B697 /* クレープブレーク.png in Resources */,
 				7EF2D8EA1C9D5101008F76E8 /* ギネスに挑戦！！-タイムテーブル.png in Resources */,
 				FAA39B3A1C9D22FF00A1B697 /* ○○男子No.1決定戦.png in Resources */,
+				FA0F10E21C9E7F0300AF0155 /* 吹奏楽部.png in Resources */,
 				FAA39B1E1C9D18CA00A1B697 /* Flat-Flight.png in Resources */,
 				FAA39B2A1C9D1EA000A1B697 /* 英語劇講堂劇.png in Resources */,
 				FAA39B3D1C9D22FF00A1B697 /* ギネスに挑戦！！.png in Resources */,
 				7E0DC8C91C9D7FAA00B45F37 /* Default-568h@2x.png in Resources */,
 				FAA39B481C9D2D9300A1B697 /* ミュージックサロン バナー.JPG in Resources */,
+				FA0F10E11C9E7F0300AF0155 /* 弦楽オーケストラ部.png in Resources */,
 				FAA39B5B1C9D458600A1B697 /* chocolat-π.png in Resources */,
 				7ED1CC001C9845CA00D4F038 /* グリークラブ.png in Resources */,
 				FAA39B421C9D22FF00A1B697 /* 替え歌選手権.png in Resources */,
@@ -646,12 +669,14 @@
 				7EF2D8ED1C9D5101008F76E8 /* 春夜祭-タイムテーブル.png in Resources */,
 				7EF2D9011C9D5A11008F76E8 /* エストレーラ-タイムテーブル.png in Resources */,
 				FAA39B3F1C9D22FF00A1B697 /* のど自慢.png in Resources */,
+				FA0F10EB1C9E7F3100AF0155 /* 剣道部.png in Resources */,
 				FAA39B151C9D172200A1B697 /* インターアクト.png in Resources */,
 				7E0DC8B31C9D673F00B45F37 /* 校長対談-タイムテーブル.png in Resources */,
 				7E0DC8B51C9D6B3500B45F37 /* 恋愛偏差値-タイムテーブル.png in Resources */,
 				7EF2D8F81C9D57CE008F76E8 /* 蜃気楼-タイムテーブル.png in Resources */,
 				7E0DC8AB1C9D64A100B45F37 /* ミュージックサロン-タイムテーブル小講堂.png in Resources */,
 				FAA39AFA1C9D089C00A1B697 /* Flapjack.png in Resources */,
+				FA0F10E71C9E7F1200AF0155 /* 恋愛偏差値.png in Resources */,
 				FAA39B221C9D18CA00A1B697 /* 蜃気楼.png in Resources */,
 				7E0DC8C51C9D7E9800B45F37 /* icon-60@2x.png in Resources */,
 				FAA39B1F1C9D18CA00A1B697 /* M&A.png in Resources */,
@@ -672,6 +697,7 @@
 				FAA39B171C9D172200A1B697 /* 高3英語劇.png in Resources */,
 				7E4D55B91C49315C00BFE19C /* Images.xcassets in Resources */,
 				7E0DC89D1C9D5E8600B45F37 /* ぽんでっくす-タイムテーブル.png in Resources */,
+				FA0F10E31C9E7F0300AF0155 /* 天使の歌声.png in Resources */,
 				7E0DC8AD1C9D64A100B45F37 /* 数学研究会模擬講義-タイムテーブル.png in Resources */,
 				FAA39B3E1C9D22FF00A1B697 /* コミュ力の窓.png in Resources */,
 				FAA39B301C9D1F1400A1B697 /* ミュージックサロン.png in Resources */,
@@ -689,6 +715,7 @@
 				7ECB09CE1C9DACF9008DECDD /* 天使の歌声-タイムテーブル.png in Resources */,
 				FAA39AFD1C9D089C00A1B697 /* 俺のケバブ.jpg in Resources */,
 				FAA39B521C9D433900A1B697 /* Flat Flight バナー1.jpg in Resources */,
+				FA0F10E91C9E7F2500AF0155 /* 少林寺憲法部演武会.png in Resources */,
 				FAA39AFE1C9D089C00A1B697 /* 鉄板職人.jpg in Resources */,
 				7E0DC8C31C9D7E9800B45F37 /* icon-40@2x.png in Resources */,
 				7EF2D8DD1C9D4FAB008F76E8 /* ミュージックサロン-タイムテーブル.png in Resources */,
@@ -698,6 +725,7 @@
 				FAA39B161C9D172200A1B697 /* 英語劇.png in Resources */,
 				FAA39B5E1C9D458600A1B697 /* 山手の泉.png in Resources */,
 				FAA39B201C9D18CA00A1B697 /* エストレーラ.png in Resources */,
+				FA0F10E61C9E7F1200AF0155 /* 数学研究会模擬講義.png in Resources */,
 				7EF2D8EE1C9D5101008F76E8 /* 替え歌選手権！！-タイムテーブル.png in Resources */,
 				7E0DC8A11C9D60EF00B45F37 /* Яooz-Leef-タイムテーブル.png in Resources */,
 				7EF2D8EC1C9D5101008F76E8 /* のど自慢-タイムテーブル.png in Resources */,

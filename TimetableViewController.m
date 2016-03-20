@@ -7,6 +7,7 @@
 //
 
 #import "TimetableViewController.h"
+#import "DetailView.h"
 
 @interface TimetableViewController ()
 
@@ -374,154 +375,186 @@
 }
 
 -(void)buttonOne1Detail:(UIButton *)button{
-    whichList = @"food";
-    flag = 1;
-    [self performSegueWithIdentifier:@"showDirect" sender:self];
+    whichList = @"performance";
+    flag = 7;
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonOne2Detail:(UIButton *)button{
-    whichList = @"food";
-    flag = 2;
-    [self performSegueWithIdentifier:@"showDirect" sender:self];
+    whichList = @"performance";
+    flag = 5;
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonOne3Detail:(UIButton *)button{
-    whichList = @"food";
+    whichList = @"performance";
     flag = 3;
-    [self performSegueWithIdentifier:@"showDirect" sender:self];
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonOne4Detail:(UIButton *)button{
-    whichList = @"food";
-    flag = 4;
-    [self performSegueWithIdentifier:@"showDirect" sender:self];
+    whichList = @"performance";
+    flag = 2;
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonOne5Detail:(UIButton *)button{
     whichList = @"food";
     flag = 5;
-    [self performSegueWithIdentifier:@"showDirect" sender:self];
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonTwo1Detail:(UIButton *)button{
-    whichList = @"display";
-    flag = 1;
-    [self performSegueWithIdentifier:@"showDirect" sender:self];
+    whichList = @"stage";
+    flag = 5;
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonTwo2Detail:(UIButton *)button{
     whichList = @"display";
     flag = 2;
-    [self performSegueWithIdentifier:@"showDirect" sender:self];
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonTwo3Detail:(UIButton *)button{
     whichList = @"display";
     flag = 3;
-    [self performSegueWithIdentifier:@"showDirect" sender:self];
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonTwo4Detail:(UIButton *)button{
     whichList = @"display";
     flag = 4;
-    [self performSegueWithIdentifier:@"showDirect" sender:self];
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonTwo5Detail:(UIButton *)button{
     whichList = @"display";
     flag = 5;
-    [self performSegueWithIdentifier:@"showDirect" sender:self];
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
+}
+
+-(void)buttonTwo6Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 6;
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
+}
+
+-(void)buttonTwo7Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 7;
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
+}
+
+-(void)buttonTwo8Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 8;
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
+}
+
+-(void)buttonTwo9Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 9;
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonThree1Detail:(UIButton *)button{
     whichList = @"band";
     flag = 1;
-    [self performSegueWithIdentifier:@"showDirect" sender:self];
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
     
 }
 
 -(void)buttonThree2Detail:(UIButton *)button{
     whichList = @"band";
     flag = 2;
-    [self performSegueWithIdentifier:@"showDirect" sender:self];
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonThree3Detail:(UIButton *)button{
     whichList = @"band";
     flag = 3;
-    [self performSegueWithIdentifier:@"showDirect" sender:self];
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonThree4Detail:(UIButton *)button{
     whichList = @"band";
     flag = 4;
-    [self performSegueWithIdentifier:@"showDirect" sender:self];
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonThree5Detail:(UIButton *)button{
     whichList = @"band";
     flag = 5;
-    [self performSegueWithIdentifier:@"showDirect" sender:self];
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonFour1Detail:(UIButton *)button{
     whichList = @"performance";
     flag = 1;
-    [self performSegueWithIdentifier:@"showDirect" sender:self];
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonFour2Detail:(UIButton *)button{
     whichList = @"performance";
     flag = 2;
-    [self performSegueWithIdentifier:@"showDirect" sender:self];
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonFour3Detail:(UIButton *)button{
     whichList = @"performance";
     flag = 3;
-    [self performSegueWithIdentifier:@"showDirect" sender:self];
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonFour4Detail:(UIButton *)button{
     whichList = @"performance";
     flag = 4;
-    [self performSegueWithIdentifier:@"showDirect" sender:self];
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonFour5Detail:(UIButton *)button{
     whichList = @"performance";
     flag = 5;
-    [self performSegueWithIdentifier:@"showDirect" sender:self];
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonFive1Detail:(UIButton *)button{
     whichList = @"stage";
     flag = 1;
-    [self performSegueWithIdentifier:@"showDirect" sender:self];
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonFive2Detail:(UIButton *)button{
     whichList = @"stage";
     flag = 1;
-    [self performSegueWithIdentifier:@"showDirect" sender:self];
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonFive3Detail:(UIButton *)button{
     whichList = @"stage";
     flag = 1;
-    [self performSegueWithIdentifier:@"showDirect" sender:self];
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonFive4Detail:(UIButton *)button{
     whichList = @"stage";
     flag = 1;
-    [self performSegueWithIdentifier:@"showDirect" sender:self];
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonFive5Detail:(UIButton *)button{
     whichList = @"stage";
     flag = 1;
-    [self performSegueWithIdentifier:@"showDirect" sender:self];
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    DetailView *detailView = segue.destinationViewController;
+    detailView.flag = flag;
+    detailView.whatList = whichList;
+    
 }
 
 @end

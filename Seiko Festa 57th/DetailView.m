@@ -181,7 +181,7 @@
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
         else if (flag == 4) {
-            detailImage = [UIImage imageNamed:@"Trick×Hark.png"];
+            detailImage = [UIImage imageNamed:@"Trick×Hark.jpg"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"Trick×Hark";
             _explainSentence.text = @"素晴らしいマジックです!";
@@ -189,12 +189,12 @@
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
         else if (flag == 5) {
-            detailImage = [UIImage imageNamed:@"インターアクト.JPG"];
+            detailImage = [UIImage imageNamed:@"インターアクト.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"インターアクトクラブ";
             _explainSentence.text = @"素晴らしいインターアクトクラブです!";
         }
-        else if (flag == 5) {
+        else if (flag == 6) {
             detailImage = [UIImage imageNamed:@"インターアクト.JPG"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"インターアクトクラブ";
@@ -338,6 +338,14 @@
             detailImage = [UIImage imageNamed:@"グリークラブ.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"グリークラブ";
+            _explainSentence.text = @"素晴らしい歌声です!";
+            _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+            _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        }
+        else if (flag == 7) {
+            detailImage = [UIImage imageNamed:@"天使の歌声.png"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"天使の歌声";
             _explainSentence.text = @"素晴らしい歌声です!";
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
