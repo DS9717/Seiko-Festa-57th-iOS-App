@@ -164,6 +164,8 @@
     
     NSString *whichList;
     
+    float contentOffsetY;
+    
 }
 
 @property(nonatomic) int flag;

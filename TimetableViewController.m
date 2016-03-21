@@ -156,7 +156,7 @@
     self.navigationItem.title=@"講堂";
     
     buttonOne1= [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 320, 190)];
-    [buttonOne1 setImage:[UIImage imageNamed:@"中1コーラス-タイムテーブル.png"] forState:UIControlStateNormal];
+    [buttonOne1 setImage:[UIImage imageNamed:@"天使の歌声-タイムテーブル.png"] forState:UIControlStateNormal];
     [buttonOne1 addTarget:self
                  action:@selector(buttonOne1Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne1];

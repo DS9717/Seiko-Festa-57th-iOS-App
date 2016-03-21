@@ -21,6 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    contentOffsetY = 0;
         
     imageNumber = 0;
     imageNumber2 = 1;
@@ -91,7 +93,7 @@
     mainScrollView.backgroundColor = [UIColor clearColor];
     //スクロールの範囲を設定
     [mainScrollView setContentSize:CGSizeMake(self.view.bounds.size.width, (length + spaceH + buttonLabelFont + 82) * 5)];
-    
+    [mainScrollView setContentOffset:CGPointMake(0.0, contentOffsetY) animated:NO];
     
     foodLabel = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + buttonLabelFont + 84) * 0, 45, labelFont + 4)];
     foodLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:labelFont];
@@ -795,7 +797,9 @@
 -(void)viewDidDisappear:(BOOL)animated {
     
     [super viewWillDisappear:animated];
-    [mainScrollView setHidden:YES];
+    contentOffsetY = mainScrollView.contentOffset.y;
+    
+    [mainScrollView removeFromSuperview];
     
 }
 
