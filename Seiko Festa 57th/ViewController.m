@@ -22,7 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    
+    int a;
         
     imageNumber = 0;
     imageNumber2 = 1;

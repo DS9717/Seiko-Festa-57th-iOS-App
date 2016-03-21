@@ -18,6 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    int a;
+    
     // Do any additional setup after loading the view.
     //[imageScroll setContentSize:CGSizeMake(540, 220)];
     
