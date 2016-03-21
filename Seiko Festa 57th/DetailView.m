@@ -242,10 +242,10 @@
         _navigationBar.title = @"Band";
         
         if (flag == 1) {
-            detailImage = [UIImage imageNamed:@"Chaos-illusion.png"];
+            detailImage = [UIImage imageNamed:@"M&A.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
-            _detailTitle.text = @"Chaos-illusion";
-            _explainSentence.text = @"Chaosです!";
+            _detailTitle.text = @"M&A";
+            _explainSentence.text = @"";
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
@@ -253,23 +253,23 @@
             detailImage = [UIImage imageNamed:@"Flat-Flight.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"Flat-Flight";
-            _explainSentence.text = @"素晴らしくFlat?です!";
+            _explainSentence.text = @"";
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
         else if (flag == 3) {
-            detailImage = [UIImage imageNamed:@"M&A.png"];
+            detailImage = [UIImage imageNamed:@"蜃気楼.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
-            _detailTitle.text = @"M&A";
-            _explainSentence.text = @"素晴らしいバンドです！";
+            _detailTitle.text = @"蜃気楼";
+            _explainSentence.text = @"";
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
         else if (flag == 4) {
-            detailImage = [UIImage imageNamed:@"WEAK-END.png"];
+            detailImage = [UIImage imageNamed:@"ぽんでっくす.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
-            _detailTitle.text = @"WEAK-END";
-            _explainSentence.text = @"素晴らしいWEAK-END！";
+            _detailTitle.text = @"ぽんでっくす";
+            _explainSentence.text = @"";
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
@@ -277,15 +277,63 @@
             detailImage = [UIImage imageNamed:@"エストレーラ.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"エストレーラ";
-            _explainSentence.text = @"素晴らしいバンドです!";
+            _explainSentence.text = @"";
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
         else if (flag == 6) {
-            detailImage = [UIImage imageNamed:@"蜃気楼.png"];
+            detailImage = [UIImage imageNamed:@"Яooz-Leef.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
-            _detailTitle.text = @"蜃気楼";
+            _detailTitle.text = @"Яooz-Leef";
+            _explainSentence.text = @"";
+            _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+            _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        }
+        else if (flag == 7) {
+            detailImage = [UIImage imageNamed:@"WEAK-END.png"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"WEAK END";
             _explainSentence.text = @"素晴らしいバンドです!";
+            _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+            _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        }
+        else if (flag == 8) {
+            detailImage = [UIImage imageNamed:@"Million-Dollars.png"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"Million Dollars";
+            _explainSentence.text = @"";
+            _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+            _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        }
+        else if (flag == 9) {
+            detailImage = [UIImage imageNamed:@"Coming-Soon.jpg"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"せいとんがかり";
+            _explainSentence.text = @"";
+            _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+            _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        }
+        else if (flag == 10) {
+            detailImage = [UIImage imageNamed:@"Chaos-illusion.png"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"Chaos illusion";
+            _explainSentence.text = @"";
+            _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+            _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        }
+        else if (flag == 11) {
+            detailImage = [UIImage imageNamed:@"Addiction？.png"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"Addiction？";
+            _explainSentence.text = @"";
+            _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+            _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        }
+        else if (flag == 12) {
+            detailImage = [UIImage imageNamed:@"奴等.png"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"奴等";
+            _explainSentence.text = @"";
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }

@@ -11,9 +11,13 @@
 
 @interface ListView : UIViewController{
     
+    //左(右)余白
     int spaceLeft;
+    //画像サイズ(self.view.bounds.size.width / 2 - spaceLeft * 2)(画像間隔は spaceLeft * 2)
     int length;
+    //画像-テキスト間隔
     int spaceH;
+    //テキストフォント
     int fontSize;
     
     

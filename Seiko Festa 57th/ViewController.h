@@ -103,6 +103,12 @@
     UIButton *buttonThree4;
     UIButton *buttonThree5;
     UIButton *buttonThree6;
+    UIButton *buttonThree7;
+    UIButton *buttonThree8;
+    UIButton *buttonThree9;
+    UIButton *buttonThree10;
+    UIButton *buttonThree11;
+    UIButton *buttonThree12;
     
     UILabel *bandLabel;
     UILabel *buttonThree1Label;
@@ -111,6 +117,12 @@
     UILabel *buttonThree4Label;
     UILabel *buttonThree5Label;
     UILabel *buttonThree6Label;
+    UILabel *buttonThree7Label;
+    UILabel *buttonThree8Label;
+    UILabel *buttonThree9Label;
+    UILabel *buttonThree10Label;
+    UILabel *buttonThree11Label;
+    UILabel *buttonThree12Label;
     
     //講堂･小講堂
     UIButton *buttonFour1;

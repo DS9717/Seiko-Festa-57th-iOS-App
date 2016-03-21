@@ -70,7 +70,13 @@
         buttonLabelFont = 13;
     } else if (r.size.width == 414) {
         //iPhone 6 plus/6s plus
-    
+        spaceLeft = 15;
+        length = 94;
+        spaceW = 16;
+        spaceH = 12;
+        labelFont = 18;
+        allButtonFont = 12;
+        buttonLabelFont = 13;
     }
     
     
@@ -102,7 +108,7 @@
     [mainScrollView addSubview:viewAllButton1];
     
     scrollView1 = [[UIScrollView alloc]init];
-    scrollView1.frame = CGRectMake(0, 50 + (length + spaceH + buttonLabelFont + 82) * 0, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 1);
+    scrollView1.frame = CGRectMake(0, 50 + (length + spaceH + buttonLabelFont + 82) * 0, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 33);
     scrollView1.showsHorizontalScrollIndicator = NO;
     scrollView1.userInteractionEnabled = YES;
     scrollView1.bounces = YES;
@@ -309,7 +315,7 @@
     [mainScrollView addSubview:viewAllButton2];
     
     scrollView2 = [[UIScrollView alloc]init];
-    scrollView2.frame = CGRectMake(0, 50 + (length + spaceH + buttonLabelFont + 82) * 1, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 1);
+    scrollView2.frame = CGRectMake(0, 50 + (length + spaceH + buttonLabelFont + 82) * 1, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 33);
     scrollView2.showsHorizontalScrollIndicator = NO;
     scrollView2.userInteractionEnabled = YES;
     scrollView2.bounces = YES;
@@ -396,16 +402,16 @@
     [mainScrollView addSubview:viewAllBUtton3];
     
     scrollView3 = [[UIScrollView alloc]init];
-    scrollView3.frame = CGRectMake(0, 50 + (length + spaceH + buttonLabelFont + 82) * 2, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 1);
+    scrollView3.frame = CGRectMake(0, 50 + (length + spaceH + buttonLabelFont + 82) * 2, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 33);
     scrollView3.showsHorizontalScrollIndicator = NO;
     scrollView3.userInteractionEnabled = YES;
     scrollView3.bounces = YES;
-    [scrollView3 setContentSize:CGSizeMake(spaceLeft + (spaceW + length) * 6, length + spaceH + buttonLabelFont + 1)];
+    [scrollView3 setContentSize:CGSizeMake(spaceLeft + (spaceW + length) * 12, length + spaceH + buttonLabelFont + 1)];
     scrollView3.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView3];
     
     buttonThree1= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 0, 0, length, length)];
-    [buttonThree1 setImage:[UIImage imageNamed:@"Chaos-illusion.png"] forState:UIControlStateNormal];
+    [buttonThree1 setImage:[UIImage imageNamed:@"M&A.png"] forState:UIControlStateNormal];
     [buttonThree1 addTarget:self
                      action:@selector(buttonThree1Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView3 addSubview:buttonThree1];
@@ -417,13 +423,13 @@
     [scrollView3 addSubview:buttonThree2];
     
     buttonThree3= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 2, 0, length, length)];
-    [buttonThree3 setImage:[UIImage imageNamed:@"M&A.png"] forState:UIControlStateNormal];
+    [buttonThree3 setImage:[UIImage imageNamed:@"蜃気楼.png"] forState:UIControlStateNormal];
     [buttonThree3 addTarget:self
                      action:@selector(buttonThree3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView3 addSubview:buttonThree3];
     
     buttonThree4= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 3, 0, length, length)];
-    [buttonThree4 setImage:[UIImage imageNamed:@"WEAK-END.png"] forState:UIControlStateNormal];
+    [buttonThree4 setImage:[UIImage imageNamed:@"ぽんでっくす.png"] forState:UIControlStateNormal];
     [buttonThree4 addTarget:self
                      action:@selector(buttonThree4Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView3 addSubview:buttonThree4];
@@ -435,14 +441,51 @@
     [scrollView3 addSubview:buttonThree5];
     
     buttonThree6= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 5, 0, length, length)];
-    [buttonThree6 setImage:[UIImage imageNamed:@"蜃気楼.png"] forState:UIControlStateNormal];
+    [buttonThree6 setImage:[UIImage imageNamed:@"Яooz-Leef.png"] forState:UIControlStateNormal];
     [buttonThree6 addTarget:self
                      action:@selector(buttonThree6Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView3 addSubview:buttonThree6];
     
+    buttonThree7= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 6, 0, length, length)];
+    [buttonThree7 setImage:[UIImage imageNamed:@"WEAK-END.png"] forState:UIControlStateNormal];
+    [buttonThree7 addTarget:self
+                     action:@selector(buttonThree7Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView3 addSubview:buttonThree7];
+    
+    buttonThree8= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 7, 0, length, length)];
+    [buttonThree8 setImage:[UIImage imageNamed:@"Million-Dollars.png"] forState:UIControlStateNormal];
+    [buttonThree8 addTarget:self
+                     action:@selector(buttonThree8Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView3 addSubview:buttonThree8];
+    
+    buttonThree9= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 8, 0, length, length)];
+    [buttonThree9 setImage:[UIImage imageNamed:@"Coming-Soon.jpg"] forState:UIControlStateNormal];
+    [buttonThree9 addTarget:self
+                     action:@selector(buttonThree9Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView3 addSubview:buttonThree9];
+    
+    buttonThree10= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 9, 0, length, length)];
+    [buttonThree10 setImage:[UIImage imageNamed:@"Chaos-illusion.png"] forState:UIControlStateNormal];
+    [buttonThree10 addTarget:self
+                     action:@selector(buttonThree10Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView3 addSubview:buttonThree10];
+    
+    buttonThree11= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 10, 0, length, length)];
+    [buttonThree11 setImage:[UIImage imageNamed:@"Addiction？.png"] forState:UIControlStateNormal];
+    [buttonThree11 addTarget:self
+                     action:@selector(buttonThree11Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView3 addSubview:buttonThree11];
+    
+    buttonThree12= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 11, 0, length, length)];
+    [buttonThree12 setImage:[UIImage imageNamed:@"奴等.png"] forState:UIControlStateNormal];
+    [buttonThree12 addTarget:self
+                     action:@selector(buttonThree12Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView3 addSubview:buttonThree12];
+    
+    
     buttonThree1Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 0, length + spaceH, length, buttonLabelFont + 1)];
     buttonThree1Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
-    buttonThree1Label.text = @"Chaos-illusion";
+    buttonThree1Label.text = @"M&A";
     buttonThree1Label.numberOfLines = 0;
     [buttonThree1Label sizeToFit];
     [scrollView3 addSubview:buttonThree1Label];
@@ -456,14 +499,14 @@
     
     buttonThree3Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 2, length + spaceH, length, buttonLabelFont + 1)];
     buttonThree3Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
-    buttonThree3Label.text = @"M&A";
+    buttonThree3Label.text = @"蜃気楼";
     buttonThree3Label.numberOfLines = 0;
     [buttonThree3Label sizeToFit];
     [scrollView3 addSubview:buttonThree3Label];
     
     buttonThree4Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 3, length + spaceH, length, buttonLabelFont + 1)];
     buttonThree4Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
-    buttonThree4Label.text = @"WEAK-END";
+    buttonThree4Label.text = @"ぽんでっくす";
     buttonThree4Label.numberOfLines = 0;
     [buttonThree4Label sizeToFit];
     [scrollView3 addSubview:buttonThree4Label];
@@ -477,10 +520,52 @@
     
     buttonThree6Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 5, length + spaceH, length, buttonLabelFont + 1)];
     buttonThree6Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
-    buttonThree6Label.text = @"蜃気楼";
+    buttonThree6Label.text = @"Яooz-Leef";
     buttonThree6Label.numberOfLines = 0;
     [buttonThree6Label sizeToFit];
     [scrollView3 addSubview:buttonThree6Label];
+    
+    buttonThree7Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 6, length + spaceH, length, buttonLabelFont + 1)];
+    buttonThree7Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonThree7Label.text = @"WEAK-END";
+    buttonThree7Label.numberOfLines = 0;
+    [buttonThree7Label sizeToFit];
+    [scrollView3 addSubview:buttonThree7Label];
+    
+    buttonThree8Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 7, length + spaceH, length, buttonLabelFont + 1)];
+    buttonThree8Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonThree8Label.text = @"Million Dollars";
+    buttonThree8Label.numberOfLines = 0;
+    [buttonThree8Label sizeToFit];
+    [scrollView3 addSubview:buttonThree8Label];
+    
+    buttonThree9Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 8, length + spaceH, length, buttonLabelFont + 1)];
+    buttonThree9Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonThree9Label.text = @"せいとんがかり";
+    buttonThree9Label.numberOfLines = 0;
+    [buttonThree9Label sizeToFit];
+    [scrollView3 addSubview:buttonThree9Label];
+    
+    buttonThree10Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 9, length + spaceH, length, buttonLabelFont + 1)];
+    buttonThree10Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonThree10Label.text = @"Chaos illusion";
+    buttonThree10Label.numberOfLines = 0;
+    [buttonThree10Label sizeToFit];
+    [scrollView3 addSubview:buttonThree10Label];
+    
+    buttonThree11Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 10, length + spaceH, length, buttonLabelFont + 1)];
+    buttonThree11Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonThree11Label.text = @"Addiction？";
+    buttonThree11Label.numberOfLines = 0;
+    [buttonThree11Label sizeToFit];
+    [scrollView3 addSubview:buttonThree11Label];
+    
+    buttonThree12Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 11, length + spaceH, length, buttonLabelFont + 1)];
+    buttonThree12Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonThree12Label.text = @"奴等";
+    buttonThree12Label.numberOfLines = 0;
+    [buttonThree12Label sizeToFit];
+    [scrollView3 addSubview:buttonThree12Label];
     
     
     
@@ -497,7 +582,7 @@
     [mainScrollView addSubview:viewAllButton4];
     
     scrollView4 = [[UIScrollView alloc]init];
-    scrollView4.frame = CGRectMake(0, 50 + (length + spaceH + buttonLabelFont + 82) * 3, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 1);
+    scrollView4.frame = CGRectMake(0, 50 + (length + spaceH + buttonLabelFont + 82) * 3, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 33);
     scrollView4.showsHorizontalScrollIndicator = NO;
     scrollView4.userInteractionEnabled = YES;
     scrollView4.bounces = YES;
@@ -598,7 +683,7 @@
     [mainScrollView addSubview:viewAllButton5];
     
     scrollView5 = [[UIScrollView alloc]init];
-    scrollView5.frame = CGRectMake(0, 50 + (length + spaceH + buttonLabelFont + 82) * 4, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 1);
+    scrollView5.frame = CGRectMake(0, 50 + (length + spaceH + buttonLabelFont + 82) * 4, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 33);
     scrollView5.showsHorizontalScrollIndicator = NO;
     scrollView5.userInteractionEnabled = YES;
     scrollView5.bounces = YES;
@@ -980,6 +1065,8 @@
     [self performSegueWithIdentifier:@"showDirect" sender:self];
 }
 
+
+
 -(void)buttonThree1Detail:(UIButton *)button{
     whichList = @"band";
     flag = 1;
@@ -1016,6 +1103,44 @@
     flag = 6;
     [self performSegueWithIdentifier:@"showDirect" sender:self];
 }
+
+-(void)buttonThree7Detail:(UIButton *)button{
+    whichList = @"band";
+    flag = 7;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonThree8Detail:(UIButton *)button{
+    whichList = @"band";
+    flag = 8;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonThree9Detail:(UIButton *)button{
+    whichList = @"band";
+    flag = 9;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonThree10Detail:(UIButton *)button{
+    whichList = @"band";
+    flag = 10;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonThree11Detail:(UIButton *)button{
+    whichList = @"band";
+    flag = 11;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonThree12Detail:(UIButton *)button{
+    whichList = @"band";
+    flag = 12;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+
 
 -(void)buttonFour1Detail:(UIButton *)button{
     whichList = @"performance";

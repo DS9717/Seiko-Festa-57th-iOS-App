@@ -59,6 +59,11 @@
 		FA0F10E71C9E7F1200AF0155 /* 恋愛偏差値.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0F10E51C9E7F1200AF0155 /* 恋愛偏差値.png */; };
 		FA0F10E91C9E7F2500AF0155 /* 少林寺憲法部演武会.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0F10E81C9E7F2500AF0155 /* 少林寺憲法部演武会.png */; };
 		FA0F10EB1C9E7F3100AF0155 /* 剣道部.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0F10EA1C9E7F3100AF0155 /* 剣道部.png */; };
+		FA6CEB911CA026CB002571EF /* Coming-Soon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA6CEB901CA026CB002571EF /* Coming-Soon.jpg */; };
+		FA8098A71C9FF6B400B2E939 /* Addiction？.png in Resources */ = {isa = PBXBuildFile; fileRef = FA8098A31C9FF6B400B2E939 /* Addiction？.png */; };
+		FA8098A81C9FF6B400B2E939 /* Million-Dollars.png in Resources */ = {isa = PBXBuildFile; fileRef = FA8098A41C9FF6B400B2E939 /* Million-Dollars.png */; };
+		FA8098A91C9FF6B400B2E939 /* 奴等.png in Resources */ = {isa = PBXBuildFile; fileRef = FA8098A51C9FF6B400B2E939 /* 奴等.png */; };
+		FA8098AA1C9FF6B400B2E939 /* Яooz-Leef.png in Resources */ = {isa = PBXBuildFile; fileRef = FA8098A61C9FF6B400B2E939 /* Яooz-Leef.png */; };
 		FAA39AFA1C9D089C00A1B697 /* Flapjack.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA39AF41C9D089C00A1B697 /* Flapjack.png */; };
 		FAA39AFB1C9D089C00A1B697 /* クレープブレーク.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA39AF51C9D089C00A1B697 /* クレープブレーク.png */; };
 		FAA39AFC1C9D089C00A1B697 /* 塩焼きそば　麺’sRUNRUN.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA39AF61C9D089C00A1B697 /* 塩焼きそば　麺’sRUNRUN.png */; };
@@ -178,6 +183,11 @@
 		FA0F10E51C9E7F1200AF0155 /* 恋愛偏差値.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "恋愛偏差値.png"; sourceTree = "<group>"; };
 		FA0F10E81C9E7F2500AF0155 /* 少林寺憲法部演武会.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "少林寺憲法部演武会.png"; sourceTree = "<group>"; };
 		FA0F10EA1C9E7F3100AF0155 /* 剣道部.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "剣道部.png"; sourceTree = "<group>"; };
+		FA6CEB901CA026CB002571EF /* Coming-Soon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Coming-Soon.jpg"; sourceTree = "<group>"; };
+		FA8098A31C9FF6B400B2E939 /* Addiction？.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Addiction？.png"; sourceTree = "<group>"; };
+		FA8098A41C9FF6B400B2E939 /* Million-Dollars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Million-Dollars.png"; sourceTree = "<group>"; };
+		FA8098A51C9FF6B400B2E939 /* 奴等.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "奴等.png"; sourceTree = "<group>"; };
+		FA8098A61C9FF6B400B2E939 /* Яooz-Leef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Яooz-Leef.png"; sourceTree = "<group>"; };
 		FAA39AF41C9D089C00A1B697 /* Flapjack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flapjack.png; sourceTree = "<group>"; };
 		FAA39AF51C9D089C00A1B697 /* クレープブレーク.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "クレープブレーク.png"; sourceTree = "<group>"; };
 		FAA39AF61C9D089C00A1B697 /* 塩焼きそば　麺’sRUNRUN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "塩焼きそば　麺’sRUNRUN.png"; sourceTree = "<group>"; };
@@ -341,6 +351,7 @@
 				FAA39B491C9D330E00A1B697 /* Left.png */,
 				FAA39B4A1C9D330E00A1B697 /* map.jpg */,
 				FAA39B4B1C9D330E00A1B697 /* Right.png */,
+				FA6CEB901CA026CB002571EF /* Coming-Soon.jpg */,
 				FAA39B441C9D2D0400A1B697 /* バナー */,
 				FAA39B001C9D093200A1B697 /* 角丸アイコン */,
 			);
@@ -499,13 +510,17 @@
 		FAA39B231C9D18CF00A1B697 /* Band */ = {
 			isa = PBXGroup;
 			children = (
-				FAA39B241C9D190100A1B697 /* Chaos-illusion.png */,
-				FAA39B191C9D18CA00A1B697 /* Flat-Flight.png */,
 				FAA39B1A1C9D18CA00A1B697 /* M&A.png */,
-				FAA39B261C9D190700A1B697 /* WEAK-END.png */,
-				FAA39B1B1C9D18CA00A1B697 /* エストレーラ.png */,
+				FAA39B191C9D18CA00A1B697 /* Flat-Flight.png */,
 				FAA39B1D1C9D18CA00A1B697 /* 蜃気楼.png */,
 				FAA39B1C1C9D18CA00A1B697 /* ぽんでっくす.png */,
+				FAA39B1B1C9D18CA00A1B697 /* エストレーラ.png */,
+				FA8098A61C9FF6B400B2E939 /* Яooz-Leef.png */,
+				FAA39B261C9D190700A1B697 /* WEAK-END.png */,
+				FA8098A41C9FF6B400B2E939 /* Million-Dollars.png */,
+				FAA39B241C9D190100A1B697 /* Chaos-illusion.png */,
+				FA8098A31C9FF6B400B2E939 /* Addiction？.png */,
+				FA8098A51C9FF6B400B2E939 /* 奴等.png */,
 			);
 			name = Band;
 			sourceTree = "<group>";
@@ -643,10 +658,12 @@
 				FAA39B211C9D18CA00A1B697 /* ぽんでっくす.png in Resources */,
 				7EF2D8F61C9D57CE008F76E8 /* M&A-タイムテーブル.png in Resources */,
 				7EF2D8DC1C9D4FAB008F76E8 /* ボールぽこぽこ-タイムテーブル.png in Resources */,
+				FA8098AA1C9FF6B400B2E939 /* Яooz-Leef.png in Resources */,
 				FAA39AFB1C9D089C00A1B697 /* クレープブレーク.png in Resources */,
 				7EF2D8EA1C9D5101008F76E8 /* ギネスに挑戦！！-タイムテーブル.png in Resources */,
 				FAA39B3A1C9D22FF00A1B697 /* ○○男子No.1決定戦.png in Resources */,
 				FA0F10E21C9E7F0300AF0155 /* 吹奏楽部.png in Resources */,
+				FA8098A71C9FF6B400B2E939 /* Addiction？.png in Resources */,
 				FAA39B1E1C9D18CA00A1B697 /* Flat-Flight.png in Resources */,
 				FAA39B2A1C9D1EA000A1B697 /* 英語劇講堂劇.png in Resources */,
 				FAA39B3D1C9D22FF00A1B697 /* ギネスに挑戦！！.png in Resources */,
@@ -668,9 +685,11 @@
 				7E0DC8B31C9D673F00B45F37 /* 校長対談-タイムテーブル.png in Resources */,
 				7E0DC8B51C9D6B3500B45F37 /* 恋愛偏差値-タイムテーブル.png in Resources */,
 				7EF2D8F81C9D57CE008F76E8 /* 蜃気楼-タイムテーブル.png in Resources */,
+				FA6CEB911CA026CB002571EF /* Coming-Soon.jpg in Resources */,
 				7E0DC8AB1C9D64A100B45F37 /* ミュージックサロン-タイムテーブル小講堂.png in Resources */,
 				FAA39AFA1C9D089C00A1B697 /* Flapjack.png in Resources */,
 				FA0F10E71C9E7F1200AF0155 /* 恋愛偏差値.png in Resources */,
+				FA8098A91C9FF6B400B2E939 /* 奴等.png in Resources */,
 				FAA39B221C9D18CA00A1B697 /* 蜃気楼.png in Resources */,
 				7E0DC8C51C9D7E9800B45F37 /* icon-60@2x.png in Resources */,
 				FAA39B1F1C9D18CA00A1B697 /* M&A.png in Resources */,
@@ -704,6 +723,7 @@
 				7E0DC8C21C9D7E9800B45F37 /* icon-29@3x.png in Resources */,
 				FAA39B621C9D458600A1B697 /* 綿's-candy.png in Resources */,
 				FAA39B411C9D22FF00A1B697 /* 春夜祭.png in Resources */,
+				FA8098A81C9FF6B400B2E939 /* Million-Dollars.png in Resources */,
 				FAA39B5C1C9D458600A1B697 /* Juicy-Juicer.png in Resources */,
 				FAA39B5D1C9D458600A1B697 /* 駅弁.png in Resources */,
 				FAA39AFD1C9D089C00A1B697 /* 俺のケバブ.jpg in Resources */,
