@@ -14,6 +14,22 @@
 
 @interface ViewController : UIViewController <UIApplicationDelegate>{
     
+    //左側余白
+    int spaceLeft;
+    //アイコン縦横長
+    int length;
+    //アイコン間スペース(横)
+    int spaceW;
+    //アイコン-テキスト間スペース(縦)
+    int spaceH;
+    //label フォントサイズ
+    int labelFont;
+    //allButon フォントサイズ
+    int allButtonFont;
+    //buttonLabel フォントサイズ
+    int buttonLabelFont;
+    
+    
     UIImage *featuredImage;
     UIImage *featuredImage2;
     

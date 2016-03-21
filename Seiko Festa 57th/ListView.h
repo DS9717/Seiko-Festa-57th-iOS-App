@@ -11,6 +11,12 @@
 
 @interface ListView : UIViewController{
     
+    int spaceLeft;
+    int length;
+    int spaceH;
+    int fontSize;
+    
+    
     NSString *_whatList;
     
     UIScrollView *scrollView;

@@ -520,14 +520,14 @@
 			isa = PBXGroup;
 			children = (
 				FAA39B2D1C9D1EB100A1B697 /* Grand-Finale.png */,
-				7ED1CBFF1C9845CA00D4F038 /* グリークラブ.png */,
+				FAA39B291C9D1EA000A1B697 /* 英語劇講堂劇.png */,
 				FAA39B2B1C9D1EAB00A1B697 /* ボールぽこぽこ.png */,
+				7ED1CBFB1C9842A900D4F038 /* 校長対談.png */,
 				FAA39B2F1C9D1F1400A1B697 /* ミュージックサロン.png */,
+				7ED1CBFF1C9845CA00D4F038 /* グリークラブ.png */,
 				FA0F10DE1C9E7F0300AF0155 /* 弦楽オーケストラ部.png */,
 				FA0F10DF1C9E7F0300AF0155 /* 吹奏楽部.png */,
 				FA0F10E01C9E7F0300AF0155 /* 天使の歌声.png */,
-				FAA39B291C9D1EA000A1B697 /* 英語劇講堂劇.png */,
-				7ED1CBFB1C9842A900D4F038 /* 校長対談.png */,
 				FA0F10E41C9E7F1200AF0155 /* 数学研究会模擬講義.png */,
 				FA0F10E51C9E7F1200AF0155 /* 恋愛偏差値.png */,
 				FA0F10E81C9E7F2500AF0155 /* 少林寺憲法部演武会.png */,
