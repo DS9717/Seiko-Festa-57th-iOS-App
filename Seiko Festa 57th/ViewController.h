@@ -14,8 +14,6 @@
 
 @interface ViewController : UIViewController <UIApplicationDelegate>{
     
-    int b;
-    
     //左側余白
     int spaceLeft;
     //アイコン縦横長

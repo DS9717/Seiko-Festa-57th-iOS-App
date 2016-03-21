@@ -18,10 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    int a;
-    
+    // Do any additional setup after loading the view.    
     
     //iOSのバージョンで分岐
     float iOSVersion = [[[UIDevice currentDevice] systemVersion] floatValue];
