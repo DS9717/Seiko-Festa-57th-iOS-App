@@ -27,6 +27,7 @@
 		7E0DC8C91C9D7FAA00B45F37 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0DC8C71C9D7FAA00B45F37 /* Default-568h@2x.png */; };
 		7E0DC8CA1C9D7FAA00B45F37 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0DC8C81C9D7FAA00B45F37 /* Default@2x.png */; };
 		7E3EB47B1C79DAB900F3B2A0 /* TimetableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3EB47A1C79DAB900F3B2A0 /* TimetableViewController.m */; };
+		7E3FE6E81CA0278D000E0281 /* MyriadPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7E3FE6E71CA02782000E0281 /* MyriadPro-Regular.otf */; };
 		7E4D55AE1C49315C00BFE19C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4D55AD1C49315C00BFE19C /* main.m */; };
 		7E4D55B11C49315C00BFE19C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4D55B01C49315C00BFE19C /* AppDelegate.m */; };
 		7E4D55B41C49315C00BFE19C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4D55B31C49315C00BFE19C /* ViewController.m */; };
@@ -142,6 +143,7 @@
 		7E0DC8C81C9D7FAA00B45F37 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		7E3EB4791C79DAB900F3B2A0 /* TimetableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimetableViewController.h; path = ../TimetableViewController.h; sourceTree = "<group>"; };
 		7E3EB47A1C79DAB900F3B2A0 /* TimetableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimetableViewController.m; path = ../TimetableViewController.m; sourceTree = "<group>"; };
+		7E3FE6E71CA02782000E0281 /* MyriadPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Regular.otf"; sourceTree = "<group>"; };
 		7E4D55A81C49315B00BFE19C /* Seiko Festa 57th.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Seiko Festa 57th.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4D55AC1C49315C00BFE19C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E4D55AD1C49315C00BFE19C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -269,6 +271,14 @@
 			name = Icons;
 			sourceTree = "<group>";
 		};
+		7E3FE6E61CA0276B000E0281 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7E3FE6E71CA02782000E0281 /* MyriadPro-Regular.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		7E4D559F1C49315B00BFE19C = {
 			isa = PBXGroup;
 			children = (
@@ -305,6 +315,7 @@
 				7E4D55B81C49315C00BFE19C /* Images.xcassets */,
 				7E4D55D11C4944F300BFE19C /* Images */,
 				7E0DC8BA1C9D7E5900B45F37 /* Icons */,
+				7E3FE6E61CA0276B000E0281 /* Fonts */,
 				7E4D55AB1C49315B00BFE19C /* Supporting Files */,
 			);
 			path = "Seiko Festa 57th";
@@ -644,6 +655,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E3FE6E81CA0278D000E0281 /* MyriadPro-Regular.otf in Resources */,
 				7E0DC8A31C9D61AC00B45F37 /* Flat-Flight-タイムテーブル.png in Resources */,
 				FAA39B2C1C9D1EAB00A1B697 /* ボールぽこぽこ.png in Resources */,
 				FAA39B211C9D18CA00A1B697 /* ぽんでっくす.png in Resources */,
