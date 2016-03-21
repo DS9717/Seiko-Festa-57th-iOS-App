@@ -70,7 +70,7 @@
         buttonLabelFont = 13;
     } else if (r.size.width == 414) {
         //iPhone 6 plus/6s plus
-        
+    
     }
     
     // UIScrollViewのインスタンス化
