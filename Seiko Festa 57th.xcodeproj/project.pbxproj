@@ -366,7 +366,6 @@
 				FAA39B4A1C9D330E00A1B697 /* map.jpg */,
 				FAA39B4B1C9D330E00A1B697 /* Right.png */,
 				FA6CEB901CA026CB002571EF /* Coming-Soon.jpg */,
-				FAA39B441C9D2D0400A1B697 /* バナー */,
 				FAA39B001C9D093200A1B697 /* 角丸アイコン */,
 				FAA39B441C9D2D0400A1B697 /* バナー */,
 				7EF2D8C81C9D4E6B008F76E8 /* タイムテーブル */,
@@ -638,7 +637,7 @@
 				TargetAttributes = {
 					7E4D55A71C49315B00BFE19C = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = TAE9KC7SWK;
+						DevelopmentTeam = 3GKM8LRN87;
 					};
 					7E4D55C01C49315C00BFE19C = {
 						CreatedOnToolsVersion = 6.2;
