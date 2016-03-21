@@ -40,7 +40,10 @@
         fontSize = 15;
     } else if (r.size.width == 375) {
         //iPhone 6/6s
-        
+        spaceLeft = 16;
+        length = 155.5;
+        spaceH = 8;
+        fontSize = 15;
     } else if (r.size.width == 414) {
         //iPhone 6 plus/6s plus
         
