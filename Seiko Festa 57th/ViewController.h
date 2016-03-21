@@ -29,6 +29,7 @@
     //buttonLabel フォントサイズ
     int buttonLabelFont;
     
+    
     UIImage *featuredImage;
     UIImage *featuredImage2;
     

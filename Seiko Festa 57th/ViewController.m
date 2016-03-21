@@ -73,6 +73,7 @@
     
     }
     
+    
     // UIScrollViewのインスタンス化
     mainScrollView = [[UIScrollView alloc]init];
     //CGRectMake(0, 64+バナー, 横, 縦-64-バナー-3-49);
