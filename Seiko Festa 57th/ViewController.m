@@ -21,14 +21,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
         
     imageNumber = 0;
     imageNumber2 = 1;
     
     organizationFeaturedImages = @[@"Flat Flight バナー1.jpg", @"ボールぽこぽこ バナー.jpg", @"ミュージックサロン バナー.JPG"];
     
-    featuredImageButton = [[UIButton alloc]initWithFrame:CGRectMake(320, 64, 320, 130)];
-    featuredImageButton2 = [[UIButton alloc]initWithFrame:CGRectMake(320, 64, 320, 130)];
+    featuredImageButton = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width, 64, self.view.bounds.size.width, self.view.bounds.size.width * 0.4)];
+    featuredImageButton2 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width, 64, self.view.bounds.size.width, self.view.bounds.size.width * 0.4)];
     
     [self featuredImageIn];
     
@@ -46,9 +48,35 @@
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
+    //画面サイズ
+    CGRect r = [[UIScreen mainScreen] bounds];
+    if (r.size.width == 320) {
+        //iPhone 4s/5/5c/5s
+        spaceLeft = 16;
+        length = 72;
+        spaceW = 20;
+        spaceH = 8;
+        labelFont = 18;
+        allButtonFont = 12; 
+        buttonLabelFont = 13;
+    } else if (r.size.width == 375) {
+        //iPhone 6/6s
+        spaceLeft = 15;
+        length = 94;
+        spaceW = 16;
+        spaceH = 12;
+        labelFont = 18;
+        allButtonFont = 12;
+        buttonLabelFont = 13;
+    } else if (r.size.width == 414) {
+        //iPhone 6 plus/6s plus
+        
+    }
+    
     // UIScrollViewのインスタンス化
     mainScrollView = [[UIScrollView alloc]init];
-    mainScrollView.frame = CGRectMake(0, 192, self.view.bounds.size.width, 327);
+    //CGRectMake(0, 64+バナー, 横, 縦-64-バナー-3-49);
+    mainScrollView.frame = CGRectMake(0, 64 + self.view.bounds.size.width * 0.4, self.view.bounds.size.width, self.view.bounds.size.height - self.view.bounds.size.width * 0.4 - 116);
     //横スクロールのインジケータを非表示にする
     mainScrollView.showsHorizontalScrollIndicator = NO;
     
@@ -57,208 +85,208 @@
     mainScrollView.bounces = YES;
     mainScrollView.backgroundColor = [UIColor clearColor];
     //スクロールの範囲を設定
-    [mainScrollView setContentSize:CGSizeMake(self.view.bounds.size.width, 880)];
+    [mainScrollView setContentSize:CGSizeMake(self.view.bounds.size.width, (length + spaceH + buttonLabelFont + 82) * 5)];
     
     
-    foodLabel = [[UILabel alloc]initWithFrame:CGRectMake(16,16, 45, 18)];
-    foodLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:18];
+    foodLabel = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + buttonLabelFont + 84) * 0, 45, labelFont + 4)];
+    foodLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:labelFont];
     foodLabel.text = @"Food";
     [mainScrollView addSubview:foodLabel];
     
-    viewAllButton1 = [[UIButton alloc]initWithFrame:CGRectMake(240, 19, 64, 12)];
+    viewAllButton1 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 80, 19 + (length + spaceH + buttonLabelFont + 82) * 0, 64, allButtonFont)];
     [viewAllButton1 setTitle:@"すべて見る" forState:UIControlStateNormal];
-    viewAllButton1.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:12];
+    viewAllButton1.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:allButtonFont];
     [viewAllButton1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [viewAllButton1 addTarget:self action:@selector(viewAll1:) forControlEvents:UIControlEventTouchUpInside];
     [mainScrollView addSubview:viewAllButton1];
     
     scrollView1 = [[UIScrollView alloc]init];
-    scrollView1.frame = CGRectMake(0, 50, self.view.bounds.size.width, 110);
+    scrollView1.frame = CGRectMake(0, 50 + (length + spaceH + buttonLabelFont + 82) * 0, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 1);
     scrollView1.showsHorizontalScrollIndicator = NO;
     scrollView1.userInteractionEnabled = YES;
     scrollView1.bounces = YES;
-    [scrollView1 setContentSize:CGSizeMake(1304, 106)];
+    [scrollView1 setContentSize:CGSizeMake(spaceLeft + (spaceW + length) * 14, length + spaceH + buttonLabelFont + 1)];
     scrollView1.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView1];
     
-    buttonOne1= [[UIButton alloc]initWithFrame:CGRectMake(16, 0, 72, 72)];
+    buttonOne1= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 0, 0, length, length)];
     [buttonOne1 setImage:[UIImage imageNamed:@"鉄板職人.jpg"] forState:UIControlStateNormal];
     [buttonOne1 addTarget:self
                    action:@selector(buttonOne1Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne1];
     
-    buttonOne2= [[UIButton alloc]initWithFrame:CGRectMake(108, 0, 72, 72)];
+    buttonOne2= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 1, 0, length, length)];
     [buttonOne2 setImage:[UIImage imageNamed:@"塩焼きそば　麺’sRUNRUN.png"] forState:UIControlStateNormal];
     [buttonOne2 addTarget:self
                    action:@selector(buttonOne2Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne2];
     
-    buttonOne3= [[UIButton alloc]initWithFrame:CGRectMake(200, 0, 72, 72)];
+    buttonOne3= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 2, 0, length, length)];
     [buttonOne3 setImage:[UIImage imageNamed:@"麺☆恋.png"] forState:UIControlStateNormal];
     [buttonOne3 addTarget:self
                    action:@selector(buttonOne3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne3];
     
-    buttonOne4= [[UIButton alloc]initWithFrame:CGRectMake(292, 0, 72, 72)];
+    buttonOne4= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 3, 0, length, length)];
     [buttonOne4 setImage:[UIImage imageNamed:@"俺のケバブ.jpg"] forState:UIControlStateNormal];
     [buttonOne4 addTarget:self
                    action:@selector(buttonOne4Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne4];
     
-    buttonOne5= [[UIButton alloc]initWithFrame:CGRectMake(384, 0, 72, 72)];
+    buttonOne5= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 4, 0, length, length)];
     [buttonOne5 setImage:[UIImage imageNamed:@"鳥角.png"] forState:UIControlStateNormal];
     [buttonOne5 addTarget:self
                    action:@selector(buttonOne5Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne5];
     
-    buttonOne6= [[UIButton alloc]initWithFrame:CGRectMake(476, 0, 72, 72)];
+    buttonOne6= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 5, 0, length, length)];
     [buttonOne6 setImage:[UIImage imageNamed:@"クレープブレーク.png"] forState:UIControlStateNormal];
     [buttonOne6 addTarget:self
                    action:@selector(buttonOne6Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne6];
     
-    buttonOne7= [[UIButton alloc]initWithFrame:CGRectMake(568, 0, 72, 72)];
+    buttonOne7= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 6, 0, length, length)];
     [buttonOne7 setImage:[UIImage imageNamed:@"Flapjack.png"] forState:UIControlStateNormal];
     [buttonOne7 addTarget:self
                    action:@selector(buttonOne7Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne7];
     
-    buttonOne8= [[UIButton alloc]initWithFrame:CGRectMake(660, 0, 72, 72)];
+    buttonOne8= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 7, 0, length, length)];
     [buttonOne8 setImage:[UIImage imageNamed:@"chocolat-π.png"] forState:UIControlStateNormal];
     [buttonOne8 addTarget:self
                    action:@selector(buttonOne8Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne8];
     
-    buttonOne9= [[UIButton alloc]initWithFrame:CGRectMake(752, 0, 72, 72)];
+    buttonOne9= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 8, 0, length, length)];
     [buttonOne9 setImage:[UIImage imageNamed:@"Juicy-Juicer.png"] forState:UIControlStateNormal];
     [buttonOne9 addTarget:self
                    action:@selector(buttonOne9Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne9];
     
-    buttonOne10= [[UIButton alloc]initWithFrame:CGRectMake(844, 0, 72, 72)];
+    buttonOne10= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 9, 0, length, length)];
     [buttonOne10 setImage:[UIImage imageNamed:@"綿's-candy.png"] forState:UIControlStateNormal];
     [buttonOne10 addTarget:self
                    action:@selector(buttonOne10Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne10];
     
-    buttonOne11= [[UIButton alloc]initWithFrame:CGRectMake(936, 0, 72, 72)];
+    buttonOne11= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 10, 0, length, length)];
     [buttonOne11 setImage:[UIImage imageNamed:@"氷菓.png"] forState:UIControlStateNormal];
     [buttonOne11 addTarget:self
                    action:@selector(buttonOne11Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne11];
     
-    buttonOne12= [[UIButton alloc]initWithFrame:CGRectMake(1028, 0, 72, 72)];
+    buttonOne12= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 11, 0, length, length)];
     [buttonOne12 setImage:[UIImage imageNamed:@"山手の泉.png"] forState:UIControlStateNormal];
     [buttonOne12 addTarget:self
                    action:@selector(buttonOne12Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne12];
     
-    buttonOne13= [[UIButton alloc]initWithFrame:CGRectMake(1120, 0, 72, 72)];
+    buttonOne13= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 12, 0, length, length)];
     [buttonOne13 setImage:[UIImage imageNamed:@"題名のない音楽喫茶.png"] forState:UIControlStateNormal];
     [buttonOne13 addTarget:self
                    action:@selector(buttonOne13Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne13];
     
-    buttonOne14= [[UIButton alloc]initWithFrame:CGRectMake(1212, 0, 72, 72)];
+    buttonOne14= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 13, 0, length, length)];
     [buttonOne14 setImage:[UIImage imageNamed:@"駅弁.png"] forState:UIControlStateNormal];
     [buttonOne14 addTarget:self
                    action:@selector(buttonOne14Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne14];
     
     
-    buttonOne1Label = [[UILabel alloc]initWithFrame:CGRectMake(16, 80, 72, 14)];
-    buttonOne1Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonOne1Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 0, length + spaceH, length, buttonLabelFont + 1)];
+    buttonOne1Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonOne1Label.text = @"鉄板職人";
     buttonOne1Label.numberOfLines = 0;
     [buttonOne1Label sizeToFit];
     [scrollView1 addSubview:buttonOne1Label];
     
-    buttonOne2Label = [[UILabel alloc]initWithFrame:CGRectMake(108, 80, 72, 14)];
-    buttonOne2Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonOne2Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 1, length + spaceH, length, buttonLabelFont + 1)];
+    buttonOne2Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonOne2Label.text = @"麺’sRUNRUN";
     buttonOne2Label.numberOfLines = 0;
     [buttonOne2Label sizeToFit];
     [scrollView1 addSubview:buttonOne2Label];
     
-    buttonOne3Label = [[UILabel alloc]initWithFrame:CGRectMake(200, 80, 72, 14)];
-    buttonOne3Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonOne3Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 2, length + spaceH, length, buttonLabelFont + 1)];
+    buttonOne3Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonOne3Label.text = @"麺☆恋";
     buttonOne3Label.numberOfLines = 0;
     [buttonOne3Label sizeToFit];
     [scrollView1 addSubview:buttonOne3Label];
     
-    buttonOne4Label = [[UILabel alloc]initWithFrame:CGRectMake(292, 80, 72, 14)];
-    buttonOne4Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonOne4Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 3, length + spaceH, length, buttonLabelFont + 1)];
+    buttonOne4Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonOne4Label.text = @"俺のケバブ";
     buttonOne4Label.numberOfLines = 0;
     [buttonOne4Label sizeToFit];
     [scrollView1 addSubview:buttonOne4Label];
     
-    buttonOne5Label = [[UILabel alloc]initWithFrame:CGRectMake(384, 80, 72, 14)];
-    buttonOne5Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonOne5Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 4, length + spaceH, length, buttonLabelFont + 1)];
+    buttonOne5Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonOne5Label.text = @"鳥角";
     buttonOne5Label.numberOfLines = 0;
     [buttonOne5Label sizeToFit];
     [scrollView1 addSubview:buttonOne5Label];
     
-    buttonOne6Label = [[UILabel alloc]initWithFrame:CGRectMake(476, 80, 72, 14)];
-    buttonOne6Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonOne6Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 5, length + spaceH, length, buttonLabelFont + 1)];
+    buttonOne6Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonOne6Label.text = @"クレープブレーク";
     buttonOne6Label.numberOfLines = 0;
     [buttonOne6Label sizeToFit];
     [scrollView1 addSubview:buttonOne6Label];
     
-    buttonOne7Label = [[UILabel alloc]initWithFrame:CGRectMake(568, 80, 72, 14)];
-    buttonOne7Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonOne7Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 6, length + spaceH, length, buttonLabelFont + 1)];
+    buttonOne7Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonOne7Label.text = @"Flapjack";
     buttonOne7Label.numberOfLines = 0;
     [buttonOne7Label sizeToFit];
     [scrollView1 addSubview:buttonOne7Label];
     
-    buttonOne8Label = [[UILabel alloc]initWithFrame:CGRectMake(660, 80, 72, 14)];
-    buttonOne8Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonOne8Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 7, length + spaceH, length, buttonLabelFont + 1)];
+    buttonOne8Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonOne8Label.text = @"chocolat π";
     buttonOne8Label.numberOfLines = 0;
     [buttonOne8Label sizeToFit];
     [scrollView1 addSubview:buttonOne8Label];
     
-    buttonOne9Label = [[UILabel alloc]initWithFrame:CGRectMake(752, 80, 72, 14)];
-    buttonOne9Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonOne9Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 8, length + spaceH, length, buttonLabelFont + 1)];
+    buttonOne9Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonOne9Label.text = @"Juicy Juicer";
     buttonOne9Label.numberOfLines = 0;
     [buttonOne9Label sizeToFit];
     [scrollView1 addSubview:buttonOne9Label];
     
-    buttonOne10Label = [[UILabel alloc]initWithFrame:CGRectMake(844, 80, 72, 14)];
-    buttonOne10Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonOne10Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 9, length + spaceH, length, buttonLabelFont + 1)];
+    buttonOne10Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonOne10Label.text = @"綿's Candy";
     buttonOne10Label.numberOfLines = 0;
     [buttonOne10Label sizeToFit];
     [scrollView1 addSubview:buttonOne10Label];
     
-    buttonOne11Label = [[UILabel alloc]initWithFrame:CGRectMake(936, 80, 72, 14)];
-    buttonOne11Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonOne11Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 10, length + spaceH, length, buttonLabelFont + 1)];
+    buttonOne11Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonOne11Label.text = @"氷菓";
     buttonOne11Label.numberOfLines = 0;
     [buttonOne11Label sizeToFit];
     [scrollView1 addSubview:buttonOne11Label];
     
-    buttonOne12Label = [[UILabel alloc]initWithFrame:CGRectMake(1028, 80, 72, 14)];
-    buttonOne12Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonOne12Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 11, length + spaceH, length, buttonLabelFont + 1)];
+    buttonOne12Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonOne12Label.text = @"山手の泉";
     buttonOne12Label.numberOfLines = 0;
     [buttonOne12Label sizeToFit];
     [scrollView1 addSubview:buttonOne12Label];
     
-    buttonOne13Label = [[UILabel alloc]initWithFrame:CGRectMake(1120, 80, 72, 14)];
-    buttonOne13Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonOne13Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 12, length + spaceH, length, buttonLabelFont + 1)];
+    buttonOne13Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonOne13Label.text = @"題名のない音楽喫茶";
     buttonOne13Label.numberOfLines = 0;
     [buttonOne13Label sizeToFit];
     [scrollView1 addSubview:buttonOne13Label];
     
-    buttonOne14Label = [[UILabel alloc]initWithFrame:CGRectMake(1212, 80, 72, 14)];
-    buttonOne14Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonOne14Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 13, length + spaceH, length, buttonLabelFont + 1)];
+    buttonOne14Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonOne14Label.text = @"駅弁";
     buttonOne14Label.numberOfLines = 0;
     [buttonOne14Label sizeToFit];
@@ -267,187 +295,187 @@
     
     
     
-    displayLabel = [[UILabel alloc]initWithFrame:CGRectMake(16,192, 60, 22)];
-    displayLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:18];
+    displayLabel = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + buttonLabelFont + 84) * 1, 60, labelFont + 4)];
+    displayLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:labelFont];
     displayLabel.text = @"Display";
     [mainScrollView addSubview:displayLabel];
     
-    viewAllButton2 = [[UIButton alloc]initWithFrame:CGRectMake(240, 195, 64, 12)];
+    viewAllButton2 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 80, 19 + (length + spaceH + buttonLabelFont + 82) * 1, 64, allButtonFont)];
     [viewAllButton2 setTitle:@"すべて見る" forState:UIControlStateNormal];
-    viewAllButton2.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:12];
+    viewAllButton2.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:allButtonFont];
     [viewAllButton2 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [viewAllButton2 addTarget:self action:@selector(viewAll2:) forControlEvents:UIControlEventTouchUpInside];
     [mainScrollView addSubview:viewAllButton2];
     
     scrollView2 = [[UIScrollView alloc]init];
-    scrollView2.frame = CGRectMake(0, 226, self.view.bounds.size.width, 110);
+    scrollView2.frame = CGRectMake(0, 50 + (length + spaceH + buttonLabelFont + 82) * 1, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 1);
     scrollView2.showsHorizontalScrollIndicator = NO;
     scrollView2.userInteractionEnabled = YES;
     scrollView2.bounces = YES;
-    [scrollView2 setContentSize:CGSizeMake(472, 106)];
+    [scrollView2 setContentSize:CGSizeMake(spaceLeft + (spaceW + length) * 5, length + spaceH + buttonLabelFont + 1)];
     scrollView2.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView2];
     
-    buttonTwo1= [[UIButton alloc]initWithFrame:CGRectMake(16, 0, 72, 72)];
+    buttonTwo1= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 0, 0, length, length)];
     [buttonTwo1 setImage:[UIImage imageNamed:@"英語劇.png"] forState:UIControlStateNormal];
     [buttonTwo1 addTarget:self
                    action:@selector(buttonTwo1Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView2 addSubview:buttonTwo1];
     
-    buttonTwo2= [[UIButton alloc]initWithFrame:CGRectMake(108, 0, 72, 72)];
+    buttonTwo2= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 1, 0, length, length)];
     [buttonTwo2 setImage:[UIImage imageNamed:@"高3英語劇.png"] forState:UIControlStateNormal];
     [buttonTwo2 addTarget:self
                    action:@selector(buttonTwo2Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView2 addSubview:buttonTwo2];
     
-    buttonTwo3= [[UIButton alloc]initWithFrame:CGRectMake(200, 0, 72, 72)];
+    buttonTwo3= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 2, 0, length, length)];
     [buttonTwo3 setImage:[UIImage imageNamed:@"迷いの国のアリス.png"] forState:UIControlStateNormal];
     [buttonTwo3 addTarget:self
                    action:@selector(buttonTwo3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView2 addSubview:buttonTwo3];
     
-    buttonTwo4= [[UIButton alloc]initWithFrame:CGRectMake(292, 0, 72, 72)];
+    buttonTwo4= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 3, 0, length, length)];
     [buttonTwo4 setImage:[UIImage imageNamed:@"Trick×Hark.jpg"] forState:UIControlStateNormal];
     [buttonTwo4 addTarget:self
                    action:@selector(buttonTwo4Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView2 addSubview:buttonTwo4];
     
-    buttonTwo5= [[UIButton alloc]initWithFrame:CGRectMake(384, 0, 72, 72)];
+    buttonTwo5= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 4, 0, length, length)];
     [buttonTwo5 setImage:[UIImage imageNamed:@"インターアクト.png"] forState:UIControlStateNormal];
     [buttonTwo5 addTarget:self
                    action:@selector(buttonTwo5Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView2 addSubview:buttonTwo5];
     
-    buttonTwo1Label = [[UILabel alloc]initWithFrame:CGRectMake(16, 80, 72, 14)];
-    buttonTwo1Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonTwo1Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 0, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo1Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonTwo1Label.text = @"英語劇";
     buttonTwo1Label.numberOfLines = 0;
     [buttonTwo1Label sizeToFit];
     [scrollView2 addSubview:buttonTwo1Label];
     
-    buttonTwo2Label = [[UILabel alloc]initWithFrame:CGRectMake(108, 80, 72, 14)];
-    buttonTwo2Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonTwo2Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 1, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo2Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonTwo2Label.text = @"高3英語劇";
     buttonTwo2Label.numberOfLines = 0;
     [buttonTwo2Label sizeToFit];
     [scrollView2 addSubview:buttonTwo2Label];
     
-    buttonTwo3Label = [[UILabel alloc]initWithFrame:CGRectMake(200, 80, 72, 14)];
-    buttonTwo3Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonTwo3Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 2, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo3Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonTwo3Label.text = @"迷いの国のアリス";
     buttonTwo3Label.numberOfLines = 0;
     [buttonTwo3Label sizeToFit];
     [scrollView2 addSubview:buttonTwo3Label];
     
-    buttonTwo4Label = [[UILabel alloc]initWithFrame:CGRectMake(292, 80, 72, 14)];
-    buttonTwo4Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonTwo4Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 3, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo4Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonTwo4Label.text = @"Trick×Hark";
     buttonTwo4Label.numberOfLines = 0;
     [buttonTwo4Label sizeToFit];
     [scrollView2 addSubview:buttonTwo4Label];
     
-    buttonTwo5Label = [[UILabel alloc]initWithFrame:CGRectMake(384, 80, 72, 14)];
-    buttonTwo5Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonTwo5Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 4, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo5Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonTwo5Label.text = @"インターアクトクラブ";
     buttonTwo5Label.numberOfLines = 0;
     [buttonTwo5Label sizeToFit];
     [scrollView2 addSubview:buttonTwo5Label];
     
     
-    bandLabel = [[UILabel alloc]initWithFrame:CGRectMake(16,368, 60, 22)];
-    bandLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:18];
+    bandLabel = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + buttonLabelFont + 84) * 2, 60, labelFont + 4)];
+    bandLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:labelFont];
     bandLabel.text = @"Band";
     [mainScrollView addSubview:bandLabel];
     
-    viewAllBUtton3 = [[UIButton alloc]initWithFrame:CGRectMake(240, 371, 64, 12)];
+    viewAllBUtton3 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 80, 19 + (length + spaceH + buttonLabelFont + 82) * 2, 64, allButtonFont)];
     [viewAllBUtton3 setTitle:@"すべて見る" forState:UIControlStateNormal];
-    viewAllBUtton3.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:12];
+    viewAllBUtton3.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:allButtonFont];
     [viewAllBUtton3 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [viewAllBUtton3 addTarget:self action:@selector(viewAll3:) forControlEvents:UIControlEventTouchUpInside];
     [mainScrollView addSubview:viewAllBUtton3];
     
     scrollView3 = [[UIScrollView alloc]init];
-    scrollView3.frame = CGRectMake(0, 402, self.view.bounds.size.width, 110);
+    scrollView3.frame = CGRectMake(0, 50 + (length + spaceH + buttonLabelFont + 82) * 2, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 1);
     scrollView3.showsHorizontalScrollIndicator = NO;
     scrollView3.userInteractionEnabled = YES;
     scrollView3.bounces = YES;
-    [scrollView3 setContentSize:CGSizeMake(564, 110)];
+    [scrollView3 setContentSize:CGSizeMake(spaceLeft + (spaceW + length) * 6, length + spaceH + buttonLabelFont + 1)];
     scrollView3.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView3];
     
-    buttonThree1= [[UIButton alloc]initWithFrame:CGRectMake(16, 0, 72, 72)];
+    buttonThree1= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 0, 0, length, length)];
     [buttonThree1 setImage:[UIImage imageNamed:@"Chaos-illusion.png"] forState:UIControlStateNormal];
     [buttonThree1 addTarget:self
                      action:@selector(buttonThree1Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView3 addSubview:buttonThree1];
     
-    buttonThree2= [[UIButton alloc]initWithFrame:CGRectMake(108, 0, 72, 72)];
+    buttonThree2= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 1, 0, length, length)];
     [buttonThree2 setImage:[UIImage imageNamed:@"Flat-Flight.png"] forState:UIControlStateNormal];
     [buttonThree2 addTarget:self
                      action:@selector(buttonThree2Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView3 addSubview:buttonThree2];
     
-    buttonThree3= [[UIButton alloc]initWithFrame:CGRectMake(200, 0, 72, 72)];
+    buttonThree3= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 2, 0, length, length)];
     [buttonThree3 setImage:[UIImage imageNamed:@"M&A.png"] forState:UIControlStateNormal];
     [buttonThree3 addTarget:self
                      action:@selector(buttonThree3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView3 addSubview:buttonThree3];
     
-    buttonThree4= [[UIButton alloc]initWithFrame:CGRectMake(292, 0, 72, 72)];
+    buttonThree4= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 3, 0, length, length)];
     [buttonThree4 setImage:[UIImage imageNamed:@"WEAK-END.png"] forState:UIControlStateNormal];
     [buttonThree4 addTarget:self
                      action:@selector(buttonThree4Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView3 addSubview:buttonThree4];
     
-    buttonThree5= [[UIButton alloc]initWithFrame:CGRectMake(384, 0, 72, 72)];
+    buttonThree5= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 4, 0, length, length)];
     [buttonThree5 setImage:[UIImage imageNamed:@"エストレーラ.png"] forState:UIControlStateNormal];
     [buttonThree5 addTarget:self
                      action:@selector(buttonThree5Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView3 addSubview:buttonThree5];
     
-    buttonThree6= [[UIButton alloc]initWithFrame:CGRectMake(476, 0, 72, 72)];
+    buttonThree6= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 5, 0, length, length)];
     [buttonThree6 setImage:[UIImage imageNamed:@"蜃気楼.png"] forState:UIControlStateNormal];
     [buttonThree6 addTarget:self
                      action:@selector(buttonThree6Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView3 addSubview:buttonThree6];
     
-    buttonThree1Label = [[UILabel alloc]initWithFrame:CGRectMake(16, 80, 72, 14)];
-    buttonThree1Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonThree1Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 0, length + spaceH, length, buttonLabelFont + 1)];
+    buttonThree1Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonThree1Label.text = @"Chaos-illusion";
     buttonThree1Label.numberOfLines = 0;
     [buttonThree1Label sizeToFit];
     [scrollView3 addSubview:buttonThree1Label];
     
-    buttonThree2Label = [[UILabel alloc]initWithFrame:CGRectMake(108, 80, 72, 14)];
-    buttonThree2Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonThree2Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 1, length + spaceH, length, buttonLabelFont + 1)];
+    buttonThree2Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonThree2Label.text = @"Flat-Flight";
     buttonThree2Label.numberOfLines = 0;
     [buttonThree2Label sizeToFit];
     [scrollView3 addSubview:buttonThree2Label];
     
-    buttonThree3Label = [[UILabel alloc]initWithFrame:CGRectMake(200, 80, 72, 14)];
-    buttonThree3Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonThree3Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 2, length + spaceH, length, buttonLabelFont + 1)];
+    buttonThree3Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonThree3Label.text = @"M&A";
     buttonThree3Label.numberOfLines = 0;
     [buttonThree3Label sizeToFit];
     [scrollView3 addSubview:buttonThree3Label];
     
-    buttonThree4Label = [[UILabel alloc]initWithFrame:CGRectMake(292, 80, 72, 14)];
-    buttonThree4Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonThree4Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 3, length + spaceH, length, buttonLabelFont + 1)];
+    buttonThree4Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonThree4Label.text = @"WEAK-END";
     buttonThree4Label.numberOfLines = 0;
     [buttonThree4Label sizeToFit];
     [scrollView3 addSubview:buttonThree4Label];
     
-    buttonThree5Label = [[UILabel alloc]initWithFrame:CGRectMake(384, 80, 72, 14)];
-    buttonThree5Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonThree5Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 4, length + spaceH, length, buttonLabelFont + 1)];
+    buttonThree5Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonThree5Label.text = @"エストレーラ";
     buttonThree5Label.numberOfLines = 0;
     [buttonThree5Label sizeToFit];
     [scrollView3 addSubview:buttonThree5Label];
     
-    buttonThree6Label = [[UILabel alloc]initWithFrame:CGRectMake(476, 80, 72, 14)];
-    buttonThree6Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonThree6Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 5, length + spaceH, length, buttonLabelFont + 1)];
+    buttonThree6Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonThree6Label.text = @"蜃気楼";
     buttonThree6Label.numberOfLines = 0;
     [buttonThree6Label sizeToFit];
@@ -455,100 +483,100 @@
     
     
     
-    performanceLabel = [[UILabel alloc]initWithFrame:CGRectMake(16,544, 100, 22)];
-    performanceLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:18];
+    performanceLabel = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + buttonLabelFont + 84) * 3, 100, labelFont + 4)];
+    performanceLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:labelFont];
     performanceLabel.text = @"Performace";
     [mainScrollView addSubview:performanceLabel];
     
-    viewAllButton4 = [[UIButton alloc]initWithFrame:CGRectMake(240, 547, 64, 12)];
+    viewAllButton4 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 80, 19 + (length + spaceH + buttonLabelFont + 82) * 3, 64, allButtonFont)];
     [viewAllButton4 setTitle:@"すべて見る" forState:UIControlStateNormal];
-    viewAllButton4.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:12];
+    viewAllButton4.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:allButtonFont];
     [viewAllButton4 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [viewAllButton4 addTarget:self action:@selector(viewAll4:) forControlEvents:UIControlEventTouchUpInside];
     [mainScrollView addSubview:viewAllButton4];
     
     scrollView4 = [[UIScrollView alloc]init];
-    scrollView4.frame = CGRectMake(0, 578, self.view.bounds.size.width, 110);
+    scrollView4.frame = CGRectMake(0, 50 + (length + spaceH + buttonLabelFont + 82) * 3, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 1);
     scrollView4.showsHorizontalScrollIndicator = NO;
     scrollView4.userInteractionEnabled = YES;
     scrollView4.bounces = YES;
-    [scrollView4 setContentSize:CGSizeMake(564, 110)];
+    [scrollView4 setContentSize:CGSizeMake(spaceLeft + (spaceW + length) * 6, length + spaceH + buttonLabelFont + 1)];
     scrollView4.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView4];
     
-    buttonFour1= [[UIButton alloc]initWithFrame:CGRectMake(16, 0, 72, 72)];
+    buttonFour1= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 0, 0, length, length)];
     [buttonFour1 setImage:[UIImage imageNamed:@"Grand-Finale.png"] forState:UIControlStateNormal];
     [buttonFour1 addTarget:self
                     action:@selector(buttonFour1Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView4 addSubview:buttonFour1];
     
-    buttonFour2= [[UIButton alloc]initWithFrame:CGRectMake(108, 0, 72, 72)];
+    buttonFour2= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 1, 0, length, length)];
     [buttonFour2 setImage:[UIImage imageNamed:@"英語劇講堂劇.png"] forState:UIControlStateNormal];
     [buttonFour2 addTarget:self
                     action:@selector(buttonFour2Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView4 addSubview:buttonFour2];
     
-    buttonFour3= [[UIButton alloc]initWithFrame:CGRectMake(200, 0, 72, 72)];
+    buttonFour3= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 2, 0, length, length)];
     [buttonFour3 setImage:[UIImage imageNamed:@"ボールぽこぽこ.png"] forState:UIControlStateNormal];
     [buttonFour3 addTarget:self
                     action:@selector(buttonFour3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView4 addSubview:buttonFour3];
     
-    buttonFour4= [[UIButton alloc]initWithFrame:CGRectMake(292, 0, 72, 72)];
+    buttonFour4= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 3, 0, length, length)];
     [buttonFour4 setImage:[UIImage imageNamed:@"校長対談.png"] forState:UIControlStateNormal];
     [buttonFour4 addTarget:self
                     action:@selector(buttonFour4Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView4 addSubview:buttonFour4];
     
-    buttonFour5= [[UIButton alloc]initWithFrame:CGRectMake(384, 0, 72, 72)];
+    buttonFour5= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 4, 0, length, length)];
     [buttonFour5 setImage:[UIImage imageNamed:@"ミュージックサロン.png"] forState:UIControlStateNormal];
     [buttonFour5 addTarget:self
                     action:@selector(buttonFour5Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView4 addSubview:buttonFour5];
     
-    buttonFour6= [[UIButton alloc]initWithFrame:CGRectMake(476, 0, 72, 72)];
+    buttonFour6= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 5, 0, length, length)];
     [buttonFour6 setImage:[UIImage imageNamed:@"グリークラブ.png"] forState:UIControlStateNormal];
     [buttonFour6 addTarget:self
                     action:@selector(buttonFour6Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView4 addSubview:buttonFour6];
     
-    buttonFour1Label = [[UILabel alloc]initWithFrame:CGRectMake(16, 80, 72, 14)];
-    buttonFour1Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonFour1Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 0, length + spaceH, length, buttonLabelFont + 1)];
+    buttonFour1Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonFour1Label.text = @"Grand-Finale";
     buttonFour1Label.numberOfLines = 0;
     [buttonFour1Label sizeToFit];
     [scrollView4 addSubview:buttonFour1Label];
     
-    buttonFour2Label = [[UILabel alloc]initWithFrame:CGRectMake(108, 80, 72, 14)];
-    buttonFour2Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonFour2Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 1, length + spaceH, length, buttonLabelFont + 1)];
+    buttonFour2Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonFour2Label.text = @"英語劇";
     buttonFour2Label.numberOfLines = 0;
     [buttonFour2Label sizeToFit];
     [scrollView4 addSubview:buttonFour2Label];
     
-    buttonFour3Label = [[UILabel alloc]initWithFrame:CGRectMake(200, 80, 72, 14)];
-    buttonFour3Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonFour3Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 2, length + spaceH, length, buttonLabelFont + 1)];
+    buttonFour3Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonFour3Label.text = @"ボールぽこぽこ";
     buttonFour3Label.numberOfLines = 0;
     [buttonFour3Label sizeToFit];
     [scrollView4 addSubview:buttonFour3Label];
     
-    buttonFour4Label = [[UILabel alloc]initWithFrame:CGRectMake(292, 80, 72, 14)];
-    buttonFour4Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonFour4Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 3, length + spaceH, length, buttonLabelFont + 1)];
+    buttonFour4Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonFour4Label.text = @"校長対談";
     buttonFour4Label.numberOfLines = 0;
     [buttonFour4Label sizeToFit];
     [scrollView4 addSubview:buttonFour4Label];
     
-    buttonFour5Label = [[UILabel alloc]initWithFrame:CGRectMake(384, 80, 72, 14)];
-    buttonFour5Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonFour5Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 4, length + spaceH, length, buttonLabelFont + 1)];
+    buttonFour5Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonFour5Label.text = @"ミュージックサロン";
     buttonFour5Label.numberOfLines = 0;
     [buttonFour5Label sizeToFit];
     [scrollView4 addSubview:buttonFour5Label];
     
-    buttonFour6Label = [[UILabel alloc]initWithFrame:CGRectMake(476, 80, 72, 14)];
-    buttonFour6Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonFour6Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 5, length + spaceH, length, buttonLabelFont + 1)];
+    buttonFour6Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonFour6Label.text = @"グリークラブ";
     buttonFour6Label.numberOfLines = 0;
     [buttonFour6Label sizeToFit];
@@ -556,100 +584,100 @@
     
     
     
-    stageLabel = [[UILabel alloc]initWithFrame:CGRectMake(16,720, 50, 22)];
-    stageLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:18];
+    stageLabel = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + buttonLabelFont + 84) * 4, 50, labelFont + 4)];
+    stageLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:labelFont];
     stageLabel.text = @"Stage";
     [mainScrollView addSubview:stageLabel];
     
-    viewAllButton5 = [[UIButton alloc]initWithFrame:CGRectMake(240, 725, 64, 12)];
+    viewAllButton5 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 80, 19 + (length + spaceH + buttonLabelFont + 82) * 4, 64, allButtonFont)];
     [viewAllButton5 setTitle:@"すべて見る" forState:UIControlStateNormal];
-    viewAllButton5.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:12];
+    viewAllButton5.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:allButtonFont];
     [viewAllButton5 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [viewAllButton5 addTarget:self action:@selector(viewAll5:) forControlEvents:UIControlEventTouchUpInside];
     [mainScrollView addSubview:viewAllButton5];
     
     scrollView5 = [[UIScrollView alloc]init];
-    scrollView5.frame = CGRectMake(0, 754, self.view.bounds.size.width, 110);
+    scrollView5.frame = CGRectMake(0, 50 + (length + spaceH + buttonLabelFont + 82) * 4, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 1);
     scrollView5.showsHorizontalScrollIndicator = NO;
     scrollView5.userInteractionEnabled = YES;
     scrollView5.bounces = YES;
-    [scrollView5 setContentSize:CGSizeMake(564, 110)];
+    [scrollView5 setContentSize:CGSizeMake(spaceLeft + (spaceW + length) * 6, length + spaceH + buttonLabelFont + 1)];
     scrollView5.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView5];
     
-    buttonFive1= [[UIButton alloc]initWithFrame:CGRectMake(16, 0, 72, 72)];
+    buttonFive1= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 0, 0, length, length)];
     [buttonFive1 setImage:[UIImage imageNamed:@"春夜祭.png"] forState:UIControlStateNormal];
     [buttonFive1 addTarget:self
                     action:@selector(buttonFive1Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView5 addSubview:buttonFive1];
     
-    buttonFive2= [[UIButton alloc]initWithFrame:CGRectMake(108, 0, 72, 72)];
+    buttonFive2= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 1, 0, length, length)];
     [buttonFive2 setImage:[UIImage imageNamed:@"フォークダンス.png"] forState:UIControlStateNormal];
     [buttonFive2 addTarget:self
                     action:@selector(buttonFive2Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView5 addSubview:buttonFive2];
     
-    buttonFive3= [[UIButton alloc]initWithFrame:CGRectMake(200, 0, 72, 72)];
+    buttonFive3= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 2, 0, length, length)];
     [buttonFive3 setImage:[UIImage imageNamed:@"○○男子No.1決定戦.png"] forState:UIControlStateNormal];
     [buttonFive3 addTarget:self
                     action:@selector(buttonFive3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView5 addSubview:buttonFive3];
     
-    buttonFive4= [[UIButton alloc]initWithFrame:CGRectMake(292, 0, 72, 72)];
+    buttonFive4= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 3, 0, length, length)];
     [buttonFive4 setImage:[UIImage imageNamed:@"Mr.聖光.png"] forState:UIControlStateNormal];
     [buttonFive4 addTarget:self
                     action:@selector(buttonFive4Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView5 addSubview:buttonFive4];
     
-    buttonFive5= [[UIButton alloc]initWithFrame:CGRectMake(384, 0, 72, 72)];
+    buttonFive5= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 4, 0, length, length)];
     [buttonFive5 setImage:[UIImage imageNamed:@"S-O-S.png"] forState:UIControlStateNormal];
     [buttonFive5 addTarget:self
                     action:@selector(buttonFive5Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView5 addSubview:buttonFive5];
     
-    buttonFive6= [[UIButton alloc]initWithFrame:CGRectMake(476, 0, 72, 72)];
+    buttonFive6= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 5, 0, length, length)];
     [buttonFive6 setImage:[UIImage imageNamed:@"替え歌選手権.png"] forState:UIControlStateNormal];
     [buttonFive6 addTarget:self
                     action:@selector(buttonFive6Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView5 addSubview:buttonFive6];
     
-    buttonFive1Label = [[UILabel alloc]initWithFrame:CGRectMake(16, 80, 72, 14)];
-    buttonFive1Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonFive1Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 0, length + spaceH, length, buttonLabelFont + 1)];
+    buttonFive1Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonFive1Label.text = @"春夜祭";
     buttonFive1Label.numberOfLines = 0;
     [buttonFive1Label sizeToFit];
     [scrollView5 addSubview:buttonFive1Label];
     
-    buttonFive2Label = [[UILabel alloc]initWithFrame:CGRectMake(108, 80, 72, 14)];
-    buttonFive2Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonFive2Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 1, length + spaceH, length, buttonLabelFont + 1)];
+    buttonFive2Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonFive2Label.text = @"フォークダンス";
     buttonFive2Label.numberOfLines = 0;
     [buttonFive2Label sizeToFit];
     [scrollView5 addSubview:buttonFive2Label];
     
-    buttonFive3Label = [[UILabel alloc]initWithFrame:CGRectMake(200, 80, 72, 14)];
-    buttonFive3Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonFive3Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 2, length + spaceH, length, buttonLabelFont + 1)];
+    buttonFive3Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonFive3Label.text = @"○○男子No.1決定戦";
     buttonFive3Label.numberOfLines = 0;
     [buttonFive3Label sizeToFit];
     [scrollView5 addSubview:buttonFive3Label];
     
-    buttonFive4Label = [[UILabel alloc]initWithFrame:CGRectMake(292, 80, 72, 14)];
-    buttonFive4Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonFive4Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 3, length + spaceH, length, buttonLabelFont + 1)];
+    buttonFive4Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonFive4Label.text = @"Mr.聖光";
     buttonFive4Label.numberOfLines = 0;
     [buttonFive4Label sizeToFit];
     [scrollView5 addSubview:buttonFive4Label];
     
-    buttonFive5Label = [[UILabel alloc]initWithFrame:CGRectMake(384, 80, 72, 14)];
-    buttonFive5Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonFive5Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 4, length + spaceH, length, buttonLabelFont + 1)];
+    buttonFive5Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonFive5Label.text = @"S-O-S";
     buttonFive5Label.numberOfLines = 0;
     [buttonFive5Label sizeToFit];
     [scrollView5 addSubview:buttonFive5Label];
     
-    buttonFive6Label = [[UILabel alloc]initWithFrame:CGRectMake(476, 80, 72, 14)];
-    buttonFive6Label.font = [UIFont fontWithName:@"HelveticaNeue" size:13];
+    buttonFive6Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 5, length + spaceH, length, buttonLabelFont + 1)];
+    buttonFive6Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
     buttonFive6Label.text = @"替え歌選手権";
     buttonFive6Label.numberOfLines = 0;
     [buttonFive6Label sizeToFit];
@@ -657,24 +685,24 @@
     
     [self.view addSubview:mainScrollView];
     
-    
-    UIView *horizontal1 = [[UIView alloc] initWithFrame:CGRectMake(16, 176, self.view.bounds.size.width - 16, 0.5)];
+    //CGRectMake(spaceLeft, 50 + length + spaceH + buttonLabelFont + 32, self.view.bounds.size.width - 15, 0.5)
+    UIView *horizontal1 = [[UIView alloc] initWithFrame:CGRectMake(spaceLeft, (length + spaceH + buttonLabelFont + 82) * 1, self.view.bounds.size.width - 15, 0.5)];
     horizontal1.backgroundColor = [UIColor colorWithRed:140.0/255.0 green:140.0/255.0 blue:140.0/255.0 alpha:1.0];
     [mainScrollView addSubview:horizontal1];
     
-    UIView *horizontal2 = [[UIView alloc] initWithFrame:CGRectMake(16, 352, self.view.bounds.size.width - 16, 0.5)];
+    UIView *horizontal2 = [[UIView alloc] initWithFrame:CGRectMake(spaceLeft, (length + spaceH + buttonLabelFont + 82) * 2, self.view.bounds.size.width - 15, 0.5)];
     horizontal2.backgroundColor = [UIColor colorWithRed:140.0/255.0 green:140.0/255.0 blue:140.0/255.0 alpha:1.0];
     [mainScrollView addSubview:horizontal2];
     
-    UIView *horizontal3 = [[UIView alloc] initWithFrame:CGRectMake(16, 528, self.view.bounds.size.width - 16, 0.5)];
+    UIView *horizontal3 = [[UIView alloc] initWithFrame:CGRectMake(spaceLeft, (length + spaceH + buttonLabelFont + 82) * 3, self.view.bounds.size.width - 15, 0.5)];
     horizontal3.backgroundColor = [UIColor colorWithRed:140.0/255.0 green:140.0/255.0 blue:140.0/255.0 alpha:1.0];
     [mainScrollView addSubview:horizontal3];
     
-    UIView *horizontal4 = [[UIView alloc] initWithFrame:CGRectMake(16, 704, self.view.bounds.size.width - 16, 0.5)];
+    UIView *horizontal4 = [[UIView alloc] initWithFrame:CGRectMake(spaceLeft, (length + spaceH + buttonLabelFont + 82) * 4, self.view.bounds.size.width - 15, 0.5)];
     horizontal4.backgroundColor = [UIColor colorWithRed:140.0/255.0 green:140.0/255.0 blue:140.0/255.0 alpha:1.0];
     [mainScrollView addSubview:horizontal4];
     
-    UIView *horizontal5= [[UIView alloc] initWithFrame:CGRectMake(0, 516, self.view.bounds.size.width, 3)];
+    UIView *horizontal5= [[UIView alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height - 52, self.view.bounds.size.width, 3)];
     horizontal5.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:horizontal5];
     
@@ -711,7 +739,7 @@
     
     [UIView animateWithDuration:0.5 delay:0.0 options:animeOptions animations:^{
         
-        featuredImageButton.frame = CGRectMake(0, 64, 320, 130);
+        featuredImageButton.frame = CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.width * 0.4);
         
     }completion:^(BOOL finished){
         
@@ -729,7 +757,7 @@
     
     [UIView animateWithDuration:0.5 delay:0.0 options:animeOptions animations:^{
         
-        featuredImageButton.frame = CGRectMake(-320, 64, 320, 130);
+        featuredImageButton.frame = CGRectMake(-self.view.bounds.size.width, 64, self.view.bounds.size.width, self.view.bounds.size.width * 0.4);
         
     }completion:^(BOOL finished){
     }];
@@ -741,7 +769,7 @@
 
 -(void)featuredImageReady{
     
-    featuredImageButton.frame = CGRectMake(320, 64, 320, 130);
+    featuredImageButton.frame = CGRectMake(self.view.bounds.size.width, 64, self.view.bounds.size.width, self.view.bounds.size.width * 0.4);
     
 }
 
@@ -769,7 +797,7 @@
     
     [UIView animateWithDuration:0.5 delay:0.0 options:animeOptions animations:^{
         
-        featuredImageButton2.frame = CGRectMake(0, 64, 320, 130);
+        featuredImageButton2.frame = CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.width * 0.4);
         
     }completion:^(BOOL finished){
         
@@ -787,7 +815,7 @@
     
     [UIView animateWithDuration:0.5 delay:0.0 options:animeOptions animations:^{
         
-        featuredImageButton2.frame = CGRectMake(-320, 64, 320, 130);
+        featuredImageButton2.frame = CGRectMake(- self.view.bounds.size.width, 64, self.view.bounds.size.width, self.view.bounds.size.width * 0.4);
         
     }completion:^(BOOL finished){
     }];
@@ -799,7 +827,7 @@
 
 -(void)featuredImage2Ready{
     
-    featuredImageButton2.frame = CGRectMake(320, 64, 320, 130);
+    featuredImageButton2.frame = CGRectMake(self.view.bounds.size.width, 64, self.view.bounds.size.width, self.view.bounds.size.width * 0.4);
     
 }
 
