@@ -147,6 +147,10 @@
     UIButton *buttonFive4;
     UIButton *buttonFive5;
     UIButton *buttonFive6;
+    UIButton *buttonFive7;
+    UIButton *buttonFive8;
+    UIButton *buttonFive9;
+    UIButton *buttonFive10;
     
     UILabel *stageLabel;
     UILabel *buttonFive1Label;
@@ -155,6 +159,10 @@
     UILabel *buttonFive4Label;
     UILabel *buttonFive5Label;
     UILabel *buttonFive6Label;
+    UILabel *buttonFive7Label;
+    UILabel *buttonFive8Label;
+    UILabel *buttonFive9Label;
+    UILabel *buttonFive10Label;
     
     UIButton *viewAllButton1;
     UIButton *viewAllButton2;
