@@ -41,6 +41,14 @@
 		7ED21AB61C79986D00AA9E83 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED21AB51C79986D00AA9E83 /* QuartzCore.framework */; };
 		7ED21AB81C7998B900AA9E83 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED21AB71C7998B900AA9E83 /* CoreGraphics.framework */; };
 		7ED21ABB1C79998200AA9E83 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED21ABA1C79998200AA9E83 /* AVFoundation.framework */; };
+		7ED6F5191CA418320077425C /* The-笑-1-GP-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED6F5181CA418320077425C /* The-笑-1-GP-タイムテーブル.png */; };
+		7ED6F51B1CA419370077425C /* せいとんがかり.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED6F51A1CA419370077425C /* せいとんがかり.png */; };
+		7ED6F51D1CA41BEC0077425C /* The 笑-1 GP.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED6F51C1CA41BEC0077425C /* The 笑-1 GP.png */; };
+		7ED6F51F1CA41C5C0077425C /* 早撃ちジョニー.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED6F51E1CA41C5C0077425C /* 早撃ちジョニー.png */; };
+		7ED6F5211CA41C7F0077425C /* 78枚目のJOKER.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED6F5201CA41C7F0077425C /* 78枚目のJOKER.png */; };
+		7ED6F5231CA41C8E0077425C /* ぶいえいす.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED6F5221CA41C8E0077425C /* ぶいえいす.png */; };
+		7ED6F5251CA41C9B0077425C /* 地理歴史巡検部.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED6F5241CA41C9B0077425C /* 地理歴史巡検部.png */; };
+		7ED6F5271CA41CB00077425C /* 藤子・Ｆ・不二雄研究会.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED6F5261CA41CB00077425C /* 藤子・Ｆ・不二雄研究会.png */; };
 		7EF2D8DC1C9D4FAB008F76E8 /* ボールぽこぽこ-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EF2D8D91C9D4FAB008F76E8 /* ボールぽこぽこ-タイムテーブル.png */; };
 		7EF2D8DD1C9D4FAB008F76E8 /* ミュージックサロン-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EF2D8DA1C9D4FAB008F76E8 /* ミュージックサロン-タイムテーブル.png */; };
 		7EF2D8DE1C9D4FAB008F76E8 /* 英語劇-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EF2D8DB1C9D4FAB008F76E8 /* 英語劇-タイムテーブル.png */; };
@@ -61,7 +69,6 @@
 		FA0F10E61C9E7F1200AF0155 /* 数学研究会模擬講義.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0F10E41C9E7F1200AF0155 /* 数学研究会模擬講義.png */; };
 		FA0F10E71C9E7F1200AF0155 /* 恋愛偏差値.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0F10E51C9E7F1200AF0155 /* 恋愛偏差値.png */; };
 		FA0F10EB1C9E7F3100AF0155 /* 剣道部.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0F10EA1C9E7F3100AF0155 /* 剣道部.png */; };
-		FA2384071CA0A445003BBDA5 /* 78枚目のJOKER.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA2383E61CA0A445003BBDA5 /* 78枚目のJOKER.jpg */; };
 		FA2384081CA0A445003BBDA5 /* EHC Jurassic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA2383E71CA0A445003BBDA5 /* EHC Jurassic.jpg */; };
 		FA2384091CA0A445003BBDA5 /* SeSDA〜聖光宇宙センター〜.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA2383E81CA0A445003BBDA5 /* SeSDA〜聖光宇宙センター〜.jpg */; };
 		FA23840A1CA0A445003BBDA5 /* Shockers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA2383E91CA0A445003BBDA5 /* Shockers.jpg */; };
@@ -76,7 +83,6 @@
 		FA2384141CA0A445003BBDA5 /* ポケモンセンターSeiko.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2383F31CA0A445003BBDA5 /* ポケモンセンターSeiko.png */; };
 		FA2384151CA0A445003BBDA5 /* リアル野球盤.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2383F41CA0A445003BBDA5 /* リアル野球盤.png */; };
 		FA2384161CA0A445003BBDA5 /* 宇宙戦艦ヤマト研究会.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA2383F51CA0A445003BBDA5 /* 宇宙戦艦ヤマト研究会.jpg */; };
-		FA2384171CA0A445003BBDA5 /* 横浜漫才フィルム.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA2383F61CA0A445003BBDA5 /* 横浜漫才フィルム.jpg */; };
 		FA2384181CA0A445003BBDA5 /* 古本市.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2383F71CA0A445003BBDA5 /* 古本市.png */; };
 		FA2384191CA0A445003BBDA5 /* 交通研究部.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA2383F81CA0A445003BBDA5 /* 交通研究部.jpg */; };
 		FA23841A1CA0A445003BBDA5 /* 常夜灯.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2383F91CA0A445003BBDA5 /* 常夜灯.png */; };
@@ -86,9 +92,7 @@
 		FA23841E1CA0A445003BBDA5 /* 聖光祭からの脱出.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2383FD1CA0A445003BBDA5 /* 聖光祭からの脱出.png */; };
 		FA23841F1CA0A445003BBDA5 /* 聖光道場.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA2383FE1CA0A445003BBDA5 /* 聖光道場.jpg */; };
 		FA2384201CA0A445003BBDA5 /* 聖書研究会.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA2383FF1CA0A445003BBDA5 /* 聖書研究会.jpg */; };
-		FA2384211CA0A445003BBDA5 /* 早撃ちジョニー.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA2384001CA0A445003BBDA5 /* 早撃ちジョニー.jpg */; };
 		FA2384221CA0A445003BBDA5 /* 地学天文学部.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2384011CA0A445003BBDA5 /* 地学天文学部.png */; };
-		FA2384231CA0A445003BBDA5 /* 地理歴史巡見部.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2384021CA0A445003BBDA5 /* 地理歴史巡見部.png */; };
 		FA2384241CA0A445003BBDA5 /* 美術部.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2384031CA0A445003BBDA5 /* 美術部.png */; };
 		FA2384251CA0A445003BBDA5 /* 物理科学部.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2384041CA0A445003BBDA5 /* 物理科学部.png */; };
 		FA2384261CA0A445003BBDA5 /* 本の泉.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2384051CA0A445003BBDA5 /* 本の泉.png */; };
@@ -145,7 +149,6 @@
 		FAA39B621C9D458600A1B697 /* 綿's-candy.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA39B5A1C9D458600A1B697 /* 綿's-candy.png */; };
 		FABB0BDF1C560EEC0009ABAA /* ListView.m in Sources */ = {isa = PBXBuildFile; fileRef = FABB0BDE1C560EEC0009ABAA /* ListView.m */; };
 		FABB0BE21C560F040009ABAA /* DetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = FABB0BE11C560F040009ABAA /* DetailView.m */; };
-		FAF5D6EB1CA13FBA00C2EEDC /* The 笑-1 GP.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D6EA1CA13FBA00C2EEDC /* The 笑-1 GP.jpg */; };
 		FAF5D6ED1CA169F500C2EEDC /* ぎゃんぶる。.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D6EC1CA169F500C2EEDC /* ぎゃんぶる。.jpg */; };
 		FAF5D6EF1CA1F94E00C2EEDC /* Seiko-Dance-Performance.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D6EE1CA1F94E00C2EEDC /* Seiko-Dance-Performance.png */; };
 		FAF9527F1CA3CE8D00797796 /* 少林寺拳法部演武会.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF9527E1CA3CE8D00797796 /* 少林寺拳法部演武会.png */; };
@@ -203,6 +206,14 @@
 		7ED21AB51C79986D00AA9E83 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7ED21AB71C7998B900AA9E83 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7ED21ABA1C79998200AA9E83 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7ED6F5181CA418320077425C /* The-笑-1-GP-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The-笑-1-GP-タイムテーブル.png"; sourceTree = "<group>"; };
+		7ED6F51A1CA419370077425C /* せいとんがかり.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "せいとんがかり.png"; sourceTree = "<group>"; };
+		7ED6F51C1CA41BEC0077425C /* The 笑-1 GP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The 笑-1 GP.png"; sourceTree = "<group>"; };
+		7ED6F51E1CA41C5C0077425C /* 早撃ちジョニー.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "早撃ちジョニー.png"; sourceTree = "<group>"; };
+		7ED6F5201CA41C7F0077425C /* 78枚目のJOKER.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "78枚目のJOKER.png"; sourceTree = "<group>"; };
+		7ED6F5221CA41C8E0077425C /* ぶいえいす.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ぶいえいす.png"; sourceTree = "<group>"; };
+		7ED6F5241CA41C9B0077425C /* 地理歴史巡検部.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "地理歴史巡検部.png"; sourceTree = "<group>"; };
+		7ED6F5261CA41CB00077425C /* 藤子・Ｆ・不二雄研究会.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "藤子・Ｆ・不二雄研究会.png"; sourceTree = "<group>"; };
 		7EF2D8D91C9D4FAB008F76E8 /* ボールぽこぽこ-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ボールぽこぽこ-タイムテーブル.png"; sourceTree = "<group>"; };
 		7EF2D8DA1C9D4FAB008F76E8 /* ミュージックサロン-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ミュージックサロン-タイムテーブル.png"; sourceTree = "<group>"; };
 		7EF2D8DB1C9D4FAB008F76E8 /* 英語劇-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "英語劇-タイムテーブル.png"; sourceTree = "<group>"; };
@@ -223,7 +234,6 @@
 		FA0F10E41C9E7F1200AF0155 /* 数学研究会模擬講義.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "数学研究会模擬講義.png"; sourceTree = "<group>"; };
 		FA0F10E51C9E7F1200AF0155 /* 恋愛偏差値.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "恋愛偏差値.png"; sourceTree = "<group>"; };
 		FA0F10EA1C9E7F3100AF0155 /* 剣道部.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "剣道部.png"; sourceTree = "<group>"; };
-		FA2383E61CA0A445003BBDA5 /* 78枚目のJOKER.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "78枚目のJOKER.jpg"; sourceTree = "<group>"; };
 		FA2383E71CA0A445003BBDA5 /* EHC Jurassic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "EHC Jurassic.jpg"; sourceTree = "<group>"; };
 		FA2383E81CA0A445003BBDA5 /* SeSDA〜聖光宇宙センター〜.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "SeSDA〜聖光宇宙センター〜.jpg"; sourceTree = "<group>"; };
 		FA2383E91CA0A445003BBDA5 /* Shockers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Shockers.jpg; sourceTree = "<group>"; };
@@ -238,7 +248,6 @@
 		FA2383F31CA0A445003BBDA5 /* ポケモンセンターSeiko.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ポケモンセンターSeiko.png"; sourceTree = "<group>"; };
 		FA2383F41CA0A445003BBDA5 /* リアル野球盤.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "リアル野球盤.png"; sourceTree = "<group>"; };
 		FA2383F51CA0A445003BBDA5 /* 宇宙戦艦ヤマト研究会.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "宇宙戦艦ヤマト研究会.jpg"; sourceTree = "<group>"; };
-		FA2383F61CA0A445003BBDA5 /* 横浜漫才フィルム.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "横浜漫才フィルム.jpg"; sourceTree = "<group>"; };
 		FA2383F71CA0A445003BBDA5 /* 古本市.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "古本市.png"; sourceTree = "<group>"; };
 		FA2383F81CA0A445003BBDA5 /* 交通研究部.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "交通研究部.jpg"; sourceTree = "<group>"; };
 		FA2383F91CA0A445003BBDA5 /* 常夜灯.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "常夜灯.png"; sourceTree = "<group>"; };
@@ -248,9 +257,7 @@
 		FA2383FD1CA0A445003BBDA5 /* 聖光祭からの脱出.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聖光祭からの脱出.png"; sourceTree = "<group>"; };
 		FA2383FE1CA0A445003BBDA5 /* 聖光道場.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "聖光道場.jpg"; sourceTree = "<group>"; };
 		FA2383FF1CA0A445003BBDA5 /* 聖書研究会.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "聖書研究会.jpg"; sourceTree = "<group>"; };
-		FA2384001CA0A445003BBDA5 /* 早撃ちジョニー.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "早撃ちジョニー.jpg"; sourceTree = "<group>"; };
 		FA2384011CA0A445003BBDA5 /* 地学天文学部.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "地学天文学部.png"; sourceTree = "<group>"; };
-		FA2384021CA0A445003BBDA5 /* 地理歴史巡見部.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "地理歴史巡見部.png"; sourceTree = "<group>"; };
 		FA2384031CA0A445003BBDA5 /* 美術部.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "美術部.png"; sourceTree = "<group>"; };
 		FA2384041CA0A445003BBDA5 /* 物理科学部.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "物理科学部.png"; sourceTree = "<group>"; };
 		FA2384051CA0A445003BBDA5 /* 本の泉.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "本の泉.png"; sourceTree = "<group>"; };
@@ -309,7 +316,6 @@
 		FABB0BDE1C560EEC0009ABAA /* ListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListView.m; sourceTree = "<group>"; };
 		FABB0BE01C560F040009ABAA /* DetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailView.h; sourceTree = "<group>"; };
 		FABB0BE11C560F040009ABAA /* DetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailView.m; sourceTree = "<group>"; };
-		FAF5D6EA1CA13FBA00C2EEDC /* The 笑-1 GP.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The 笑-1 GP.jpg"; sourceTree = "<group>"; };
 		FAF5D6EC1CA169F500C2EEDC /* ぎゃんぶる。.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ぎゃんぶる。.jpg"; sourceTree = "<group>"; };
 		FAF5D6EE1CA1F94E00C2EEDC /* Seiko-Dance-Performance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seiko-Dance-Performance.png"; sourceTree = "<group>"; };
 		FAF9527E1CA3CE8D00797796 /* 少林寺拳法部演武会.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "少林寺拳法部演武会.png"; sourceTree = "<group>"; };
@@ -489,6 +495,7 @@
 				7EF2D8E11C9D5101008F76E8 /* S-O-S-タイムテーブル.png */,
 				7EF2D8E21C9D5101008F76E8 /* ギネスに挑戦！！-タイムテーブル.png */,
 				7EF2D8E61C9D5101008F76E8 /* 替え歌選手権！！-タイムテーブル.png */,
+				7ED6F5181CA418320077425C /* The-笑-1-GP-タイムテーブル.png */,
 				7EF2D8E31C9D5101008F76E8 /* コミュ力の窓-タイムテーブル.png */,
 				7EF2D8DF1C9D5101008F76E8 /* ○○男子No.1決定戦-タイムテーブル.png */,
 				7EF2D8E41C9D5101008F76E8 /* のど自慢-タイムテーブル.png */,
@@ -593,6 +600,7 @@
 				FAF5D6EC1CA169F500C2EEDC /* ぎゃんぶる。.jpg */,
 				FAA39B121C9D172200A1B697 /* 高3英語劇.png */,
 				FA2383F81CA0A445003BBDA5 /* 交通研究部.jpg */,
+				7ED6F5261CA41CB00077425C /* 藤子・Ｆ・不二雄研究会.png */,
 				FA2383F11CA0A445003BBDA5 /* ベイスターズ研究会.jpg */,
 				FA2384031CA0A445003BBDA5 /* 美術部.png */,
 				FA2384061CA0A445003BBDA5 /* 魔女の卓球便.png */,
@@ -604,16 +612,15 @@
 				FA2383FD1CA0A445003BBDA5 /* 聖光祭からの脱出.png */,
 				FA2384041CA0A445003BBDA5 /* 物理科学部.png */,
 				FA2383E81CA0A445003BBDA5 /* SeSDA〜聖光宇宙センター〜.jpg */,
-				FA2384021CA0A445003BBDA5 /* 地理歴史巡見部.png */,
+				7ED6F5241CA41C9B0077425C /* 地理歴史巡検部.png */,
 				FA2383EC1CA0A445003BBDA5 /* かるた会.jpg */,
 				FA2383F21CA0A445003BBDA5 /* ボーカロイド研究会.png */,
 				FA2384051CA0A445003BBDA5 /* 本の泉.png */,
 				FA2383E71CA0A445003BBDA5 /* EHC Jurassic.jpg */,
-				FA2384001CA0A445003BBDA5 /* 早撃ちジョニー.jpg */,
+				7ED6F51E1CA41C5C0077425C /* 早撃ちジョニー.png */,
 				FA2383FA1CA0A445003BBDA5 /* 人狼の館.jpg */,
-				FA2383F61CA0A445003BBDA5 /* 横浜漫才フィルム.jpg */,
 				FA2383FC1CA0A445003BBDA5 /* 生物部.png */,
-				FA2383E61CA0A445003BBDA5 /* 78枚目のJOKER.jpg */,
+				7ED6F5201CA41C7F0077425C /* 78枚目のJOKER.png */,
 				FA2383EB1CA0A445003BBDA5 /* アニメ研究会.png */,
 				FA2383E91CA0A445003BBDA5 /* Shockers.jpg */,
 				FA2383EF1CA0A445003BBDA5 /* コンピュータ部.jpg */,
@@ -621,6 +628,7 @@
 				FAA39B101C9D172200A1B697 /* インターアクト.png */,
 				FA2383EA1CA0A445003BBDA5 /* Showtime!.png */,
 				FA2383EE1CA0A445003BBDA5 /* クイズ研究会.png */,
+				7ED6F5221CA41C8E0077425C /* ぶいえいす.png */,
 				FA2383FF1CA0A445003BBDA5 /* 聖書研究会.jpg */,
 				FA2383FB1CA0A445003BBDA5 /* 数学研究会.png */,
 			);
@@ -638,6 +646,7 @@
 				FA8098A61C9FF6B400B2E939 /* Яooz-Leef.png */,
 				FAA39B261C9D190700A1B697 /* WEAK-END.png */,
 				FA8098A41C9FF6B400B2E939 /* Million-Dollars.png */,
+				7ED6F51A1CA419370077425C /* せいとんがかり.png */,
 				FAA39B241C9D190100A1B697 /* Chaos-illusion.png */,
 				FA8098A31C9FF6B400B2E939 /* Addiction？.png */,
 				FA8098A51C9FF6B400B2E939 /* 奴等.png */,
@@ -675,7 +684,7 @@
 				FAA39B361C9D22FF00A1B697 /* のど自慢.png */,
 				FAA39B341C9D22FF00A1B697 /* ギネスに挑戦！！.png */,
 				FAA39B351C9D22FF00A1B697 /* コミュ力の窓.png */,
-				FAF5D6EA1CA13FBA00C2EEDC /* The 笑-1 GP.jpg */,
+				7ED6F51C1CA41BEC0077425C /* The 笑-1 GP.png */,
 				FAA39B391C9D22FF00A1B697 /* 替え歌選手権.png */,
 				FAA39B311C9D22FF00A1B697 /* ○○男子No.1決定戦.png */,
 				FAA39B331C9D22FF00A1B697 /* S-O-S.png */,
@@ -742,7 +751,7 @@
 				TargetAttributes = {
 					7E4D55A71C49315B00BFE19C = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = 3GKM8LRN87;
+						DevelopmentTeam = TAE9KC7SWK;
 					};
 					7E4D55C01C49315C00BFE19C = {
 						CreatedOnToolsVersion = 6.2;
@@ -776,7 +785,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA2384261CA0A445003BBDA5 /* 本の泉.png in Resources */,
-				FA2384231CA0A445003BBDA5 /* 地理歴史巡見部.png in Resources */,
 				7E3FE6E81CA0278D000E0281 /* MyriadPro-Regular.otf in Resources */,
 				7E0DC8A31C9D61AC00B45F37 /* Flat-Flight-タイムテーブル.png in Resources */,
 				FAA39B2C1C9D1EAB00A1B697 /* ボールぽこぽこ.png in Resources */,
@@ -789,7 +797,6 @@
 				FA2384251CA0A445003BBDA5 /* 物理科学部.png in Resources */,
 				FAA39B3A1C9D22FF00A1B697 /* ○○男子No.1決定戦.png in Resources */,
 				FA0F10E21C9E7F0300AF0155 /* 吹奏楽部.png in Resources */,
-				FA2384071CA0A445003BBDA5 /* 78枚目のJOKER.jpg in Resources */,
 				FA8098A71C9FF6B400B2E939 /* Addiction？.png in Resources */,
 				FAA39B1E1C9D18CA00A1B697 /* Flat-Flight.png in Resources */,
 				FA2384181CA0A445003BBDA5 /* 古本市.png in Resources */,
@@ -811,9 +818,9 @@
 				FAA39AFF1C9D089C00A1B697 /* 麺☆恋.png in Resources */,
 				7E4D55B71C49315C00BFE19C /* Main.storyboard in Resources */,
 				7EF2D8ED1C9D5101008F76E8 /* 春夜祭-タイムテーブル.png in Resources */,
+				7ED6F51B1CA419370077425C /* せいとんがかり.png in Resources */,
 				7EF2D9011C9D5A11008F76E8 /* エストレーラ-タイムテーブル.png in Resources */,
 				FAA39B3F1C9D22FF00A1B697 /* のど自慢.png in Resources */,
-				FAF5D6EB1CA13FBA00C2EEDC /* The 笑-1 GP.jpg in Resources */,
 				FA0F10EB1C9E7F3100AF0155 /* 剣道部.png in Resources */,
 				FAF5D6EF1CA1F94E00C2EEDC /* Seiko-Dance-Performance.png in Resources */,
 				FAA39B151C9D172200A1B697 /* インターアクト.png in Resources */,
@@ -823,6 +830,7 @@
 				7EF2D8F81C9D57CE008F76E8 /* 蜃気楼-タイムテーブル.png in Resources */,
 				FA6CEB911CA026CB002571EF /* Coming-Soon.jpg in Resources */,
 				7E0DC8AB1C9D64A100B45F37 /* ミュージックサロン-タイムテーブル小講堂.png in Resources */,
+				7ED6F51D1CA41BEC0077425C /* The 笑-1 GP.png in Resources */,
 				FAA39AFA1C9D089C00A1B697 /* Flapjack.png in Resources */,
 				FA0F10E71C9E7F1200AF0155 /* 恋愛偏差値.png in Resources */,
 				FA8098A91C9FF6B400B2E939 /* 奴等.png in Resources */,
@@ -848,6 +856,7 @@
 				FAF9527F1CA3CE8D00797796 /* 少林寺拳法部演武会.png in Resources */,
 				FAA39B181C9D172200A1B697 /* 迷いの国のアリス.png in Resources */,
 				FAA39B171C9D172200A1B697 /* 高3英語劇.png in Resources */,
+				7ED6F5191CA418320077425C /* The-笑-1-GP-タイムテーブル.png in Resources */,
 				7E4D55B91C49315C00BFE19C /* Images.xcassets in Resources */,
 				7E0DC89D1C9D5E8600B45F37 /* ぽんでっくす-タイムテーブル.png in Resources */,
 				FA2384141CA0A445003BBDA5 /* ポケモンセンターSeiko.png in Resources */,
@@ -857,9 +866,11 @@
 				FAA39B3E1C9D22FF00A1B697 /* コミュ力の窓.png in Resources */,
 				FAA39B301C9D1F1400A1B697 /* ミュージックサロン.png in Resources */,
 				7E0DC8CA1C9D7FAA00B45F37 /* Default@2x.png in Resources */,
+				7ED6F51F1CA41C5C0077425C /* 早撃ちジョニー.png in Resources */,
 				7E0DC8C11C9D7E9800B45F37 /* icon-29@2x.png in Resources */,
 				7EF2D8EB1C9D5101008F76E8 /* コミュ力の窓-タイムテーブル.png in Resources */,
 				FAA39AFC1C9D089C00A1B697 /* 塩焼きそば　麺’sRUNRUN.png in Resources */,
+				7ED6F5251CA41C9B0077425C /* 地理歴史巡検部.png in Resources */,
 				FAA39B601C9D458600A1B697 /* 鳥角.png in Resources */,
 				FA2384271CA0A445003BBDA5 /* 魔女の卓球便.png in Resources */,
 				FAA39B4E1C9D330E00A1B697 /* Right.png in Resources */,
@@ -878,16 +889,18 @@
 				FA23841E1CA0A445003BBDA5 /* 聖光祭からの脱出.png in Resources */,
 				FA23841B1CA0A445003BBDA5 /* 人狼の館.jpg in Resources */,
 				FA23840B1CA0A445003BBDA5 /* Showtime!.png in Resources */,
+				7ED6F5231CA41C8E0077425C /* ぶいえいす.png in Resources */,
 				FA2384081CA0A445003BBDA5 /* EHC Jurassic.jpg in Resources */,
+				7ED6F5271CA41CB00077425C /* 藤子・Ｆ・不二雄研究会.png in Resources */,
 				7E0DC8C31C9D7E9800B45F37 /* icon-40@2x.png in Resources */,
 				7EF2D8DD1C9D4FAB008F76E8 /* ミュージックサロン-タイムテーブル.png in Resources */,
 				FAA39B3B1C9D22FF00A1B697 /* Mr.聖光.png in Resources */,
 				FA23840D1CA0A445003BBDA5 /* かるた会.jpg in Resources */,
 				FA23841F1CA0A445003BBDA5 /* 聖光道場.jpg in Resources */,
-				FA2384171CA0A445003BBDA5 /* 横浜漫才フィルム.jpg in Resources */,
 				FAF5D6ED1CA169F500C2EEDC /* ぎゃんぶる。.jpg in Resources */,
 				7E0DC8B71C9D73D700B45F37 /* clock-7.png in Resources */,
 				FAA39B2E1C9D1EB100A1B697 /* Grand-Finale.png in Resources */,
+				7ED6F5211CA41C7F0077425C /* 78枚目のJOKER.png in Resources */,
 				FA2384201CA0A445003BBDA5 /* 聖書研究会.jpg in Resources */,
 				FAA39B161C9D172200A1B697 /* 英語劇.png in Resources */,
 				FAA39B5E1C9D458600A1B697 /* 山手の泉.png in Resources */,
@@ -897,7 +910,6 @@
 				7E0DC8A11C9D60EF00B45F37 /* Яooz-Leef-タイムテーブル.png in Resources */,
 				7EF2D8EC1C9D5101008F76E8 /* のど自慢-タイムテーブル.png in Resources */,
 				FAA39B251C9D190100A1B697 /* Chaos-illusion.png in Resources */,
-				FA2384211CA0A445003BBDA5 /* 早撃ちジョニー.jpg in Resources */,
 				FAA39B271C9D190700A1B697 /* WEAK-END.png in Resources */,
 				7E0DC8A51C9D631300B45F37 /* Chaos-Illusion-タイムテーブル.png in Resources */,
 				FA23840A1CA0A445003BBDA5 /* Shockers.jpg in Resources */,

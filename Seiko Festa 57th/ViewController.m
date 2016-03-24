@@ -459,7 +459,7 @@
     [scrollView3 addSubview:buttonThree8];
     
     buttonThree9= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 8, 0, length, length)];
-    [buttonThree9 setImage:[UIImage imageNamed:@"Coming-Soon.jpg"] forState:UIControlStateNormal];
+    [buttonThree9 setImage:[UIImage imageNamed:@"せいとんがかり.JPG"] forState:UIControlStateNormal];
     [buttonThree9 addTarget:self
                      action:@selector(buttonThree9Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView3 addSubview:buttonThree9];
@@ -801,7 +801,7 @@
     [scrollView5 addSubview:buttonFive3];
     
     buttonFive4= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 3, 0, length, length)];
-    [buttonFive4 setImage:[UIImage imageNamed:@"Seiko-Dance=Performance.png"] forState:UIControlStateNormal];
+    [buttonFive4 setImage:[UIImage imageNamed:@"Seiko-Dance-Performance.png"] forState:UIControlStateNormal];
     [buttonFive4 addTarget:self
                     action:@selector(buttonFive4Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView5 addSubview:buttonFive4];
@@ -825,7 +825,7 @@
     [scrollView5 addSubview:buttonFive7];
     
     buttonFive8= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 7, 0, length, length)];
-    [buttonFive8 setImage:[UIImage imageNamed:@"The 笑-1 GP.jpg"] forState:UIControlStateNormal];
+    [buttonFive8 setImage:[UIImage imageNamed:@"The 笑-1 GP.png"] forState:UIControlStateNormal];
     [buttonFive8 addTarget:self
                     action:@selector(buttonFive8Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView5 addSubview:buttonFive8];

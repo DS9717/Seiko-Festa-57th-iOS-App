@@ -407,7 +407,7 @@
         [scrollView addSubview:label8];
         
         button9= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + fontSize + 29) * 4, length, length)];
-        [button9 setImage:[UIImage imageNamed:@"Coming-Soon.jpg"] forState:UIControlStateNormal];
+        [button9 setImage:[UIImage imageNamed:@"せいとんがかり.png"] forState:UIControlStateNormal];
         [button9 addTarget:self
                     action:@selector(buttonThree9Detail:) forControlEvents:UIControlEventTouchUpInside];
         [scrollView addSubview:button9];
@@ -667,7 +667,7 @@
         [scrollView addSubview:label3];
         
         button4= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + self.view.bounds.size.width / 2, 16 + (length + spaceH + fontSize + 29) * 1, length, length)];
-        [button4 setImage:[UIImage imageNamed:@"Seiko-Dnace-Performance.png"] forState:UIControlStateNormal];
+        [button4 setImage:[UIImage imageNamed:@"Seiko-Dance-Performance.png"] forState:UIControlStateNormal];
         [button4 addTarget:self
                     action:@selector(buttonFive4Detail:) forControlEvents:UIControlEventTouchUpInside];
         [scrollView addSubview:button4];
@@ -715,7 +715,7 @@
         [scrollView addSubview:label7];
         
         button8= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + self.view.bounds.size.width / 2, 16 + (length + spaceH + fontSize + 29) * 3, length, length)];
-        [button8 setImage:[UIImage imageNamed:@"The 笑-1 GP.jpg"] forState:UIControlStateNormal];
+        [button8 setImage:[UIImage imageNamed:@"The 笑-1 GP.png"] forState:UIControlStateNormal];
         [button8 addTarget:self
                     action:@selector(buttonFive8Detail:) forControlEvents:UIControlEventTouchUpInside];
         [scrollView addSubview:button8];
@@ -763,7 +763,7 @@
         [scrollView addSubview:label11];
         
         //スクロールの範囲を設定
-        [scrollView setContentSize:CGSizeMake(self.view.bounds.size.width, 16 + (length + spaceH + fontSize + 29) * 5)];
+        [scrollView setContentSize:CGSizeMake(self.view.bounds.size.width, 16 + (length + spaceH + fontSize + 29) * 6)];
     }
     
     [self.view addSubview:scrollView];
