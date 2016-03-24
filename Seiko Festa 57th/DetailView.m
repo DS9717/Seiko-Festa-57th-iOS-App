@@ -345,8 +345,8 @@
         if (flag == 1) {
             detailImage = [UIImage imageNamed:@"Grand-Finale.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
-            _detailTitle.text = @"Grand-Finale";
-            _explainSentence.text = @"聖光祭の最後を彩るのはGrand-Finale!";
+            _detailTitle.text = @"Grand Finale";
+            _explainSentence.text = @"";
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
@@ -354,7 +354,7 @@
             detailImage = [UIImage imageNamed:@"英語劇講堂劇.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"英語劇";
-            _explainSentence.text = @"講堂にも来てね!";
+            _explainSentence.text = @"";
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
@@ -362,39 +362,87 @@
             detailImage = [UIImage imageNamed:@"ボールぽこぽこ.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"ボールぽこぽこ";
-            _explainSentence.text = @"素晴らしい曲芸です!";
+            _explainSentence.text = @"";
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
         else if (flag == 4) {
-            detailImage = [UIImage imageNamed:@"校長対談.png"];
+            detailImage = [UIImage imageNamed:@"グリークラブ.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
-            _detailTitle.text = @"校長対談";
-            _explainSentence.text = @"校長先生とお話し!";
+            _detailTitle.text = @"グリークラブ";
+            _explainSentence.text = @"";
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
         else if (flag == 5) {
-            detailImage = [UIImage imageNamed:@"ミュージックサロン.png"];
+            detailImage = [UIImage imageNamed:@"弦楽オーケストラ部.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
-            _detailTitle.text = @"ミュージックサロン";
-            _explainSentence.text = @"素晴らしい音色です!";
+            _detailTitle.text = @"弦楽オーケストラ部";
+            _explainSentence.text = @"";
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
         else if (flag == 6) {
-            detailImage = [UIImage imageNamed:@"グリークラブ.png"];
+            detailImage = [UIImage imageNamed:@"恋愛偏差値.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
-            _detailTitle.text = @"グリークラブ";
-            _explainSentence.text = @"素晴らしい歌声です!";
+            _detailTitle.text = @"恋愛偏差値";
+            _explainSentence.text = @"";
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
         else if (flag == 7) {
+            detailImage = [UIImage imageNamed:@"校長対談.png"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"校長対談";
+            _explainSentence.text = @"";
+            _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+            _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        }
+        else if (flag == 8) {
+            detailImage = [UIImage imageNamed:@"吹奏楽部.png"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"吹奏楽部";
+            _explainSentence.text = @"";
+            _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+            _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        }
+        else if (flag == 9) {
+            detailImage = [UIImage imageNamed:@"ミュージックサロン.png"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"ミュージックサロン";
+            _explainSentence.text = @"";
+            _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+            _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        }
+        else if (flag == 10) {
             detailImage = [UIImage imageNamed:@"天使の歌声.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"天使の歌声";
-            _explainSentence.text = @"素晴らしい歌声です!";
+            _explainSentence.text = @"";
+            _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+            _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        }
+        else if (flag == 11) {
+            detailImage = [UIImage imageNamed:@"数学研究会模擬講義.png"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"数学研究会模擬講義";
+            _explainSentence.text = @"";
+            _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+            _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        }
+        else if (flag == 12) {
+            detailImage = [UIImage imageNamed:@"少林寺拳法部演武会.png"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"少林寺拳法部演武会";
+            _explainSentence.text = @"";
+            _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+            _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        }
+        else if (flag == 13) {
+            detailImage = [UIImage imageNamed:@"剣道部.png"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"剣道部";
+            _explainSentence.text = @"";
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
@@ -428,6 +476,14 @@
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
         else if (flag == 4) {
+            detailImage = [UIImage imageNamed:@"Seiko-Dance-Performance.png"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"Seiko Dance Performance";
+            _explainSentence.text = @"";
+            _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+            _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+        }
+        else if (flag == 5) {
             detailImage = [UIImage imageNamed:@"のど自慢.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"のど自慢";
@@ -435,7 +491,7 @@
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
-        else if (flag == 5) {
+        else if (flag == 6) {
             detailImage = [UIImage imageNamed:@"ギネスに挑戦！！.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"ギネスに挑戦！！";
@@ -443,7 +499,7 @@
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
-        else if (flag == 6) {
+        else if (flag == 7) {
             detailImage = [UIImage imageNamed:@"コミュ力の窓.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"コミュ力の窓";
@@ -451,7 +507,7 @@
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
-        else if (flag == 7) {
+        else if (flag == 8) {
             detailImage = [UIImage imageNamed:@"The 笑-1 GP.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"The 笑-1 GP";
@@ -459,7 +515,7 @@
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
-        else if (flag == 8) {
+        else if (flag == 9) {
             detailImage = [UIImage imageNamed:@"替え歌選手権.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"替え歌選手権";
@@ -467,7 +523,7 @@
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
-        else if (flag == 9) {
+        else if (flag == 10) {
             detailImage = [UIImage imageNamed:@"○○男子No.1決定戦.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"○○男子No.1決定戦";
@@ -475,7 +531,7 @@
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
-        else if (flag == 10) {
+        else if (flag == 11) {
             detailImage = [UIImage imageNamed:@"S-O-S.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"S.O.S.";
@@ -483,7 +539,6 @@
             _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
-        
     }
     
     self.navigationController.navigationBar.tintColor=[UIColor orangeColor];

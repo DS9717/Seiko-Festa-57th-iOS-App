@@ -125,12 +125,19 @@
     UILabel *buttonThree12Label;
     
     //講堂･小講堂
-    UIButton *buttonFour1;
-    UIButton *buttonFour2;
-    UIButton *buttonFour3;
-    UIButton *buttonFour4;
-    UIButton *buttonFour5;
-    UIButton *buttonFour6;
+    UIButton *buttonFour1;  //Grand Finale
+    UIButton *buttonFour2;  //英語劇
+    UIButton *buttonFour3;  //ボールぽこぽこ
+    UIButton *buttonFour4;  //グリークラブ
+    UIButton *buttonFour5;  //弦楽オーケストラ部
+    UIButton *buttonFour6;  //恋愛偏差値
+    UIButton *buttonFour7;  //校長対談
+    UIButton *buttonFour8;  //吹奏楽部
+    UIButton *buttonFour9;  //ミュージックサロン
+    UIButton *buttonFour10; //天使の歌声
+    UIButton *buttonFour11; //数学研究会模擬講義
+    UIButton *buttonFour12; //少林寺拳法部演武会
+    UIButton *buttonFour13; //剣道部
     
     UILabel *performanceLabel;
     UILabel *buttonFour1Label;
@@ -139,18 +146,26 @@
     UILabel *buttonFour4Label;
     UILabel *buttonFour5Label;
     UILabel *buttonFour6Label;
+    UILabel *buttonFour7Label;
+    UILabel *buttonFour8Label;
+    UILabel *buttonFour9Label;
+    UILabel *buttonFour10Label;
+    UILabel *buttonFour11Label;
+    UILabel *buttonFour12Label;
+    UILabel *buttonFour13Label;
     
     //外ステージ
-    UIButton *buttonFive1;
-    UIButton *buttonFive2;
-    UIButton *buttonFive3;
-    UIButton *buttonFive4;
-    UIButton *buttonFive5;
-    UIButton *buttonFive6;
-    UIButton *buttonFive7;
-    UIButton *buttonFive8;
-    UIButton *buttonFive9;
-    UIButton *buttonFive10;
+    UIButton *buttonFive1;  //フォークダンス
+    UIButton *buttonFive2;  //春夜祭
+    UIButton *buttonFive3;  //Mr.聖光
+    UIButton *buttonFive4;  //Seiko Dance Performance
+    UIButton *buttonFive5;  //のど自慢
+    UIButton *buttonFive6;  //ギネスに挑戦！！
+    UIButton *buttonFive7;  //コミュ力の窓
+    UIButton *buttonFive8;  //The 笑-1 GP
+    UIButton *buttonFive9;  //替え歌選手権
+    UIButton *buttonFive10; //○○男子No.1決定戦
+    UIButton *buttonFive11; //S.O.S
     
     UILabel *stageLabel;
     UILabel *buttonFive1Label;
@@ -163,6 +178,7 @@
     UILabel *buttonFive8Label;
     UILabel *buttonFive9Label;
     UILabel *buttonFive10Label;
+    UILabel *buttonFive11Label;
     
     UIButton *viewAllButton1;
     UIButton *viewAllButton2;
