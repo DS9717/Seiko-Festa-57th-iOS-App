@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DetailView.h"
 
 @interface TimetableViewController : UIViewController<UIScrollViewDelegate>{
     

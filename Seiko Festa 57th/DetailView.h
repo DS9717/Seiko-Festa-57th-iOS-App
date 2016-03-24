@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ViewController.h"
 #import "ListView.h"
+#import "TimetableViewController.h"
 
 @interface DetailView : UIViewController{
     

@@ -459,7 +459,7 @@
     [scrollView3 addSubview:buttonThree8];
     
     buttonThree9= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 8, 0, length, length)];
-    [buttonThree9 setImage:[UIImage imageNamed:@"せいとんがかり.JPG"] forState:UIControlStateNormal];
+    [buttonThree9 setImage:[UIImage imageNamed:@"せいとんがかり.png"] forState:UIControlStateNormal];
     [buttonThree9 addTarget:self
                      action:@selector(buttonThree9Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView3 addSubview:buttonThree9];
