@@ -11,6 +11,9 @@
 
 @interface TimetableViewController : UIViewController<UIScrollViewDelegate>{
     
+    //開始位置
+    int startPoint;
+    
     UIScrollView *mainScrollView;
     UIScrollView *scrollView1;
     UIScrollView *scrollView2;
