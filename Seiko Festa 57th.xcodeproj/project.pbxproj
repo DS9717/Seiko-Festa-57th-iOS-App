@@ -16,8 +16,6 @@
 		7E0DC8AD1C9D64A100B45F37 /* 数学研究会模擬講義-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0DC8AA1C9D64A100B45F37 /* 数学研究会模擬講義-タイムテーブル.png */; };
 		7E0DC8B31C9D673F00B45F37 /* 校長対談-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0DC8B21C9D673F00B45F37 /* 校長対談-タイムテーブル.png */; };
 		7E0DC8B51C9D6B3500B45F37 /* 恋愛偏差値-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0DC8B41C9D6B3500B45F37 /* 恋愛偏差値-タイムテーブル.png */; };
-		7E0DC8B71C9D73D700B45F37 /* clock-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0DC8B61C9D73D700B45F37 /* clock-7.png */; };
-		7E0DC8B91C9D73F800B45F37 /* Home-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0DC8B81C9D73F800B45F37 /* Home-50.png */; };
 		7E0DC8C11C9D7E9800B45F37 /* icon-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0DC8BB1C9D7E9800B45F37 /* icon-29@2x.png */; };
 		7E0DC8C21C9D7E9800B45F37 /* icon-29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0DC8BC1C9D7E9800B45F37 /* icon-29@3x.png */; };
 		7E0DC8C31C9D7E9800B45F37 /* icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0DC8BD1C9D7E9800B45F37 /* icon-40@2x.png */; };
@@ -51,6 +49,8 @@
 		7ED6F5271CA41CB00077425C /* 藤子・Ｆ・不二雄研究会.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED6F5261CA41CB00077425C /* 藤子・Ｆ・不二雄研究会.png */; };
 		7ED6F5291CA4208F0077425C /* 横浜漫才フィルム.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED6F5281CA4208F0077425C /* 横浜漫才フィルム.png */; };
 		7ED6F52B1CA4DFCA0077425C /* 生徒会展示.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED6F52A1CA4DFCA0077425C /* 生徒会展示.png */; };
+		7ED6F52E1CA576B90077425C /* Default-667@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED6F52C1CA576B90077425C /* Default-667@2x.png */; };
+		7ED6F52F1CA576B90077425C /* Default-736@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED6F52D1CA576B90077425C /* Default-736@3x.png */; };
 		7EF2D8DC1C9D4FAB008F76E8 /* ボールぽこぽこ-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EF2D8D91C9D4FAB008F76E8 /* ボールぽこぽこ-タイムテーブル.png */; };
 		7EF2D8DD1C9D4FAB008F76E8 /* ミュージックサロン-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EF2D8DA1C9D4FAB008F76E8 /* ミュージックサロン-タイムテーブル.png */; };
 		7EF2D8DE1C9D4FAB008F76E8 /* 英語劇-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EF2D8DB1C9D4FAB008F76E8 /* 英語劇-タイムテーブル.png */; };
@@ -99,7 +99,6 @@
 		FA2384251CA0A445003BBDA5 /* 物理科学部.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2384041CA0A445003BBDA5 /* 物理科学部.png */; };
 		FA2384261CA0A445003BBDA5 /* 本の泉.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2384051CA0A445003BBDA5 /* 本の泉.png */; };
 		FA2384271CA0A445003BBDA5 /* 魔女の卓球便.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2384061CA0A445003BBDA5 /* 魔女の卓球便.png */; };
-		FA6CEB911CA026CB002571EF /* Coming-Soon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA6CEB901CA026CB002571EF /* Coming-Soon.jpg */; };
 		FA8098A71C9FF6B400B2E939 /* Addiction？.png in Resources */ = {isa = PBXBuildFile; fileRef = FA8098A31C9FF6B400B2E939 /* Addiction？.png */; };
 		FA8098A81C9FF6B400B2E939 /* Million-Dollars.png in Resources */ = {isa = PBXBuildFile; fileRef = FA8098A41C9FF6B400B2E939 /* Million-Dollars.png */; };
 		FA8098A91C9FF6B400B2E939 /* 奴等.png in Resources */ = {isa = PBXBuildFile; fileRef = FA8098A51C9FF6B400B2E939 /* 奴等.png */; };
@@ -176,8 +175,6 @@
 		7E0DC8AA1C9D64A100B45F37 /* 数学研究会模擬講義-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "数学研究会模擬講義-タイムテーブル.png"; sourceTree = "<group>"; };
 		7E0DC8B21C9D673F00B45F37 /* 校長対談-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "校長対談-タイムテーブル.png"; sourceTree = "<group>"; };
 		7E0DC8B41C9D6B3500B45F37 /* 恋愛偏差値-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "恋愛偏差値-タイムテーブル.png"; sourceTree = "<group>"; };
-		7E0DC8B61C9D73D700B45F37 /* clock-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock-7.png"; sourceTree = "<group>"; };
-		7E0DC8B81C9D73F800B45F37 /* Home-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home-50.png"; sourceTree = "<group>"; };
 		7E0DC8BB1C9D7E9800B45F37 /* icon-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-29@2x.png"; sourceTree = "<group>"; };
 		7E0DC8BC1C9D7E9800B45F37 /* icon-29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-29@3x.png"; sourceTree = "<group>"; };
 		7E0DC8BD1C9D7E9800B45F37 /* icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40@2x.png"; sourceTree = "<group>"; };
@@ -189,7 +186,7 @@
 		7E3EB4791C79DAB900F3B2A0 /* TimetableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimetableViewController.h; path = ../TimetableViewController.h; sourceTree = "<group>"; };
 		7E3EB47A1C79DAB900F3B2A0 /* TimetableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimetableViewController.m; path = ../TimetableViewController.m; sourceTree = "<group>"; };
 		7E3FE6E71CA02782000E0281 /* MyriadPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Regular.otf"; sourceTree = "<group>"; };
-		7E4D55A81C49315B00BFE19C /* Seiko Festa 57th.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Seiko Festa 57th.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E4D55A81C49315B00BFE19C /* Seiko Festa 57th App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Seiko Festa 57th App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4D55AC1C49315C00BFE19C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E4D55AD1C49315C00BFE19C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7E4D55AF1C49315C00BFE19C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -218,6 +215,8 @@
 		7ED6F5261CA41CB00077425C /* 藤子・Ｆ・不二雄研究会.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "藤子・Ｆ・不二雄研究会.png"; sourceTree = "<group>"; };
 		7ED6F5281CA4208F0077425C /* 横浜漫才フィルム.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "横浜漫才フィルム.png"; sourceTree = "<group>"; };
 		7ED6F52A1CA4DFCA0077425C /* 生徒会展示.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "生徒会展示.png"; sourceTree = "<group>"; };
+		7ED6F52C1CA576B90077425C /* Default-667@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667@2x.png"; sourceTree = "<group>"; };
+		7ED6F52D1CA576B90077425C /* Default-736@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736@3x.png"; sourceTree = "<group>"; };
 		7EF2D8D91C9D4FAB008F76E8 /* ボールぽこぽこ-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ボールぽこぽこ-タイムテーブル.png"; sourceTree = "<group>"; };
 		7EF2D8DA1C9D4FAB008F76E8 /* ミュージックサロン-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ミュージックサロン-タイムテーブル.png"; sourceTree = "<group>"; };
 		7EF2D8DB1C9D4FAB008F76E8 /* 英語劇-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "英語劇-タイムテーブル.png"; sourceTree = "<group>"; };
@@ -266,7 +265,6 @@
 		FA2384041CA0A445003BBDA5 /* 物理科学部.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "物理科学部.png"; sourceTree = "<group>"; };
 		FA2384051CA0A445003BBDA5 /* 本の泉.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "本の泉.png"; sourceTree = "<group>"; };
 		FA2384061CA0A445003BBDA5 /* 魔女の卓球便.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "魔女の卓球便.png"; sourceTree = "<group>"; };
-		FA6CEB901CA026CB002571EF /* Coming-Soon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Coming-Soon.jpg"; sourceTree = "<group>"; };
 		FA8098A31C9FF6B400B2E939 /* Addiction？.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Addiction？.png"; sourceTree = "<group>"; };
 		FA8098A41C9FF6B400B2E939 /* Million-Dollars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Million-Dollars.png"; sourceTree = "<group>"; };
 		FA8098A51C9FF6B400B2E939 /* 奴等.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "奴等.png"; sourceTree = "<group>"; };
@@ -357,6 +355,8 @@
 				7E0DC8C01C9D7E9800B45F37 /* icon-60@3x.png */,
 				7E0DC8C71C9D7FAA00B45F37 /* Default-568h@2x.png */,
 				7E0DC8C81C9D7FAA00B45F37 /* Default@2x.png */,
+				7ED6F52C1CA576B90077425C /* Default-667@2x.png */,
+				7ED6F52D1CA576B90077425C /* Default-736@3x.png */,
 			);
 			name = Icons;
 			sourceTree = "<group>";
@@ -382,7 +382,7 @@
 		7E4D55A91C49315B00BFE19C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7E4D55A81C49315B00BFE19C /* Seiko Festa 57th.app */,
+				7E4D55A81C49315B00BFE19C /* Seiko Festa 57th App.app */,
 				7E4D55C11C49315C00BFE19C /* Seiko Festa 57thTests.xctest */,
 			);
 			name = Products;
@@ -440,12 +440,9 @@
 		7E4D55D11C4944F300BFE19C /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				7E0DC8B61C9D73D700B45F37 /* clock-7.png */,
-				7E0DC8B81C9D73F800B45F37 /* Home-50.png */,
 				FAA39B491C9D330E00A1B697 /* Left.png */,
 				FAA39B4A1C9D330E00A1B697 /* map.jpg */,
 				FAA39B4B1C9D330E00A1B697 /* Right.png */,
-				FA6CEB901CA026CB002571EF /* Coming-Soon.jpg */,
 				FAA39B001C9D093200A1B697 /* 角丸アイコン */,
 				FAA39B441C9D2D0400A1B697 /* バナー */,
 				7EF2D8C81C9D4E6B008F76E8 /* タイムテーブル */,
@@ -711,9 +708,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7E4D55A71C49315B00BFE19C /* Seiko Festa 57th */ = {
+		7E4D55A71C49315B00BFE19C /* Seiko Festa 57th App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7E4D55CB1C49315C00BFE19C /* Build configuration list for PBXNativeTarget "Seiko Festa 57th" */;
+			buildConfigurationList = 7E4D55CB1C49315C00BFE19C /* Build configuration list for PBXNativeTarget "Seiko Festa 57th App" */;
 			buildPhases = (
 				7E4D55A41C49315B00BFE19C /* Sources */,
 				7E4D55A51C49315B00BFE19C /* Frameworks */,
@@ -723,9 +720,9 @@
 			);
 			dependencies = (
 			);
-			name = "Seiko Festa 57th";
+			name = "Seiko Festa 57th App";
 			productName = "Seiko Festa 57th";
-			productReference = 7E4D55A81C49315B00BFE19C /* Seiko Festa 57th.app */;
+			productReference = 7E4D55A81C49315B00BFE19C /* Seiko Festa 57th App.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7E4D55C01C49315C00BFE19C /* Seiko Festa 57thTests */ = {
@@ -779,7 +776,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7E4D55A71C49315B00BFE19C /* Seiko Festa 57th */,
+				7E4D55A71C49315B00BFE19C /* Seiko Festa 57th App */,
 				7E4D55C01C49315C00BFE19C /* Seiko Festa 57thTests */,
 			);
 		};
@@ -835,11 +832,11 @@
 				FA2384161CA0A445003BBDA5 /* 宇宙戦艦ヤマト研究会.jpg in Resources */,
 				7E0DC8B51C9D6B3500B45F37 /* 恋愛偏差値-タイムテーブル.png in Resources */,
 				7EF2D8F81C9D57CE008F76E8 /* 蜃気楼-タイムテーブル.png in Resources */,
-				FA6CEB911CA026CB002571EF /* Coming-Soon.jpg in Resources */,
 				7E0DC8AB1C9D64A100B45F37 /* ミュージックサロン-タイムテーブル小講堂.png in Resources */,
 				7ED6F51D1CA41BEC0077425C /* The 笑-1 GP.png in Resources */,
 				FAA39AFA1C9D089C00A1B697 /* Flapjack.png in Resources */,
 				FA0F10E71C9E7F1200AF0155 /* 恋愛偏差値.png in Resources */,
+				7ED6F52E1CA576B90077425C /* Default-667@2x.png in Resources */,
 				FA8098A91C9FF6B400B2E939 /* 奴等.png in Resources */,
 				FAA39B221C9D18CA00A1B697 /* 蜃気楼.png in Resources */,
 				7E0DC8C51C9D7E9800B45F37 /* icon-60@2x.png in Resources */,
@@ -859,7 +856,6 @@
 				FAA39B471C9D2D9300A1B697 /* ボールぽこぽこ バナー.jpg in Resources */,
 				FA2384101CA0A445003BBDA5 /* コンピュータ部.jpg in Resources */,
 				FA23840F1CA0A445003BBDA5 /* クイズ研究会.png in Resources */,
-				7E0DC8B91C9D73F800B45F37 /* Home-50.png in Resources */,
 				FAF9527F1CA3CE8D00797796 /* 少林寺拳法部演武会.png in Resources */,
 				FAA39B181C9D172200A1B697 /* 迷いの国のアリス.png in Resources */,
 				FAA39B171C9D172200A1B697 /* 高3英語劇.png in Resources */,
@@ -904,9 +900,9 @@
 				7EF2D8DD1C9D4FAB008F76E8 /* ミュージックサロン-タイムテーブル.png in Resources */,
 				FAA39B3B1C9D22FF00A1B697 /* Mr.聖光.png in Resources */,
 				FA23840D1CA0A445003BBDA5 /* かるた会.jpg in Resources */,
+				7ED6F52F1CA576B90077425C /* Default-736@3x.png in Resources */,
 				FA23841F1CA0A445003BBDA5 /* 聖光道場.jpg in Resources */,
 				FAF5D6ED1CA169F500C2EEDC /* ぎゃんぶる。.jpg in Resources */,
-				7E0DC8B71C9D73D700B45F37 /* clock-7.png in Resources */,
 				FAA39B2E1C9D1EB100A1B697 /* Grand-Finale.png in Resources */,
 				7ED6F5211CA41C7F0077425C /* 78枚目のJOKER.png in Resources */,
 				FA2384201CA0A445003BBDA5 /* 聖書研究会.jpg in Resources */,
@@ -966,7 +962,7 @@
 /* Begin PBXTargetDependency section */
 		7E4D55C31C49315C00BFE19C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7E4D55A71C49315B00BFE19C /* Seiko Festa 57th */;
+			target = 7E4D55A71C49315B00BFE19C /* Seiko Festa 57th App */;
 			targetProxy = 7E4D55C21C49315C00BFE19C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1041,6 +1037,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yuki Masuda (TAE9KC7SWK)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -1054,6 +1051,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "Seiko Festa 57th Provisioning Profile";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1135,7 +1133,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7E4D55CB1C49315C00BFE19C /* Build configuration list for PBXNativeTarget "Seiko Festa 57th" */ = {
+		7E4D55CB1C49315C00BFE19C /* Build configuration list for PBXNativeTarget "Seiko Festa 57th App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7E4D55CC1C49315C00BFE19C /* Debug */,

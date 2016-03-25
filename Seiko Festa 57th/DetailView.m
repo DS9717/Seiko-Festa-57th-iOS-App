@@ -306,7 +306,7 @@
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
         else if (flag == 9) {
-            detailImage = [UIImage imageNamed:@"Coming-Soon.jpg"];
+            detailImage = [UIImage imageNamed:@"せいとんがかり.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"せいとんがかり";
             _explainSentence.text = @"";
