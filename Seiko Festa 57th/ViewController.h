@@ -190,6 +190,13 @@
     
     float contentOffsetY;
     
+    float contentOffsetX1;
+    float contentOffsetX2;
+    float contentOffsetX3;
+    float contentOffsetX4;
+    float contentOffsetX5;
+    
+    
 }
 
 @property(nonatomic) int flag;

@@ -113,6 +113,7 @@
     scrollView1.userInteractionEnabled = YES;
     scrollView1.bounces = YES;
     [scrollView1 setContentSize:CGSizeMake(spaceLeft + (spaceW + length) * 14, length + spaceH + buttonLabelFont + 1)];
+    [scrollView1 setContentOffset:CGPointMake(contentOffsetX1, 0.0) animated:NO];
     scrollView1.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView1];
     
@@ -320,6 +321,7 @@
     scrollView2.userInteractionEnabled = YES;
     scrollView2.bounces = YES;
     [scrollView2 setContentSize:CGSizeMake(spaceLeft + (spaceW + length) * 5, length + spaceH + buttonLabelFont + 1)];
+    [scrollView2 setContentOffset:CGPointMake(contentOffsetX2, 0.0) animated:NO];
     scrollView2.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView2];
     
@@ -407,6 +409,7 @@
     scrollView3.userInteractionEnabled = YES;
     scrollView3.bounces = YES;
     [scrollView3 setContentSize:CGSizeMake(spaceLeft + (spaceW + length) * 12, length + spaceH + buttonLabelFont + 1)];
+    [scrollView3 setContentOffset:CGPointMake(contentOffsetX3, 0.0) animated:NO];
     scrollView3.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView3];
     
@@ -587,6 +590,7 @@
     scrollView4.userInteractionEnabled = YES;
     scrollView4.bounces = YES;
     [scrollView4 setContentSize:CGSizeMake(spaceLeft + (spaceW + length) * 13, length + spaceH + buttonLabelFont + 1)];
+    [scrollView4 setContentOffset:CGPointMake(contentOffsetX4, 0.0) animated:NO];
     scrollView4.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView4];
     
@@ -779,6 +783,7 @@
     scrollView5.userInteractionEnabled = YES;
     scrollView5.bounces = YES;
     [scrollView5 setContentSize:CGSizeMake(spaceLeft + (spaceW + length) * 11, length + spaceH + buttonLabelFont + 1)];
+    [scrollView5 setContentOffset:CGPointMake(contentOffsetX5, 0.0) animated:NO];
     scrollView5.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView5];
     
@@ -954,6 +959,11 @@
     
     [super viewWillDisappear:animated];
     contentOffsetY = mainScrollView.contentOffset.y;
+    contentOffsetX1 = scrollView1.contentOffset.x;
+    contentOffsetX2 = scrollView2.contentOffset.x;
+    contentOffsetX3 = scrollView3.contentOffset.x;
+    contentOffsetX4 = scrollView4.contentOffset.x;
+    contentOffsetX5 = scrollView5.contentOffset.x;
     
     [mainScrollView removeFromSuperview];
     

@@ -29,7 +29,7 @@
     //iOS8以降
     if(iOSVersion >= 8.0f){
         
-        mainScrollView.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height-49);
+        mainScrollView.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
         
     }else{
         
@@ -105,7 +105,7 @@
     scrollView5.delegate = self;
     scrollView5.directionalLockEnabled = YES;
     scrollView5.bounces = YES;
-    [scrollView5 setContentSize:CGSizeMake(self.view.bounds.size.width, (self.view.bounds.size.width * 19 / 32) * 0)];
+    [scrollView5 setContentSize:CGSizeMake(self.view.bounds.size.width, (self.view.bounds.size.width * 19 / 32) * 4)];
     scrollView5.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView5];
     
