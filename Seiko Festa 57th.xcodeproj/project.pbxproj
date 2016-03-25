@@ -50,6 +50,7 @@
 		7ED6F5251CA41C9B0077425C /* 地理歴史巡検部.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED6F5241CA41C9B0077425C /* 地理歴史巡検部.png */; };
 		7ED6F5271CA41CB00077425C /* 藤子・Ｆ・不二雄研究会.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED6F5261CA41CB00077425C /* 藤子・Ｆ・不二雄研究会.png */; };
 		7ED6F5291CA4208F0077425C /* 横浜漫才フィルム.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED6F5281CA4208F0077425C /* 横浜漫才フィルム.png */; };
+		7ED6F52B1CA4DFCA0077425C /* 生徒会展示.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED6F52A1CA4DFCA0077425C /* 生徒会展示.png */; };
 		7EF2D8DC1C9D4FAB008F76E8 /* ボールぽこぽこ-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EF2D8D91C9D4FAB008F76E8 /* ボールぽこぽこ-タイムテーブル.png */; };
 		7EF2D8DD1C9D4FAB008F76E8 /* ミュージックサロン-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EF2D8DA1C9D4FAB008F76E8 /* ミュージックサロン-タイムテーブル.png */; };
 		7EF2D8DE1C9D4FAB008F76E8 /* 英語劇-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EF2D8DB1C9D4FAB008F76E8 /* 英語劇-タイムテーブル.png */; };
@@ -216,6 +217,7 @@
 		7ED6F5241CA41C9B0077425C /* 地理歴史巡検部.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "地理歴史巡検部.png"; sourceTree = "<group>"; };
 		7ED6F5261CA41CB00077425C /* 藤子・Ｆ・不二雄研究会.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "藤子・Ｆ・不二雄研究会.png"; sourceTree = "<group>"; };
 		7ED6F5281CA4208F0077425C /* 横浜漫才フィルム.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "横浜漫才フィルム.png"; sourceTree = "<group>"; };
+		7ED6F52A1CA4DFCA0077425C /* 生徒会展示.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "生徒会展示.png"; sourceTree = "<group>"; };
 		7EF2D8D91C9D4FAB008F76E8 /* ボールぽこぽこ-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ボールぽこぽこ-タイムテーブル.png"; sourceTree = "<group>"; };
 		7EF2D8DA1C9D4FAB008F76E8 /* ミュージックサロン-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ミュージックサロン-タイムテーブル.png"; sourceTree = "<group>"; };
 		7EF2D8DB1C9D4FAB008F76E8 /* 英語劇-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "英語劇-タイムテーブル.png"; sourceTree = "<group>"; };
@@ -634,6 +636,7 @@
 				7ED6F5221CA41C8E0077425C /* ぶいえいす.png */,
 				FA2383FF1CA0A445003BBDA5 /* 聖書研究会.jpg */,
 				FA2383FB1CA0A445003BBDA5 /* 数学研究会.png */,
+				7ED6F52A1CA4DFCA0077425C /* 生徒会展示.png */,
 			);
 			name = Display;
 			sourceTree = "<group>";
@@ -800,6 +803,7 @@
 				FA2384251CA0A445003BBDA5 /* 物理科学部.png in Resources */,
 				FAA39B3A1C9D22FF00A1B697 /* ○○男子No.1決定戦.png in Resources */,
 				FA0F10E21C9E7F0300AF0155 /* 吹奏楽部.png in Resources */,
+				7ED6F52B1CA4DFCA0077425C /* 生徒会展示.png in Resources */,
 				FA8098A71C9FF6B400B2E939 /* Addiction？.png in Resources */,
 				FAA39B1E1C9D18CA00A1B697 /* Flat-Flight.png in Resources */,
 				FA2384181CA0A445003BBDA5 /* 古本市.png in Resources */,
