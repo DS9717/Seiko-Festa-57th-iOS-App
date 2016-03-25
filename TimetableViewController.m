@@ -47,7 +47,7 @@
     mainScrollView.directionalLockEnabled = YES;
     mainScrollView.bounces = NO;
     mainScrollView.backgroundColor = [UIColor clearColor];
-    [mainScrollView setContentSize:CGSizeMake(7*(self.view.bounds.size.width), self.view.bounds.size.height-113)];
+    [mainScrollView setContentSize:CGSizeMake(5*(self.view.bounds.size.width), self.view.bounds.size.height-113)];
     
     scrollView1 = [[UIScrollView alloc]init];
     scrollView1.frame = CGRectMake(self.view.bounds.size.width * 0, 0, self.view.bounds.size.width, self.view.bounds.size.height-113);
@@ -117,7 +117,7 @@
     scrollView6.delegate = self;
     scrollView6.directionalLockEnabled = YES;
     scrollView6.bounces = YES;
-    [scrollView6 setContentSize:CGSizeMake(self.view.bounds.size.width, 180)];
+    [scrollView6 setContentSize:CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.height)];
     scrollView6.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView6];
     
@@ -129,9 +129,10 @@
     scrollView7.delegate = self;
     scrollView7.directionalLockEnabled = YES;
     scrollView7.bounces = YES;
-    [scrollView7 setContentSize:CGSizeMake(self.view.bounds.size.width, 180)];
+    [scrollView7 setContentSize:CGSizeMake(self.view.bounds.size.width,self.view.bounds.size.height)];
     scrollView7.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView7];
+    
     
     [self.view addSubview:mainScrollView];
     

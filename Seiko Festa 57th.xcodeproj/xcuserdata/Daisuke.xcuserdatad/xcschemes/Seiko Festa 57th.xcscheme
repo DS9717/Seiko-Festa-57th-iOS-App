@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7E4D55A71C49315B00BFE19C"
-               BuildableName = "Seiko Festa 57th.app"
-               BlueprintName = "Seiko Festa 57th"
+               BuildableName = "Seiko Festa 57th App.app"
+               BlueprintName = "Seiko Festa 57th App"
                ReferencedContainer = "container:Seiko Festa 57th.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -57,8 +57,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7E4D55A71C49315B00BFE19C"
-            BuildableName = "Seiko Festa 57th.app"
-            BlueprintName = "Seiko Festa 57th"
+            BuildableName = "Seiko Festa 57th App.app"
+            BlueprintName = "Seiko Festa 57th App"
             ReferencedContainer = "container:Seiko Festa 57th.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -77,8 +77,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7E4D55A71C49315B00BFE19C"
-            BuildableName = "Seiko Festa 57th.app"
-            BlueprintName = "Seiko Festa 57th"
+            BuildableName = "Seiko Festa 57th App.app"
+            BlueprintName = "Seiko Festa 57th App"
             ReferencedContainer = "container:Seiko Festa 57th.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -96,8 +96,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7E4D55A71C49315B00BFE19C"
-            BuildableName = "Seiko Festa 57th.app"
-            BlueprintName = "Seiko Festa 57th"
+            BuildableName = "Seiko Festa 57th App.app"
+            BlueprintName = "Seiko Festa 57th App"
             ReferencedContainer = "container:Seiko Festa 57th.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
