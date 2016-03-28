@@ -57,6 +57,8 @@
     
     NSString *whichList;
     
+    UILabel *nav_title;
+    
 }
 @property(nonatomic) int flag;
 @property(nonatomic) NSString *whatList;

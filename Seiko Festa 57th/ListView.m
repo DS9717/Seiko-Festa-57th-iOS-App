@@ -25,9 +25,9 @@
     
     //iOS8以降
     if(iOSVersion >= 8.0f){
-        scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
+        scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height-64)];
     }else{
-        scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.height-113)];
+        scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height-113)];
     }
     
     //画面サイズ
@@ -53,6 +53,16 @@
     }
     
     
+    //Navigation Itemのタイトルのフォントを設定
+    nav_title=[[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.navigationItem.titleView.frame.size.width,40)];
+    nav_title.textColor=[UIColor whiteColor];
+    
+    nav_title.textAlignment=NSTextAlignmentCenter;
+    
+    [nav_title setFont:[UIFont fontWithName:@"MyriadPro-Regular" size:22]];
+    self.navigationItem.titleView=nav_title;
+    
+    
     //横スクロールのインジケータを非表示にする
     scrollView.showsHorizontalScrollIndicator = NO;
     
@@ -64,7 +74,7 @@
     
     if ([_whatList isEqualToString:@"food"]) {
         
-        self.navigationItem.title = @"Food";
+        nav_title.text=@"Food";
         
         button1= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + fontSize + 29) * 0, length, length)];
         [button1 setImage:[UIImage imageNamed:@"鉄板職人.jpg"] forState:UIControlStateNormal];
@@ -239,7 +249,7 @@
         
     }else if ([_whatList isEqualToString:@"display"]) {
         
-        self.navigationItem.title = @"Display";
+        nav_title.text=@"Display";
         
         button1= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + fontSize + 29) * 0, length, length)];
         [button1 setImage:[UIImage imageNamed:@"英語劇.png"] forState:UIControlStateNormal];
@@ -308,7 +318,7 @@
         
     }else if ([_whatList isEqualToString:@"band"]) {
         
-        self.navigationItem.title = @"Band";
+        nav_title.text=@"Band";
         
         button1= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + fontSize + 29) * 0, length, length)];
         [button1 setImage:[UIImage imageNamed:@"M&A.png"] forState:UIControlStateNormal];
@@ -461,7 +471,7 @@
         
     }else if ([_whatList isEqualToString:@"performance"]) {
         
-        self.navigationItem.title = @"Performance";
+        nav_title.text=@"Performance";
         
         button1= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + fontSize + 29) * 0, length, length)];
         [button1 setImage:[UIImage imageNamed:@"Grand-Finale.png"] forState:UIControlStateNormal];
@@ -628,7 +638,7 @@
         
     }else if ([_whatList isEqualToString:@"stage"]) {
         
-        self.navigationItem.title = @"Stage";
+        nav_title.text=@"Stage";
         
         button1= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + fontSize + 29) * 0, length, length)];
         [button1 setImage:[UIImage imageNamed:@"フォークダンス.png"] forState:UIControlStateNormal];
@@ -767,8 +777,19 @@
     }
     
     [self.view addSubview:scrollView];
-    self.navigationController.navigationBar.tintColor=[UIColor orangeColor];
+   
+    self.navigationController.navigationBar.translucent = NO;
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:247.0/255.0 green:59.0/255.0 blue:63.0/255.0 alpha:1.0];
+    self.navigationController.navigationBar.tintColor=[UIColor whiteColor];
+    
+    self.tabBarController.tabBar.barTintColor = [UIColor whiteColor];
+    self.tabBarController.tabBar.tintColor = [UIColor colorWithRed:247.0/255.0 green:59.0/255.0 blue:63.0/255.0 alpha:1.0];
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 
+    UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc]init];
+    backButtonItem.title = @"";
+    self.navigationItem.backBarButtonItem = backButtonItem;
     
 }
 

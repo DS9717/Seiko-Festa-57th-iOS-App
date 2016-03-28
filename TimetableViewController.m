@@ -33,7 +33,7 @@
         
     }else{
         
-        mainScrollView.frame = CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.height-113);
+        mainScrollView.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height-113);
         
     }
     
@@ -47,7 +47,7 @@
     mainScrollView.directionalLockEnabled = YES;
     mainScrollView.bounces = NO;
     mainScrollView.backgroundColor = [UIColor clearColor];
-    [mainScrollView setContentSize:CGSizeMake(5*(self.view.bounds.size.width), self.view.bounds.size.height-113)];
+    [mainScrollView setContentSize:CGSizeMake(7*(self.view.bounds.size.width), self.view.bounds.size.height-113)];
     
     scrollView1 = [[UIScrollView alloc]init];
     scrollView1.frame = CGRectMake(self.view.bounds.size.width * 0, 0, self.view.bounds.size.width, self.view.bounds.size.height-113);
@@ -154,7 +154,15 @@
     //ページコントロールを貼付ける
     [self.view addSubview:pageControl];
     
-    self.navigationItem.title=@"講堂";
+    //Navigation Itemのタイトルのフォントを設定
+    nav_title=[[UILabel alloc]initWithFrame:CGRectMake(0, 0, 150, 40)];
+    nav_title.textColor=[UIColor whiteColor];
+    nav_title.text = @"講堂";
+    nav_title.textAlignment=NSTextAlignmentCenter;
+    
+    [nav_title setFont:[UIFont boldSystemFontOfSize:18]];
+    self.navigationItem.titleView=nav_title;
+    
     
     //講堂
     buttonOne1= [[UIButton alloc]initWithFrame:CGRectMake(0, (self.view.bounds.size.width * 19 / 32) * 0, self.view.bounds.size.width, self.view.bounds.size.width * 19 / 32)];
@@ -322,12 +330,17 @@
     [scrollView5 addSubview:buttonFive4];
     
     
-    UIView *horizontal5= [[UIView alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height - 52, self.view.bounds.size.width, 3)];
-    horizontal5.backgroundColor = [UIColor orangeColor];
-    [self.view addSubview:horizontal5];
+    self.navigationController.navigationBar.translucent = NO;
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:247.0/255.0 green:59.0/255.0 blue:63.0/255.0 alpha:1.0];
+    self.navigationController.navigationBar.tintColor=[UIColor whiteColor];
+    self.tabBarController.tabBar.barTintColor = [UIColor whiteColor];
+    self.tabBarController.tabBar.tintColor = [UIColor colorWithRed:247.0/255.0 green:59.0/255.0 blue:63.0/255.0 alpha:1.0];
     
-
-    self.navigationController.navigationBar.tintColor=[UIColor orangeColor];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc]init];
+    backButtonItem.title = @"";
+    self.navigationItem.backBarButtonItem = backButtonItem;
     
 }
 
@@ -358,19 +371,19 @@
     }
     
     if (pageControl.currentPage==0) {
-        self.navigationItem.title=@"講堂";
+        nav_title.text = @"講堂";
     }else if (pageControl.currentPage==1) {
-        self.navigationItem.title=@"外ステージ";
+        nav_title.text = @"外ステージ";
     }else if (pageControl.currentPage==2) {
-        self.navigationItem.title=@"ライブハウス1";
+        nav_title.text = @"ライブハウス1";
     }else if (pageControl.currentPage==3) {
-        self.navigationItem.title=@"ライブハウス2";
+        nav_title.text = @"ライブハウス2";
     }else if (pageControl.currentPage==4) {
-        self.navigationItem.title=@"小講堂";
+        nav_title.text = @"小講堂";
     }else if (pageControl.currentPage==5) {
-        self.navigationItem.title=@"体育館";
+        nav_title.text = @"体育館";
     }else if (pageControl.currentPage==6) {
-        self.navigationItem.title=@"武道場";
+        nav_title.text = @"武道場";
     }
     
 }

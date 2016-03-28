@@ -29,16 +29,32 @@
     
     organizationFeaturedImages = @[@"Flat Flight バナー1.jpg", @"ボールぽこぽこ バナー.jpg", @"ミュージックサロン バナー.JPG"];
     
-    featuredImageButton = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width, 64, self.view.bounds.size.width, self.view.bounds.size.width * 0.4)];
-    featuredImageButton2 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width, 64, self.view.bounds.size.width, self.view.bounds.size.width * 0.4)];
+    featuredImageButton = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.width * 0.4)];
+    featuredImageButton2 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.width * 0.4)];
     
     [self featuredImageIn];
     
     self.navigationController.navigationBar.translucent = NO;
-    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:247.0/255.0 green:59.0/255.0 blue:63.0/255.0 alpha:0.0];
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:247.0/255.0 green:59.0/255.0 blue:63.0/255.0 alpha:1.0];
     self.navigationController.navigationBar.tintColor=[UIColor whiteColor];
-    self.tabBarController.tabBar.barTintColor = [UIColor blackColor];
-    self.tabBarController.tabBar.tintColor = [UIColor whiteColor];
+    self.tabBarController.tabBar.barTintColor = [UIColor whiteColor];
+    self.tabBarController.tabBar.tintColor = [UIColor colorWithRed:247.0/255.0 green:59.0/255.0 blue:63.0/255.0 alpha:1.0];
+    
+    //Navigation Itemのタイトルのフォントを設定
+    UILabel *nav_title=[[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.navigationItem.titleView.frame.size.width,40)];
+    nav_title.text=@"Welcome";
+    nav_title.textColor=[UIColor whiteColor];
+    
+    nav_title.textAlignment=NSTextAlignmentCenter;
+    
+    [nav_title setFont:[UIFont fontWithName:@"MyriadPro-Regular" size:22]];
+    self.navigationItem.titleView=nav_title;
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc]init];
+    backButtonItem.title = @"";
+    self.navigationItem.backBarButtonItem = backButtonItem;
     
 }
 
@@ -58,7 +74,7 @@
         length = 72;
         spaceW = 20;
         spaceH = 8;
-        labelFont = 18;
+        labelFont = 20;
         allButtonFont = 12; 
         buttonLabelFont = 13;
     } else if (r.size.width == 375) {
@@ -85,7 +101,7 @@
     // UIScrollViewのインスタンス化
     mainScrollView = [[UIScrollView alloc]init];
     //CGRectMake(0, 64+バナー, 横, 縦-64-バナー-3-49);
-    mainScrollView.frame = CGRectMake(0, 64 + self.view.bounds.size.width * 0.4, self.view.bounds.size.width, self.view.bounds.size.height - self.view.bounds.size.width * 0.4 - 116);
+    mainScrollView.frame = CGRectMake(0, 0 + self.view.bounds.size.width * 0.4, self.view.bounds.size.width, self.view.bounds.size.height - self.view.bounds.size.width * 0.4 - 49);
     //横スクロールのインジケータを非表示にする
     mainScrollView.showsHorizontalScrollIndicator = NO;
     
@@ -98,11 +114,11 @@
     [mainScrollView setContentOffset:CGPointMake(0.0, contentOffsetY) animated:NO];
     
     foodLabel = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + buttonLabelFont + 83) * 0, 45, labelFont + 4)];
-    foodLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:labelFont];
+    foodLabel.font = [UIFont fontWithName:@"MyriadPro-Regular" size:labelFont];
     foodLabel.text = @"Food";
     [mainScrollView addSubview:foodLabel];
     
-    viewAllButton1 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 80, 19 + (length + spaceH + buttonLabelFont + 83) * 0, 64, allButtonFont)];
+    viewAllButton1 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 80, 20 + (length + spaceH + buttonLabelFont + 83) * 0, 64, allButtonFont)];
     [viewAllButton1 setTitle:@"すべて見る" forState:UIControlStateNormal];
     viewAllButton1.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:allButtonFont];
     [viewAllButton1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -305,12 +321,12 @@
     
     
     
-    displayLabel = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + buttonLabelFont + 83) * 1, 60, labelFont + 4)];
-    displayLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:labelFont];
+    displayLabel = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + buttonLabelFont + 83) * 1, 80, labelFont + 4)];
+    displayLabel.font = [UIFont fontWithName:@"MyriadPro-Regular" size:labelFont];
     displayLabel.text = @"Display";
     [mainScrollView addSubview:displayLabel];
     
-    viewAllButton2 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 80, 19 + (length + spaceH + buttonLabelFont + 83) * 1, 64, allButtonFont)];
+    viewAllButton2 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 80, 20 + (length + spaceH + buttonLabelFont + 83) * 1, 64, allButtonFont)];
     [viewAllButton2 setTitle:@"すべて見る" forState:UIControlStateNormal];
     viewAllButton2.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:allButtonFont];
     [viewAllButton2 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -394,11 +410,11 @@
     
     
     bandLabel = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + buttonLabelFont + 83) * 2, 60, labelFont + 4)];
-    bandLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:labelFont];
+    bandLabel.font = [UIFont fontWithName:@"MyriadPro-Regular" size:labelFont];
     bandLabel.text = @"Band";
     [mainScrollView addSubview:bandLabel];
     
-    viewAllBUtton3 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 80, 19 + (length + spaceH + buttonLabelFont + 83) * 2, 64, allButtonFont)];
+    viewAllBUtton3 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 80, 20 + (length + spaceH + buttonLabelFont + 83) * 2, 64, allButtonFont)];
     [viewAllBUtton3 setTitle:@"すべて見る" forState:UIControlStateNormal];
     viewAllBUtton3.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:allButtonFont];
     [viewAllBUtton3 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -497,7 +513,7 @@
     
     buttonThree2Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 1, length + spaceH, length, buttonLabelFont + 1)];
     buttonThree2Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
-    buttonThree2Label.text = @"Flat-Flight";
+    buttonThree2Label.text = @"Flat Flight";
     buttonThree2Label.numberOfLines = 0;
     [buttonThree2Label sizeToFit];
     [scrollView3 addSubview:buttonThree2Label];
@@ -525,7 +541,7 @@
     
     buttonThree6Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 5, length + spaceH, length, buttonLabelFont + 1)];
     buttonThree6Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
-    buttonThree6Label.text = @"Яooz-Leef";
+    buttonThree6Label.text = @"Яooz Leef";
     buttonThree6Label.numberOfLines = 0;
     [buttonThree6Label sizeToFit];
     [scrollView3 addSubview:buttonThree6Label];
@@ -575,11 +591,11 @@
     
     
     performanceLabel = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + buttonLabelFont + 83) * 3, 100, labelFont + 4)];
-    performanceLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:labelFont];
+    performanceLabel.font = [UIFont fontWithName:@"MyriadPro-Regular" size:labelFont];
     performanceLabel.text = @"Performace";
     [mainScrollView addSubview:performanceLabel];
     
-    viewAllButton4 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 80, 19 + (length + spaceH + buttonLabelFont + 83) * 3, 64, allButtonFont)];
+    viewAllButton4 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 80, 20 + (length + spaceH + buttonLabelFont + 83) * 3, 64, allButtonFont)];
     [viewAllButton4 setTitle:@"すべて見る" forState:UIControlStateNormal];
     viewAllButton4.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:allButtonFont];
     [viewAllButton4 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -676,7 +692,7 @@
     
     buttonFour1Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 0, length + spaceH, length, buttonLabelFont + 1)];
     buttonFour1Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
-    buttonFour1Label.text = @"Grand-Finale";
+    buttonFour1Label.text = @"Grand Finale";
     buttonFour1Label.numberOfLines = 0;
     [buttonFour1Label sizeToFit];
     [scrollView4 addSubview:buttonFour1Label];
@@ -768,11 +784,11 @@
     
     
     stageLabel = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + buttonLabelFont + 83) * 4, 50, labelFont + 4)];
-    stageLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:labelFont];
+    stageLabel.font = [UIFont fontWithName:@"MyriadPro-Regular" size:labelFont];
     stageLabel.text = @"Stage";
     [mainScrollView addSubview:stageLabel];
     
-    viewAllButton5 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 80, 19 + (length + spaceH + buttonLabelFont + 83) * 4, 64, allButtonFont)];
+    viewAllButton5 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 80, 20 + (length + spaceH + buttonLabelFont + 83) * 4, 64, allButtonFont)];
     [viewAllButton5 setTitle:@"すべて見る" forState:UIControlStateNormal];
     viewAllButton5.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:allButtonFont];
     [viewAllButton5 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -951,9 +967,7 @@
     horizontal4.backgroundColor = [UIColor colorWithRed:140.0/255.0 green:140.0/255.0 blue:140.0/255.0 alpha:1.0];
     [mainScrollView addSubview:horizontal4];
     
-    UIView *horizontal5= [[UIView alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height - 52, self.view.bounds.size.width, 3)];
-    horizontal5.backgroundColor = [UIColor orangeColor];
-    [self.view addSubview:horizontal5];
+    
     
 }
 
@@ -995,7 +1009,7 @@
     
     [UIView animateWithDuration:0.5 delay:0.0 options:animeOptions animations:^{
         
-        featuredImageButton.frame = CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.width * 0.4);
+        featuredImageButton.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.width * 0.4);
         
     }completion:^(BOOL finished){
         
@@ -1013,7 +1027,7 @@
     
     [UIView animateWithDuration:0.5 delay:0.0 options:animeOptions animations:^{
         
-        featuredImageButton.frame = CGRectMake(-self.view.bounds.size.width, 64, self.view.bounds.size.width, self.view.bounds.size.width * 0.4);
+        featuredImageButton.frame = CGRectMake(-self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.width * 0.4);
         
     }completion:^(BOOL finished){
     }];
@@ -1025,7 +1039,7 @@
 
 -(void)featuredImageReady{
     
-    featuredImageButton.frame = CGRectMake(self.view.bounds.size.width, 64, self.view.bounds.size.width, self.view.bounds.size.width * 0.4);
+    featuredImageButton.frame = CGRectMake(self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.width * 0.4);
     
 }
 
@@ -1053,7 +1067,7 @@
     
     [UIView animateWithDuration:0.5 delay:0.0 options:animeOptions animations:^{
         
-        featuredImageButton2.frame = CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.width * 0.4);
+        featuredImageButton2.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.width * 0.4);
         
     }completion:^(BOOL finished){
         
@@ -1071,7 +1085,7 @@
     
     [UIView animateWithDuration:0.5 delay:0.0 options:animeOptions animations:^{
         
-        featuredImageButton2.frame = CGRectMake(- self.view.bounds.size.width, 64, self.view.bounds.size.width, self.view.bounds.size.width * 0.4);
+        featuredImageButton2.frame = CGRectMake(- self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.width * 0.4);
         
     }completion:^(BOOL finished){
     }];
@@ -1083,7 +1097,7 @@
 
 -(void)featuredImage2Ready{
     
-    featuredImageButton2.frame = CGRectMake(self.view.bounds.size.width, 64, self.view.bounds.size.width, self.view.bounds.size.width * 0.4);
+    featuredImageButton2.frame = CGRectMake(self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.width * 0.4);
     
 }
 

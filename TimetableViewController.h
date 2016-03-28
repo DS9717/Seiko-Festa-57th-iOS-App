@@ -59,6 +59,8 @@
     UIButton *buttonFive5;
     
     NSString *whichList;
+    
+    UILabel *nav_title;
 }
 @property(nonatomic) int flag;
 
