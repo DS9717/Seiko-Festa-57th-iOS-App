@@ -34,7 +34,9 @@
     
     [self featuredImageIn];
     
-    self.navigationController.navigationBar.tintColor=[UIColor orangeColor];
+    self.navigationController.navigationBar.translucent = NO;
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:247.0/255.0 green:59.0/255.0 blue:63.0/255.0 alpha:0.0];
+    self.navigationController.navigationBar.tintColor=[UIColor whiteColor];
     self.tabBarController.tabBar.barTintColor = [UIColor blackColor];
     self.tabBarController.tabBar.tintColor = [UIColor whiteColor];
     
