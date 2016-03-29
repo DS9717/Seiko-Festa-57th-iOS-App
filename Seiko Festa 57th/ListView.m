@@ -77,7 +77,7 @@
         nav_title.text=@"Food";
         
         button1= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + fontSize + 29) * 0, length, length)];
-        [button1 setImage:[UIImage imageNamed:@"鉄板職人.jpg"] forState:UIControlStateNormal];
+        [button1 setImage:[UIImage imageNamed:@"鉄板職人.png"] forState:UIControlStateNormal];
         [button1 addTarget:self
                        action:@selector(buttonOne1Detail:) forControlEvents:UIControlEventTouchUpInside];
         [scrollView addSubview:button1];

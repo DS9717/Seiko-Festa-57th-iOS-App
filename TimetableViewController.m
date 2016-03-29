@@ -138,7 +138,7 @@
     
     //UIPageControlのインスタンス化
     CGFloat x = (self.view.bounds.size.width - 300) / 2;
-    pageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(x, self.view.bounds.size.height-109, 300, 50)];
+    pageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(x, self.view.bounds.size.height-173, 300, 50)];
     //ドットの色
     pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
     pageControl.currentPageIndicatorTintColor = [UIColor blackColor];

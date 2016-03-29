@@ -24,11 +24,12 @@
     
     UILabel *nav_title;
     
+    UILabel *_detailTitle;
+    UITextView *_explainSentence;
+    
 }
 @property(nonatomic) int flag;
 @property (weak, nonatomic) IBOutlet UINavigationItem *navigationBar;
-@property (weak, nonatomic) IBOutlet UILabel *detailTitle;
-@property (weak, nonatomic) IBOutlet UILabel *explainSentence;
 @property(nonatomic) NSString *whatList;
 
 @end

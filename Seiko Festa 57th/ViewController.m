@@ -136,7 +136,7 @@
     [mainScrollView addSubview:scrollView1];
     
     buttonOne1= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 0, 0, length, length)];
-    [buttonOne1 setImage:[UIImage imageNamed:@"鉄板職人.jpg"] forState:UIControlStateNormal];
+    [buttonOne1 setImage:[UIImage imageNamed:@"鉄板職人.png"] forState:UIControlStateNormal];
     [buttonOne1 addTarget:self
                    action:@selector(buttonOne1Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne1];
