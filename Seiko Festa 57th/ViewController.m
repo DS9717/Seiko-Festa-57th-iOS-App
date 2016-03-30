@@ -1233,8 +1233,224 @@
     [self performSegueWithIdentifier:@"showDirect" sender:self];
 }
 
+-(void)buttonTwo6Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 6;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo7Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 7;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo8Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 8;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo9Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 9;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo10Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 10;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo11Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 11;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo12Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 12;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo13Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 13;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo14Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 14;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo15Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 15;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo16Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 16;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo17Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 17;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo18Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 18;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo19Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 19;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo20Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 20;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo21Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 21;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo22Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 22;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo23Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 23;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo24Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 24;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo25Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 25;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo26Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 26;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo27Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 27;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo28Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 28;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo29Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 29;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo30Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 30;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo31Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 31;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo32Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 32;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo33Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 33;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo34Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 34;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo35Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 35;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo36Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 36;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo37Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 37;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo38Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 38;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo39Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 39;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo40Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 40;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
+
+-(void)buttonTwo41Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 41;
+    [self performSegueWithIdentifier:@"showDirect" sender:self];
+}
 
 
+//バンド
 -(void)buttonThree1Detail:(UIButton *)button{
     whichList = @"band";
     flag = 1;

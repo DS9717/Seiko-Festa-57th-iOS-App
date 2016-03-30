@@ -244,7 +244,7 @@
         button1= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + fontSize + 29) * 0, length, length)];
         [button1 setImage:[UIImage imageNamed:@"英語劇.png"] forState:UIControlStateNormal];
         [button1 addTarget:self
-                    action:@selector(buttonTwo1Detail:) forControlEvents:UIControlEventTouchUpInside];
+                    action:@selector(buttonOne1Detail:) forControlEvents:UIControlEventTouchUpInside];
         [scrollView addSubview:button1];
         
         label1 = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + length + spaceH + (length + spaceH + fontSize + 29) * 0, length, fontSize + 5)];
@@ -254,52 +254,162 @@
         [scrollView addSubview:label1];
         
         button2= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + self.view.bounds.size.width / 2, 16, length, length)];
-        [button2 setImage:[UIImage imageNamed:@"高3英語劇.png"] forState:UIControlStateNormal];
+        [button2 setImage:[UIImage imageNamed:@"ポケモンセンターSeiko.png"] forState:UIControlStateNormal];
         [button2 addTarget:self
-                    action:@selector(buttonTwo2Detail:) forControlEvents:UIControlEventTouchUpInside];
+                    action:@selector(buttonOne2Detail:) forControlEvents:UIControlEventTouchUpInside];
         [scrollView addSubview:button2];
         
         label2 = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + self.view.bounds.size.width / 2, length + 24, length, fontSize + 5)];
         label2.font = [UIFont fontWithName:@"HelveticaNeue" size:fontSize];
-        label2.text = @"高3英語劇";
+        label2.text = @"ポケモンセンターSeiko";
         label2.textAlignment = NSTextAlignmentCenter;
         [scrollView addSubview:label2];
         
         button3= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + fontSize + 29) * 1, length, length)];
-        [button3 setImage:[UIImage imageNamed:@"迷いの国のアリス.png"] forState:UIControlStateNormal];
+        [button3 setImage:[UIImage imageNamed:@"宇宙戦艦ヤマト研究会.jpg"] forState:UIControlStateNormal];
         [button3 addTarget:self
-                    action:@selector(buttonTwo3Detail:) forControlEvents:UIControlEventTouchUpInside];
+                    action:@selector(buttonOne3Detail:) forControlEvents:UIControlEventTouchUpInside];
         [scrollView addSubview:button3];
         
         label3 = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + length + spaceH + (length + spaceH + fontSize + 29) * 1, length, fontSize + 5)];
         label3.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
-        label3.text = @"迷いの国のアリス";
+        label3.text = @"宇宙戦艦ヤマト研究会";
         label3.textAlignment = NSTextAlignmentCenter;
         [scrollView addSubview:label3];
         
         button4= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + self.view.bounds.size.width / 2, 16 + (length + spaceH + fontSize + 29) * 1, length, length)];
-        [button4 setImage:[UIImage imageNamed:@"Trick×Hark.jpg"] forState:UIControlStateNormal];
+        [button4 setImage:[UIImage imageNamed:@"とにかく明るいＦｅｓ村.png"] forState:UIControlStateNormal];
         [button4 addTarget:self
-                    action:@selector(buttonTwo4Detail:) forControlEvents:UIControlEventTouchUpInside];
+                    action:@selector(buttonOne4Detail:) forControlEvents:UIControlEventTouchUpInside];
         [scrollView addSubview:button4];
         
         label4 = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + self.view.bounds.size.width / 2, 16 + length + spaceH + (length + spaceH + fontSize + 29) * 1, length, fontSize + 5)];
         label4.font = [UIFont fontWithName:@"HelveticaNeue" size:fontSize];
-        label4.text = @"Trick×Hark";
+        label4.text = @"とにかく明るいFes村";
         label4.textAlignment = NSTextAlignmentCenter;
         [scrollView addSubview:label4];
         
         button5= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + fontSize + 29) * 2, length, length)];
-        [button5 setImage:[UIImage imageNamed:@"インターアクト.png"] forState:UIControlStateNormal];
+        [button5 setImage:[UIImage imageNamed:@"Trick×Hark.jpg"] forState:UIControlStateNormal];
         [button5 addTarget:self
-                    action:@selector(buttonTwo5Detail:) forControlEvents:UIControlEventTouchUpInside];
+                    action:@selector(buttonOne5Detail:) forControlEvents:UIControlEventTouchUpInside];
         [scrollView addSubview:button5];
         
         label5 = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + length + spaceH + (length + spaceH + fontSize + 29) * 2, length, fontSize + 5)];
         label5.font = [UIFont fontWithName:@"HelveticaNeue" size:fontSize];
-        label5.text = @"インターアクト";
+        label5.text = @"Trick×Hark";
         label5.textAlignment = NSTextAlignmentCenter;
         [scrollView addSubview:label5];
+        
+        button6= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + self.view.bounds.size.width / 2, 16 + (length + spaceH + fontSize + 29) * 2, length, length)];
+        [button6 setImage:[UIImage imageNamed:@"ぎゃんぶる。.jpg"] forState:UIControlStateNormal];
+        [button6 addTarget:self
+                    action:@selector(buttonOne6Detail:) forControlEvents:UIControlEventTouchUpInside];
+        [scrollView addSubview:button6];
+        
+        label6 = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + self.view.bounds.size.width / 2, 16 + length + spaceH + (length + spaceH + fontSize + 29) * 2, length, fontSize + 5)];
+        label6.font = [UIFont fontWithName:@"HelveticaNeue" size:fontSize];
+        label6.text = @"ぎゃんぶる。";
+        label6.textAlignment = NSTextAlignmentCenter;
+        [scrollView addSubview:label6];
+        
+        button7= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + fontSize + 29) * 3, length, length)];
+        [button7 setImage:[UIImage imageNamed:@"高3英語劇.png"] forState:UIControlStateNormal];
+        [button7 addTarget:self
+                    action:@selector(buttonOne7Detail:) forControlEvents:UIControlEventTouchUpInside];
+        [scrollView addSubview:button7];
+        
+        label7 = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + length + spaceH + (length + spaceH + fontSize + 29) * 3, length, fontSize + 5)];
+        label7.font = [UIFont fontWithName:@"HelveticaNeue" size:fontSize];
+        label7.text = @"高3英語劇";
+        label7.textAlignment = NSTextAlignmentCenter;
+        [scrollView addSubview:label7];
+        
+        button8= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + self.view.bounds.size.width / 2, 16 + (length + spaceH + fontSize + 29) * 3, length, length)];
+        [button8 setImage:[UIImage imageNamed:@"交通研究部.jpg"] forState:UIControlStateNormal];
+        [button8 addTarget:self
+                    action:@selector(buttonOne8Detail:) forControlEvents:UIControlEventTouchUpInside];
+        [scrollView addSubview:button8];
+        
+        label8 = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + self.view.bounds.size.width / 2, 16 + length + spaceH + (length + spaceH + fontSize + 29) * 3, length, fontSize + 5)];
+        label8.font = [UIFont fontWithName:@"HelveticaNeue" size:fontSize];
+        label8.text = @"交通研究部";
+        label8.textAlignment = NSTextAlignmentCenter;
+        [scrollView addSubview:label8];
+        
+        button9= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + fontSize + 29) * 4, length, length)];
+        [button9 setImage:[UIImage imageNamed:@"藤子・Ｆ・不二雄研究会.png"] forState:UIControlStateNormal];
+        [button9 addTarget:self
+                    action:@selector(buttonOne9Detail:) forControlEvents:UIControlEventTouchUpInside];
+        [scrollView addSubview:button9];
+        
+        label9 = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + length + spaceH + (length + spaceH + fontSize + 29) * 4, length, fontSize + 5)];
+        label9.font = [UIFont fontWithName:@"HelveticaNeue" size:fontSize];
+        label9.text = @"藤子・Ｆ・不二雄研究会";
+        label9.textAlignment = NSTextAlignmentCenter;
+        [scrollView addSubview:label9];
+        
+        button10= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + self.view.bounds.size.width / 2, 16 + (length + spaceH + fontSize + 29) * 4, length, length)];
+        [button10 setImage:[UIImage imageNamed:@"ベイスターズ研究会.jpg"] forState:UIControlStateNormal];
+        [button10 addTarget:self
+                     action:@selector(buttonOne10Detail:) forControlEvents:UIControlEventTouchUpInside];
+        [scrollView addSubview:button10];
+        
+        label10 = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + self.view.bounds.size.width / 2, 16 + length + spaceH + (length + spaceH + fontSize + 29) * 4, length, fontSize + 5)];
+        label10.font = [UIFont fontWithName:@"HelveticaNeue" size:fontSize];
+        label10.text = @"ベイスターズ研究会";
+        label10.textAlignment = NSTextAlignmentCenter;
+        [scrollView addSubview:label10];
+        
+        button11= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + fontSize + 29) * 5, length, length)];
+        [button11 setImage:[UIImage imageNamed:@"美術部.png"] forState:UIControlStateNormal];
+        [button11 addTarget:self
+                     action:@selector(buttonOne11Detail:) forControlEvents:UIControlEventTouchUpInside];
+        [scrollView addSubview:button11];
+        
+        label11 = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + length + spaceH + (length + spaceH + fontSize + 29) * 5, length, fontSize + 5)];
+        label11.font = [UIFont fontWithName:@"HelveticaNeue" size:fontSize];
+        label11.text = @"美術部";
+        label11.textAlignment = NSTextAlignmentCenter;
+        [scrollView addSubview:label11];
+        
+        button12= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + self.view.bounds.size.width / 2, 16 + (length + spaceH + fontSize + 29) * 5, length, length)];
+        [button12 setImage:[UIImage imageNamed:@"魔女の卓球便.png"] forState:UIControlStateNormal];
+        [button12 addTarget:self
+                     action:@selector(buttonOne12Detail:) forControlEvents:UIControlEventTouchUpInside];
+        [scrollView addSubview:button12];
+        
+        label12 = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + self.view.bounds.size.width / 2, 16 + length + spaceH + (length + spaceH + fontSize + 29) * 5, length, fontSize + 5)];
+        label12.font = [UIFont fontWithName:@"HelveticaNeue" size:fontSize];
+        label12.text = @"魔女の卓球便";
+        label12.textAlignment = NSTextAlignmentCenter;
+        [scrollView addSubview:label12];
+        
+        button13= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + fontSize + 29) * 6, length, length)];
+        [button13 setImage:[UIImage imageNamed:@"聖光道場.jpg"] forState:UIControlStateNormal];
+        [button13 addTarget:self
+                     action:@selector(buttonOne13Detail:) forControlEvents:UIControlEventTouchUpInside];
+        [scrollView addSubview:button13];
+        
+        label13 = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + length + spaceH + (length + spaceH + fontSize + 29) * 6, length, fontSize + 5)];
+        label13.font = [UIFont fontWithName:@"HelveticaNeue" size:fontSize];
+        label13.text = @"聖光道場";
+        label13.textAlignment = NSTextAlignmentCenter;
+        [scrollView addSubview:label13];
+        
+        button14= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + self.view.bounds.size.width / 2, 16 + (length + spaceH + fontSize + 29) * 6, length, length)];
+        [button14 setImage:[UIImage imageNamed:@"迷いの国のアリス.png"] forState:UIControlStateNormal];
+        [button14 addTarget:self
+                     action:@selector(buttonOne14Detail:) forControlEvents:UIControlEventTouchUpInside];
+        [scrollView addSubview:button14];
+        
+        label14 = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + self.view.bounds.size.width / 2, 16 + length + spaceH + (length + spaceH + fontSize + 29) * 6, length, fontSize + 5)];
+        label14.font = [UIFont fontWithName:@"HelveticaNeue" size:fontSize];
+        label14.text = @"迷いの国のアリス";
+        label14.textAlignment = NSTextAlignmentCenter;
+        [scrollView addSubview:label14];
+        
+        
         
         //スクロールの範囲を設定
         [scrollView setContentSize:CGSizeMake(self.view.bounds.size.width, 16 + (length + spaceH + fontSize + 29) * 3)];
@@ -861,6 +971,8 @@
     [self performSegueWithIdentifier:@"showDetail" sender:self];
 }
 
+
+//趣味研
 -(void)buttonTwo1Detail:(UIButton *)button{
     whichList = @"display";
     flag = 1;
@@ -894,6 +1006,216 @@
 -(void)buttonTwo6Detail:(UIButton *)button{
     whichList = @"display";
     flag = 6;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo7Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 7;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo8Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 8;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo9Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 9;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo10Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 10;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo11Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 11;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo12Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 12;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo13Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 13;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo14Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 14;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo15Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 15;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo16Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 16;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo17Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 17;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo18Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 18;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo19Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 19;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo20Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 20;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo21Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 21;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo22Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 22;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo23Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 23;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo24Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 24;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo25Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 25;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo26Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 26;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo27Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 27;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo28Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 28;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo29Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 29;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo30Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 30;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo31Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 31;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo32Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 32;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo33Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 33;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo34Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 34;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo35Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 35;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo36Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 36;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo37Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 37;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo38Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 38;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo39Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 39;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo40Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 40;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+-(void)buttonTwo41Detail:(UIButton *)button{
+    whichList = @"display";
+    flag = 41;
     [self performSegueWithIdentifier:@"showDetail" sender:self];
 }
 

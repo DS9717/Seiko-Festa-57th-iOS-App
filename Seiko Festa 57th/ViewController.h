@@ -81,12 +81,47 @@
     UILabel *buttonOne14Label;
     
     //趣味研
-    UIButton *buttonTwo1;
-    UIButton *buttonTwo2;
-    UIButton *buttonTwo3;
-    UIButton *buttonTwo4;
-    UIButton *buttonTwo5;
-    UIButton *buttonTwo6;
+    UIButton *buttonTwo1;   //英語劇
+    UIButton *buttonTwo2;   //ポケモンセンターSeiko
+    UIButton *buttonTwo3;   //宇宙戦艦ヤマト研究会
+    UIButton *buttonTwo4;   //とにかく明るいFes村
+    UIButton *buttonTwo5;   //Trick×Hark
+    UIButton *buttonTwo6;   //ぎゃんぶる。
+    UIButton *buttonTwo7;   //高3英語劇
+    UIButton *buttonTwo8;   //交通研究部
+    UIButton *buttonTwo9;   //藤子･F･不二雄研究会
+    UIButton *buttonTwo10;  //ベイスターズ研究会
+    UIButton *buttonTwo11;  //美術部
+    UIButton *buttonTwo12;  //魔女の卓球便
+    UIButton *buttonTwo13;  //聖光道場
+    UIButton *buttonTwo14;  //迷いの国のアリス
+    UIButton *buttonTwo15;  //リアル野球盤
+    UIButton *buttonTwo16;  //常夜灯
+    UIButton *buttonTwo17;  //地学天文部
+    UIButton *buttonTwo18;  //聖光祭からの脱出
+    UIButton *buttonTwo19;  //物理化学部
+    UIButton *buttonTwo20;  //SeSDA〜聖光宇宙センター〜
+    UIButton *buttonTwo21;  //かるた会
+    UIButton *buttonTwo22;  //ボーカロイド研究会
+    UIButton *buttonTwo23;  //本の泉
+    UIButton *buttonTwo24;  //EHC Jurassic
+    UIButton *buttonTwo25;  //早撃ちジョニー
+    UIButton *buttonTwo26;  //人狼の館
+    UIButton *buttonTwo27;  //横浜漫才フィルム
+    UIButton *buttonTwo28;  //生物部
+    UIButton *buttonTwo29;  //78枚目のJoker
+    UIButton *buttonTwo30;  //アニメ研究会
+    UIButton *buttonTwo31;  //Shockers
+    UIButton *buttonTwo32;  //コンピュータ部
+    UIButton *buttonTwo33;  //古本市
+    UIButton *buttonTwo34;  //インターアクトクラブ
+    UIButton *buttonTwo35;  //Showtime!
+    UIButton *buttonTwo36;  //クイズ研究会
+    UIButton *buttonTwo37;  //地理歴史巡見部
+    UIButton *buttonTwo38;  //ぶいえいす
+    UIButton *buttonTwo39;  //聖書研究会
+    UIButton *buttonTwo40;  //数学研究会
+    UIButton *buttonTwo41;  //生徒会展示
     
     UILabel *displayLabel;
     UILabel *buttonTwo1Label;
@@ -95,6 +130,42 @@
     UILabel *buttonTwo4Label;
     UILabel *buttonTwo5Label;
     UILabel *buttonTwo6Label;
+    UILabel *buttonTwo7Label;
+    UILabel *buttonTwo8Label;
+    UILabel *buttonTwo9Label;
+    UILabel *buttonTwo10Label;
+    UILabel *buttonTwo11Label;
+    UILabel *buttonTwo12Label;
+    UILabel *buttonTwo13Label;
+    UILabel *buttonTwo14Label;
+    UILabel *buttonTwo15Label;
+    UILabel *buttonTwo16Label;
+    UILabel *buttonTwo17Label;
+    UILabel *buttonTwo18Label;
+    UILabel *buttonTwo19Label;
+    UILabel *buttonTwo20Label;
+    UILabel *buttonTwo21Label;
+    UILabel *buttonTwo22Label;
+    UILabel *buttonTwo23Label;
+    UILabel *buttonTwo24Label;
+    UILabel *buttonTwo25Label;
+    UILabel *buttonTwo26Label;
+    UILabel *buttonTwo27Label;
+    UILabel *buttonTwo28Label;
+    UILabel *buttonTwo29Label;
+    UILabel *buttonTwo30Label;
+    UILabel *buttonTwo31Label;
+    UILabel *buttonTwo32Label;
+    UILabel *buttonTwo33Label;
+    UILabel *buttonTwo34Label;
+    UILabel *buttonTwo35Label;
+    UILabel *buttonTwo36Label;
+    UILabel *buttonTwo37Label;
+    UILabel *buttonTwo38Label;
+    UILabel *buttonTwo39Label;
+    UILabel *buttonTwo40Label;
+    UILabel *buttonTwo41Label;
+    
     
     //バンド
     UIButton *buttonThree1;
