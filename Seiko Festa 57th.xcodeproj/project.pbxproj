@@ -32,6 +32,15 @@
 		7E4D55B71C49315C00BFE19C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4D55B51C49315C00BFE19C /* Main.storyboard */; };
 		7E4D55B91C49315C00BFE19C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E4D55B81C49315C00BFE19C /* Images.xcassets */; };
 		7E4D55C81C49315C00BFE19C /* Seiko_Festa_57thTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4D55C71C49315C00BFE19C /* Seiko_Festa_57thTests.m */; };
+		7EB62DF11CAAE28E0097FDB5 /* Blur.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB62DF01CAAE28E0097FDB5 /* Blur.png */; };
+		7EB62DF31CAAE44D0097FDB5 /* 鉄板職人.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB62DF21CAAE44D0097FDB5 /* 鉄板職人.png */; };
+		7EB62DF51CAAE70A0097FDB5 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB62DF41CAAE70A0097FDB5 /* line.png */; };
+		7EB62E001CAAEF540097FDB5 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB62DFF1CAAEF540097FDB5 /* ShareViewController.m */; };
+		7EB62E101CAAFD1F0097FDB5 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EB62E0F1CAAFD1F0097FDB5 /* Social.framework */; };
+		7EB62E141CAB01C80097FDB5 /* Facebook icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB62E131CAB01C80097FDB5 /* Facebook icon.png */; };
+		7EB62E161CAB021E0097FDB5 /* Twitter icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB62E151CAB021E0097FDB5 /* Twitter icon.png */; };
+		7EB62E181CAB02EF0097FDB5 /* LINE icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB62E171CAB02EF0097FDB5 /* LINE icon.png */; };
+		7EB62E1A1CAB030D0097FDB5 /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB62E191CAB030D0097FDB5 /* cancel.png */; };
 		7EB711871C9EDEF300E0F691 /* 奴等-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB711861C9EDEF300E0F691 /* 奴等-タイムテーブル.png */; };
 		7ECB09CE1C9DACF9008DECDD /* 天使の歌声-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ECB09CD1C9DACF9008DECDD /* 天使の歌声-タイムテーブル.png */; };
 		7ED1CBFC1C9842A900D4F038 /* 校長対談.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED1CBFB1C9842A900D4F038 /* 校長対談.png */; };
@@ -107,7 +116,6 @@
 		FAA39AFB1C9D089C00A1B697 /* クレープブレーク.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA39AF51C9D089C00A1B697 /* クレープブレーク.png */; };
 		FAA39AFC1C9D089C00A1B697 /* 塩焼きそば　麺’sRUNRUN.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA39AF61C9D089C00A1B697 /* 塩焼きそば　麺’sRUNRUN.png */; };
 		FAA39AFD1C9D089C00A1B697 /* 俺のケバブ.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAA39AF71C9D089C00A1B697 /* 俺のケバブ.jpg */; };
-		FAA39AFE1C9D089C00A1B697 /* 鉄板職人.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAA39AF81C9D089C00A1B697 /* 鉄板職人.jpg */; };
 		FAA39AFF1C9D089C00A1B697 /* 麺☆恋.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA39AF91C9D089C00A1B697 /* 麺☆恋.png */; };
 		FAA39B141C9D172200A1B697 /* Trick×Hark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAA39B0F1C9D172200A1B697 /* Trick×Hark.jpg */; };
 		FAA39B151C9D172200A1B697 /* インターアクト.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA39B101C9D172200A1B697 /* インターアクト.png */; };
@@ -198,6 +206,16 @@
 		7E4D55C11C49315C00BFE19C /* Seiko Festa 57thTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Seiko Festa 57thTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4D55C61C49315C00BFE19C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E4D55C71C49315C00BFE19C /* Seiko_Festa_57thTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Seiko_Festa_57thTests.m; sourceTree = "<group>"; };
+		7EB62DF01CAAE28E0097FDB5 /* Blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blur.png; sourceTree = "<group>"; };
+		7EB62DF21CAAE44D0097FDB5 /* 鉄板職人.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "鉄板職人.png"; sourceTree = "<group>"; };
+		7EB62DF41CAAE70A0097FDB5 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		7EB62DFE1CAAEF540097FDB5 /* ShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		7EB62DFF1CAAEF540097FDB5 /* ShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		7EB62E0F1CAAFD1F0097FDB5 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		7EB62E131CAB01C80097FDB5 /* Facebook icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Facebook icon.png"; sourceTree = "<group>"; };
+		7EB62E151CAB021E0097FDB5 /* Twitter icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twitter icon.png"; sourceTree = "<group>"; };
+		7EB62E171CAB02EF0097FDB5 /* LINE icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LINE icon.png"; sourceTree = "<group>"; };
+		7EB62E191CAB030D0097FDB5 /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
 		7EB711861C9EDEF300E0F691 /* 奴等-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "奴等-タイムテーブル.png"; sourceTree = "<group>"; };
 		7ECB09CD1C9DACF9008DECDD /* 天使の歌声-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天使の歌声-タイムテーブル.png"; sourceTree = "<group>"; };
 		7ED1CBFB1C9842A900D4F038 /* 校長対談.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "校長対談.png"; sourceTree = "<group>"; };
@@ -273,7 +291,6 @@
 		FAA39AF51C9D089C00A1B697 /* クレープブレーク.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "クレープブレーク.png"; sourceTree = "<group>"; };
 		FAA39AF61C9D089C00A1B697 /* 塩焼きそば　麺’sRUNRUN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "塩焼きそば　麺’sRUNRUN.png"; sourceTree = "<group>"; };
 		FAA39AF71C9D089C00A1B697 /* 俺のケバブ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "俺のケバブ.jpg"; sourceTree = "<group>"; };
-		FAA39AF81C9D089C00A1B697 /* 鉄板職人.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "鉄板職人.jpg"; sourceTree = "<group>"; };
 		FAA39AF91C9D089C00A1B697 /* 麺☆恋.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "麺☆恋.png"; sourceTree = "<group>"; };
 		FAA39B0F1C9D172200A1B697 /* Trick×Hark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Trick×Hark.jpg"; sourceTree = "<group>"; };
 		FAA39B101C9D172200A1B697 /* インターアクト.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "インターアクト.png"; sourceTree = "<group>"; };
@@ -328,6 +345,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EB62E101CAAFD1F0097FDB5 /* Social.framework in Frameworks */,
 				7ED21ABB1C79998200AA9E83 /* AVFoundation.framework in Frameworks */,
 				7ED21AB81C7998B900AA9E83 /* CoreGraphics.framework in Frameworks */,
 				7ED21AB61C79986D00AA9E83 /* QuartzCore.framework in Frameworks */,
@@ -402,6 +420,8 @@
 				FABB0BE11C560F040009ABAA /* DetailView.m */,
 				7E3EB4791C79DAB900F3B2A0 /* TimetableViewController.h */,
 				7E3EB47A1C79DAB900F3B2A0 /* TimetableViewController.m */,
+				7EB62DFE1CAAEF540097FDB5 /* ShareViewController.h */,
+				7EB62DFF1CAAEF540097FDB5 /* ShareViewController.m */,
 				7E4D55B81C49315C00BFE19C /* Images.xcassets */,
 				7E4D55D11C4944F300BFE19C /* Images */,
 				7E0DC8BA1C9D7E5900B45F37 /* Icons */,
@@ -440,9 +460,15 @@
 		7E4D55D11C4944F300BFE19C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7EB62DF41CAAE70A0097FDB5 /* line.png */,
+				7EB62DF01CAAE28E0097FDB5 /* Blur.png */,
 				FAA39B491C9D330E00A1B697 /* Left.png */,
 				FAA39B4A1C9D330E00A1B697 /* map.jpg */,
 				FAA39B4B1C9D330E00A1B697 /* Right.png */,
+				7EB62E131CAB01C80097FDB5 /* Facebook icon.png */,
+				7EB62E151CAB021E0097FDB5 /* Twitter icon.png */,
+				7EB62E171CAB02EF0097FDB5 /* LINE icon.png */,
+				7EB62E191CAB030D0097FDB5 /* cancel.png */,
 				FAA39B001C9D093200A1B697 /* 角丸アイコン */,
 				FAA39B441C9D2D0400A1B697 /* バナー */,
 				7EF2D8C81C9D4E6B008F76E8 /* タイムテーブル */,
@@ -453,6 +479,7 @@
 		7ED21AB91C7998CE00AA9E83 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7EB62E0F1CAAFD1F0097FDB5 /* Social.framework */,
 				7ED21ABA1C79998200AA9E83 /* AVFoundation.framework */,
 				7ED21AB71C7998B900AA9E83 /* CoreGraphics.framework */,
 				7ED21AB51C79986D00AA9E83 /* QuartzCore.framework */,
@@ -572,7 +599,7 @@
 		FAA39B011C9D126000A1B697 /* Food */ = {
 			isa = PBXGroup;
 			children = (
-				FAA39AF81C9D089C00A1B697 /* 鉄板職人.jpg */,
+				7EB62DF21CAAE44D0097FDB5 /* 鉄板職人.png */,
 				FAA39AF61C9D089C00A1B697 /* 塩焼きそば　麺’sRUNRUN.png */,
 				FAA39AF91C9D089C00A1B697 /* 麺☆恋.png */,
 				FAA39AF71C9D089C00A1B697 /* 俺のケバブ.jpg */,
@@ -796,9 +823,11 @@
 				7EF2D8DC1C9D4FAB008F76E8 /* ボールぽこぽこ-タイムテーブル.png in Resources */,
 				FA8098AA1C9FF6B400B2E939 /* Яooz-Leef.png in Resources */,
 				FAA39AFB1C9D089C00A1B697 /* クレープブレーク.png in Resources */,
+				7EB62E181CAB02EF0097FDB5 /* LINE icon.png in Resources */,
 				7EF2D8EA1C9D5101008F76E8 /* ギネスに挑戦！！-タイムテーブル.png in Resources */,
 				FA2384251CA0A445003BBDA5 /* 物理科学部.png in Resources */,
 				FAA39B3A1C9D22FF00A1B697 /* ○○男子No.1決定戦.png in Resources */,
+				7EB62E1A1CAB030D0097FDB5 /* cancel.png in Resources */,
 				FA0F10E21C9E7F0300AF0155 /* 吹奏楽部.png in Resources */,
 				7ED6F52B1CA4DFCA0077425C /* 生徒会展示.png in Resources */,
 				FA8098A71C9FF6B400B2E939 /* Addiction？.png in Resources */,
@@ -809,6 +838,7 @@
 				FA2384191CA0A445003BBDA5 /* 交通研究部.jpg in Resources */,
 				FA2384111CA0A445003BBDA5 /* とにかく明るいＦｅｓ村.png in Resources */,
 				FAA39B3D1C9D22FF00A1B697 /* ギネスに挑戦！！.png in Resources */,
+				7EB62DF11CAAE28E0097FDB5 /* Blur.png in Resources */,
 				7E0DC8C91C9D7FAA00B45F37 /* Default-568h@2x.png in Resources */,
 				FAA39B481C9D2D9300A1B697 /* ミュージックサロン バナー.JPG in Resources */,
 				FA2384091CA0A445003BBDA5 /* SeSDA〜聖光宇宙センター〜.jpg in Resources */,
@@ -818,6 +848,7 @@
 				FAA39B421C9D22FF00A1B697 /* 替え歌選手権.png in Resources */,
 				FAA39B3C1C9D22FF00A1B697 /* S-O-S.png in Resources */,
 				FA2384151CA0A445003BBDA5 /* リアル野球盤.png in Resources */,
+				7EB62E161CAB021E0097FDB5 /* Twitter icon.png in Resources */,
 				7EF2D8E91C9D5101008F76E8 /* S-O-S-タイムテーブル.png in Resources */,
 				FAA39AFF1C9D089C00A1B697 /* 麺☆恋.png in Resources */,
 				7E4D55B71C49315C00BFE19C /* Main.storyboard in Resources */,
@@ -871,6 +902,7 @@
 				FAA39B301C9D1F1400A1B697 /* ミュージックサロン.png in Resources */,
 				7E0DC8CA1C9D7FAA00B45F37 /* Default@2x.png in Resources */,
 				7ED6F51F1CA41C5C0077425C /* 早撃ちジョニー.png in Resources */,
+				7EB62DF31CAAE44D0097FDB5 /* 鉄板職人.png in Resources */,
 				7E0DC8C11C9D7E9800B45F37 /* icon-29@2x.png in Resources */,
 				7EF2D8EB1C9D5101008F76E8 /* コミュ力の窓-タイムテーブル.png in Resources */,
 				FAA39AFC1C9D089C00A1B697 /* 塩焼きそば　麺’sRUNRUN.png in Resources */,
@@ -880,6 +912,7 @@
 				FAA39B4E1C9D330E00A1B697 /* Right.png in Resources */,
 				7E0DC8C21C9D7E9800B45F37 /* icon-29@3x.png in Resources */,
 				FAA39B621C9D458600A1B697 /* 綿's-candy.png in Resources */,
+				7EB62DF51CAAE70A0097FDB5 /* line.png in Resources */,
 				FAA39B411C9D22FF00A1B697 /* 春夜祭.png in Resources */,
 				FA8098A81C9FF6B400B2E939 /* Million-Dollars.png in Resources */,
 				FAA39B5C1C9D458600A1B697 /* Juicy-Juicer.png in Resources */,
@@ -889,7 +922,6 @@
 				7ECB09CE1C9DACF9008DECDD /* 天使の歌声-タイムテーブル.png in Resources */,
 				FAA39AFD1C9D089C00A1B697 /* 俺のケバブ.jpg in Resources */,
 				FAA39B521C9D433900A1B697 /* Flat Flight バナー1.jpg in Resources */,
-				FAA39AFE1C9D089C00A1B697 /* 鉄板職人.jpg in Resources */,
 				FA23841E1CA0A445003BBDA5 /* 聖光祭からの脱出.png in Resources */,
 				FA23841B1CA0A445003BBDA5 /* 人狼の館.jpg in Resources */,
 				FA23840B1CA0A445003BBDA5 /* Showtime!.png in Resources */,
@@ -903,6 +935,7 @@
 				7ED6F52F1CA576B90077425C /* Default-736@3x.png in Resources */,
 				FA23841F1CA0A445003BBDA5 /* 聖光道場.jpg in Resources */,
 				FAF5D6ED1CA169F500C2EEDC /* ぎゃんぶる。.jpg in Resources */,
+				7EB62E141CAB01C80097FDB5 /* Facebook icon.png in Resources */,
 				FAA39B2E1C9D1EB100A1B697 /* Grand-Finale.png in Resources */,
 				7ED6F5211CA41C7F0077425C /* 78枚目のJOKER.png in Resources */,
 				FA2384201CA0A445003BBDA5 /* 聖書研究会.jpg in Resources */,
@@ -944,6 +977,7 @@
 				7E4D55B41C49315C00BFE19C /* ViewController.m in Sources */,
 				7E3EB47B1C79DAB900F3B2A0 /* TimetableViewController.m in Sources */,
 				FABB0BE21C560F040009ABAA /* DetailView.m in Sources */,
+				7EB62E001CAAEF540097FDB5 /* ShareViewController.m in Sources */,
 				7E4D55B11C49315C00BFE19C /* AppDelegate.m in Sources */,
 				7E4D55AE1C49315C00BFE19C /* main.m in Sources */,
 			);

@@ -20,10 +20,10 @@
     [super viewDidLoad];
 
     // Do any additional setup after loading the view.
-    //[imageScroll setContentSize:CGSizeMake(540, 220)];
     
+    //[imageScroll setContentSize:CGSizeMake(540, 220)];
     imageScroll = [[UIScrollView alloc]init];
-    imageScroll.frame = CGRectMake(0, 120, 320, 220);
+    imageScroll.frame = CGRectMake(0, 50, 320, 220);
     //横スクロールのインジケータを非表示にする
     imageScroll.showsHorizontalScrollIndicator = NO;
     imageScroll.userInteractionEnabled = YES;
@@ -33,18 +33,37 @@
     imageScroll.backgroundColor = [UIColor clearColor];
     //スクロールの範囲を設定
     [imageScroll setContentSize:CGSizeMake(640, 220)];
+    
+    _detailTitle = [[UILabel alloc]initWithFrame:CGRectMake(16, 310, self.view.bounds.size.width-32, 20)];
+    _detailTitle.textAlignment = NSTextAlignmentCenter;
+    _detailTitle.textColor = [UIColor whiteColor];
+    _explainSentence = [[UITextView alloc]initWithFrame:CGRectMake(16, 340, self.view.bounds.size.width-32, self.view.bounds.size.height-49-340)];
+    _explainSentence.textColor = [UIColor whiteColor];
+    _explainSentence.editable = NO;
+    _explainSentence.backgroundColor = [UIColor clearColor];
+    _explainSentence.selectable = NO;
+
+    //Navigation Itemのタイトルのフォントを設定
+    nav_title=[[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.navigationItem.titleView.frame.size.width,40)];
+    nav_title.textColor=[UIColor whiteColor];
+    
+    nav_title.textAlignment=NSTextAlignmentCenter;
+    
+    [nav_title setFont:[UIFont fontWithName:@"MyriadPro-Regular" size:22]];
+    self.navigationItem.titleView=nav_title;
+    
 
     
     if ([_whatList isEqualToString:@"food"]) {
         
-        _navigationBar.title = @"Food";
+        nav_title.text=@"Food";
         
         if (flag == 1) {
-            detailImage = [UIImage imageNamed:@"鉄板職人.jpg"];
-            mapImage = [UIImage imageNamed:@"map.jpg"];
+            detailImage = [UIImage imageNamed:@"鉄板職人.png"];
+         
             _detailTitle.text = @"鉄板職人";
-            _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
-            _explainSentence.text = @"";
+            _detailTitle.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:20];
+            _explainSentence.text = @"従来の豚たまに加え、さらに新しい味が追加され進化した鉄板職人。ぜひ一度足をお運び下さい。";
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
         else if (flag == 2) {
@@ -154,7 +173,7 @@
         
     }else if ([_whatList isEqualToString:@"display"]) {
         
-        _navigationBar.title = @"Display";
+        nav_title.text=@"Display";
         
         if (flag == 1) {
             detailImage = [UIImage imageNamed:@"英語劇.png"];
@@ -239,7 +258,7 @@
         
     }else if ([_whatList isEqualToString:@"band"]) {
         
-        _navigationBar.title = @"Band";
+        nav_title.text=@"Band";
         
         if (flag == 1) {
             detailImage = [UIImage imageNamed:@"M&A.png"];
@@ -340,7 +359,7 @@
         
     }else if ([_whatList isEqualToString:@"performance"]) {
         
-        _navigationBar.title = @"Performance";
+        nav_title.text=@"Performance";
         
         if (flag == 1) {
             detailImage = [UIImage imageNamed:@"Grand-Finale.png"];
@@ -449,7 +468,7 @@
         
     }else if ([_whatList isEqualToString:@"stage"]) {
         
-        _navigationBar.title = @"Stage";
+        nav_title.text=@"Stage";
         
         if (flag == 1) {
             detailImage = [UIImage imageNamed:@"フォークダンス.png"];
@@ -540,20 +559,8 @@
             _explainSentence.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
         }
     }
-    
-    self.navigationController.navigationBar.tintColor=[UIColor orangeColor];
 
-    right = [[UIButton alloc]initWithFrame:CGRectMake(270, 0, 50, 220)];
-    [right setImage:[UIImage imageNamed:@"Right.png"] forState:UIControlStateNormal];
-    [right addTarget:self
-                   action:@selector(righton:) forControlEvents:UIControlEventTouchUpInside];
-    [imageScroll addSubview:right];
-
-    left = [[UIButton alloc]initWithFrame:CGRectMake(320, 0, 50, 220)];
-    [left setImage:[UIImage imageNamed:@"Left.png"] forState:UIControlStateNormal];
-    [left addTarget:self
-              action:@selector(lefton:) forControlEvents:UIControlEventTouchUpInside];
-    [imageScroll addSubview:left];
+   
     
     
     detailImageview = [[UIImageView alloc] initWithFrame:CGRectMake(50, 0, 220, 220)];
@@ -564,6 +571,44 @@
     [imageScroll addSubview:mapImageview];
     
     [self.view addSubview:imageScroll];
+    
+    
+    self.navigationController.navigationBar.translucent = NO;
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:247.0/255.0 green:59.0/255.0 blue:63.0/255.0 alpha:1.0];
+    self.navigationController.navigationBar.tintColor=[UIColor whiteColor];
+    
+    self.tabBarController.tabBar.tintColor = [UIColor colorWithRed:247.0/255.0 green:59.0/255.0 blue:63.0/255.0 alpha:1.0];
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc]init];
+    backButtonItem.title = @"";
+    self.navigationItem.backBarButtonItem = backButtonItem;
+    
+    [self.view addSubview:_detailTitle];
+    [self.view addSubview:_explainSentence];
+    
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(20, 330, 280, 11.25)];
+    imageView.image = [UIImage imageNamed:@"line.png"];
+    [self.view addSubview:imageView];
+    
+    UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
+    rootViewController.modalPresentationStyle = UIModalPresentationCurrentContext;
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    self.tabBarController.tabBar.barTintColor = [UIColor blackColor];
+    
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    
+    [super viewWillDisappear:animated];
+    self.tabBarController.tabBar.barTintColor = [UIColor whiteColor];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -580,8 +625,6 @@
 }
 
 
-
-
 /*
 #pragma mark - Navigation
 
@@ -591,5 +634,6 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 
 @end
