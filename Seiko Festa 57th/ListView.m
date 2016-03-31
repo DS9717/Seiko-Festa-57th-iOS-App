@@ -34,8 +34,8 @@
     CGRect r = [[UIScreen mainScreen] bounds];
     if (r.size.width == 320) {
         //iPhone 4s/5/5c/5s
-        spaceLeft = 16;
-        length = 128;
+        spaceLeft = 38;
+        length = 84;
         spaceH = 8;
         fontSize = 15;
     } else if (r.size.width == 375) {
@@ -72,9 +72,13 @@
     scrollView.backgroundColor = [UIColor clearColor];
     
     
+    //食品
     if ([_whatList isEqualToString:@"food"]) {
         
         nav_title.text=@"Food";
+        
+        //スクロールの範囲を設定
+        [scrollView setContentSize:CGSizeMake(self.view.bounds.size.width, 16 + (length + spaceH + fontSize + 29) * 7)];
         
         button1= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + fontSize + 29) * 0, length, length)];
         [button1 setImage:[UIImage imageNamed:@"鉄板職人.png"] forState:UIControlStateNormal];
@@ -244,12 +248,17 @@
         label14.textAlignment = NSTextAlignmentCenter;
         [scrollView addSubview:label14];
         
-        //スクロールの範囲を設定
-        [scrollView setContentSize:CGSizeMake(self.view.bounds.size.width, 6 + (length + spaceH + fontSize + 29) * 7)];
         
+        
+        
+        
+    //趣味研
     }else if ([_whatList isEqualToString:@"display"]) {
         
         nav_title.text=@"Display";
+        
+        //スクロールの範囲を設定
+        [scrollView setContentSize:CGSizeMake(self.view.bounds.size.width, 16 + (length + spaceH + fontSize + 29) * 7)];
         
         button1= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + fontSize + 29) * 0, length, length)];
         [button1 setImage:[UIImage imageNamed:@"英語劇.png"] forState:UIControlStateNormal];
@@ -418,17 +427,18 @@
         label14.text = @"迷いの国のアリス";
         label14.textAlignment = NSTextAlignmentCenter;
         [scrollView addSubview:label14];
+    
         
         
         
-        //スクロールの範囲を設定
-        [scrollView setContentSize:CGSizeMake(self.view.bounds.size.width, 16 + (length + spaceH + fontSize + 29) * 3)];
         
-        
-        
+    //バンド
     }else if ([_whatList isEqualToString:@"band"]) {
         
         nav_title.text=@"Band";
+        
+        //スクロールの範囲を設定
+        [scrollView setContentSize:CGSizeMake(self.view.bounds.size.width, 16 + (length + spaceH + fontSize + 29) * 6)];
         
         button1= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + fontSize + 29) * 0, length, length)];
         [button1 setImage:[UIImage imageNamed:@"M&A.png"] forState:UIControlStateNormal];
@@ -574,14 +584,17 @@
         label12.textAlignment = NSTextAlignmentCenter;
         [scrollView addSubview:label12];
         
-        //スクロールの範囲を設定
-        [scrollView setContentSize:CGSizeMake(self.view.bounds.size.width, 16 + (length + spaceH + fontSize + 29) * 6)];
+    
         
         
         
+    //講堂･小講堂
     }else if ([_whatList isEqualToString:@"performance"]) {
         
         nav_title.text=@"Performance";
+        
+        //スクロールの範囲を設定
+        [scrollView setContentSize:CGSizeMake(self.view.bounds.size.width, 16 + (length + spaceH + fontSize + 29) * 7)];
         
         button1= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + fontSize + 29) * 0, length, length)];
         [button1 setImage:[UIImage imageNamed:@"Grand-Finale.png"] forState:UIControlStateNormal];
@@ -741,14 +754,17 @@
         label13.textAlignment = NSTextAlignmentCenter;
         [scrollView addSubview:label13];
         
-        //スクロールの範囲を設定
-        [scrollView setContentSize:CGSizeMake(self.view.bounds.size.width, 16 + (length + spaceH + fontSize + 29) * 7)];
         
         
         
+        
+    //ステージ
     }else if ([_whatList isEqualToString:@"stage"]) {
         
         nav_title.text=@"Stage";
+        
+        //スクロールの範囲を設定
+        [scrollView setContentSize:CGSizeMake(self.view.bounds.size.width, 16 + (length + spaceH + fontSize + 29) * 6)];
         
         button1= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + fontSize + 29) * 0, length, length)];
         [button1 setImage:[UIImage imageNamed:@"フォークダンス.png"] forState:UIControlStateNormal];
@@ -881,9 +897,6 @@
         label11.text = @"S.O.S";
         label11.textAlignment = NSTextAlignmentCenter;
         [scrollView addSubview:label11];
-        
-        //スクロールの範囲を設定
-        [scrollView setContentSize:CGSizeMake(self.view.bounds.size.width, 16 + (length + spaceH + fontSize + 29) * 6)];
     }
     
     [self.view addSubview:scrollView];
