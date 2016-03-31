@@ -2213,6 +2213,7 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"showDirect"]) {
+        
         DetailView *detailView = segue.destinationViewController;
         detailView.flag = flag;
         detailView.whatList = whichList;
@@ -2220,6 +2221,7 @@
     }
     
     else if ([segue.identifier isEqualToString:@"showList"]) {
+        
         ListView *listView = segue.destinationViewController;
         listView.whatList = whichList;
     }
