@@ -13,6 +13,21 @@
 
 @interface DetailView : UIViewController{
     
+    //画像上左右余白
+    int space;
+    //画像サイズ
+    int length;
+    //画像下余白
+    int spaceU;
+    //タイトルフォントサイズ
+    int titleSize;
+    //白線太さ
+    int lineSize;
+    //白線-説明文間隔
+    int spaceBetween;
+    //テキストフォント
+    int explainSize;
+    
     NSString *_whatList;
     UIScrollView *imageScroll;
     UIImage *detailImage;
@@ -21,6 +36,7 @@
     UIImageView *mapImageview;
     UIButton *left;
     UIButton *right;
+    
     
     UILabel *nav_title;
     

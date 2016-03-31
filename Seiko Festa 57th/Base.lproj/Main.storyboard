@@ -85,11 +85,6 @@
                     <view key="view" contentMode="scaleToFill" id="4xV-Gm-rZE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blur.png" translatesAutoresizingMaskIntoConstraints="NO" id="VcT-Dv-XC4">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="1p5-CC-i0v">
@@ -189,9 +184,6 @@
             <point key="canvasLocation" x="3122" y="1028"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Blur.png" width="640" height="910"/>
-    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="7qL-oO-efD"/>
     </inferredMetricsTieBreakers>
