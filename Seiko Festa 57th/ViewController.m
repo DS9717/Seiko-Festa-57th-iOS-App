@@ -321,6 +321,8 @@
     
     
     
+    
+    //趣味研
     displayLabel = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + buttonLabelFont + 83) * 1, 80, labelFont + 4)];
     displayLabel.font = [UIFont fontWithName:@"MyriadPro-Regular" size:labelFont];
     displayLabel.text = @"Display";
@@ -338,7 +340,7 @@
     scrollView2.showsHorizontalScrollIndicator = NO;
     scrollView2.userInteractionEnabled = YES;
     scrollView2.bounces = YES;
-    [scrollView2 setContentSize:CGSizeMake(spaceLeft + (spaceW + length) * 5, length + spaceH + buttonLabelFont + 1)];
+    [scrollView2 setContentSize:CGSizeMake(spaceLeft + (spaceW + length) * 41, length + spaceH + buttonLabelFont + 1)];
     [scrollView2 setContentOffset:CGPointMake(contentOffsetX2, 0.0) animated:NO];
     scrollView2.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView2];
@@ -350,28 +352,245 @@
     [scrollView2 addSubview:buttonTwo1];
     
     buttonTwo2= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 1, 0, length, length)];
-    [buttonTwo2 setImage:[UIImage imageNamed:@"高3英語劇.png"] forState:UIControlStateNormal];
+    [buttonTwo2 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
     [buttonTwo2 addTarget:self
                    action:@selector(buttonTwo2Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView2 addSubview:buttonTwo2];
     
     buttonTwo3= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 2, 0, length, length)];
-    [buttonTwo3 setImage:[UIImage imageNamed:@"迷いの国のアリス.png"] forState:UIControlStateNormal];
+    [buttonTwo3 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
     [buttonTwo3 addTarget:self
                    action:@selector(buttonTwo3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView2 addSubview:buttonTwo3];
     
     buttonTwo4= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 3, 0, length, length)];
-    [buttonTwo4 setImage:[UIImage imageNamed:@"Trick×Hark.jpg"] forState:UIControlStateNormal];
+    [buttonTwo4 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
     [buttonTwo4 addTarget:self
                    action:@selector(buttonTwo4Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView2 addSubview:buttonTwo4];
     
     buttonTwo5= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 4, 0, length, length)];
-    [buttonTwo5 setImage:[UIImage imageNamed:@"インターアクト.png"] forState:UIControlStateNormal];
+    [buttonTwo5 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
     [buttonTwo5 addTarget:self
                    action:@selector(buttonTwo5Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView2 addSubview:buttonTwo5];
+    
+    buttonTwo6= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 5, 0, length, length)];
+    [buttonTwo6 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo6 addTarget:self
+                   action:@selector(buttonTwo6Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo6];
+    
+    buttonTwo7= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 6, 0, length, length)];
+    [buttonTwo7 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo7 addTarget:self
+                   action:@selector(buttonTwo7Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo7];
+    
+    buttonTwo8= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 7, 0, length, length)];
+    [buttonTwo8 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo8 addTarget:self
+                   action:@selector(buttonTwo8Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo8];
+    
+    buttonTwo9= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 8, 0, length, length)];
+    [buttonTwo9 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo9 addTarget:self
+                   action:@selector(buttonTwo9Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo9];
+    
+    buttonTwo10= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 9, 0, length, length)];
+    [buttonTwo10 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo10 addTarget:self
+                   action:@selector(buttonTwo10Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo10];
+    
+    buttonTwo11= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 10, 0, length, length)];
+    [buttonTwo11 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo11 addTarget:self
+                    action:@selector(buttonTwo11Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo11];
+    
+    buttonTwo12= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 11, 0, length, length)];
+    [buttonTwo12 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo12 addTarget:self
+                    action:@selector(buttonTwo12Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo12];
+    
+    buttonTwo13= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 12, 0, length, length)];
+    [buttonTwo13 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo13 addTarget:self
+                    action:@selector(buttonTwo13Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo13];
+    
+    buttonTwo14= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 13, 0, length, length)];
+    [buttonTwo14 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo14 addTarget:self
+                    action:@selector(buttonTwo14Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo14];
+    
+    buttonTwo15= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 14, 0, length, length)];
+    [buttonTwo15 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo15 addTarget:self
+                    action:@selector(buttonTwo15Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo15];
+    
+    buttonTwo16= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 15, 0, length, length)];
+    [buttonTwo16 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo16 addTarget:self
+                    action:@selector(buttonTwo16Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo16];
+    
+    buttonTwo17= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 16, 0, length, length)];
+    [buttonTwo17 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo17 addTarget:self
+                    action:@selector(buttonTwo17Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo17];
+    
+    buttonTwo18= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 17, 0, length, length)];
+    [buttonTwo18 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo18 addTarget:self
+                    action:@selector(buttonTwo18Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo18];
+    
+    buttonTwo19= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 18, 0, length, length)];
+    [buttonTwo19 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo19 addTarget:self
+                    action:@selector(buttonTwo19Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo19];
+    
+    buttonTwo20= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 19, 0, length, length)];
+    [buttonTwo20 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo20 addTarget:self
+                    action:@selector(buttonTwo20Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo20];
+    
+    buttonTwo21= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 20, 0, length, length)];
+    [buttonTwo21 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo21 addTarget:self
+                    action:@selector(buttonTwo21Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo21];
+    
+    buttonTwo22= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 21, 0, length, length)];
+    [buttonTwo22 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo22 addTarget:self
+                    action:@selector(buttonTwo22Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo22];
+    
+    buttonTwo23= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 22, 0, length, length)];
+    [buttonTwo23 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo23 addTarget:self
+                    action:@selector(buttonTwo23Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo23];
+    
+    buttonTwo24= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 23, 0, length, length)];
+    [buttonTwo24 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo24 addTarget:self
+                    action:@selector(buttonTwo24Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo24];
+    
+    buttonTwo25= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 24, 0, length, length)];
+    [buttonTwo25 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo25 addTarget:self
+                    action:@selector(buttonTwo25Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo25];
+    
+    buttonTwo26= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 25, 0, length, length)];
+    [buttonTwo26 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo26 addTarget:self
+                    action:@selector(buttonTwo26Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo26];
+    
+    buttonTwo27= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 26, 0, length, length)];
+    [buttonTwo27 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo27 addTarget:self
+                    action:@selector(buttonTwo27Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo27];
+    
+    buttonTwo28= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 27, 0, length, length)];
+    [buttonTwo28 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo28 addTarget:self
+                    action:@selector(buttonTwo28Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo28];
+    
+    buttonTwo29= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 28, 0, length, length)];
+    [buttonTwo29 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo29 addTarget:self
+                    action:@selector(buttonTwo29Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo29];
+    
+    buttonTwo30= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 29, 0, length, length)];
+    [buttonTwo30 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo30 addTarget:self
+                    action:@selector(buttonTwo30Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo30];
+    
+    buttonTwo31= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 30, 0, length, length)];
+    [buttonTwo31 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo31 addTarget:self
+                    action:@selector(buttonTwo31Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo31];
+    
+    buttonTwo32= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 31, 0, length, length)];
+    [buttonTwo32 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo32 addTarget:self
+                    action:@selector(buttonTwo32Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo32];
+    
+    buttonTwo33= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 32, 0, length, length)];
+    [buttonTwo33 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo33 addTarget:self
+                    action:@selector(buttonTwo33Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo33];
+    
+    buttonTwo34= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 33, 0, length, length)];
+    [buttonTwo34 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo34 addTarget:self
+                    action:@selector(buttonTwo34Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo34];
+    
+    buttonTwo35= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 34, 0, length, length)];
+    [buttonTwo35 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo35 addTarget:self
+                    action:@selector(buttonTwo35Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo35];
+    
+    buttonTwo36= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 35, 0, length, length)];
+    [buttonTwo36 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo36 addTarget:self
+                    action:@selector(buttonTwo36Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo36];
+    
+    buttonTwo37= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 36, 0, length, length)];
+    [buttonTwo37 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo37 addTarget:self
+                    action:@selector(buttonTwo37Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo37];
+    
+    buttonTwo38= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 37, 0, length, length)];
+    [buttonTwo38 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo38 addTarget:self
+                    action:@selector(buttonTwo38Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo38];
+    
+    buttonTwo39= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 38, 0, length, length)];
+    [buttonTwo39 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo39 addTarget:self
+                    action:@selector(buttonTwo39Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo39];
+    
+    buttonTwo40= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 39, 0, length, length)];
+    [buttonTwo40 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo40 addTarget:self
+                    action:@selector(buttonTwo40Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo40];
+    
+    buttonTwo41= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 40, 0, length, length)];
+    [buttonTwo41 setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    [buttonTwo41 addTarget:self
+                    action:@selector(buttonTwo41Detail:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView2 addSubview:buttonTwo41];
+    
     
     buttonTwo1Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 0, length + spaceH, length, buttonLabelFont + 1)];
     buttonTwo1Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
@@ -382,33 +601,289 @@
     
     buttonTwo2Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 1, length + spaceH, length, buttonLabelFont + 1)];
     buttonTwo2Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
-    buttonTwo2Label.text = @"高3英語劇";
+    buttonTwo2Label.text = @"";
     buttonTwo2Label.numberOfLines = 0;
     [buttonTwo2Label sizeToFit];
     [scrollView2 addSubview:buttonTwo2Label];
     
     buttonTwo3Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 2, length + spaceH, length, buttonLabelFont + 1)];
     buttonTwo3Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
-    buttonTwo3Label.text = @"迷いの国のアリス";
+    buttonTwo3Label.text = @"";
     buttonTwo3Label.numberOfLines = 0;
     [buttonTwo3Label sizeToFit];
     [scrollView2 addSubview:buttonTwo3Label];
     
     buttonTwo4Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 3, length + spaceH, length, buttonLabelFont + 1)];
     buttonTwo4Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
-    buttonTwo4Label.text = @"Trick×Hark";
+    buttonTwo4Label.text = @"";
     buttonTwo4Label.numberOfLines = 0;
     [buttonTwo4Label sizeToFit];
     [scrollView2 addSubview:buttonTwo4Label];
     
     buttonTwo5Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 4, length + spaceH, length, buttonLabelFont + 1)];
     buttonTwo5Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
-    buttonTwo5Label.text = @"インターアクトクラブ";
+    buttonTwo5Label.text = @"";
     buttonTwo5Label.numberOfLines = 0;
     [buttonTwo5Label sizeToFit];
     [scrollView2 addSubview:buttonTwo5Label];
     
+    buttonTwo6Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 5, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo6Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo6Label.text = @"";
+    buttonTwo6Label.numberOfLines = 0;
+    [buttonTwo6Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo6Label];
     
+    buttonTwo7Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 6, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo7Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo7Label.text = @"";
+    buttonTwo7Label.numberOfLines = 0;
+    [buttonTwo7Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo7Label];
+    
+    buttonTwo8Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 7, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo8Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo8Label.text = @"";
+    buttonTwo8Label.numberOfLines = 0;
+    [buttonTwo8Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo8Label];
+    
+    buttonTwo9Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 8, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo9Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo9Label.text = @"";
+    buttonTwo9Label.numberOfLines = 0;
+    [buttonTwo9Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo9Label];
+    
+    buttonTwo10Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 9, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo10Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo10Label.text = @"";
+    buttonTwo10Label.numberOfLines = 0;
+    [buttonTwo10Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo10Label];
+    
+    buttonTwo11Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 10, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo11Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo11Label.text = @"";
+    buttonTwo11Label.numberOfLines = 0;
+    [buttonTwo11Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo11Label];
+    
+    buttonTwo12Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 11, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo12Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo12Label.text = @"";
+    buttonTwo12Label.numberOfLines = 0;
+    [buttonTwo12Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo12Label];
+    
+    buttonTwo13Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 12, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo13Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo13Label.text = @"";
+    buttonTwo13Label.numberOfLines = 0;
+    [buttonTwo13Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo13Label];
+    
+    buttonTwo14Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 13, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo14Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo14Label.text = @"";
+    buttonTwo14Label.numberOfLines = 0;
+    [buttonTwo14Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo14Label];
+    
+    buttonTwo15Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 14, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo15Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo1Label.text = @"";
+    buttonTwo15Label.numberOfLines = 0;
+    [buttonTwo15Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo15Label];
+    
+    buttonTwo16Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 15, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo16Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo16Label.text = @"";
+    buttonTwo16Label.numberOfLines = 0;
+    [buttonTwo16Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo16Label];
+    
+    buttonTwo17Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 16, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo17Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo17Label.text = @"";
+    buttonTwo17Label.numberOfLines = 0;
+    [buttonTwo17Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo17Label];
+    
+    buttonTwo18Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 17, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo18Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo18Label.text = @"";
+    buttonTwo18Label.numberOfLines = 0;
+    [buttonTwo18Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo18Label];
+    
+    buttonTwo19Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 18, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo19Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo19Label.text = @"";
+    buttonTwo19Label.numberOfLines = 0;
+    [buttonTwo19Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo19Label];
+    
+    buttonTwo20Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 19, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo20Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo20Label.text = @"";
+    buttonTwo20Label.numberOfLines = 0;
+    [buttonTwo20Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo20Label];
+    
+    buttonTwo21Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 20, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo21Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo21Label.text = @"";
+    buttonTwo21Label.numberOfLines = 0;
+    [buttonTwo21Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo21Label];
+    
+    buttonTwo22Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 21, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo22Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo22Label.text = @"";
+    buttonTwo22Label.numberOfLines = 0;
+    [buttonTwo22Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo22Label];
+    
+    buttonTwo23Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 22, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo23Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo23Label.text = @"";
+    buttonTwo23Label.numberOfLines = 0;
+    [buttonTwo23Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo23Label];
+    
+    buttonTwo24Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 23, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo24Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo24Label.text = @"";
+    buttonTwo24Label.numberOfLines = 0;
+    [buttonTwo24Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo24Label];
+    
+    buttonTwo25Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 24, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo25Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo25Label.text = @"";
+    buttonTwo25Label.numberOfLines = 0;
+    [buttonTwo25Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo25Label];
+    
+    buttonTwo26Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 25, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo26Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo26Label.text = @"";
+    buttonTwo26Label.numberOfLines = 0;
+    [buttonTwo26Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo26Label];
+    
+    buttonTwo27Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 26, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo27Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo27Label.text = @"";
+    buttonTwo27Label.numberOfLines = 0;
+    [buttonTwo27Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo27Label];
+    
+    buttonTwo28Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 27, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo28Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo28Label.text = @"";
+    buttonTwo28Label.numberOfLines = 0;
+    [buttonTwo28Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo28Label];
+    
+    buttonTwo29Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 28, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo29Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo29Label.text = @"";
+    buttonTwo29Label.numberOfLines = 0;
+    [buttonTwo29Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo29Label];
+    
+    buttonTwo30Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 29, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo30Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo30Label.text = @"";
+    buttonTwo30Label.numberOfLines = 0;
+    [buttonTwo30Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo30Label];
+    
+    buttonTwo31Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 30, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo31Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo31Label.text = @"";
+    buttonTwo31Label.numberOfLines = 0;
+    [buttonTwo31Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo31Label];
+    
+    buttonTwo32Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 31, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo32Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo32Label.text = @"";
+    buttonTwo32Label.numberOfLines = 0;
+    [buttonTwo32Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo32Label];
+    
+    buttonTwo33Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 32, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo33Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo33Label.text = @"";
+    buttonTwo33Label.numberOfLines = 0;
+    [buttonTwo33Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo33Label];
+    
+    buttonTwo34Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 33, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo34Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo34Label.text = @"";
+    buttonTwo34Label.numberOfLines = 0;
+    [buttonTwo34Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo34Label];
+    
+    buttonTwo35Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 34, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo35Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo35Label.text = @"";
+    buttonTwo35Label.numberOfLines = 0;
+    [buttonTwo35Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo35Label];
+    
+    buttonTwo36Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 35, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo36Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo36Label.text = @"";
+    buttonTwo36Label.numberOfLines = 0;
+    [buttonTwo36Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo36Label];
+    
+    buttonTwo37Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 36, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo37Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo37Label.text = @"";
+    buttonTwo37Label.numberOfLines = 0;
+    [buttonTwo37Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo37Label];
+    
+    buttonTwo38Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 37, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo38Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo38Label.text = @"";
+    buttonTwo38Label.numberOfLines = 0;
+    [buttonTwo38Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo38Label];
+    
+    buttonTwo39Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 38, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo39Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo39Label.text = @"";
+    buttonTwo39Label.numberOfLines = 0;
+    [buttonTwo39Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo39Label];
+    
+    buttonTwo40Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 39, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo40Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo40Label.text = @"";
+    buttonTwo40Label.numberOfLines = 0;
+    [buttonTwo40Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo40Label];
+    
+    buttonTwo41Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 40, length + spaceH, length, buttonLabelFont + 1)];
+    buttonTwo41Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
+    buttonTwo41Label.text = @"";
+    buttonTwo41Label.numberOfLines = 0;
+    [buttonTwo40Label sizeToFit];
+    [scrollView2 addSubview:buttonTwo41Label];
+    
+    
+    
+    
+    
+    //バンド
     bandLabel = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + buttonLabelFont + 83) * 2, 60, labelFont + 4)];
     bandLabel.font = [UIFont fontWithName:@"MyriadPro-Regular" size:labelFont];
     bandLabel.text = @"Band";
@@ -590,6 +1065,9 @@
     
     
     
+    
+    
+    //講堂･小講堂
     performanceLabel = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + buttonLabelFont + 83) * 3, 100, labelFont + 4)];
     performanceLabel.font = [UIFont fontWithName:@"MyriadPro-Regular" size:labelFont];
     performanceLabel.text = @"Performace";
@@ -783,6 +1261,9 @@
     
     
     
+    
+    
+    //ステージ
     stageLabel = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + buttonLabelFont + 83) * 4, 50, labelFont + 4)];
     stageLabel.font = [UIFont fontWithName:@"MyriadPro-Regular" size:labelFont];
     stageLabel.text = @"Stage";
@@ -1219,6 +1700,8 @@
     [self performSegueWithIdentifier:@"showDirect" sender:self];
 }
 
+
+//趣味研
 -(void)buttonTwo1Detail:(UIButton *)button{
     whichList = @"display";
     flag = 1;
