@@ -93,7 +93,7 @@
         [scrollView addSubview:label1];
         
         button2= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + self.view.bounds.size.width / 2, 16, length, length)];
-        [button2 setImage:[UIImage imageNamed:@"塩焼きそば　麺’sRUNRUN.png"] forState:UIControlStateNormal];
+        [button2 setImage:[UIImage imageNamed:@"塩焼きそば-麺’sRUNRUN.png"] forState:UIControlStateNormal];
         [button2 addTarget:self
                     action:@selector(buttonOne2Detail:) forControlEvents:UIControlEventTouchUpInside];
         [scrollView addSubview:button2];
@@ -117,7 +117,7 @@
         [scrollView addSubview:label3];
         
         button4= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + self.view.bounds.size.width / 2, 16 + (length + spaceH + fontSize + 29) * 1, length, length)];
-        [button4 setImage:[UIImage imageNamed:@"俺のケバブ.jpg"] forState:UIControlStateNormal];
+        [button4 setImage:[UIImage imageNamed:@"俺のケバブ.png"] forState:UIControlStateNormal];
         [button4 addTarget:self
                     action:@selector(buttonOne4Detail:) forControlEvents:UIControlEventTouchUpInside];
         [scrollView addSubview:button4];

@@ -100,7 +100,7 @@
             _explainSentence.text = @"従来の豚たまに加え、さらに新しい味が追加され進化した鉄板職人。ぜひ一度足をお運び下さい。";
         }
         else if (flag == 2) {
-            detailImage = [UIImage imageNamed:@"塩焼きそば　麺’sRUNRUN.png"];
+            detailImage = [UIImage imageNamed:@"塩焼きそば-麺’sRUNRUN.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"麺’sRUNRUN";
             _explainSentence.text = @"3年連続売り上げ1位を獲得した職人達の、魂の込もった1皿を召し上がれ。この味は、裏切らない。";
@@ -112,7 +112,7 @@
             _explainSentence.text = @"味自慢のソース焼きそば。ソース焼きそばへの愛で本物の味をお届けします。あなたの舌が唸ること間違いなし！";
         }
         else if (flag == 4) {
-            detailImage = [UIImage imageNamed:@"俺のケバブ.jpg"];
+            detailImage = [UIImage imageNamed:@"俺のケバブ.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"俺のケバブ";
             _explainSentence.text = @"売切れ御免！大人気店「俺のケバブ」が今年もやってきた。これを食べずに聖光祭は終われない！";
@@ -523,14 +523,14 @@
     rootViewController.modalPresentationStyle = UIModalPresentationCurrentContext;
     
     right = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - space, 0, space, self.view.bounds.size.width - space * 2)];
-    [right setImage:[UIImage imageNamed:@"Right-to-map.png"] forState:UIControlStateNormal];
+    [right setImage:[UIImage imageNamed:@"Right-to-Map.png"] forState:UIControlStateNormal];
     right.contentMode = UIViewContentModeScaleAspectFill;
     [right addTarget:self
               action:@selector(righton:) forControlEvents:UIControlEventTouchUpInside];
     [imageScroll addSubview:right];
     
     left = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width, 0, space, self.view.bounds.size.width - space * 2)];
-    [left setImage:[UIImage imageNamed:@"Left-to-map.png"] forState:UIControlStateNormal];
+    [left setImage:[UIImage imageNamed:@"Left-to-Map.png"] forState:UIControlStateNormal];
     left.contentMode = UIViewContentModeScaleAspectFill;
     [left addTarget:self
              action:@selector(lefton:) forControlEvents:UIControlEventTouchUpInside];
