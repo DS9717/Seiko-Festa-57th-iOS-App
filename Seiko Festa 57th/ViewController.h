@@ -64,7 +64,6 @@
     UIButton *buttonOne13;  //題名のない音楽喫茶
     UIButton *buttonOne14;  //駅弁
     
-    UILabel *foodLabel;
     UILabel *buttonOne1Label;
     UILabel *buttonOne2Label;
     UILabel *buttonOne3Label;
@@ -123,7 +122,6 @@
     UIButton *buttonTwo40;  //数学研究会
     UIButton *buttonTwo41;  //生徒会展示
     
-    UILabel *displayLabel;
     UILabel *buttonTwo1Label;
     UILabel *buttonTwo2Label;
     UILabel *buttonTwo3Label;
@@ -181,7 +179,6 @@
     UIButton *buttonThree11;
     UIButton *buttonThree12;
     
-    UILabel *bandLabel;
     UILabel *buttonThree1Label;
     UILabel *buttonThree2Label;
     UILabel *buttonThree3Label;
@@ -210,7 +207,6 @@
     UIButton *buttonFour12; //少林寺拳法部演武会
     UIButton *buttonFour13; //剣道部
     
-    UILabel *performanceLabel;
     UILabel *buttonFour1Label;
     UILabel *buttonFour2Label;
     UILabel *buttonFour3Label;
@@ -238,7 +234,6 @@
     UIButton *buttonFive10; //○○男子No.1決定戦
     UIButton *buttonFive11; //S.O.S
     
-    UILabel *stageLabel;
     UILabel *buttonFive1Label;
     UILabel *buttonFive2Label;
     UILabel *buttonFive3Label;
@@ -253,7 +248,7 @@
     
     UIButton *viewAllButton1;
     UIButton *viewAllButton2;
-    UIButton *viewAllBUtton3;
+    UIButton *viewAllButton3;
     UIButton *viewAllButton4;
     UIButton *viewAllButton5;
     
@@ -267,6 +262,11 @@
     float contentOffsetX4;
     float contentOffsetX5;
     
+    UIImageView *Food;
+    UIImageView *Display;
+    UIImageView *Band;
+    UIImageView *Performance;
+    UIImageView *Stage;
     
 }
 

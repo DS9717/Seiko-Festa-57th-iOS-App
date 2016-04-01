@@ -110,23 +110,21 @@
     mainScrollView.bounces = YES;
     mainScrollView.backgroundColor = [UIColor clearColor];
     //スクロールの範囲を設定
-    [mainScrollView setContentSize:CGSizeMake(self.view.bounds.size.width, (length + spaceH + buttonLabelFont + 83) * 5)];
+    [mainScrollView setContentSize:CGSizeMake(self.view.bounds.size.width, 1162)];
     [mainScrollView setContentOffset:CGPointMake(0.0, contentOffsetY) animated:NO];
     
-    foodLabel = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + buttonLabelFont + 83) * 0, 45, labelFont + 4)];
-    foodLabel.font = [UIFont fontWithName:@"MyriadPro-Regular" size:labelFont];
-    foodLabel.text = @"Food";
-    [mainScrollView addSubview:foodLabel];
+    Food = [[UIImageView alloc]initWithFrame:CGRectMake(85, 16, 150, 100)];
+    Food.image = [UIImage imageNamed:@"Food-icon.png"];
+    [mainScrollView addSubview:Food];
     
-    viewAllButton1 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 80, 20 + (length + spaceH + buttonLabelFont + 83) * 0, 64, allButtonFont)];
-    [viewAllButton1 setTitle:@"すべて見る" forState:UIControlStateNormal];
-    viewAllButton1.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:allButtonFont];
-    [viewAllButton1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    viewAllButton1 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 60, 16, 60, 100)];
+    [viewAllButton1 setImage:[UIImage imageNamed:@"Right-to-List.png"] forState:UIControlStateNormal];
+    viewAllButton1.contentMode = UIViewContentModeScaleAspectFill;
     [viewAllButton1 addTarget:self action:@selector(viewAll1:) forControlEvents:UIControlEventTouchUpInside];
     [mainScrollView addSubview:viewAllButton1];
     
     scrollView1 = [[UIScrollView alloc]init];
-    scrollView1.frame = CGRectMake(0, 50 + (length + spaceH + buttonLabelFont + 82) * 0, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 33);
+    scrollView1.frame = CGRectMake(0, 116, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 33);
     scrollView1.showsHorizontalScrollIndicator = NO;
     scrollView1.userInteractionEnabled = YES;
     scrollView1.bounces = YES;
@@ -142,7 +140,7 @@
     [scrollView1 addSubview:buttonOne1];
     
     buttonOne2= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 1, 0, length, length)];
-    [buttonOne2 setImage:[UIImage imageNamed:@"塩焼きそば　麺’sRUNRUN.png"] forState:UIControlStateNormal];
+    [buttonOne2 setImage:[UIImage imageNamed:@"塩焼きそば-麺’sRUNRUN.png"] forState:UIControlStateNormal];
     [buttonOne2 addTarget:self
                    action:@selector(buttonOne2Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne2];
@@ -154,7 +152,7 @@
     [scrollView1 addSubview:buttonOne3];
     
     buttonOne4= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 3, 0, length, length)];
-    [buttonOne4 setImage:[UIImage imageNamed:@"俺のケバブ.jpg"] forState:UIControlStateNormal];
+    [buttonOne4 setImage:[UIImage imageNamed:@"俺のケバブ.png"] forState:UIControlStateNormal];
     [buttonOne4 addTarget:self
                    action:@selector(buttonOne4Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne4];
@@ -323,20 +321,18 @@
     
     
     //趣味研
-    displayLabel = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + buttonLabelFont + 83) * 1, 80, labelFont + 4)];
-    displayLabel.font = [UIFont fontWithName:@"MyriadPro-Regular" size:labelFont];
-    displayLabel.text = @"Display";
-    [mainScrollView addSubview:displayLabel];
+    Display = [[UIImageView alloc]initWithFrame:CGRectMake(85, 242, 150, 100)];
+    Display.image = [UIImage imageNamed:@"Display-icon.png"];
+    [mainScrollView addSubview:Display];
     
-    viewAllButton2 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 80, 20 + (length + spaceH + buttonLabelFont + 83) * 1, 64, allButtonFont)];
-    [viewAllButton2 setTitle:@"すべて見る" forState:UIControlStateNormal];
-    viewAllButton2.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:allButtonFont];
-    [viewAllButton2 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    viewAllButton2 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 60, 242, 60, 100)];
+    [viewAllButton2 setImage:[UIImage imageNamed:@"Right-to-List.png"] forState:UIControlStateNormal];
+    viewAllButton2.contentMode = UIViewContentModeCenter;
     [viewAllButton2 addTarget:self action:@selector(viewAll2:) forControlEvents:UIControlEventTouchUpInside];
     [mainScrollView addSubview:viewAllButton2];
     
     scrollView2 = [[UIScrollView alloc]init];
-    scrollView2.frame = CGRectMake(0, 50 + (length + spaceH + buttonLabelFont + 83) * 1, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 33);
+    scrollView2.frame = CGRectMake(0, 342, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 33);
     scrollView2.showsHorizontalScrollIndicator = NO;
     scrollView2.userInteractionEnabled = YES;
     scrollView2.bounces = YES;
@@ -884,20 +880,18 @@
     
     
     //バンド
-    bandLabel = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + buttonLabelFont + 83) * 2, 60, labelFont + 4)];
-    bandLabel.font = [UIFont fontWithName:@"MyriadPro-Regular" size:labelFont];
-    bandLabel.text = @"Band";
-    [mainScrollView addSubview:bandLabel];
+    Band = [[UIImageView alloc]initWithFrame:CGRectMake(85, 468, 150, 100)];
+    Band.image = [UIImage imageNamed:@"Band-icon.png"];
+    [mainScrollView addSubview:Band];
     
-    viewAllBUtton3 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 80, 20 + (length + spaceH + buttonLabelFont + 83) * 2, 64, allButtonFont)];
-    [viewAllBUtton3 setTitle:@"すべて見る" forState:UIControlStateNormal];
-    viewAllBUtton3.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:allButtonFont];
-    [viewAllBUtton3 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [viewAllBUtton3 addTarget:self action:@selector(viewAll3:) forControlEvents:UIControlEventTouchUpInside];
-    [mainScrollView addSubview:viewAllBUtton3];
+    viewAllButton3 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 60, 468, 60, 100)];
+    [viewAllButton3 setImage:[UIImage imageNamed:@"Right-to-List.png"] forState:UIControlStateNormal];
+    viewAllButton3.contentMode = UIViewContentModeCenter;
+    [viewAllButton3 addTarget:self action:@selector(viewAll3:) forControlEvents:UIControlEventTouchUpInside];
+    [mainScrollView addSubview:viewAllButton3];
     
     scrollView3 = [[UIScrollView alloc]init];
-    scrollView3.frame = CGRectMake(0, 50 + (length + spaceH + buttonLabelFont + 83) * 2, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 33);
+    scrollView3.frame = CGRectMake(0, 568, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 33);
     scrollView3.showsHorizontalScrollIndicator = NO;
     scrollView3.userInteractionEnabled = YES;
     scrollView3.bounces = YES;
@@ -1068,20 +1062,18 @@
     
     
     //講堂･小講堂
-    performanceLabel = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + buttonLabelFont + 83) * 3, 100, labelFont + 4)];
-    performanceLabel.font = [UIFont fontWithName:@"MyriadPro-Regular" size:labelFont];
-    performanceLabel.text = @"Performace";
-    [mainScrollView addSubview:performanceLabel];
+    Performance = [[UIImageView alloc]initWithFrame:CGRectMake(85, 694, 150, 100)];
+    Performance.image = [UIImage imageNamed:@"Performance-icon.png"];
+    [mainScrollView addSubview:Performance];
     
-    viewAllButton4 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 80, 20 + (length + spaceH + buttonLabelFont + 83) * 3, 64, allButtonFont)];
-    [viewAllButton4 setTitle:@"すべて見る" forState:UIControlStateNormal];
-    viewAllButton4.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:allButtonFont];
-    [viewAllButton4 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    viewAllButton4 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 60, 694, 60, 100)];
+    [viewAllButton4 setImage:[UIImage imageNamed:@"Right-to-List.png"] forState:UIControlStateNormal];
+    viewAllButton4.contentMode = UIViewContentModeCenter;
     [viewAllButton4 addTarget:self action:@selector(viewAll4:) forControlEvents:UIControlEventTouchUpInside];
     [mainScrollView addSubview:viewAllButton4];
     
     scrollView4 = [[UIScrollView alloc]init];
-    scrollView4.frame = CGRectMake(0, 50 + (length + spaceH + buttonLabelFont + 83) * 3, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 33);
+    scrollView4.frame = CGRectMake(0, 794, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 33);
     scrollView4.showsHorizontalScrollIndicator = NO;
     scrollView4.userInteractionEnabled = YES;
     scrollView4.bounces = YES;
@@ -1264,20 +1256,18 @@
     
     
     //ステージ
-    stageLabel = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + (length + spaceH + buttonLabelFont + 83) * 4, 50, labelFont + 4)];
-    stageLabel.font = [UIFont fontWithName:@"MyriadPro-Regular" size:labelFont];
-    stageLabel.text = @"Stage";
-    [mainScrollView addSubview:stageLabel];
+    Stage = [[UIImageView alloc]initWithFrame:CGRectMake(85, 920, 150, 100)];
+    Stage.image = [UIImage imageNamed:@"Stage-icon.png"];
+    [mainScrollView addSubview:Stage];
     
-    viewAllButton5 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 80, 20 + (length + spaceH + buttonLabelFont + 83) * 4, 64, allButtonFont)];
-    [viewAllButton5 setTitle:@"すべて見る" forState:UIControlStateNormal];
-    viewAllButton5.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:allButtonFont];
-    [viewAllButton5 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    viewAllButton5 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 60, 920, 60, 100)];
+    [viewAllButton5 setImage:[UIImage imageNamed:@"Right-to-List.png"] forState:UIControlStateNormal];
+    viewAllButton5.contentMode = UIViewContentModeCenter;
     [viewAllButton5 addTarget:self action:@selector(viewAll5:) forControlEvents:UIControlEventTouchUpInside];
     [mainScrollView addSubview:viewAllButton5];
     
     scrollView5 = [[UIScrollView alloc]init];
-    scrollView5.frame = CGRectMake(0, 50 + (length + spaceH + buttonLabelFont + 83) * 4, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 33);
+    scrollView5.frame = CGRectMake(0, 1020, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 33);
     scrollView5.showsHorizontalScrollIndicator = NO;
     scrollView5.userInteractionEnabled = YES;
     scrollView5.bounces = YES;
@@ -1432,23 +1422,6 @@
     [self.view addSubview:mainScrollView];
     
     //CGRectMake(spaceLeft, 50 + length + spaceH + buttonLabelFont + 32, self.view.bounds.size.width - 15, 0.5)
-    UIView *horizontal1 = [[UIView alloc] initWithFrame:CGRectMake(spaceLeft, (length + spaceH + buttonLabelFont + 82) * 1, self.view.bounds.size.width - 15, 0.5)];
-    horizontal1.backgroundColor = [UIColor colorWithRed:140.0/255.0 green:140.0/255.0 blue:140.0/255.0 alpha:1.0];
-    [mainScrollView addSubview:horizontal1];
-    
-    UIView *horizontal2 = [[UIView alloc] initWithFrame:CGRectMake(spaceLeft, (length + spaceH + buttonLabelFont + 82) * 2, self.view.bounds.size.width - 15, 0.5)];
-    horizontal2.backgroundColor = [UIColor colorWithRed:140.0/255.0 green:140.0/255.0 blue:140.0/255.0 alpha:1.0];
-    [mainScrollView addSubview:horizontal2];
-    
-    UIView *horizontal3 = [[UIView alloc] initWithFrame:CGRectMake(spaceLeft, (length + spaceH + buttonLabelFont + 82) * 3, self.view.bounds.size.width - 15, 0.5)];
-    horizontal3.backgroundColor = [UIColor colorWithRed:140.0/255.0 green:140.0/255.0 blue:140.0/255.0 alpha:1.0];
-    [mainScrollView addSubview:horizontal3];
-    
-    UIView *horizontal4 = [[UIView alloc] initWithFrame:CGRectMake(spaceLeft, (length + spaceH + buttonLabelFont + 82) * 4, self.view.bounds.size.width - 15, 0.5)];
-    horizontal4.backgroundColor = [UIColor colorWithRed:140.0/255.0 green:140.0/255.0 blue:140.0/255.0 alpha:1.0];
-    [mainScrollView addSubview:horizontal4];
-    
-    
     
 }
 
