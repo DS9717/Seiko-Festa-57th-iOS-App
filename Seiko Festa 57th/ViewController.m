@@ -317,7 +317,6 @@
     
     
     
-    
     //趣味研
     Display = [[UIButton alloc]initWithFrame:CGRectMake(92.5, 248, 135, 90)];
     [Display setImage:[UIImage imageNamed:@"Display-icon.png"] forState:UIControlStateNormal];
