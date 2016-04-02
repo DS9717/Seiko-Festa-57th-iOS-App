@@ -107,16 +107,16 @@
     mainScrollView.bounces = YES;
     mainScrollView.backgroundColor = [UIColor clearColor];
     //スクロールの範囲を設定
-    [mainScrollView setContentSize:CGSizeMake(self.view.bounds.size.width, 1128)];
+    [mainScrollView setContentSize:CGSizeMake(self.view.bounds.size.width, 1176)];
     [mainScrollView setContentOffset:CGPointMake(0.0, contentOffsetY) animated:NO];
     
     Food = [[UIButton alloc]initWithFrame:CGRectMake(92.5, 16, 135, 90)];
-    [Food setImage:[UIImage imageNamed:@"Food-icon.png"] forState:UIControlStateNormal];
+    [Food setImage:[UIImage imageNamed:@"Food-icon"] forState:UIControlStateNormal];
     [Food addTarget:self action:@selector(viewAll1:) forControlEvents:UIControlEventTouchUpInside];
     [mainScrollView addSubview:Food];
     
     viewAllButton1 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 60, 16, 60, 90)];
-    [viewAllButton1 setImage:[UIImage imageNamed:@"Right-to-List.png"] forState:UIControlStateNormal];
+    [viewAllButton1 setImage:[UIImage imageNamed:@"Right-to-List"] forState:UIControlStateNormal];
     viewAllButton1.contentMode = UIViewContentModeScaleAspectFill;
     [viewAllButton1 addTarget:self action:@selector(viewAll1:) forControlEvents:UIControlEventTouchUpInside];
     [mainScrollView addSubview:viewAllButton1];
@@ -319,12 +319,12 @@
     
     //趣味研
     Display = [[UIButton alloc]initWithFrame:CGRectMake(92.5, 248, 135, 90)];
-    [Display setImage:[UIImage imageNamed:@"Display-icon.png"] forState:UIControlStateNormal];
+    [Display setImage:[UIImage imageNamed:@"Display-icon"] forState:UIControlStateNormal];
     [Display addTarget:self action:@selector(viewAll2:) forControlEvents:UIControlEventTouchUpInside];
     [mainScrollView addSubview:Display];
     
     viewAllButton2 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 60, 248, 60, 90)];
-    [viewAllButton2 setImage:[UIImage imageNamed:@"Right-to-List.png"] forState:UIControlStateNormal];
+    [viewAllButton2 setImage:[UIImage imageNamed:@"Right-to-List"] forState:UIControlStateNormal];
     viewAllButton2.contentMode = UIViewContentModeCenter;
     [viewAllButton2 addTarget:self action:@selector(viewAll2:) forControlEvents:UIControlEventTouchUpInside];
     [mainScrollView addSubview:viewAllButton2];
@@ -878,19 +878,19 @@
     
     
     //バンド
-    Band = [[UIButton alloc]initWithFrame:CGRectMake(92.5, 464, 135, 90)];
-    [Band setImage:[UIImage imageNamed:@"Band-icon.png"] forState:UIControlStateNormal];
+    Band = [[UIButton alloc]initWithFrame:CGRectMake(92.5, 480, 135, 90)];
+    [Band setImage:[UIImage imageNamed:@"Band-icon"] forState:UIControlStateNormal];
     [Band addTarget:self action:@selector(viewAll3:) forControlEvents:UIControlEventTouchUpInside];
     [mainScrollView addSubview:Band];
     
-    viewAllButton3 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 60, 464, 60, 90)];
-    [viewAllButton3 setImage:[UIImage imageNamed:@"Right-to-List.png"] forState:UIControlStateNormal];
+    viewAllButton3 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 60, 480, 60, 90)];
+    [viewAllButton3 setImage:[UIImage imageNamed:@"Right-to-List"] forState:UIControlStateNormal];
     viewAllButton3.contentMode = UIViewContentModeCenter;
     [viewAllButton3 addTarget:self action:@selector(viewAll3:) forControlEvents:UIControlEventTouchUpInside];
     [mainScrollView addSubview:viewAllButton3];
     
     scrollView3 = [[UIScrollView alloc]init];
-    scrollView3.frame = CGRectMake(0, 554, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 33);
+    scrollView3.frame = CGRectMake(0, 570, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 33);
     scrollView3.showsHorizontalScrollIndicator = NO;
     scrollView3.userInteractionEnabled = YES;
     scrollView3.bounces = YES;
@@ -1061,19 +1061,19 @@
     
     
     //講堂･小講堂
-    Performance = [[UIButton alloc]initWithFrame:CGRectMake(92.5, 680, 135, 90)];
-    [Performance setImage:[UIImage imageNamed:@"Performance-icon.png"] forState:UIControlStateNormal];
+    Performance = [[UIButton alloc]initWithFrame:CGRectMake(92.5, 712, 135, 90)];
+    [Performance setImage:[UIImage imageNamed:@"Performance-icon"] forState:UIControlStateNormal];
     [Performance addTarget:self action:@selector(viewAll4:) forControlEvents:UIControlEventTouchUpInside];
     [mainScrollView addSubview:Performance];
     
-    viewAllButton4 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 60, 680, 60, 90)];
-    [viewAllButton4 setImage:[UIImage imageNamed:@"Right-to-List.png"] forState:UIControlStateNormal];
+    viewAllButton4 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 60, 712, 60, 90)];
+    [viewAllButton4 setImage:[UIImage imageNamed:@"Right-to-List"] forState:UIControlStateNormal];
     viewAllButton4.contentMode = UIViewContentModeCenter;
     [viewAllButton4 addTarget:self action:@selector(viewAll4:) forControlEvents:UIControlEventTouchUpInside];
     [mainScrollView addSubview:viewAllButton4];
     
     scrollView4 = [[UIScrollView alloc]init];
-    scrollView4.frame = CGRectMake(0, 770, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 33);
+    scrollView4.frame = CGRectMake(0, 802, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 33);
     scrollView4.showsHorizontalScrollIndicator = NO;
     scrollView4.userInteractionEnabled = YES;
     scrollView4.bounces = YES;
@@ -1255,19 +1255,19 @@
     
     
     //ステージ
-    Stage = [[UIButton alloc]initWithFrame:CGRectMake(92.5, 896, 135, 90)];
+    Stage = [[UIButton alloc]initWithFrame:CGRectMake(92.5, 944, 135, 90)];
     [Stage setImage:[UIImage imageNamed:@"Stage-icon.png"] forState:UIControlStateNormal];
     [Stage addTarget:self action:@selector(viewAll5:) forControlEvents:UIControlEventTouchUpInside];
     [mainScrollView addSubview:Stage];
     
-    viewAllButton5 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 60, 896, 60, 90)];
-    [viewAllButton5 setImage:[UIImage imageNamed:@"Right-to-List.png"] forState:UIControlStateNormal];
+    viewAllButton5 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - 60, 944, 60, 90)];
+    [viewAllButton5 setImage:[UIImage imageNamed:@"Right-to-List"] forState:UIControlStateNormal];
     viewAllButton5.contentMode = UIViewContentModeCenter;
     [viewAllButton5 addTarget:self action:@selector(viewAll5:) forControlEvents:UIControlEventTouchUpInside];
     [mainScrollView addSubview:viewAllButton5];
     
     scrollView5 = [[UIScrollView alloc]init];
-    scrollView5.frame = CGRectMake(0, 986, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 33);
+    scrollView5.frame = CGRectMake(0, 1034, self.view.bounds.size.width, length + spaceH + buttonLabelFont + 33);
     scrollView5.showsHorizontalScrollIndicator = NO;
     scrollView5.userInteractionEnabled = YES;
     scrollView5.bounces = YES;

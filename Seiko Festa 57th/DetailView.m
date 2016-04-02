@@ -523,14 +523,14 @@
     rootViewController.modalPresentationStyle = UIModalPresentationCurrentContext;
     
     right = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - space, 0, space, self.view.bounds.size.width - space * 2)];
-    [right setImage:[UIImage imageNamed:@"Right-to-Map.png"] forState:UIControlStateNormal];
+    [right setImage:[UIImage imageNamed:@"Right-to-Map"] forState:UIControlStateNormal];
     right.contentMode = UIViewContentModeScaleAspectFill;
     [right addTarget:self
               action:@selector(righton:) forControlEvents:UIControlEventTouchUpInside];
     [imageScroll addSubview:right];
     
     left = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width, 0, space, self.view.bounds.size.width - space * 2)];
-    [left setImage:[UIImage imageNamed:@"Left-to-Map.png"] forState:UIControlStateNormal];
+    [left setImage:[UIImage imageNamed:@"Left-to-Map"] forState:UIControlStateNormal];
     left.contentMode = UIViewContentModeScaleAspectFill;
     [left addTarget:self
              action:@selector(lefton:) forControlEvents:UIControlEventTouchUpInside];
