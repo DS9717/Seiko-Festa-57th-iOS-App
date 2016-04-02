@@ -1258,7 +1258,6 @@
     
     
     
-    
     //ステージ
     Stage = [[UIButton alloc]initWithFrame:CGRectMake(92.5, 896, 135, 90)];
     [Stage setImage:[UIImage imageNamed:@"Stage-icon.png"] forState:UIControlStateNormal];
