@@ -74,7 +74,6 @@
         length = 72;
         spaceW = 20;
         spaceH = 8;
-        labelFont = 20;
         allButtonFont = 12; 
         buttonLabelFont = 13;
     } else if (r.size.width == 375) {
@@ -83,7 +82,6 @@
         length = 94;
         spaceW = 16;
         spaceH = 12;
-        labelFont = 18;
         allButtonFont = 12;
         buttonLabelFont = 13;
     } else if (r.size.width == 414) {
@@ -92,7 +90,6 @@
         length = 94;
         spaceW = 16;
         spaceH = 12;
-        labelFont = 18;
         allButtonFont = 12;
         buttonLabelFont = 13;
     }
@@ -113,7 +110,7 @@
     [mainScrollView setContentSize:CGSizeMake(self.view.bounds.size.width, 1162)];
     [mainScrollView setContentOffset:CGPointMake(0.0, contentOffsetY) animated:NO];
     
-    Food = [[UIImageView alloc]initWithFrame:CGRectMake(85, 16, 150, 100)];
+    Food = [[UIImageView alloc]initWithFrame:CGRectMake((self.view.bounds.size.width - 150) / 2, 16, 150, 100)];
     Food.image = [UIImage imageNamed:@"Food-icon.png"];
     [mainScrollView addSubview:Food];
     
@@ -321,7 +318,7 @@
     
     
     //趣味研
-    Display = [[UIImageView alloc]initWithFrame:CGRectMake(85, 242, 150, 100)];
+    Display = [[UIImageView alloc]initWithFrame:CGRectMake((self.view.bounds.size.width - 150) / 2, 242, 150, 100)];
     Display.image = [UIImage imageNamed:@"Display-icon.png"];
     [mainScrollView addSubview:Display];
     
@@ -597,28 +594,28 @@
     
     buttonTwo2Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 1, length + spaceH, length, buttonLabelFont + 1)];
     buttonTwo2Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
-    buttonTwo2Label.text = @"";
+    buttonTwo2Label.text = @"ポケモンセンターSeiko";
     buttonTwo2Label.numberOfLines = 0;
     [buttonTwo2Label sizeToFit];
     [scrollView2 addSubview:buttonTwo2Label];
     
     buttonTwo3Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 2, length + spaceH, length, buttonLabelFont + 1)];
     buttonTwo3Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
-    buttonTwo3Label.text = @"";
+    buttonTwo3Label.text = @"宇宙戦艦ヤマト研究会";
     buttonTwo3Label.numberOfLines = 0;
     [buttonTwo3Label sizeToFit];
     [scrollView2 addSubview:buttonTwo3Label];
     
     buttonTwo4Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 3, length + spaceH, length, buttonLabelFont + 1)];
     buttonTwo4Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
-    buttonTwo4Label.text = @"";
+    buttonTwo4Label.text = @"とにかく明るいFes村";
     buttonTwo4Label.numberOfLines = 0;
     [buttonTwo4Label sizeToFit];
     [scrollView2 addSubview:buttonTwo4Label];
     
     buttonTwo5Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 4, length + spaceH, length, buttonLabelFont + 1)];
     buttonTwo5Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
-    buttonTwo5Label.text = @"";
+    buttonTwo5Label.text = @"Trick×Hark";
     buttonTwo5Label.numberOfLines = 0;
     [buttonTwo5Label sizeToFit];
     [scrollView2 addSubview:buttonTwo5Label];
@@ -880,7 +877,7 @@
     
     
     //バンド
-    Band = [[UIImageView alloc]initWithFrame:CGRectMake(85, 468, 150, 100)];
+    Band = [[UIImageView alloc]initWithFrame:CGRectMake((self.view.bounds.size.width - 150) / 2, 468, 150, 100)];
     Band.image = [UIImage imageNamed:@"Band-icon.png"];
     [mainScrollView addSubview:Band];
     
@@ -1062,7 +1059,7 @@
     
     
     //講堂･小講堂
-    Performance = [[UIImageView alloc]initWithFrame:CGRectMake(85, 694, 150, 100)];
+    Performance = [[UIImageView alloc]initWithFrame:CGRectMake((self.view.bounds.size.width - 150) / 2, 694, 150, 100)];
     Performance.image = [UIImage imageNamed:@"Performance-icon.png"];
     [mainScrollView addSubview:Performance];
     
@@ -1256,7 +1253,7 @@
     
     
     //ステージ
-    Stage = [[UIImageView alloc]initWithFrame:CGRectMake(85, 920, 150, 100)];
+    Stage = [[UIImageView alloc]initWithFrame:CGRectMake((self.view.bounds.size.width - 150) / 2, 920, 150, 100)];
     Stage.image = [UIImage imageNamed:@"Stage-icon.png"];
     [mainScrollView addSubview:Stage];
     
