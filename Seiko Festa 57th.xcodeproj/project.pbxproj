@@ -123,6 +123,7 @@
 		FAA39B481C9D2D9300A1B697 /* ミュージックサロン バナー.JPG in Resources */ = {isa = PBXBuildFile; fileRef = FAA39B461C9D2D9300A1B697 /* ミュージックサロン バナー.JPG */; };
 		FAA39B4D1C9D330E00A1B697 /* map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAA39B4A1C9D330E00A1B697 /* map.jpg */; };
 		FAA39B521C9D433900A1B697 /* Flat Flight バナー1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAA39B511C9D433900A1B697 /* Flat Flight バナー1.jpg */; };
+		FAAE7B241CAFC6690072B702 /* 78枚目のJoker.png in Resources */ = {isa = PBXBuildFile; fileRef = FAAE7B231CAFC6690072B702 /* 78枚目のJoker.png */; };
 		FABB0BDF1C560EEC0009ABAA /* ListView.m in Sources */ = {isa = PBXBuildFile; fileRef = FABB0BDE1C560EEC0009ABAA /* ListView.m */; };
 		FABB0BE21C560F040009ABAA /* DetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = FABB0BE11C560F040009ABAA /* DetailView.m */; };
 		FAD7F5A41CAFB7470075883A /* EHC-Jurassic.png in Resources */ = {isa = PBXBuildFile; fileRef = FAD7F57B1CAFB7460075883A /* EHC-Jurassic.png */; };
@@ -165,7 +166,6 @@
 		FAD7F5C91CAFB7470075883A /* 本の泉.png in Resources */ = {isa = PBXBuildFile; fileRef = FAD7F5A01CAFB7460075883A /* 本の泉.png */; };
 		FAD7F5CA1CAFB7470075883A /* 魔女の卓球便.png in Resources */ = {isa = PBXBuildFile; fileRef = FAD7F5A11CAFB7470075883A /* 魔女の卓球便.png */; };
 		FAD7F5CB1CAFB7470075883A /* 迷いの国のアリス.png in Resources */ = {isa = PBXBuildFile; fileRef = FAD7F5A21CAFB7470075883A /* 迷いの国のアリス.png */; };
-		FAF89EA71CAFC3DD00CC3612 /* 78枚目のJoker.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF89EA61CAFC3DD00CC3612 /* 78枚目のJoker.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -303,6 +303,7 @@
 		FAA39B461C9D2D9300A1B697 /* ミュージックサロン バナー.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ミュージックサロン バナー.JPG"; sourceTree = "<group>"; };
 		FAA39B4A1C9D330E00A1B697 /* map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = map.jpg; sourceTree = "<group>"; };
 		FAA39B511C9D433900A1B697 /* Flat Flight バナー1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Flat Flight バナー1.jpg"; sourceTree = "<group>"; };
+		FAAE7B231CAFC6690072B702 /* 78枚目のJoker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "78枚目のJoker.png"; sourceTree = "<group>"; };
 		FABB0BDD1C560EEC0009ABAA /* ListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListView.h; sourceTree = "<group>"; };
 		FABB0BDE1C560EEC0009ABAA /* ListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListView.m; sourceTree = "<group>"; };
 		FABB0BE01C560F040009ABAA /* DetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailView.h; sourceTree = "<group>"; };
@@ -347,7 +348,6 @@
 		FAD7F5A01CAFB7460075883A /* 本の泉.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "本の泉.png"; sourceTree = "<group>"; };
 		FAD7F5A11CAFB7470075883A /* 魔女の卓球便.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "魔女の卓球便.png"; sourceTree = "<group>"; };
 		FAD7F5A21CAFB7470075883A /* 迷いの国のアリス.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "迷いの国のアリス.png"; sourceTree = "<group>"; };
-		FAF89EA61CAFC3DD00CC3612 /* 78枚目のJoker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "78枚目のJoker.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -659,7 +659,7 @@
 		FAA39B0C1C9D131400A1B697 /* Display */ = {
 			isa = PBXGroup;
 			children = (
-				FAF89EA61CAFC3DD00CC3612 /* 78枚目のJoker.png */,
+				FAAE7B231CAFC6690072B702 /* 78枚目のJoker.png */,
 				FAD7F57B1CAFB7460075883A /* EHC-Jurassic.png */,
 				FAD7F57C1CAFB7460075883A /* SeSDA〜聖光宇宙センター〜.png */,
 				FAD7F57D1CAFB7460075883A /* Shockers.png */,
@@ -995,7 +995,7 @@
 				7EB62E861CAEB0410097FDB5 /* コミュ力の窓.png in Resources */,
 				7EB711871C9EDEF300E0F691 /* 奴等-タイムテーブル.png in Resources */,
 				FAD7F5C91CAFB7470075883A /* 本の泉.png in Resources */,
-				FAF89EA71CAFC3DD00CC3612 /* 78枚目のJoker.png in Resources */,
+				FAAE7B241CAFC6690072B702 /* 78枚目のJoker.png in Resources */,
 				7EB62E651CAEAF8D0097FDB5 /* ボールぽこぽこ.png in Resources */,
 				FAD7F5C41CAFB7470075883A /* 地学天文学部.png in Resources */,
 				7EB62EAE1CAED61D0097FDB5 /* Food-icon.png in Resources */,
