@@ -262,11 +262,11 @@
     float contentOffsetX4;
     float contentOffsetX5;
     
-    UIImageView *Food;
-    UIImageView *Display;
-    UIImageView *Band;
-    UIImageView *Performance;
-    UIImageView *Stage;
+    UIButton *Food;
+    UIButton *Display;
+    UIButton *Band;
+    UIButton *Performance;
+    UIButton *Stage;
     
 }
 
