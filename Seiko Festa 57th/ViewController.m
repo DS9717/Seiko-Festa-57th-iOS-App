@@ -74,7 +74,6 @@
         length = 72;
         spaceW = 20;
         spaceH = 8;
-        labelFont = 20;
         allButtonFont = 12; 
         buttonLabelFont = 13;
     } else if (r.size.width == 375) {
@@ -83,7 +82,6 @@
         length = 94;
         spaceW = 16;
         spaceH = 12;
-        labelFont = 18;
         allButtonFont = 12;
         buttonLabelFont = 13;
     } else if (r.size.width == 414) {
@@ -92,7 +90,6 @@
         length = 94;
         spaceW = 16;
         spaceH = 12;
-        labelFont = 18;
         allButtonFont = 12;
         buttonLabelFont = 13;
     }
@@ -599,28 +596,28 @@
     
     buttonTwo2Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 1, length + spaceH, length, buttonLabelFont + 1)];
     buttonTwo2Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
-    buttonTwo2Label.text = @"";
+    buttonTwo2Label.text = @"ポケモンセンターSeiko";
     buttonTwo2Label.numberOfLines = 0;
     [buttonTwo2Label sizeToFit];
     [scrollView2 addSubview:buttonTwo2Label];
     
     buttonTwo3Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 2, length + spaceH, length, buttonLabelFont + 1)];
     buttonTwo3Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
-    buttonTwo3Label.text = @"";
+    buttonTwo3Label.text = @"宇宙戦艦ヤマト研究会";
     buttonTwo3Label.numberOfLines = 0;
     [buttonTwo3Label sizeToFit];
     [scrollView2 addSubview:buttonTwo3Label];
     
     buttonTwo4Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 3, length + spaceH, length, buttonLabelFont + 1)];
     buttonTwo4Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
-    buttonTwo4Label.text = @"";
+    buttonTwo4Label.text = @"とにかく明るいFes村";
     buttonTwo4Label.numberOfLines = 0;
     [buttonTwo4Label sizeToFit];
     [scrollView2 addSubview:buttonTwo4Label];
     
     buttonTwo5Label = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + (spaceW + length) * 4, length + spaceH, length, buttonLabelFont + 1)];
     buttonTwo5Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
-    buttonTwo5Label.text = @"";
+    buttonTwo5Label.text = @"Trick×Hark";
     buttonTwo5Label.numberOfLines = 0;
     [buttonTwo5Label sizeToFit];
     [scrollView2 addSubview:buttonTwo5Label];

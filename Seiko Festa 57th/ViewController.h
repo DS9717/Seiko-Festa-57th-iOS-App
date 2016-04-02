@@ -22,8 +22,6 @@
     int spaceW;
     //アイコン-テキスト間スペース(縦)
     int spaceH;
-    //label フォントサイズ
-    int labelFont;
     //allButon フォントサイズ
     int allButtonFont;
     //buttonLabel フォントサイズ
