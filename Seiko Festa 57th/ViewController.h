@@ -17,7 +17,7 @@
     //左側余白
     int spaceLeft;
     //アイコン縦横長
-    int length;
+    //int length;
     //アイコン間スペース(横)
     int spaceW;
     //アイコン-テキスト間スペース(縦)
@@ -26,20 +26,25 @@
     int allButtonFont;
     //buttonLabel フォントサイズ
     int buttonLabelFont;
+
+    
     
     //書き換え中
-     //上左右間隔
+     //Foodボタン上
+     int spaceAllAbove;
+     //allButonサイズ(縦)
+     int allButtonLength;
+     //Foodボタン-scrollView1間隔
+     int spaceAllBelow;
+     //アイコン画像上左右間隔
      int space;
      //アイコンサイズ
-     int lenght;
-     //見出しボタン-アイコン間隔
-     int spaceA;
-     //アイコン-テキスト間隔
-     int spaceB;
-     //allButonサイズ(縦)
-     int allButtonSize;
-     //ボタンラベルサイズ
+     int length;
+     //アイコン画像-buttonラベル間隔
+     int spaceBelow;
+     //buttonラベルフォントサイズ
      int labelFontSize;
+    
     
     
     UIImage *featuredImage;
