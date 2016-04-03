@@ -27,6 +27,20 @@
     //buttonLabel フォントサイズ
     int buttonLabelFont;
     
+    //書き換え中
+     //上左右間隔
+     int space;
+     //アイコンサイズ
+     int lenght;
+     //見出しボタン-アイコン間隔
+     int spaceA;
+     //アイコン-テキスト間隔
+     int spaceB;
+     //allButonサイズ(縦)
+     int allButtonSize;
+     //ボタンラベルサイズ
+     int labelFontSize;
+    
     
     UIImage *featuredImage;
     UIImage *featuredImage2;

@@ -198,6 +198,8 @@
 		FAD7F5C91CAFB7470075883A /* 本の泉.png in Resources */ = {isa = PBXBuildFile; fileRef = FAD7F5A01CAFB7460075883A /* 本の泉.png */; };
 		FAD7F5CA1CAFB7470075883A /* 魔女の卓球便.png in Resources */ = {isa = PBXBuildFile; fileRef = FAD7F5A11CAFB7470075883A /* 魔女の卓球便.png */; };
 		FAD7F5CB1CAFB7470075883A /* 迷いの国のアリス.png in Resources */ = {isa = PBXBuildFile; fileRef = FAD7F5A21CAFB7470075883A /* 迷いの国のアリス.png */; };
+		FAE012F71CB086EA00E43DFB /* chocolat-π.png in Resources */ = {isa = PBXBuildFile; fileRef = FAE012F61CB086EA00E43DFB /* chocolat-π.png */; };
+		FAE012F91CB0877800E43DFB /* Flapjack.png in Resources */ = {isa = PBXBuildFile; fileRef = FAE012F81CB0877800E43DFB /* Flapjack.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -298,7 +300,6 @@
 		7EB62E151CAB021E0097FDB5 /* Twitter icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twitter icon.png"; sourceTree = "<group>"; };
 		7EB62E171CAB02EF0097FDB5 /* LINE icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LINE icon.png"; sourceTree = "<group>"; };
 		7EB62E191CAB030D0097FDB5 /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
-		7EB62E281CAEAE0A0097FDB5 /* Flapjack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flapjack.png; sourceTree = "<group>"; };
 		7EB62E291CAEAE0A0097FDB5 /* Juicy-Juicer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Juicy-Juicer.png"; sourceTree = "<group>"; };
 		7EB62E2A1CAEAE0A0097FDB5 /* クレープブレーク.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "クレープブレーク.png"; sourceTree = "<group>"; };
 		7EB62E2B1CAEAE0A0097FDB5 /* 駅弁.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "駅弁.png"; sourceTree = "<group>"; };
@@ -416,6 +417,8 @@
 		FAD7F5A01CAFB7460075883A /* 本の泉.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "本の泉.png"; sourceTree = "<group>"; };
 		FAD7F5A11CAFB7470075883A /* 魔女の卓球便.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "魔女の卓球便.png"; sourceTree = "<group>"; };
 		FAD7F5A21CAFB7470075883A /* 迷いの国のアリス.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "迷いの国のアリス.png"; sourceTree = "<group>"; };
+		FAE012F61CB086EA00E43DFB /* chocolat-π.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chocolat-π.png"; sourceTree = "<group>"; };
+		FAE012F81CB0877800E43DFB /* Flapjack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flapjack.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -849,19 +852,20 @@
 		FAA39B011C9D126000A1B697 /* Food */ = {
 			isa = PBXGroup;
 			children = (
-				7EB62E281CAEAE0A0097FDB5 /* Flapjack.png */,
-				7EB62E291CAEAE0A0097FDB5 /* Juicy-Juicer.png */,
-				7EB62E2A1CAEAE0A0097FDB5 /* クレープブレーク.png */,
-				7EB62E2B1CAEAE0A0097FDB5 /* 駅弁.png */,
+				7EB62E311CAEAE0A0097FDB5 /* 鉄板職人.png */,
 				7EB62E2C1CAEAE0A0097FDB5 /* 塩焼きそば-麺’sRUNRUN.png */,
+				7EB62E341CAEAE0A0097FDB5 /* 麺☆恋.png */,
 				7EB62E2D1CAEAE0A0097FDB5 /* 俺のケバブ.png */,
+				7EB62E301CAEAE0A0097FDB5 /* 鳥角.png */,
+				7EB62E2A1CAEAE0A0097FDB5 /* クレープブレーク.png */,
+				FAE012F81CB0877800E43DFB /* Flapjack.png */,
+				FAE012F61CB086EA00E43DFB /* chocolat-π.png */,
+				7EB62E291CAEAE0A0097FDB5 /* Juicy-Juicer.png */,
+				7EB62E331CAEAE0A0097FDB5 /* 綿's-candy.png */,
+				7EB62E321CAEAE0A0097FDB5 /* 氷菓.png */,
 				7EB62E2E1CAEAE0A0097FDB5 /* 山手の泉.png */,
 				7EB62E2F1CAEAE0A0097FDB5 /* 題名のない音楽喫茶.png */,
-				7EB62E301CAEAE0A0097FDB5 /* 鳥角.png */,
-				7EB62E311CAEAE0A0097FDB5 /* 鉄板職人.png */,
-				7EB62E321CAEAE0A0097FDB5 /* 氷菓.png */,
-				7EB62E331CAEAE0A0097FDB5 /* 綿's-candy.png */,
-				7EB62E341CAEAE0A0097FDB5 /* 麺☆恋.png */,
+				7EB62E2B1CAEAE0A0097FDB5 /* 駅弁.png */,
 			);
 			name = Food;
 			sourceTree = "<group>";
@@ -1148,6 +1152,7 @@
 				FAD7F5A61CAFB7470075883A /* Shockers.png in Resources */,
 				7EF2D8E71C9D5101008F76E8 /* ○○男子No.1決定戦-タイムテーブル.png in Resources */,
 				7E0DC8C61C9D7E9800B45F37 /* icon-60@3x.png in Resources */,
+				FAE012F91CB0877800E43DFB /* Flapjack.png in Resources */,
 				7EB62E421CAEAE0A0097FDB5 /* 麺☆恋.png in Resources */,
 				7EB62E541CAEAF4D0097FDB5 /* WEAK-END.png in Resources */,
 				FAD7F5B01CAFB7470075883A /* ぶいえいす.png in Resources */,
@@ -1168,6 +1173,7 @@
 				7E0DC8AD1C9D64A100B45F37 /* 数学研究会模擬講義-タイムテーブル.png in Resources */,
 				7EB62E4F1CAEAF4D0097FDB5 /* Addiction？.png in Resources */,
 				7E0DC8CA1C9D7FAA00B45F37 /* Default@2x.png in Resources */,
+				FAE012F71CB086EA00E43DFB /* chocolat-π.png in Resources */,
 				7E859F8B1CB01E7B00EDB2E6 /* のど自慢 バナー2.JPG in Resources */,
 				7EB62E551CAEAF4D0097FDB5 /* Яooz-Leef.png in Resources */,
 				7E859F791CB01DEE00EDB2E6 /* 弦楽オーケストラ バナー.png in Resources */,
