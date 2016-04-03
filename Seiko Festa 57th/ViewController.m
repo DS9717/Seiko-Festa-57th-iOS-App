@@ -27,7 +27,33 @@
     imageNumber = 0;
     imageNumber2 = 1;
     
-    organizationFeaturedImages = @[@"Flat Flight バナー1.jpg", @"ボールぽこぽこ バナー.jpg", @"ミュージックサロン バナー.JPG"];
+    NSDate *date = [NSDate date];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy/MM/dd HH:mm:ss"];
+    NSString *dateString = [formatter stringFromDate:date];
+    month=[[dateString substringWithRange:NSMakeRange(5, 2)]intValue];
+    day=[[dateString substringWithRange:NSMakeRange(8, 2)]intValue];
+    hour=[[dateString substringWithRange:NSMakeRange(11, 2)]intValue];
+    minute=[[dateString substringWithRange:NSMakeRange(14, 2)]intValue];
+    
+    monthC = month;
+    dayC = day;
+    hourC = hour;
+    minuteC =minute;
+    
+    if ((month == 4 && day < 4) || (month == 4 && day == 4 && hour <= 9)) {
+        
+        organizationFeaturedImages = @[@"英語劇 教室劇 バナー1.png", @"ミュージックサロン バナー1.JPG", @"S-O-S バナー1.png", @"恋愛偏差値 バナー1.jpg", @"Flat Flight バナー1.jpg", @"WEAK-END バナー1.png", @"聖光祭からの脱出 バナー1.JPG", @"M&A バナー1.jpg", @"コミュ力の窓 バナー1.png", @"Showtime! バナー1.JPG", @"Яooz-Leef バナー1.jpg", @"のど自慢 バナー1.JPG", @"ボールぽこぽこ バナー.jpg", @"英語劇 バナー1.png", @"ぽんでっくす バナー1.jpg", @"地学天文学部 バナー1.jpg", @"Mr.聖光 バナー1.jpg", @"春夜祭 バナー.png"];
+        
+    }else if ((month == 4 && day == 4 && ((hour == 17 && minute >= 30) || (hour >= 18))) || (month == 4 && day == 5 && hour <= 9) ){
+        
+        organizationFeaturedImages = @[@"英語劇 教室劇 バナー2.png", @"Million Dollars バナー.jpg", @"弦楽オーケストラ部 バナー.png", @"恋愛偏差値 バナー2.jpg", @"剣道部 バナー.jpg", @"コミュ力の窓 バナー2.png", @"ぽんでっくす バナー2.jpg", @"ミュージックサロン バナー2.JPG", @"S-O-S バナー2.png", @"M&A バナー2.jpg", @"英語劇 バナー2.png", @"Showtime! バナー2.JPG", @"WEAK-END バナー2.png", @"聖光祭からの脱出 バナー2.JPG", @"Flat Flight バナー2.jpg", @"のど自慢 バナー2.JPG", @"Яooz-Leef バナー2.jpg", @"Mr.聖光 バナー2.jpg", @"吹奏楽部 バナー.jpg", @"地学天文学部 バナー2.jpg", @"フォークダンス バナー.jpg", @"Grand Finale バナー.jpg"];
+        
+    }else {
+        
+    }
+    
+    
     
     featuredImageButton = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.width * 0.4)];
     featuredImageButton2 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.width * 0.4)];
@@ -1426,6 +1452,10 @@
     
     //CGRectMake(spaceW, 50 + length + spaceH + buttonLabelFont + 32, self.view.bounds.size.width - 15, 0.5)
     
+    UIView *horizontal= [[UIView alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.width * 0.4, self.view.bounds.size.width, 1)];
+    horizontal.backgroundColor = [UIColor colorWithRed:211.0/255.0 green:211.0/255.0 blue:211.0/255.0 alpha:1.0];
+    [self.view addSubview:horizontal];
+    
 }
 
 -(void)viewDidDisappear:(BOOL)animated {
@@ -1443,6 +1473,91 @@
 }
 
 -(void)featuredImageIn{
+    
+    NSDate *date = [NSDate date];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy/MM/dd HH:mm:ss"];
+    NSString *dateString = [formatter stringFromDate:date];
+    month=[[dateString substringWithRange:NSMakeRange(5, 2)]intValue];
+    day=[[dateString substringWithRange:NSMakeRange(8, 2)]intValue];
+    hour=[[dateString substringWithRange:NSMakeRange(11, 2)]intValue];
+    minute=[[dateString substringWithRange:NSMakeRange(14, 2)]intValue];
+
+    
+    if (month == 4 && day == 4) {
+        
+        if (hour == 10 && 0 <= minute && minute <= 29) {
+            organizationFeaturedImages = @[@"英語劇 教室劇 バナー1.png", @"ミュージックサロン バナー1.JPG", @"S-O-S バナー1.png", @"恋愛偏差値 バナー1.jpg"];
+        }else if (hour == 10 && 30 <= minute && minute <= 59) {
+            organizationFeaturedImages = @[@"英語劇 教室劇 バナー1.png", @"ミュージックサロン バナー1.JPG", @"S-O-S バナー1.png", @"Flat Flight バナー1.jpg"];
+        }else if (hour == 11 && 0 <= minute && minute <= 29) {
+            organizationFeaturedImages = @[@"英語劇 教室劇 バナー1.png", @"ミュージックサロン バナー1.JPG", @"Flat Flight バナー1.jpg", @"WEAK-END バナー1.png"];
+        }else if (hour == 11 && 30 <= minute && minute <= 59) {
+            organizationFeaturedImages = @[@"英語劇 教室劇 バナー1.png", @"ミュージックサロン バナー1.JPG", @"WEAK-END バナー1.png", @"M&A バナー1.jpg"];
+        }else if (hour == 12 && 0 <= minute && minute <= 29) {
+            organizationFeaturedImages = @[@"ミュージックサロン バナー1.JPG", @"M&A バナー1.jpg", @"コミュ力の窓 バナー1.png", @"聖光祭からの脱出 バナー1.JPG"];
+        }else if (hour == 12 && 30 <= minute && minute <= 59) {
+            organizationFeaturedImages = @[@"ミュージックサロン バナー1.JPG", @"コミュ力の窓 バナー1.png", @"Showtime! バナー1.JPG", @"聖光祭からの脱出 バナー1.JPG"];
+        }else if (hour == 13 && 0 <= minute && minute <= 29) {
+            organizationFeaturedImages = @[@"ミュージックサロン バナー1.JPG", @"Showtime! バナー1.JPG", @"Яooz-Leef バナー1.jpg", @"のど自慢 バナー1.JPG", @"ボールぽこぽこ バナー.jpg"];
+        }else if (hour == 13 && 30 <= minute && minute <= 59) {
+            organizationFeaturedImages = @[@"英語劇 バナー1.png", @"ミュージックサロン バナー1.JPG", @"Яooz-Leef バナー1.jpg", @"のど自慢 バナー1.JPG", @"ボールぽこぽこ バナー.jpg", @"ぽんでっくす バナー1.jpg", @"地学天文学部 バナー1.jpg"];
+        }else if (hour == 14 && 0 <= minute && minute <= 29) {
+            organizationFeaturedImages = @[@"英語劇 バナー1.png", @"ミュージックサロン バナー1.JPG", @"のど自慢 バナー1.JPG",@"ぽんでっくす バナー1.jpg", @"地学天文学部 バナー1.jpg", @"Mr.聖光 バナー1.jpg"];
+        }else if (hour == 14 && 30 <= minute && minute <= 59) {
+            organizationFeaturedImages = @[@"英語劇 バナー1.png", @"ミュージックサロン バナー1.JPG", @"Mr.聖光 バナー1.jpg", @"春夜祭 バナー.png"];
+        }else if (hour == 15 && 0 <= minute && minute <= 29) {
+            organizationFeaturedImages = @[@"英語劇 バナー1.png", @"春夜祭 バナー.png"];
+        }else if ((hour == 15 && 30 <= minute && minute <= 59) || (hour == 16 && 0 <= minute && minute <= 59)) {
+            organizationFeaturedImages = @[@"春夜祭 バナー.png"];
+        }else if (hour == 17 && 0 <= minute && minute <=29){
+            
+        }
+    
+    }else if (month == 4 && day == 5) {
+        
+        if (hour == 10 && 0 <= minute && minute <= 29) {
+            organizationFeaturedImages = @[@"英語劇 教室劇 バナー2.png", @"Million Dollars バナー.jpg", @"弦楽オーケストラ部 バナー.png", @"恋愛偏差値 バナー2.jpg", @"剣道部 バナー.jpg"];
+        }else if (hour == 10 && 30 <= minute && minute <= 59) {
+            organizationFeaturedImages = @[@"英語劇 教室劇 バナー2.png", @"Million Dollars バナー.jpg", @"弦楽オーケストラ部 バナー.png", @"コミュ力の窓 バナー2.png", @"ぽんでっくす バナー2.jpg", @"ミュージックサロン バナー2.JPG", @"剣道部 バナー.jpg"];
+        }else if (hour == 11 && 0 <= minute && minute <= 29) {
+            organizationFeaturedImages = @[@"英語劇 教室劇 バナー2.png", @"弦楽オーケストラ部 バナー.png", @"コミュ力の窓 バナー2.png",@"ぽんでっくす バナー2.jpg", @"ミュージックサロン バナー2.JPG", @"S-O-S バナー2.png", @"剣道部 バナー.jpg"];
+        }else if (hour == 11 && 30 <= minute && minute <= 59) {
+            organizationFeaturedImages = @[@"英語劇 教室劇 バナー2.png", @"M&A バナー2.jpg", @"S-O-S バナー2.png", @"ミュージックサロン バナー2.JPG", @"聖光祭からの脱出 バナー2.JPG", @"剣道部 バナー.jpg"];
+        }else if (hour == 12 && 0 <= minute && minute <= 29) {
+            organizationFeaturedImages = @[@"英語劇 バナー2.png", @"M&A バナー2.jpg", @"Showtime! バナー2.JPG", @"WEAK-END バナー2.png", @"ミュージックサロン バナー2.JPG", @"剣道部 バナー.jpg"];
+        }else if (hour == 12 && 30 <= minute && minute <= 59) {
+            organizationFeaturedImages = @[@"英語劇 バナー2.png", @"WEAK-END バナー2.png", @"Showtime! バナー2.JPG", @"Flat Flight バナー2.jpg"];
+        }else if (hour == 13 && 0 <= minute && minute <= 29) {
+            organizationFeaturedImages = @[@"英語劇 バナー2.png", @"Яooz-Leef バナー2.jpg", @"のど自慢 バナー2.JPG", @"聖光祭からの脱出 バナー2.JPG"];
+        }else if (hour == 13 && 30 <= minute && minute <= 59) {
+            organizationFeaturedImages = @[@"英語劇 バナー2.png", @"Яooz-Leef バナー2.jpg", @"のど自慢 バナー2.JPG", @"Mr.聖光 バナー2.jpg", @"吹奏楽部 バナー.jpg", @"地学天文学部 バナー2.jpg", @"ミュージックサロン バナー2.JPG"];
+        }else if (hour == 14 && 0 <= minute && minute <= 29) {
+            organizationFeaturedImages = @[@"Mr.聖光 バナー2.jpg", @"吹奏楽部 バナー.jpg", @"地学天文学部 バナー2.jpg", @"ミュージックサロン バナー2.JPG", @"フォークダンス バナー.jpg"];
+        }else if (hour == 14 && 30 <= minute && minute <= 59) {
+            organizationFeaturedImages = @[@"Mr.聖光 バナー2.jpg", @"吹奏楽部 バナー.jpg", @"フォークダンス バナー.jpg", @"Grand Finale バナー.jpg"];
+        }else if (hour == 15 || hour == 16) {
+            organizationFeaturedImages = @[@"Grand Finale バナー.jpg"];
+        }else if (hour >= 17) {
+            
+        }
+        
+    }
+    
+    if (month == monthC && day == dayC && hour == hourC && minute == minuteC) {
+        
+    } else {
+        
+        monthC = month;
+        dayC = day;
+        hourC = hour;
+        minuteC =minute;
+        
+        imageNumber = 0;
+        imageNumber2 = 1;
+        
+    }
+    
     
     if (imageNumber == organizationFeaturedImages.count) {
         
