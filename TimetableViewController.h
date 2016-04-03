@@ -61,6 +61,10 @@
     NSString *whichList;
     
     UILabel *nav_title;
+    
+    int month;
+    int day;
+    
 }
 @property(nonatomic) int flag;
 

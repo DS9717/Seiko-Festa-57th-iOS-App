@@ -20,6 +20,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    NSDate *date = [NSDate date];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy/MM/dd HH:mm:ss"];
+    NSString *dateString = [formatter stringFromDate:date];
+    month=[[dateString substringWithRange:NSMakeRange(5, 2)]intValue];
+    day=[[dateString substringWithRange:NSMakeRange(8, 2)]intValue];
+    
     // UIScrollViewのインスタンス化
     mainScrollView = [[UIScrollView alloc]init];
     
@@ -47,6 +54,7 @@
     mainScrollView.directionalLockEnabled = YES;
     mainScrollView.bounces = NO;
     mainScrollView.backgroundColor = [UIColor clearColor];
+    
     [mainScrollView setContentSize:CGSizeMake(7*(self.view.bounds.size.width), self.view.bounds.size.height-113)];
     
     scrollView1 = [[UIScrollView alloc]init];
@@ -57,7 +65,7 @@
     scrollView1.delegate = self;
     scrollView1.directionalLockEnabled = YES;
     scrollView1.bounces = YES;
-    [scrollView1 setContentSize:CGSizeMake(self.view.bounds.size.width, (self.view.bounds.size.width * 19 / 32) * 4)];
+    [scrollView1 setContentSize:CGSizeMake(self.view.bounds.size.width, (self.view.bounds.size.width * 19 / 32) * 3 + (self.view.bounds.size.width * 18 / 32))];
     scrollView1.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView1];
     
@@ -69,7 +77,7 @@
     scrollView2.delegate = self;
     scrollView2.directionalLockEnabled = YES;
     scrollView2.bounces = YES;
-    [scrollView2 setContentSize:CGSizeMake(self.view.bounds.size.width, (self.view.bounds.size.width * 19 / 32) * 9)];
+    [scrollView2 setContentSize:CGSizeMake(self.view.bounds.size.width, (self.view.bounds.size.width * 19 / 32) * 8 + (self.view.bounds.size.width * 18 / 32))];
     scrollView2.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView2];
     
@@ -81,7 +89,7 @@
     scrollView3.delegate = self;
     scrollView3.directionalLockEnabled = YES;
     scrollView3.bounces = YES;
-    [scrollView3 setContentSize:CGSizeMake(self.view.bounds.size.width, (self.view.bounds.size.width * 19 / 32) * 4)];
+    [scrollView3 setContentSize:CGSizeMake(self.view.bounds.size.width, (self.view.bounds.size.width * 19 / 32) * 3 + (self.view.bounds.size.width * 18 / 32))];
     scrollView3.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView3];
     
@@ -93,7 +101,7 @@
     scrollView4.delegate = self;
     scrollView4.directionalLockEnabled = YES;
     scrollView4.bounces = YES;
-    [scrollView4 setContentSize:CGSizeMake(self.view.bounds.size.width, (self.view.bounds.size.width * 19 / 32) * 5)];
+    [scrollView4 setContentSize:CGSizeMake(self.view.bounds.size.width, (self.view.bounds.size.width * 19 / 32) * 4 + (self.view.bounds.size.width * 18 / 32))];
     scrollView4.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView4];
     
@@ -105,7 +113,7 @@
     scrollView5.delegate = self;
     scrollView5.directionalLockEnabled = YES;
     scrollView5.bounces = YES;
-    [scrollView5 setContentSize:CGSizeMake(self.view.bounds.size.width, (self.view.bounds.size.width * 19 / 32) * 4)];
+    [scrollView5 setContentSize:CGSizeMake(self.view.bounds.size.width, (self.view.bounds.size.width * 19 / 32) * 3 + (self.view.bounds.size.width * 18 / 32))];
     scrollView5.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView5];
     
@@ -183,7 +191,7 @@
                    action:@selector(buttonOne3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView1 addSubview:buttonOne3];
     
-    buttonOne4= [[UIButton alloc]initWithFrame:CGRectMake(0, (self.view.bounds.size.width * 19 / 32) * 3, self.view.bounds.size.width, self.view.bounds.size.width * 19 / 32)];
+    buttonOne4= [[UIButton alloc]initWithFrame:CGRectMake(0, (self.view.bounds.size.width * 19 / 32) * 3, self.view.bounds.size.width, self.view.bounds.size.width * 18 / 32)];
     [buttonOne4 setImage:[UIImage imageNamed:@"英語劇-タイムテーブル.png"] forState:UIControlStateNormal];
     [buttonOne4 addTarget:self
                    action:@selector(buttonOne4Detail:) forControlEvents:UIControlEventTouchUpInside];
@@ -204,7 +212,7 @@
     [scrollView2 addSubview:buttonTwo2];
     
     buttonTwo3= [[UIButton alloc]initWithFrame:CGRectMake(0, (self.view.bounds.size.width * 19 / 32) * 2, self.view.bounds.size.width, self.view.bounds.size.width * 19 / 32)];
-    [buttonTwo3 setImage:[UIImage imageNamed:@"替え歌選手権！！-タイムテーブル.png"] forState:UIControlStateNormal];
+    [buttonTwo3 setImage:[UIImage imageNamed:@"替え劇〜赤ずきん〜-タイムテーブル.png"] forState:UIControlStateNormal];
     [buttonTwo3 addTarget:self
                    action:@selector(buttonTwo3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView2 addSubview:buttonTwo3];
@@ -239,7 +247,7 @@
                    action:@selector(buttonTwo8Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView2 addSubview:buttonTwo8];
 
-    buttonTwo9= [[UIButton alloc]initWithFrame:CGRectMake(0, (self.view.bounds.size.width * 19 / 32) * 8, self.view.bounds.size.width, self.view.bounds.size.width * 19 / 32)];
+    buttonTwo9= [[UIButton alloc]initWithFrame:CGRectMake(0, (self.view.bounds.size.width * 19 / 32) * 8, self.view.bounds.size.width, self.view.bounds.size.width * 18 / 32)];
     [buttonTwo9 setImage:[UIImage imageNamed:@"春夜祭-タイムテーブル.png"] forState:UIControlStateNormal];
     [buttonTwo9 addTarget:self
                    action:@selector(buttonTwo9Detail:) forControlEvents:UIControlEventTouchUpInside];
@@ -265,7 +273,7 @@
                    action:@selector(buttonThree3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView3 addSubview:buttonThree3];
     
-    buttonThree4= [[UIButton alloc]initWithFrame:CGRectMake(0, (self.view.bounds.size.width * 19 / 32) * 3, self.view.bounds.size.width, self.view.bounds.size.width * 19 / 32)];
+    buttonThree4= [[UIButton alloc]initWithFrame:CGRectMake(0, (self.view.bounds.size.width * 19 / 32) * 3, self.view.bounds.size.width, self.view.bounds.size.width * 18 / 32)];
     [buttonThree4 setImage:[UIImage imageNamed:@"ぽんでっくす-タイムテーブル.png"] forState:UIControlStateNormal];
     [buttonThree4 addTarget:self
                    action:@selector(buttonThree4Detail:) forControlEvents:UIControlEventTouchUpInside];
@@ -297,7 +305,7 @@
                      action:@selector(buttonFour4Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView4 addSubview:buttonFour4];
     
-    buttonFour5= [[UIButton alloc]initWithFrame:CGRectMake(0, (self.view.bounds.size.width * 19 / 32) * 4, self.view.bounds.size.width, self.view.bounds.size.width * 19 / 32)];
+    buttonFour5= [[UIButton alloc]initWithFrame:CGRectMake(0, (self.view.bounds.size.width * 19 / 32) * 4, self.view.bounds.size.width, self.view.bounds.size.width * 18 / 32)];
     [buttonFour5 setImage:[UIImage imageNamed:@"奴等-タイムテーブル.png"] forState:UIControlStateNormal];
     [buttonFour5 addTarget:self
                     action:@selector(buttonFour5Detail:) forControlEvents:UIControlEventTouchUpInside];
@@ -323,7 +331,7 @@
                     action:@selector(buttonFive3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView5 addSubview:buttonFive3];
     
-    buttonFive4= [[UIButton alloc]initWithFrame:CGRectMake(0, (self.view.bounds.size.width * 19 / 32) * 3, self.view.bounds.size.width, self.view.bounds.size.width * 19 / 32)];
+    buttonFive4= [[UIButton alloc]initWithFrame:CGRectMake(0, (self.view.bounds.size.width * 19 / 32) * 3, self.view.bounds.size.width, self.view.bounds.size.width * 18 / 32)];
     [buttonFive4 setImage:[UIImage imageNamed:@"ミュージックサロン-タイムテーブル小講堂.png"] forState:UIControlStateNormal];
     [buttonFive4 addTarget:self
                     action:@selector(buttonFive4Detail:) forControlEvents:UIControlEventTouchUpInside];

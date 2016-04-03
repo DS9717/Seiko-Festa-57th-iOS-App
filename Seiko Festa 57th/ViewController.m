@@ -43,7 +43,7 @@
     
     if ((month == 4 && day < 4) || (month == 4 && day == 4 && hour <= 9)) {
         
-        organizationFeaturedImages = @[@"英語劇 教室劇 バナー1.png", @"ミュージックサロン バナー1.JPG", @"S-O-S バナー1.png", @"恋愛偏差値 バナー1.jpg", @"Flat Flight バナー1.jpg", @"WEAK-END バナー1.png", @"聖光祭からの脱出 バナー1.JPG", @"M&A バナー1.jpg", @"コミュ力の窓 バナー1.png", @"Showtime! バナー1.JPG", @"Яooz-Leef バナー1.jpg", @"のど自慢 バナー1.JPG", @"ボールぽこぽこ バナー.jpg", @"英語劇 バナー1.png", @"ぽんでっくす バナー1.jpg", @"地学天文学部 バナー1.jpg", @"Mr.聖光 バナー1.jpg", @"春夜祭 バナー.png"];
+        organizationFeaturedImages = @[@"英語劇 教室劇 バナー1.png", @"ミュージックサロン バナー1.JPG", @"S-O-S バナー1.png", @"恋愛偏差値 バナー1.jpg", @"Flat Flight バナー1.jpg", @"WEAK-END バナー1.png", @"聖光祭からの脱出 バナー1.JPG", @"M&A バナー1.jpg", @"コミュ力の窓 バナー1.png", @"Showtime! バナー1.JPG", @"Яooz-Leef バナー1.jpg", @"のど自慢 バナー1.JPG", @"ボールぽこぽこ バナー.jpg", @"英語劇 バナー1.png", @"ぽんでっくす バナー1.jpg", @"地学天文学部 バナー1.jpg", @"Mr.聖光 バナー1.jpg", @"春夜祭 バナー.jpg"];
         
     }else if ((month == 4 && day == 4 && ((hour == 17 && minute >= 30) || (hour >= 18))) || (month == 4 && day == 5 && hour <= 9) ){
         
@@ -1502,11 +1502,11 @@
         }else if (hour == 14 && 0 <= minute && minute <= 29) {
             organizationFeaturedImages = @[@"英語劇 バナー1.png", @"ミュージックサロン バナー1.JPG", @"のど自慢 バナー1.JPG",@"ぽんでっくす バナー1.jpg", @"地学天文学部 バナー1.jpg", @"Mr.聖光 バナー1.jpg"];
         }else if (hour == 14 && 30 <= minute && minute <= 59) {
-            organizationFeaturedImages = @[@"英語劇 バナー1.png", @"ミュージックサロン バナー1.JPG", @"Mr.聖光 バナー1.jpg", @"春夜祭 バナー.png"];
+            organizationFeaturedImages = @[@"英語劇 バナー1.png", @"ミュージックサロン バナー1.JPG", @"Mr.聖光 バナー1.jpg", @"春夜祭 バナー.jpg"];
         }else if (hour == 15 && 0 <= minute && minute <= 29) {
-            organizationFeaturedImages = @[@"英語劇 バナー1.png", @"春夜祭 バナー.png"];
+            organizationFeaturedImages = @[@"英語劇 バナー1.png", @"春夜祭 バナー.jpg"];
         }else if ((hour == 15 && 30 <= minute && minute <= 59) || (hour == 16 && 0 <= minute && minute <= 59)) {
-            organizationFeaturedImages = @[@"春夜祭 バナー.png"];
+            organizationFeaturedImages = @[@"春夜祭 バナー.jpg"];
         }else if (hour == 17 && 0 <= minute && minute <=29){
             
         }
