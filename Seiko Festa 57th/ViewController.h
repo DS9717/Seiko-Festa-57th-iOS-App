@@ -266,6 +266,16 @@
     UIButton *Performance;
     UIButton *Stage;
     
+    int month;
+    int day;
+    int hour;
+    int minute;
+    
+    int monthC;
+    int dayC;
+    int hourC;
+    int minuteC;
+    
 }
 
 @property(nonatomic) int flag;
