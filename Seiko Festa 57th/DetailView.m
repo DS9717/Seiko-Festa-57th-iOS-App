@@ -121,7 +121,7 @@
             detailImage = [UIImage imageNamed:@"鳥角.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"鳥角";
-            _explainSentence.text = @"宣伝文 理由もなく聖光祭に来てしまった貴方を今日焼き鳥の虜にさせる。愛と情熱の滲み出る鳥 を是非ご堪能あれ。";
+            _explainSentence.text = @"理由もなく聖光祭に来てしまった貴方を今日焼き鳥の虜にさせる。愛と情熱の滲み出る鳥を是非ご堪能あれ。";
         }
         else if (flag == 6) {
             detailImage = [UIImage imageNamed:@"クレープブレーク.png"];
@@ -169,13 +169,13 @@
             detailImage = [UIImage imageNamed:@"題名のない音楽喫茶.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"題名のない音楽喫茶";
-            _explainSentence.text = @"紹介文　少し聖光祭の喧騒から離れて、ゆったり休憩しませんか？聖光生の演奏と共に、優雅なティータイムをどうぞ。";
+            _explainSentence.text = @"少し聖光祭の喧騒から離れて、ゆったり休憩しませんか？聖光生の演奏と共に、優雅なティータイムをどうぞ。";
         }
         else if (flag == 14) {
             detailImage = [UIImage imageNamed:@"駅弁.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"駅弁";
-            _explainSentence.text = @"紹介文　いらっしゃい、いらっしゃい。今年もおいしい駅弁、一杯あります。詳しい品目は、○ページをご覧ください。";
+            _explainSentence.text = @"いらっしゃい、いらっしゃい。今年もおいしい駅弁、一杯あります。詳しい品目は、○ページをご覧ください。";
         }
         
     }else if ([_whatList isEqualToString:@"display"]) {
@@ -189,71 +189,74 @@
             _explainSentence.text = @"今年の演目はイギリスの有名ドラマ「SHERLOCK」。現代の名探偵の活躍をお見逃しなく!!";
         }
         else if (flag == 2) {
+            detailImage = [UIImage imageNamed:@"ポケモンセンターSeiko.png"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"ポケモンセンターSeiko";
+            _explainSentence.text = @"";
+        }
+        else if (flag == 3) {
+            detailImage = [UIImage imageNamed:@"宇宙戦艦ヤマト研究会.png"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"宇宙戦艦ヤマト研究会";
+            _explainSentence.text = @"";
+        }
+        else if (flag == 4) {
+            detailImage = [UIImage imageNamed:@"とにかく明るいFes村.png"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"とにかく明るいFes村";
+            _explainSentence.text = @"";
+        }
+        else if (flag == 5) {
+            detailImage = [UIImage imageNamed:@"Trick×Hark.png"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"Trick×Hark";
+            _explainSentence.text = @"";
+        }
+        else if (flag == 6) {
+            detailImage = [UIImage imageNamed:@"ぎゃんぶる。.png"];
+            mapImage = [UIImage imageNamed:@"map.jpg"];
+            _detailTitle.text = @"ぎゃんぶる。";
+            _explainSentence.text = @"";
+        }
+        else if (flag == 7) {
             detailImage = [UIImage imageNamed:@"高3英語劇.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"高3英語劇";
-            _explainSentence.text = @"サスペンス劇の金字塔を最高学年が熱演！刻一刻と迫る運命、明かされる驚愕の真実！";
-        }
-        else if (flag == 3) {
-            detailImage = [UIImage imageNamed:@"迷いの国のアリス.png"];
-            mapImage = [UIImage imageNamed:@"map.jpg"];
-            _detailTitle.text = @"迷いの国のアリス";
-            _explainSentence.text = @"ようこそ、Under Landへ。謎を解き、アリスの世界から脱出せよ";
-        }
-        else if (flag == 4) {
-            detailImage = [UIImage imageNamed:@"Trick×Hark.jpg"];
-            mapImage = [UIImage imageNamed:@"map.jpg"];
-            _detailTitle.text = @"Trick×Hark";
-            _explainSentence.text = @"聖光生がマジックで作り上げる幻想的な世界へいざなう… 　目の前で繰り広げられる奇跡の目撃者となれ！";
-        }
-        else if (flag == 5) {
-            detailImage = [UIImage imageNamed:@"インターアクト.png"];
-            mapImage = [UIImage imageNamed:@"map.jpg"];
-            _detailTitle.text = @"インターアクトクラブ";
-            _explainSentence.text = @"聖光学院インターアクトクラブの活動報告、物品販売を行っています。是非お越しください！";
-        }
-        else if (flag == 6) {
-            detailImage = [UIImage imageNamed:@"インターアクト.JPG"];
-            mapImage = [UIImage imageNamed:@"map.jpg"];
-            _detailTitle.text = @"インターアクトクラブ";
             _explainSentence.text = @"";
         }
-        else if (flag == 5) {
-            detailImage = [UIImage imageNamed:@"インターアクト.JPG"];
+        else if (flag == 8) {
+            detailImage = [UIImage imageNamed:@"交通研究部.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
-            _detailTitle.text = @"インターアクトクラブ";
+            _detailTitle.text = @"交通研究部";
             _explainSentence.text = @"";
         }
-        else if (flag == 5) {
-            detailImage = [UIImage imageNamed:@"インターアクト.JPG"];
+        else if (flag == 9) {
+            detailImage = [UIImage imageNamed:@"藤子・Ｆ・不二雄研究会.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
-            _detailTitle.text = @"インターアクトクラブ";
+            _detailTitle.text = @"藤子・Ｆ・不二雄研究会";
             _explainSentence.text = @"";
         }
-        else if (flag == 5) {
-            detailImage = [UIImage imageNamed:@"インターアクト.JPG"];
+        else if (flag == 10) {
+            detailImage = [UIImage imageNamed:@"ベイスターズ研究会.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
-            _detailTitle.text = @"インターアクトクラブ";
+            _detailTitle.text = @"ベイスターズ研究会";
             _explainSentence.text = @"";
         }
-        else if (flag == 5) {
-            detailImage = [UIImage imageNamed:@"インターアクト.JPG"];
+        
+        
+        
+        
+        
+        
+        
+        //ここから
+        else if (flag == 11) {
+            detailImage = [UIImage imageNamed:@".png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
-            _detailTitle.text = @"インターアクトクラブ";
+            _detailTitle.text = @"";
             _explainSentence.text = @"";
         }
-        else if (flag == 5) {
-            detailImage = [UIImage imageNamed:@"インターアクト.JPG"];
-            mapImage = [UIImage imageNamed:@"map.jpg"];
-            _detailTitle.text = @"インターアクトクラブ";
-            _explainSentence.text = @"";
-        }
-        else if (flag == 5) {
-            detailImage = [UIImage imageNamed:@"インターアクト.JPG"];
-            mapImage = [UIImage imageNamed:@"map.jpg"];
-            _detailTitle.text = @"インターアクトクラブ";
-            _explainSentence.text = @"";
-        }
+        
         
     }else if ([_whatList isEqualToString:@"band"]) {
         

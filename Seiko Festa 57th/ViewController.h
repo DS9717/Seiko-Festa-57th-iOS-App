@@ -71,7 +71,7 @@
     UIButton *buttonOne3;   //麺☆恋
     UIButton *buttonOne4;   //俺のケバブ
     UIButton *buttonOne5;   //鳥角
-    UIButton *buttonOne6;   //クレープブレーク
+    UIButton *buttonOne6;   //Crepe Break
     UIButton *buttonOne7;   //Flapjack
     UIButton *buttonOne8;   //chocolat π
     UIButton *buttonOne9;   //Juicy Juicer
@@ -130,7 +130,7 @@
     UIButton *buttonTwo31;  //Shockers
     UIButton *buttonTwo32;  //コンピュータ部
     UIButton *buttonTwo33;  //古本市
-    UIButton *buttonTwo34;  //インターアクトクラブ
+    UIButton *buttonTwo34;  //インターアクト
     UIButton *buttonTwo35;  //Showtime!
     UIButton *buttonTwo36;  //クイズ研究会
     UIButton *buttonTwo37;  //地理歴史巡見部
