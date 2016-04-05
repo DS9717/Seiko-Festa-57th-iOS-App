@@ -30,13 +30,11 @@
 		7E859F561CB00A5700EDB2E6 /* のど自慢 バナー1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7E859F521CB00A5700EDB2E6 /* のど自慢 バナー1.JPG */; };
 		7E859F5B1CB00A8100EDB2E6 /* ボールぽこぽこ バナー.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E859F581CB00A8100EDB2E6 /* ボールぽこぽこ バナー.jpg */; };
 		7E859F5C1CB00A8100EDB2E6 /* ミュージックサロン バナー1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7E859F591CB00A8100EDB2E6 /* ミュージックサロン バナー1.JPG */; };
-		7E859F5D1CB00A8100EDB2E6 /* 英語劇 バナー1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E859F5A1CB00A8100EDB2E6 /* 英語劇 バナー1.png */; };
 		7E859F631CB00AA300EDB2E6 /* Showtime! バナー1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7E859F5F1CB00AA300EDB2E6 /* Showtime! バナー1.JPG */; };
 		7E859F651CB00AA300EDB2E6 /* 聖光祭からの脱出 バナー1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7E859F611CB00AA300EDB2E6 /* 聖光祭からの脱出 バナー1.JPG */; };
 		7E859F661CB00AA300EDB2E6 /* 地学天文学部 バナー1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E859F621CB00AA300EDB2E6 /* 地学天文学部 バナー1.jpg */; };
 		7E859F691CB00ABD00EDB2E6 /* 恋愛偏差値 バナー1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E859F681CB00ABD00EDB2E6 /* 恋愛偏差値 バナー1.jpg */; };
 		7E859F771CB01DEE00EDB2E6 /* Grand Finale バナー.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E859F731CB01DEE00EDB2E6 /* Grand Finale バナー.jpg */; };
-		7E859F781CB01DEE00EDB2E6 /* 英語劇 バナー2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E859F741CB01DEE00EDB2E6 /* 英語劇 バナー2.png */; };
 		7E859F791CB01DEE00EDB2E6 /* 弦楽オーケストラ部 バナー.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E859F751CB01DEE00EDB2E6 /* 弦楽オーケストラ部 バナー.png */; };
 		7E859F7A1CB01DEE00EDB2E6 /* 吹奏楽部 バナー.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E859F761CB01DEE00EDB2E6 /* 吹奏楽部 バナー.jpg */; };
 		7E859F7F1CB01E6C00EDB2E6 /* Showtime! バナー2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7E859F7B1CB01E6C00EDB2E6 /* Showtime! バナー2.JPG */; };
@@ -136,6 +134,8 @@
 		7E85A0691CB40F1A00EDB2E6 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E85A0681CB40F1A00EDB2E6 /* AboutViewController.m */; };
 		7E85A06B1CB4195600EDB2E6 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A06A1CB4195600EDB2E6 /* Icon.png */; };
 		7E85A06D1CB4210D00EDB2E6 /* Access.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A06C1CB4210D00EDB2E6 /* Access.png */; };
+		7E85A06F1CB42C2D00EDB2E6 /* 英語劇 バナー1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A06E1CB42C2D00EDB2E6 /* 英語劇 バナー1.png */; };
+		7E85A0711CB42C5700EDB2E6 /* 英語劇 バナー2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A0701CB42C5700EDB2E6 /* 英語劇 バナー2.png */; };
 		7EB62DF11CAAE28E0097FDB5 /* Blur.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB62DF01CAAE28E0097FDB5 /* Blur.png */; };
 		7EB62DF51CAAE70A0097FDB5 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB62DF41CAAE70A0097FDB5 /* line.png */; };
 		7EB62E001CAAEF540097FDB5 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB62DFF1CAAEF540097FDB5 /* ShareViewController.m */; };
@@ -285,13 +285,11 @@
 		7E859F521CB00A5700EDB2E6 /* のど自慢 バナー1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "のど自慢 バナー1.JPG"; sourceTree = "<group>"; };
 		7E859F581CB00A8100EDB2E6 /* ボールぽこぽこ バナー.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ボールぽこぽこ バナー.jpg"; sourceTree = "<group>"; };
 		7E859F591CB00A8100EDB2E6 /* ミュージックサロン バナー1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ミュージックサロン バナー1.JPG"; sourceTree = "<group>"; };
-		7E859F5A1CB00A8100EDB2E6 /* 英語劇 バナー1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "英語劇 バナー1.png"; sourceTree = "<group>"; };
 		7E859F5F1CB00AA300EDB2E6 /* Showtime! バナー1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Showtime! バナー1.JPG"; sourceTree = "<group>"; };
 		7E859F611CB00AA300EDB2E6 /* 聖光祭からの脱出 バナー1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "聖光祭からの脱出 バナー1.JPG"; sourceTree = "<group>"; };
 		7E859F621CB00AA300EDB2E6 /* 地学天文学部 バナー1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "地学天文学部 バナー1.jpg"; sourceTree = "<group>"; };
 		7E859F681CB00ABD00EDB2E6 /* 恋愛偏差値 バナー1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "恋愛偏差値 バナー1.jpg"; sourceTree = "<group>"; };
 		7E859F731CB01DEE00EDB2E6 /* Grand Finale バナー.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Grand Finale バナー.jpg"; sourceTree = "<group>"; };
-		7E859F741CB01DEE00EDB2E6 /* 英語劇 バナー2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "英語劇 バナー2.png"; sourceTree = "<group>"; };
 		7E859F751CB01DEE00EDB2E6 /* 弦楽オーケストラ部 バナー.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "弦楽オーケストラ部 バナー.png"; sourceTree = "<group>"; };
 		7E859F761CB01DEE00EDB2E6 /* 吹奏楽部 バナー.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "吹奏楽部 バナー.jpg"; sourceTree = "<group>"; };
 		7E859F7B1CB01E6C00EDB2E6 /* Showtime! バナー2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Showtime! バナー2.JPG"; sourceTree = "<group>"; };
@@ -394,6 +392,8 @@
 		7E85A0681CB40F1A00EDB2E6 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		7E85A06A1CB4195600EDB2E6 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		7E85A06C1CB4210D00EDB2E6 /* Access.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Access.png; sourceTree = "<group>"; };
+		7E85A06E1CB42C2D00EDB2E6 /* 英語劇 バナー1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "英語劇 バナー1.png"; sourceTree = "<group>"; };
+		7E85A0701CB42C5700EDB2E6 /* 英語劇 バナー2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "英語劇 バナー2.png"; sourceTree = "<group>"; };
 		7EB62DF01CAAE28E0097FDB5 /* Blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blur.png; sourceTree = "<group>"; };
 		7EB62DF41CAAE70A0097FDB5 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
 		7EB62DFE1CAAEF540097FDB5 /* ShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
@@ -631,11 +631,6 @@
 		7E4D55D11C4944F300BFE19C /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				7E85A0511CB3FC7600EDB2E6 /* Food icon vector enji.pdf */,
-				7E85A0531CB3FD7E00EDB2E6 /* Display icon vector enji.pdf */,
-				7E85A0551CB3FE3900EDB2E6 /* Band icon vector enji.pdf */,
-				7E85A0571CB3FEC900EDB2E6 /* Performance icon vector enji.pdf */,
-				7E85A0591CB3FF3800EDB2E6 /* Stage icon vector enji.pdf */,
 				7EB62DF41CAAE70A0097FDB5 /* line.png */,
 				7E859FB01CB02C3B00EDB2E6 /* Right to List.pdf */,
 				7E85A06C1CB4210D00EDB2E6 /* Access.png */,
@@ -688,9 +683,9 @@
 		7E859F5E1CB00A8800EDB2E6 /* 講堂 */ = {
 			isa = PBXGroup;
 			children = (
+				7E85A06E1CB42C2D00EDB2E6 /* 英語劇 バナー1.png */,
 				7E859F581CB00A8100EDB2E6 /* ボールぽこぽこ バナー.jpg */,
 				7E859F591CB00A8100EDB2E6 /* ミュージックサロン バナー1.JPG */,
-				7E859F5A1CB00A8100EDB2E6 /* 英語劇 バナー1.png */,
 			);
 			name = "講堂";
 			sourceTree = "<group>";
@@ -730,8 +725,8 @@
 		7E859F6D1CB01DAA00EDB2E6 /* 講堂 */ = {
 			isa = PBXGroup;
 			children = (
+				7E85A0701CB42C5700EDB2E6 /* 英語劇 バナー2.png */,
 				7E859F731CB01DEE00EDB2E6 /* Grand Finale バナー.jpg */,
-				7E859F741CB01DEE00EDB2E6 /* 英語劇 バナー2.png */,
 				7E859F751CB01DEE00EDB2E6 /* 弦楽オーケストラ部 バナー.png */,
 				7E859F761CB01DEE00EDB2E6 /* 吹奏楽部 バナー.jpg */,
 			);
@@ -881,6 +876,11 @@
 		7EB62EBC1CAEE4E30097FDB5 /* Category Icons */ = {
 			isa = PBXGroup;
 			children = (
+				7E85A0511CB3FC7600EDB2E6 /* Food icon vector enji.pdf */,
+				7E85A0531CB3FD7E00EDB2E6 /* Display icon vector enji.pdf */,
+				7E85A0551CB3FE3900EDB2E6 /* Band icon vector enji.pdf */,
+				7E85A0571CB3FEC900EDB2E6 /* Performance icon vector enji.pdf */,
+				7E85A0591CB3FF3800EDB2E6 /* Stage icon vector enji.pdf */,
 				7E859FA61CB027FB00EDB2E6 /* Food icon.pdf */,
 				7E859FA81CB028A200EDB2E6 /* Display icon.pdf */,
 				7E859FAA1CB0291800EDB2E6 /* Band icon.pdf */,
@@ -1265,7 +1265,6 @@
 				7EB62DF11CAAE28E0097FDB5 /* Blur.png in Resources */,
 				FAD7F5C31CAFB7470075883A /* 早撃ちジョニー.png in Resources */,
 				7E859FDB1CB16BF000EDB2E6 /* ギネスに挑戦！！-タイムテーブル.png in Resources */,
-				7E859F781CB01DEE00EDB2E6 /* 英語劇 バナー2.png in Resources */,
 				7E859F9A1CB01EA500EDB2E6 /* 恋愛偏差値 バナー2.jpg in Resources */,
 				7E85A01C1CB16CAE00EDB2E6 /* のど自慢-タイムテーブル2.png in Resources */,
 				7E85A03B1CB16CE800EDB2E6 /* 少林寺拳法部演武会-タイムテーブル.png in Resources */,
@@ -1415,6 +1414,7 @@
 				FAD7F5C61CAFB7470075883A /* 藤子・Ｆ・不二雄研究会.png in Resources */,
 				7E859FF01CB16C2D00EDB2E6 /* エストレーラ-タイムテーブル.png in Resources */,
 				7ED6F52F1CA576B90077425C /* Default-736@3x.png in Resources */,
+				7E85A06F1CB42C2D00EDB2E6 /* 英語劇 バナー1.png in Resources */,
 				7EB62E531CAEAF4D0097FDB5 /* Million-Dollars.png in Resources */,
 				7E859FCC1CB16BCA00EDB2E6 /* 英語劇-タイムテーブル.png in Resources */,
 				7EB62E661CAEAF8D0097FDB5 /* ミュージックサロン.png in Resources */,
@@ -1425,7 +1425,6 @@
 				FAD7F5AC1CAFB7470075883A /* ぎゃんぶる。.png in Resources */,
 				7EB62E3B1CAEAE0A0097FDB5 /* 俺のケバブ.png in Resources */,
 				7E859F551CB00A5700EDB2E6 /* コミュ力の窓 バナー1.png in Resources */,
-				7E859F5D1CB00A8100EDB2E6 /* 英語劇 バナー1.png in Resources */,
 				7E85A02D1CB16CCD00EDB2E6 /* Addiction-タイムテーブル.png in Resources */,
 				7E859F981CB01E8F00EDB2E6 /* ぽんでっくす バナー2.jpg in Resources */,
 				7E859FDE1CB16BF000EDB2E6 /* 春夜祭-タイムテーブル.png in Resources */,
@@ -1451,6 +1450,7 @@
 				7E859F491CB00A4000EDB2E6 /* Flat Flight バナー1.jpg in Resources */,
 				7E859FA91CB028A200EDB2E6 /* Display icon.pdf in Resources */,
 				7E85A02F1CB16CCD00EDB2E6 /* WEAK-END-タイムテーブル2.png in Resources */,
+				7E85A0711CB42C5700EDB2E6 /* 英語劇 バナー2.png in Resources */,
 				7E85A0091CB16CA000EDB2E6 /* 弦楽オーケストラ部-タイムテーブル.png in Resources */,
 				7EB62E861CAEB0410097FDB5 /* コミュ力の窓.png in Resources */,
 				7E859F651CB00AA300EDB2E6 /* 聖光祭からの脱出 バナー1.JPG in Resources */,
