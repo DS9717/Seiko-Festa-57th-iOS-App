@@ -11,9 +11,7 @@
 		7E0DC8C21C9D7E9800B45F37 /* icon-29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0DC8BC1C9D7E9800B45F37 /* icon-29@3x.png */; };
 		7E0DC8C31C9D7E9800B45F37 /* icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0DC8BD1C9D7E9800B45F37 /* icon-40@2x.png */; };
 		7E0DC8C41C9D7E9800B45F37 /* icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0DC8BE1C9D7E9800B45F37 /* icon-40@3x.png */; };
-		7E0DC8C51C9D7E9800B45F37 /* icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0DC8BF1C9D7E9800B45F37 /* icon-60@2x.png */; };
 		7E0DC8C61C9D7E9800B45F37 /* icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0DC8C01C9D7E9800B45F37 /* icon-60@3x.png */; };
-		7E0DC8C91C9D7FAA00B45F37 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0DC8C71C9D7FAA00B45F37 /* Default-568h@2x.png */; };
 		7E0DC8CA1C9D7FAA00B45F37 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0DC8C81C9D7FAA00B45F37 /* Default@2x.png */; };
 		7E3EB47B1C79DAB900F3B2A0 /* TimetableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3EB47A1C79DAB900F3B2A0 /* TimetableViewController.m */; };
 		7E3FE6E81CA0278D000E0281 /* MyriadPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7E3FE6E71CA02782000E0281 /* MyriadPro-Regular.otf */; };
@@ -127,6 +125,17 @@
 		7E85A0411CB171EE00EDB2E6 /* S-O-S-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A0401CB171EE00EDB2E6 /* S-O-S-タイムテーブル.png */; };
 		7E85A0431CB1720200EDB2E6 /* S-O-S-タイムテーブル2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A0421CB1720200EDB2E6 /* S-O-S-タイムテーブル2.png */; };
 		7E85A0451CB2EB1600EDB2E6 /* とにかく明るいFes村.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A0441CB2EB1600EDB2E6 /* とにかく明るいFes村.png */; };
+		7E85A0481CB3EC9300EDB2E6 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E85A0471CB3EC9300EDB2E6 /* InfoViewController.m */; };
+		7E85A0521CB3FC7600EDB2E6 /* Food icon vector enji.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A0511CB3FC7600EDB2E6 /* Food icon vector enji.pdf */; };
+		7E85A0541CB3FD7E00EDB2E6 /* Display icon vector enji.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A0531CB3FD7E00EDB2E6 /* Display icon vector enji.pdf */; };
+		7E85A0561CB3FE3900EDB2E6 /* Band icon vector enji.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A0551CB3FE3900EDB2E6 /* Band icon vector enji.pdf */; };
+		7E85A0581CB3FEC900EDB2E6 /* Performance icon vector enji.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A0571CB3FEC900EDB2E6 /* Performance icon vector enji.pdf */; };
+		7E85A05A1CB3FF3800EDB2E6 /* Stage icon vector enji.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A0591CB3FF3800EDB2E6 /* Stage icon vector enji.pdf */; };
+		7E85A0621CB4095D00EDB2E6 /* icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A0611CB4095D00EDB2E6 /* icon-60@2x.png */; };
+		7E85A0661CB40A9300EDB2E6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A0651CB40A9300EDB2E6 /* Default-568h@2x.png */; };
+		7E85A0691CB40F1A00EDB2E6 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E85A0681CB40F1A00EDB2E6 /* AboutViewController.m */; };
+		7E85A06B1CB4195600EDB2E6 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A06A1CB4195600EDB2E6 /* Icon.png */; };
+		7E85A06D1CB4210D00EDB2E6 /* Access.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A06C1CB4210D00EDB2E6 /* Access.png */; };
 		7EB62DF11CAAE28E0097FDB5 /* Blur.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB62DF01CAAE28E0097FDB5 /* Blur.png */; };
 		7EB62DF51CAAE70A0097FDB5 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB62DF41CAAE70A0097FDB5 /* line.png */; };
 		7EB62E001CAAEF540097FDB5 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB62DFF1CAAEF540097FDB5 /* ShareViewController.m */; };
@@ -250,9 +259,7 @@
 		7E0DC8BC1C9D7E9800B45F37 /* icon-29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-29@3x.png"; sourceTree = "<group>"; };
 		7E0DC8BD1C9D7E9800B45F37 /* icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40@2x.png"; sourceTree = "<group>"; };
 		7E0DC8BE1C9D7E9800B45F37 /* icon-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40@3x.png"; sourceTree = "<group>"; };
-		7E0DC8BF1C9D7E9800B45F37 /* icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60@2x.png"; sourceTree = "<group>"; };
 		7E0DC8C01C9D7E9800B45F37 /* icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60@3x.png"; sourceTree = "<group>"; };
-		7E0DC8C71C9D7FAA00B45F37 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7E0DC8C81C9D7FAA00B45F37 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		7E3EB4791C79DAB900F3B2A0 /* TimetableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimetableViewController.h; path = ../TimetableViewController.h; sourceTree = "<group>"; };
 		7E3EB47A1C79DAB900F3B2A0 /* TimetableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimetableViewController.m; path = ../TimetableViewController.m; sourceTree = "<group>"; };
@@ -374,6 +381,19 @@
 		7E85A0401CB171EE00EDB2E6 /* S-O-S-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "S-O-S-タイムテーブル.png"; sourceTree = "<group>"; };
 		7E85A0421CB1720200EDB2E6 /* S-O-S-タイムテーブル2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "S-O-S-タイムテーブル2.png"; sourceTree = "<group>"; };
 		7E85A0441CB2EB1600EDB2E6 /* とにかく明るいFes村.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "とにかく明るいFes村.png"; sourceTree = "<group>"; };
+		7E85A0461CB3EC9300EDB2E6 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		7E85A0471CB3EC9300EDB2E6 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		7E85A0511CB3FC7600EDB2E6 /* Food icon vector enji.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Food icon vector enji.pdf"; sourceTree = "<group>"; };
+		7E85A0531CB3FD7E00EDB2E6 /* Display icon vector enji.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Display icon vector enji.pdf"; sourceTree = "<group>"; };
+		7E85A0551CB3FE3900EDB2E6 /* Band icon vector enji.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Band icon vector enji.pdf"; sourceTree = "<group>"; };
+		7E85A0571CB3FEC900EDB2E6 /* Performance icon vector enji.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Performance icon vector enji.pdf"; sourceTree = "<group>"; };
+		7E85A0591CB3FF3800EDB2E6 /* Stage icon vector enji.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Stage icon vector enji.pdf"; sourceTree = "<group>"; };
+		7E85A0611CB4095D00EDB2E6 /* icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60@2x.png"; sourceTree = "<group>"; };
+		7E85A0651CB40A9300EDB2E6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7E85A0671CB40F1900EDB2E6 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		7E85A0681CB40F1A00EDB2E6 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		7E85A06A1CB4195600EDB2E6 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		7E85A06C1CB4210D00EDB2E6 /* Access.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Access.png; sourceTree = "<group>"; };
 		7EB62DF01CAAE28E0097FDB5 /* Blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blur.png; sourceTree = "<group>"; };
 		7EB62DF41CAAE70A0097FDB5 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
 		7EB62DFE1CAAEF540097FDB5 /* ShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
@@ -511,14 +531,15 @@
 		7E0DC8BA1C9D7E5900B45F37 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				7E85A06A1CB4195600EDB2E6 /* Icon.png */,
 				7E0DC8BB1C9D7E9800B45F37 /* icon-29@2x.png */,
 				7E0DC8BC1C9D7E9800B45F37 /* icon-29@3x.png */,
 				7E0DC8BD1C9D7E9800B45F37 /* icon-40@2x.png */,
 				7E0DC8BE1C9D7E9800B45F37 /* icon-40@3x.png */,
-				7E0DC8BF1C9D7E9800B45F37 /* icon-60@2x.png */,
+				7E85A0611CB4095D00EDB2E6 /* icon-60@2x.png */,
 				7E0DC8C01C9D7E9800B45F37 /* icon-60@3x.png */,
-				7E0DC8C71C9D7FAA00B45F37 /* Default-568h@2x.png */,
 				7E0DC8C81C9D7FAA00B45F37 /* Default@2x.png */,
+				7E85A0651CB40A9300EDB2E6 /* Default-568h@2x.png */,
 				7ED6F52C1CA576B90077425C /* Default-667@2x.png */,
 				7ED6F52D1CA576B90077425C /* Default-736@3x.png */,
 			);
@@ -568,6 +589,10 @@
 				7E3EB47A1C79DAB900F3B2A0 /* TimetableViewController.m */,
 				7EB62DFE1CAAEF540097FDB5 /* ShareViewController.h */,
 				7EB62DFF1CAAEF540097FDB5 /* ShareViewController.m */,
+				7E85A0461CB3EC9300EDB2E6 /* InfoViewController.h */,
+				7E85A0471CB3EC9300EDB2E6 /* InfoViewController.m */,
+				7E85A0671CB40F1900EDB2E6 /* AboutViewController.h */,
+				7E85A0681CB40F1A00EDB2E6 /* AboutViewController.m */,
 				7E4D55B81C49315C00BFE19C /* Images.xcassets */,
 				7E4D55D11C4944F300BFE19C /* Images */,
 				7E0DC8BA1C9D7E5900B45F37 /* Icons */,
@@ -606,8 +631,14 @@
 		7E4D55D11C4944F300BFE19C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7E85A0511CB3FC7600EDB2E6 /* Food icon vector enji.pdf */,
+				7E85A0531CB3FD7E00EDB2E6 /* Display icon vector enji.pdf */,
+				7E85A0551CB3FE3900EDB2E6 /* Band icon vector enji.pdf */,
+				7E85A0571CB3FEC900EDB2E6 /* Performance icon vector enji.pdf */,
+				7E85A0591CB3FF3800EDB2E6 /* Stage icon vector enji.pdf */,
 				7EB62DF41CAAE70A0097FDB5 /* line.png */,
 				7E859FB01CB02C3B00EDB2E6 /* Right to List.pdf */,
+				7E85A06C1CB4210D00EDB2E6 /* Access.png */,
 				7EB62EBC1CAEE4E30097FDB5 /* Category Icons */,
 				FAA39B001C9D093200A1B697 /* 丸アイコン */,
 				FAA39B441C9D2D0400A1B697 /* バナー */,
@@ -1227,6 +1258,7 @@
 				7EB62E581CAEAF4D0097FDB5 /* ぽんでっくす.png in Resources */,
 				FAD7F5AD1CAFB7470075883A /* クイズ研究会.png in Resources */,
 				7EB62E371CAEAE0A0097FDB5 /* Juicy-Juicer.png in Resources */,
+				7E85A06D1CB4210D00EDB2E6 /* Access.png in Resources */,
 				FAD7F5B81CAFB7470075883A /* 古本市.png in Resources */,
 				7E859FF61CB16C4400EDB2E6 /* ミュージックサロン-タイムテーブル小講堂.png in Resources */,
 				7EB62E801CAEB0410097FDB5 /* ○○男子No.1決定戦.png in Resources */,
@@ -1236,7 +1268,6 @@
 				7E859F781CB01DEE00EDB2E6 /* 英語劇 バナー2.png in Resources */,
 				7E859F9A1CB01EA500EDB2E6 /* 恋愛偏差値 バナー2.jpg in Resources */,
 				7E85A01C1CB16CAE00EDB2E6 /* のど自慢-タイムテーブル2.png in Resources */,
-				7E0DC8C91C9D7FAA00B45F37 /* Default-568h@2x.png in Resources */,
 				7E85A03B1CB16CE800EDB2E6 /* 少林寺拳法部演武会-タイムテーブル.png in Resources */,
 				7EB62E391CAEAE0A0097FDB5 /* 駅弁.png in Resources */,
 				FAD7F5A51CAFB7470075883A /* SeSDA〜聖光宇宙センター〜.png in Resources */,
@@ -1249,6 +1280,7 @@
 				7EB62E641CAEAF8D0097FDB5 /* グリークラブ.png in Resources */,
 				7EB62E161CAB021E0097FDB5 /* Twitter icon.png in Resources */,
 				7E859F8A1CB01E7B00EDB2E6 /* コミュ力の窓 バナー2.png in Resources */,
+				7E85A0661CB40A9300EDB2E6 /* Default-568h@2x.png in Resources */,
 				7E859FA71CB027FB00EDB2E6 /* Food icon.pdf in Resources */,
 				FAD7F5BE1CAFB7470075883A /* 生徒会展示.png in Resources */,
 				7EB62E671CAEAF8D0097FDB5 /* 弦楽オーケストラ部.png in Resources */,
@@ -1261,6 +1293,8 @@
 				7E859FBF1CB0E02200EDB2E6 /* 英語劇 教室劇 バナー2.png in Resources */,
 				7E859FB91CB0DCCE00EDB2E6 /* WEAK-END バナー1.png in Resources */,
 				7E85A00B1CB16CA000EDB2E6 /* 天使の歌声-タイムテーブル2.png in Resources */,
+				7E85A0561CB3FE3900EDB2E6 /* Band icon vector enji.pdf in Resources */,
+				7E85A06B1CB4195600EDB2E6 /* Icon.png in Resources */,
 				7E859F941CB01E8F00EDB2E6 /* M&A バナー2.jpg in Resources */,
 				7E859FEE1CB16C2D00EDB2E6 /* WEAK-END-タイムテーブル.png in Resources */,
 				7EB62E521CAEAF4D0097FDB5 /* M&A.png in Resources */,
@@ -1284,10 +1318,10 @@
 				7EB62E401CAEAE0A0097FDB5 /* 氷菓.png in Resources */,
 				FAD7F5BB1CAFB7470075883A /* 常夜灯.png in Resources */,
 				FAD7F5BA1CAFB7470075883A /* 高3英語劇.png in Resources */,
-				7E0DC8C51C9D7E9800B45F37 /* icon-60@2x.png in Resources */,
 				7E859FB71CB0311000EDB2E6 /* Right to map.pdf in Resources */,
 				7E859F7A1CB01DEE00EDB2E6 /* 吹奏楽部 バナー.jpg in Resources */,
 				7E0DC8C41C9D7E9800B45F37 /* icon-40@3x.png in Resources */,
+				7E85A0621CB4095D00EDB2E6 /* icon-60@2x.png in Resources */,
 				7E859FAB1CB0291800EDB2E6 /* Band icon.pdf in Resources */,
 				FAA39B4D1C9D330E00A1B697 /* map.jpg in Resources */,
 				7E859F951CB01E8F00EDB2E6 /* Million Dollars バナー.jpg in Resources */,
@@ -1327,6 +1361,7 @@
 				7E859F531CB00A5700EDB2E6 /* Mr.聖光 バナー1.jpg in Resources */,
 				FAD7F5B11CAFB7470075883A /* ベイスターズ研究会.png in Resources */,
 				FAD7F5B21CAFB7470075883A /* ボーカロイド研究会.png in Resources */,
+				7E85A0581CB3FEC900EDB2E6 /* Performance icon vector enji.pdf in Resources */,
 				FAD7F5C01CAFB7470075883A /* 聖光祭からの脱出.png in Resources */,
 				7E4D55B91C49315C00BFE19C /* Images.xcassets in Resources */,
 				7EB62E4F1CAEAF4D0097FDB5 /* Addiction？.png in Resources */,
@@ -1346,9 +1381,11 @@
 				7E859F7F1CB01E6C00EDB2E6 /* Showtime! バナー2.JPG in Resources */,
 				7E0DC8C21C9D7E9800B45F37 /* icon-29@3x.png in Resources */,
 				7E85A0451CB2EB1600EDB2E6 /* とにかく明るいFes村.png in Resources */,
+				7E85A0521CB3FC7600EDB2E6 /* Food icon vector enji.pdf in Resources */,
 				7EB62E811CAEB0410097FDB5 /* Mr.聖光.png in Resources */,
 				7EB62E6E1CAEAFDD0097FDB5 /* 校長対談.png in Resources */,
 				7EB62DF51CAAE70A0097FDB5 /* line.png in Resources */,
+				7E85A0541CB3FD7E00EDB2E6 /* Display icon vector enji.pdf in Resources */,
 				7E859F661CB00AA300EDB2E6 /* 地学天文学部 バナー1.jpg in Resources */,
 				7EB62E571CAEAF4D0097FDB5 /* せいとんがかり.png in Resources */,
 				7E859FAD1CB029DF00EDB2E6 /* Performance icon.pdf in Resources */,
@@ -1372,6 +1409,7 @@
 				7E85A01D1CB16CAE00EDB2E6 /* 替え劇〜赤ずきん〜-タイムテーブル2.png in Resources */,
 				FAD7F5A41CAFB7470075883A /* EHC-Jurassic.png in Resources */,
 				7E859FCD1CB16BCA00EDB2E6 /* 天使の歌声-タイムテーブル.png in Resources */,
+				7E85A05A1CB3FF3800EDB2E6 /* Stage icon vector enji.pdf in Resources */,
 				7E859FF91CB16C4400EDB2E6 /* 恋愛偏差値-タイムテーブル.png in Resources */,
 				7EB62E511CAEAF4D0097FDB5 /* Flat-Flight.png in Resources */,
 				FAD7F5C61CAFB7470075883A /* 藤子・Ｆ・不二雄研究会.png in Resources */,
@@ -1441,8 +1479,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E85A0691CB40F1A00EDB2E6 /* AboutViewController.m in Sources */,
 				7E85A03F1CB16E3C00EDB2E6 /* ViewController.m in Sources */,
 				FABB0BDF1C560EEC0009ABAA /* ListView.m in Sources */,
+				7E85A0481CB3EC9300EDB2E6 /* InfoViewController.m in Sources */,
 				7E3EB47B1C79DAB900F3B2A0 /* TimetableViewController.m in Sources */,
 				FABB0BE21C560F040009ABAA /* DetailView.m in Sources */,
 				7EB62E001CAAEF540097FDB5 /* ShareViewController.m in Sources */,
