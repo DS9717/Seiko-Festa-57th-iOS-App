@@ -34,8 +34,8 @@
     CGRect r = [[UIScreen mainScreen] bounds];
     if (r.size.width == 320) {
         //iPhone 4s/5/5c/5s
-        spaceLeft = 38;
-        length = 84;
+        spaceLeft = 16;
+        length = 128;
         spaceH = 8;
         fontSize = 15;
     } else if (r.size.width == 375) {
@@ -43,13 +43,13 @@
         spaceLeft = 16;
         length = 155.5;
         spaceH = 8;
-        fontSize = 15;
+        fontSize = 17;
     } else if (r.size.width == 414) {
         //iPhone 6 plus/6s plus
         spaceLeft = 16;
         length = 175;
         spaceH = 8;
-        fontSize = 15;
+        fontSize = 19;
     }
     
     
@@ -172,7 +172,7 @@
         
         label8 = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + self.view.bounds.size.width / 2, 16 + length + spaceH + (length + spaceH + fontSize + 29) * 3, length, fontSize + 5)];
         label8.font = [UIFont fontWithName:@"HelveticaNeue" size:fontSize];
-        label8.text = @"chocolat π";
+        label8.text = @"chocolate π";
         label8.textAlignment = NSTextAlignmentCenter;
         [scrollView addSubview:label8];
         
@@ -364,7 +364,7 @@
         
         label9 = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + length + spaceH + (length + spaceH + fontSize + 29) * 4, length, fontSize + 5)];
         label9.font = [UIFont fontWithName:@"HelveticaNeue" size:fontSize];
-        label9.text = @"藤子・Ｆ・不二雄研究会";
+        label9.text = @"藤子･Ｆ･不二雄研究会";
         label9.textAlignment = NSTextAlignmentCenter;
         [scrollView addSubview:label9];
         
@@ -388,7 +388,7 @@
         
         label11 = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + length + spaceH + (length + spaceH + fontSize + 29) * 5, length, fontSize + 5)];
         label11.font = [UIFont fontWithName:@"HelveticaNeue" size:fontSize];
-        label11.text = @"美術部・芸術講座展示";
+        label11.text = @"美術部･芸術講座展示";
         label11.textAlignment = NSTextAlignmentCenter;
         [scrollView addSubview:label11];
         

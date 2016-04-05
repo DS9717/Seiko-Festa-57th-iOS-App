@@ -112,7 +112,7 @@
         length = 89;
         spaceAllBelow = -16;
         spaceBelow = 9;
-        buttonLabelFont = 14;
+        buttonLabelFont = 15;
     } else if (r.size.width == 414) {
         //iPhone 6 plus/6s plus
         spaceAllAbove = 10;
@@ -694,7 +694,7 @@
     
     buttonTwo9Label = [[UILabel alloc]initWithFrame:CGRectMake(space + (space + length) * 8, space + length + spaceBelow, length, buttonLabelFont + 1)];
     buttonTwo9Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
-    buttonTwo9Label.text = @"藤子・Ｆ・不二雄研究会";
+    buttonTwo9Label.text = @"藤子･Ｆ･不二雄研究会";
     buttonTwo9Label.numberOfLines = 0;
     [buttonTwo9Label sizeToFit];
     [scrollView2 addSubview:buttonTwo9Label];
@@ -708,7 +708,7 @@
     
     buttonTwo11Label = [[UILabel alloc]initWithFrame:CGRectMake(space + (space + length) * 10, space + length + spaceBelow, length, buttonLabelFont + 1)];
     buttonTwo11Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
-    buttonTwo11Label.text = @"美術部・芸術講座展示";
+    buttonTwo11Label.text = @"美術部･芸術講座展示";
     buttonTwo11Label.numberOfLines = 0;
     [buttonTwo11Label sizeToFit];
     [scrollView2 addSubview:buttonTwo11Label];
@@ -770,8 +770,8 @@
     [scrollView2 addSubview:buttonTwo19Label];
     
     buttonTwo20Label = [[UILabel alloc]initWithFrame:CGRectMake(space + (space + length) * 19, space + length + spaceBelow, length, buttonLabelFont + 1)];
-    buttonTwo20Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
-    buttonTwo20Label.text = @"SeSDA〜聖光宇宙センター〜";
+    buttonTwo20Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont - 2];
+    buttonTwo20Label.text = @"SeSDA~聖光宇宙センター~";
     buttonTwo20Label.numberOfLines = 0;
     [buttonTwo20Label sizeToFit];
     [scrollView2 addSubview:buttonTwo20Label];
