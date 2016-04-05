@@ -139,7 +139,7 @@
             detailImage = [UIImage imageNamed:@"chocolat-π.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"chocolate π";
-            _explainSentence.text = @"πなのにパイは三角!? 人生そんなに甘くない…でもチョコは甘い！これを食べればあなたも元気いっπ!!";
+            _explainSentence.text = @"πなのにパイは三角!?人生そんなに甘くない…でもチョコは甘い！これを食べればあなたも元気いっπ!!";
         }
         else if (flag == 9) {
             detailImage = [UIImage imageNamed:@"Juicy-Juicer.png"];
@@ -151,19 +151,19 @@
             detailImage = [UIImage imageNamed:@"綿's-candy.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"綿's Candy";
-            _explainSentence.text = @"今年の綿あめは一味、いや二味違う!? これは食べなければっ！聖光の綿あめ職人達が最高の一本を貴方に・・・";
+            _explainSentence.text = @"今年の綿あめは一味、いや二味違う!?これは食べなければっ！聖光の綿あめ職人達が最高の一本を貴方に ･･･";
         }
         else if (flag == 11) {
             detailImage = [UIImage imageNamed:@"氷菓.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"氷菓";
-            _explainSentence.text = @"熱い熱い聖光祭のお供には・・・やっぱり甘くて冷たいかき氷でしょ‼︎";
+            _explainSentence.text = @"熱い熱い聖光祭のお供には･･･やっぱり甘くて冷たいかき氷でしょ‼︎";
         }
         else if (flag == 12) {
             detailImage = [UIImage imageNamed:@"山手の泉.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"山手の泉";
-            _explainSentence.text = @"これを見たそこのあなた!のどをうるおしたくありませんか? そんな方は是非山手の泉へ!!";
+            _explainSentence.text = @"これを見たそこのあなた!のどをうるおしたくありませんか？そんな方は是非山手の泉へ!!";
         }
         else if (flag == 13) {
             detailImage = [UIImage imageNamed:@"題名のない音楽喫茶.png"];
@@ -192,241 +192,241 @@
             detailImage = [UIImage imageNamed:@"ポケモンセンターSeiko.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"ポケモンセンターSeiko";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"20周年を迎えてポケモンがますます熱い！ポケセンSeikoは企画もポケモンも伝説祭りだ！";
         }
         else if (flag == 3) {
             detailImage = [UIImage imageNamed:@"宇宙戦艦ヤマト研究会.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"宇宙戦艦ヤマト研究会";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"この時代錯誤の研究会も何と今年で３年目。今年も多数のロマンあふれる展示をご用意！是非いらして下さい！";
         }
         else if (flag == 4) {
             detailImage = [UIImage imageNamed:@"とにかく明るいFes村.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"とにかく明るいFes村";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"祭りの季節が一足早く聖光にやってきた！射的とかやってるよ！「安心してくださいENJOYできますよ」";
         }
         else if (flag == 5) {
             detailImage = [UIImage imageNamed:@"Trick×Hark.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"Trick×Hark";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"聖光生がマジックで作り上げる幻想的な世界へいざなう…目の前で繰り広げられる奇跡の目撃者となれ！";
         }
         else if (flag == 6) {
             detailImage = [UIImage imageNamed:@"ぎゃんぶる。.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"ぎゃんぶる。";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"聖光祭に全てを賭ける熱い男達が待っている！君も一緒にぎゃんぶる？";
         }
         else if (flag == 7) {
             detailImage = [UIImage imageNamed:@"高3英語劇.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"高3英語劇";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"サスペンス劇の金字塔を最高学年が熱演！刻一刻と迫る運命、明かされる驚愕の真実！";
         }
         else if (flag == 8) {
             detailImage = [UIImage imageNamed:@"交通研究部.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"交通研究部";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"部員たちの熱意のこもった研究と、関東最大級の鉄道模型！我らが交研の本気をとくとご覧あれ！";
         }
         else if (flag == 9) {
             detailImage = [UIImage imageNamed:@"藤子・Ｆ・不二雄研究会.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
-            _detailTitle.text = @"藤子･Ｆ･不二雄研究会";
-            _explainSentence.text = @"";
+            _detailTitle.text = @"藤子・Ｆ・不二雄研究会";
+            _explainSentence.text = @"ドラえもんが聖光にやってくる？展示や漫画、映画でF作品を感じよう！君もドラえもんの世界に行かないか？";
         }
         else if (flag == 10) {
             detailImage = [UIImage imageNamed:@"ベイスターズ研究会.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"ベイスターズ研究会";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"つよきベイスターズに気をつけろ！ベイ研もさらにすごくなった！ストラックアウトもあるので是非来てね";
         }
         else if (flag == 11) {
             detailImage = [UIImage imageNamed:@"美術部.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
-            _detailTitle.text = @"美術部･芸術講座展示";
-            _explainSentence.text = @"";
+            _detailTitle.text = @"美術部・芸術講座展示";
+            _explainSentence.text = @"聖光学院において長い伝統を誇る美術部の部員がこの１年で製作した作品の展示を行ってます。";
         }
         else if (flag == 12) {
             detailImage = [UIImage imageNamed:@"魔女の卓球便.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"魔女の卓球便";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"魔女の卓球便です♪お一人様でも卓球部員が相手をします！是非来てください！予約制につきご注意を。";
         }
         else if (flag == 13) {
             detailImage = [UIImage imageNamed:@"聖光道場.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"聖光道場";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"皆さんは将棋を指したことがありかすか？経験者も未経験者も是非是非部員との真剣勝負をお楽しみ下さい。";
         }
         else if (flag == 14) {
             detailImage = [UIImage imageNamed:@"迷いの国のアリス.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"迷いの国のアリス";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"ようこそ、Under Landへ。謎を解き、アリスの世界から脱出せよ。";
         }
         else if (flag == 15) {
             detailImage = [UIImage imageNamed:@"リアル野球盤.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"リアル野球盤";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"あの、テレビでおなじみ『リアル野球盤』が聖光にやって来た。君も野球盤のバッターになってみないか？";
         }
         else if (flag == 16) {
             detailImage = [UIImage imageNamed:@"常夜灯.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"常夜灯";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"洒落で実用的、多彩なクラフトを販売。喫茶スペースでは被災地のお菓子を揃えています(メニューはP.？？)。";
         }
         else if (flag == 17) {
             detailImage = [UIImage imageNamed:@"地学天文学部.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"地学天文学部";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"美しく多彩な石の展示と解説付き本格プラネタリウム。化石レプリカ作りや実験の体験もできます！";
         }
         else if (flag == 18) {
             detailImage = [UIImage imageNamed:@"聖光祭からの脱出.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"聖光祭からの脱出";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"聖光祭にリアル脱出ゲームが登場！参加型謎解きアクション！あなたは謎を解き無事脱出できるのか?!";
         }
         else if (flag == 19) {
             detailImage = [UIImage imageNamed:@"物理科学部.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"物理科学部";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"スライム・人工イクラ・巨大イライラ棒など面白いものがたくさん！物理科学部ですが化学実験もやってます。";
         }
         else if (flag == 20) {
             detailImage = [UIImage imageNamed:@"SeSDA〜聖光宇宙センター〜.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"SeSDA〜聖光宇宙センター〜";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"希少なはやぶさ2の実物大模型や実際に動く無人火星探査機を展示中！キミたち、教室へ急げ！";
         }
         else if (flag == 21) {
             detailImage = [UIImage imageNamed:@"かるた会.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"かるた会";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"ちはやふるで話題の競技かるた、ド迫力の試合をご覧あれ！誰でも楽しめるミニゲームもやってます！";
         }
         else if (flag == 22) {
             detailImage = [UIImage imageNamed:@"ボーカロイド研究会.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"ボーカロイド研究会";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"ボカロ曲・ｐｖ・Ｐの特集やってます。室内は音がよく響いているのでご注意ください。";
         }
         else if (flag == 23) {
             detailImage = [UIImage imageNamed:@"本の泉.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"本の泉";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"「本の泉」では、会員達が制作した作品を収録した会誌や、影響を受けた書籍などを展示しています。望むだけ本の世界に浸って下さい。";
         }
         else if (flag == 24) {
             detailImage = [UIImage imageNamed:@"EHC-Jurassic.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"EHC Jurassic";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"今年の英語道楽のテーマは“恐竜”!!!巨大模型や資料の展示、さらに英語や日本語の恐竜クイズに挑戦だ！";
         }
         else if (flag == 25) {
             detailImage = [UIImage imageNamed:@"早撃ちジョニー.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"早撃ちジョニー";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"赤外線銃を使った新感覚シューティングゲーム。暗い部屋の中で繰り広げられる戦いであなたは聖光生を倒せるか?!";
         }
         else if (flag == 26) {
             detailImage = [UIImage imageNamed:@"人狼の館.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"人狼の館";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"駆け引きを楽しみ勝利を掴め‼︎至高の頭脳ゲームが遂に聖光祭に登場‼︎（小学校高学年以上推奨)";
         }
         else if (flag == 27) {
             detailImage = [UIImage imageNamed:@"横浜漫才フィルム.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"横浜漫才フィルム";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"みなさんの笑顔を守り続けて早2年。挫折と失敗と先輩の圧力を乗り越えてここまで来ました。";
         }
         else if (flag == 28) {
             detailImage = [UIImage imageNamed:@"生物部.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"生物部";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"今年は貝、魚、昆虫、鳥などについて展示します！部誌の配布やクイズも行っています。是非お越しください！";
         }
         else if (flag == 29) {
             detailImage = [UIImage imageNamed:@"78枚目のJoker.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"78枚目のJoker";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"爽やかなイケメンサッカー部とトランプで遊んで盛り上がりたい人集まれ!!";
         }
         else if (flag == 30) {
             detailImage = [UIImage imageNamed:@"アニメ研究会.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"アニメ研究会";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"アニ研、パワーアップして復活！最近アニメが好きな人もそうでない人も「アニ研はいいぞ」と言ってしまうような展示をご覧あれ！";
         }
         else if (flag == 31) {
             detailImage = [UIImage imageNamed:@"Shockers.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"Shockers";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"数々のゲームをクリアしていく脱出系アトラクションです。あなたもshockを受けに来ませんか？(迷ったらいきましょう！)";
         }
         else if (flag == 32) {
             detailImage = [UIImage imageNamed:@"コンピュータ部.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"コンピュータ部";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"部員の制作したPCゲームを多数展示しています。今年はついにタブレットアプリも完成！存分にお楽しみあれ。";
         }
         else if (flag == 33) {
             detailImage = [UIImage imageNamed:@"古本市.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"古本市";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"ひょっとしたら欲しい本が見つかるかもしれない！古本売ってます。見に来て下さい！";
         }
         else if (flag == 34) {
             detailImage = [UIImage imageNamed:@"インターアクト.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"インターアクト";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"聖光学院インターアクトクラブの活動報告、物品販売を行っています。是非お越しください！";
         }
         else if (flag == 35) {
             detailImage = [UIImage imageNamed:@"Showtime!.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"Showtime!";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"あなたに最高の笑いを提供することを保証します！さあ笑いあふれるコントの世界へ･･･It's Showtime！";
         }
         else if (flag == 36) {
             detailImage = [UIImage imageNamed:@"クイズ研究会.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"クイズ研究会";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"Q.ある男が一晩で新しい言葉を広められるか賭けた事に由来する、あなたが今すべき事は何。A.『クイズ』";
         }
         else if (flag == 37) {
             detailImage = [UIImage imageNamed:@"地理歴史巡見部.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"地理歴史巡見部";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"今年は東北地方を中心とした外装や展示、そしてお子様向けに鎧の着付けをしています。是非来てください！";
         }
         else if (flag == 38) {
             detailImage = [UIImage imageNamed:@"ぶいえいす.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"ぶいえいす";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"体力テストと心理ゲームやってます！ランキングも開催中！新記録を出すのはあなたかも知れません!!";
         }
         else if (flag == 39) {
             detailImage = [UIImage imageNamed:@"聖書研究会.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"聖書研究会";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"建学の精神であるキリスト教を知って聖光学院をより深く知ろう！例年人気の制服試着体験も行っています。";
         }
         else if (flag == 40) {
             detailImage = [UIImage imageNamed:@"数学研究会.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"数学研究会";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"徹底研究して作った入試予想問題、大盤振る舞い中！パズルもあるよ！冷やかし歓迎！気軽に来てね！";
         }
         else if (flag == 41) {
             detailImage = [UIImage imageNamed:@"生徒会展示.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"生徒会展示";
-            _explainSentence.text = @"";
+            _explainSentence.text = @"聖光学院生徒会の30年の歴史をとくとご覧あれ。聖光学院の年間スケジュールをまとめています。";
         }
         
         
@@ -616,7 +616,7 @@
             detailImage = [UIImage imageNamed:@"Seiko-Dance-Performance.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"Seiko Dance Performance";
-            _explainSentence.text = @"今年もやってきた！聖光生が超カッコイイ!? ダンスパフォーマンスで聖光祭を盛り上げる！";
+            _explainSentence.text = @"今年もやってきた！聖光生が超カッコイイ!?ダンスパフォーマンスで聖光祭を盛り上げる！";
         }
         else if (flag == 5) {
             detailImage = [UIImage imageNamed:@"のど自慢.png"];
@@ -628,13 +628,13 @@
             detailImage = [UIImage imageNamed:@"ギネスに挑戦!!.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"ギネスに挑戦!!";
-            _explainSentence.text = @"ギネスに記録にあの聖光生が挑戦!? 果敢に記録に挑戦する聖光生の勇姿をとくとご覧あれ!!";
+            _explainSentence.text = @"ギネスに記録にあの聖光生が挑戦!?果敢に記録に挑戦する聖光生の勇姿をとくとご覧あれ!!";
         }
         else if (flag == 7) {
             detailImage = [UIImage imageNamed:@"コミュ力の窓.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
             _detailTitle.text = @"コミュ力の窓";
-            _explainSentence.text = @"「あっ…」「あの…」「えっと…」まさか聖光生は話すのが苦手!? そんなことはない！コミュ力を駆使した熾烈な戦いをご覧あれ！";
+            _explainSentence.text = @"「あっ…」「あの…」「えっと…」まさか聖光生は話すのが苦手!?そんなことはない！コミュ力を駆使した熾烈な戦いをご覧あれ！";
         }
         else if (flag == 8) {
             detailImage = [UIImage imageNamed:@"The 笑-1 GP.png"];
