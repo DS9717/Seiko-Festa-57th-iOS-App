@@ -21,14 +21,25 @@
 
     CGRect r = [[UIScreen mainScreen] bounds];
     if (r.size.width == 320) {
-        //iPhone 4s/5/5c/5s
-        space = 50;
-        //length = self.view.bounds.size.width - space * 2 = 220
-        spaceU = 40;
-        titleSize = 20;
-        lineSize = 11.25;
-        spaceBetween = 10;
-        explainSize = 15;
+        if (r.size.height == 480) {
+            //iPhone4s
+            space = 50;
+            //length = self.view.bounds.size.width - space * 2 = 220
+            spaceU = 40;
+            titleSize = 20;
+            lineSize = 11.25;
+            spaceBetween = 10;
+            explainSize = 15;
+        }else if (r.size.height == 568) {
+            //iPhone5/5c/5s
+            space = 50;
+            //length = self.view.bounds.size.width - space * 2 = 220
+            spaceU = 40;
+            titleSize = 20;
+            lineSize = 11.25;
+            spaceBetween = 10;
+            explainSize = 15;
+        }
     } else if (r.size.width == 375) {
         //iPhone 6/6s
         space = 60;
