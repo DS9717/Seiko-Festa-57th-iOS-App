@@ -295,6 +295,10 @@
     int hourC;
     int minuteC;
     
+    UIImageView *welcomeBanner;
+    
+    NSTimer *timer;
+    
 }
 
 @property(nonatomic) int flag;
