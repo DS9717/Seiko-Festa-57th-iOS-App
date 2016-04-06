@@ -237,7 +237,7 @@
         }
         else if (flag == 8) {
             detailImage = [UIImage imageNamed:@"交通研究部.png"];
-            mapImage = [UIImage imageNamed:@"map.jpg"];
+            mapImage = [UIImage imageNamed:@"交通研究部マップ.png"];
             _detailTitle.text = @"交通研究部";
             _explainSentence.text = @"部員たちの熱意のこもった研究と、関東最大級の鉄道模型！我らが交研の本気をとくとご覧あれ！";
         }

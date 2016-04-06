@@ -198,6 +198,7 @@
 		7ED21AB61C79986D00AA9E83 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED21AB51C79986D00AA9E83 /* QuartzCore.framework */; };
 		7ED21AB81C7998B900AA9E83 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED21AB71C7998B900AA9E83 /* CoreGraphics.framework */; };
 		7ED21ABB1C79998200AA9E83 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED21ABA1C79998200AA9E83 /* AVFoundation.framework */; };
+		FA2BE5D51CB54A32007C0B48 /* 交通研究部マップ.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2BE5D41CB54A32007C0B48 /* 交通研究部マップ.png */; };
 		FA81741F1CB28CB90024C957 /* 78枚目のJoker.png in Resources */ = {isa = PBXBuildFile; fileRef = FA81741E1CB28CB90024C957 /* 78枚目のJoker.png */; };
 		FA8174211CB2961A0024C957 /* 魔女の卓球便.png in Resources */ = {isa = PBXBuildFile; fileRef = FA8174201CB2961A0024C957 /* 魔女の卓球便.png */; };
 		FA8174231CB296C70024C957 /* 数学研究会模擬講義.png in Resources */ = {isa = PBXBuildFile; fileRef = FA8174221CB296C70024C957 /* 数学研究会模擬講義.png */; };
@@ -460,6 +461,7 @@
 		7ED21AB51C79986D00AA9E83 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7ED21AB71C7998B900AA9E83 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7ED21ABA1C79998200AA9E83 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FA2BE5D41CB54A32007C0B48 /* 交通研究部マップ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "交通研究部マップ.png"; sourceTree = "<group>"; };
 		FA81741E1CB28CB90024C957 /* 78枚目のJoker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "78枚目のJoker.png"; sourceTree = "<group>"; };
 		FA8174201CB2961A0024C957 /* 魔女の卓球便.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "魔女の卓球便.png"; sourceTree = "<group>"; };
 		FA8174221CB296C70024C957 /* 数学研究会模擬講義.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "数学研究会模擬講義.png"; sourceTree = "<group>"; };
@@ -897,6 +899,11 @@
 		7EB62EBD1CAEE4FC0097FDB5 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				FA2BE5CF1CB549E1007C0B48 /* Food */,
+				FA2BE5D01CB549E9007C0B48 /* Display */,
+				FA2BE5D21CB549F4007C0B48 /* Band */,
+				FA2BE5D11CB549EE007C0B48 /* Performance */,
+				FA2BE5D31CB549F8007C0B48 /* Stage */,
 				FAA39B4A1C9D330E00A1B697 /* map.jpg */,
 				7E859FB61CB0311000EDB2E6 /* Right to map.pdf */,
 				7E859FB41CB0306100EDB2E6 /* Left to map.pdf */,
@@ -1014,6 +1021,42 @@
 				7EF2D8CA1C9D4E7C008F76E8 /* 小講堂 */,
 			);
 			name = "1日目";
+			sourceTree = "<group>";
+		};
+		FA2BE5CF1CB549E1007C0B48 /* Food */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Food;
+			sourceTree = "<group>";
+		};
+		FA2BE5D01CB549E9007C0B48 /* Display */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE5D41CB54A32007C0B48 /* 交通研究部マップ.png */,
+			);
+			name = Display;
+			sourceTree = "<group>";
+		};
+		FA2BE5D11CB549EE007C0B48 /* Performance */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Performance;
+			sourceTree = "<group>";
+		};
+		FA2BE5D21CB549F4007C0B48 /* Band */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Band;
+			sourceTree = "<group>";
+		};
+		FA2BE5D31CB549F8007C0B48 /* Stage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Stage;
 			sourceTree = "<group>";
 		};
 		FAA39B001C9D093200A1B697 /* 丸アイコン */ = {
@@ -1279,6 +1322,7 @@
 				FAD7F5A51CAFB7470075883A /* SeSDA〜聖光宇宙センター〜.png in Resources */,
 				7E859FF81CB16C4400EDB2E6 /* 数学研究会模擬講義-タイムテーブル.png in Resources */,
 				7EB62E3E1CAEAE0A0097FDB5 /* 鳥角.png in Resources */,
+				FA2BE5D51CB54A32007C0B48 /* 交通研究部マップ.png in Resources */,
 				7E859F891CB01E7B00EDB2E6 /* S-O-S バナー2.png in Resources */,
 				7E859FB51CB0306200EDB2E6 /* Left to map.pdf in Resources */,
 				7E4FB5971CB5436200A1547B /* icon-40@3x.png in Resources */,
