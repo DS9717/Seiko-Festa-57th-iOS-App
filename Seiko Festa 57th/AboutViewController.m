@@ -51,7 +51,7 @@
     if (cellNumber==0) {
         
         UIImageView *iconView = [[UIImageView alloc]init];
-        iconView.image = [UIImage imageNamed:@"Icon.png"];
+        iconView.image = [UIImage imageNamed:@"icon.png"];
         
         UILabel *designedBy = [[UILabel alloc]init];
         designedBy.text = @"Designed by";

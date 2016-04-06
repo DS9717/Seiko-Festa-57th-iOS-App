@@ -41,12 +41,14 @@
     hourC = hour;
     minuteC =minute;
     
+    featuredImageButton = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.width * 0.4)];
+    featuredImageButton2 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.width * 0.4)];
     
-    if ((month == 4 && day < 5) || (month == 4 && day == 5 && hour <= 9)) {
+    if ((month == 4 && day < 6) || (month == 4 && day == 6 && hour <= 8)) {
         
         organizationFeaturedImages = @[@"英語劇 教室劇 バナー1.png", @"ミュージックサロン バナー1.JPG", @"S-O-S バナー1.png", @"恋愛偏差値 バナー1.jpg", @"Flat Flight バナー1.jpg", @"WEAK-END バナー1.png", @"聖光祭からの脱出 バナー1.JPG", @"M&A バナー1.jpg", @"コミュ力の窓 バナー1.png", @"Showtime! バナー1.JPG", @"Яooz-Leef バナー1.jpg", @"のど自慢 バナー1.JPG", @"ボールぽこぽこ バナー.jpg", @"英語劇 バナー1.png", @"ぽんでっくす バナー1.jpg", @"地学天文学部 バナー1.jpg", @"Mr.聖光 バナー1.jpg", @"春夜祭 バナー.jpg"];
         
-    }else if ((month == 4 && day == 5 && hour >= 17) || (month == 4 && day == 6 && hour <= 9)){
+    }else if ((month == 4 && day == 6 && hour >= 17) || (month == 4 && day == 7 && hour <= 8)){
         
         organizationFeaturedImages = @[@"英語劇 教室劇 バナー2.png", @"Million Dollars バナー.jpg", @"弦楽オーケストラ部 バナー.png", @"恋愛偏差値 バナー2.jpg", @"剣道部 バナー.jpg", @"コミュ力の窓 バナー2.png", @"ぽんでっくす バナー2.jpg", @"S-O-S バナー2.png", @"M&A バナー2.jpg", @"英語劇 バナー2.png", @"Showtime! バナー2.JPG", @"WEAK-END バナー2.png", @"聖光祭からの脱出 バナー2.JPG", @"Flat Flight バナー2.jpg", @"のど自慢 バナー2.JPG", @"Яooz-Leef バナー2.jpg", @"Mr.聖光 バナー2.jpg", @"吹奏楽部 バナー.jpg", @"地学天文学部 バナー2.jpg", @"フォークダンス バナー.jpg", @"Grand Finale バナー.jpg"];
         
@@ -54,12 +56,21 @@
         
     }
     
+    if ((month == 4 && day == 6 && hour == 16 && 30 <= minute && minute <= 59) || (month == 4 && day == 7 && hour >= 17)) {
+        
+        welcomeBanner = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.width * 0.4)];
+        welcomeBanner.image = [UIImage imageNamed:@"Thank-you.png"];
+        [self.view addSubview:welcomeBanner];
+        
+    }else {
     
-    
-    featuredImageButton = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.width * 0.4)];
-    featuredImageButton2 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.width * 0.4)];
-    
-    [self featuredImageIn];
+        welcomeBanner = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.width * 0.4)];
+        welcomeBanner.image = [UIImage imageNamed:@"Welcome.png"];
+        [self.view addSubview:welcomeBanner];
+        [self performSelector:@selector(welcomeBannerOut) withObject:nil afterDelay:7.0];
+        [self performSelector:@selector(featuredImageIn) withObject:nil afterDelay:7.0];
+        
+    }
     
     self.navigationController.navigationBar.translucent = NO;
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:140.0/255.0 green:23.0/255.0 blue:26.0/255.0 alpha:1.0];
@@ -82,6 +93,9 @@
     UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc]init];
     backButtonItem.title = @"";
     self.navigationItem.backBarButtonItem = backButtonItem;
+    
+    //起動画面で非表示にしていたステータスバーを表示
+    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
     
 }
 
@@ -1532,9 +1546,9 @@
     minute=[[dateString substringWithRange:NSMakeRange(14, 2)]intValue];
 
     
-    if (month == 4 && day == 5) {
+    if (month == 4 && day == 6) {
         
-        if (hour == 10 && 0 <= minute && minute <= 29) {
+        if ((hour == 9) || (hour == 10 && 0 <= minute && minute <= 29)) {
             organizationFeaturedImages = @[@"英語劇 教室劇 バナー1.png", @"ミュージックサロン バナー1.JPG", @"S-O-S バナー1.png", @"恋愛偏差値 バナー1.jpg"];
         }else if (hour == 10 && 30 <= minute && minute <= 59) {
             organizationFeaturedImages = @[@"英語劇 教室劇 バナー1.png", @"ミュージックサロン バナー1.JPG", @"S-O-S バナー1.png", @"Flat Flight バナー1.jpg"];
@@ -1557,14 +1571,14 @@
         }else if (hour == 15 && 0 <= minute && minute <= 29) {
             organizationFeaturedImages = @[@"英語劇 バナー1.png", @"春夜祭 バナー.jpg"];
         }else if ((hour == 15 && 30 <= minute && minute <= 59) || (hour == 16 && 0 <= minute && minute <= 29)) {
-            organizationFeaturedImages = @[@"春夜祭 バナー.jpg", @"春夜祭 バナー.jpg"];
+
         }else if (hour == 16 && 30 <= minute && minute <= 59){
-            
+        
         }
     
-    }else if (month == 4 && day == 6) {
+    }else if (month == 4 && day == 7) {
         
-        if (hour == 10 && 0 <= minute && minute <= 29) {
+        if ((hour == 9) || (hour == 10 && 0 <= minute && minute <= 29)) {
             organizationFeaturedImages = @[@"英語劇 教室劇 バナー2.png", @"Million Dollars バナー.jpg", @"弦楽オーケストラ部 バナー.png", @"恋愛偏差値 バナー2.jpg", @"剣道部 バナー.jpg"];
         }else if (hour == 10 && 30 <= minute && minute <= 59) {
             organizationFeaturedImages = @[@"英語劇 教室劇 バナー2.png", @"Million Dollars バナー.jpg", @"弦楽オーケストラ部 バナー.png", @"コミュ力の窓 バナー2.png", @"ぽんでっくす バナー2.jpg", @"剣道部 バナー.jpg"];
@@ -1585,7 +1599,7 @@
         }else if (hour == 14 && 30 <= minute && minute <= 59) {
             organizationFeaturedImages = @[@"Mr.聖光 バナー2.jpg", @"吹奏楽部 バナー.jpg", @"フォークダンス バナー.jpg", @"Grand Finale バナー.jpg"];
         }else if (hour == 15 || hour == 16) {
-            organizationFeaturedImages = @[@"Grand Finale バナー.jpg", @"Grand Finale バナー.jpg"];
+        
         }else if (hour >= 17) {
             
         }
@@ -1740,6 +1754,19 @@
     [bannerButton addTarget:self
                      action:@selector(featuredDetail:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:bannerButton];
+    
+}
+
+-(void)welcomeBannerOut{
+    
+    UIViewAnimationOptions animeOptions = UIViewAnimationOptionCurveLinear;
+    
+    [UIView animateWithDuration:0.5 delay:0.0 options:animeOptions animations:^{
+        
+        welcomeBanner.frame = CGRectMake(- self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.width * 0.4);
+        
+    }completion:^(BOOL finished){
+    }];
     
 }
 
