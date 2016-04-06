@@ -26,7 +26,7 @@
 		7E4FB5971CB5436200A1547B /* icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4FB58B1CB5436200A1547B /* icon-40@3x.png */; };
 		7E4FB5991CB5436200A1547B /* icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4FB58D1CB5436200A1547B /* icon-60@2x.png */; };
 		7E4FB59A1CB5436200A1547B /* icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4FB58E1CB5436200A1547B /* icon-60@3x.png */; };
-		7E4FB59B1CB5436200A1547B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4FB58F1CB5436200A1547B /* icon.png */; };
+		7E4FB59D1CB5463B00A1547B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4FB59C1CB5463B00A1547B /* Icon.png */; };
 		7E859F491CB00A4000EDB2E6 /* Flat Flight バナー1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E859F441CB00A4000EDB2E6 /* Flat Flight バナー1.jpg */; };
 		7E859F4A1CB00A4000EDB2E6 /* M&A バナー1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E859F451CB00A4000EDB2E6 /* M&A バナー1.jpg */; };
 		7E859F4C1CB00A4000EDB2E6 /* Яooz-Leef バナー1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E859F471CB00A4000EDB2E6 /* Яooz-Leef バナー1.jpg */; };
@@ -283,7 +283,7 @@
 		7E4FB58B1CB5436200A1547B /* icon-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40@3x.png"; sourceTree = "<group>"; };
 		7E4FB58D1CB5436200A1547B /* icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60@2x.png"; sourceTree = "<group>"; };
 		7E4FB58E1CB5436200A1547B /* icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60@3x.png"; sourceTree = "<group>"; };
-		7E4FB58F1CB5436200A1547B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		7E4FB59C1CB5463B00A1547B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		7E859F441CB00A4000EDB2E6 /* Flat Flight バナー1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Flat Flight バナー1.jpg"; sourceTree = "<group>"; };
 		7E859F451CB00A4000EDB2E6 /* M&A バナー1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "M&A バナー1.jpg"; sourceTree = "<group>"; };
 		7E859F471CB00A4000EDB2E6 /* Яooz-Leef バナー1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Яooz-Leef バナー1.jpg"; sourceTree = "<group>"; };
@@ -535,7 +535,7 @@
 		7E0DC8BA1C9D7E5900B45F37 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				7E4FB58F1CB5436200A1547B /* icon.png */,
+				7E4FB59C1CB5463B00A1547B /* Icon.png */,
 				7E4FB5881CB5436200A1547B /* icon-29@2x.png */,
 				7E4FB5891CB5436200A1547B /* icon-29@3x.png */,
 				7E4FB58A1CB5436200A1547B /* icon-40@2x.png */,
@@ -1315,7 +1315,6 @@
 				7EB62E841CAEB0410097FDB5 /* The 笑-1 GP.png in Resources */,
 				7E859F931CB01E8F00EDB2E6 /* Flat Flight バナー2.jpg in Resources */,
 				7E859F8C1CB01E7B00EDB2E6 /* フォークダンス バナー.jpg in Resources */,
-				7E4FB59B1CB5436200A1547B /* icon.png in Resources */,
 				7EB62E3A1CAEAE0A0097FDB5 /* 塩焼きそば-麺’sRUNRUN.png in Resources */,
 				7E859FCA1CB16BCA00EDB2E6 /* ボールぽこぽこ-タイムテーブル.png in Resources */,
 				FAD7F5AE1CAFB7470075883A /* コンピュータ部.png in Resources */,
@@ -1343,6 +1342,7 @@
 				7E85A0151CB16CAE00EDB2E6 /* ○○男子No.1決定戦-タイムテーブル2.png in Resources */,
 				7E859FDA1CB16BF000EDB2E6 /* The-笑-1-GP-タイムテーブル.png in Resources */,
 				FAD7F5C81CAFB7470075883A /* 物理科学部.png in Resources */,
+				7E4FB59D1CB5463B00A1547B /* Icon.png in Resources */,
 				7EB62E721CAEB0170097FDB5 /* 少林寺拳法部演武会.png in Resources */,
 				FAD7F5A61CAFB7470075883A /* Shockers.png in Resources */,
 				7E859FDC1CB16BF000EDB2E6 /* コミュ力の窓-タイムテーブル.png in Resources */,
