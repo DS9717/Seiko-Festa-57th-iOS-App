@@ -53,6 +53,10 @@
         UIImageView *iconView = [[UIImageView alloc]init];
         iconView.image = [UIImage imageNamed:@"Icon.png"];
         
+        UILabel *seikoFesta = [[UILabel alloc]init];
+        seikoFesta.text = @"Seiko Festa";
+        seikoFesta.textAlignment = NSTextAlignmentCenter;
+        
         UILabel *designedBy = [[UILabel alloc]init];
         designedBy.text = @"Designed by";
         designedBy.textAlignment = NSTextAlignmentCenter;
@@ -70,7 +74,10 @@
             
             iconView.frame = CGRectMake(110, 70, 100, 100);
             
-            designedBy.frame = CGRectMake(0, 300, self.view.bounds.size.width, 20);
+            seikoFesta.frame = CGRectMake(0, 180, self.view.bounds.size.width, 22);
+            seikoFesta.font = designedBy.font = [UIFont fontWithName:@"MyriadPro-Regular" size:22];
+            
+            designedBy.frame = CGRectMake(0, 320, self.view.bounds.size.width, 20);
             designedBy.font = [UIFont fontWithName:@"MyriadPro-Regular" size:18];
             
             designers.frame = CGRectMake(0, 350, self.view.bounds.size.width, 20);
@@ -84,6 +91,7 @@
         }
         
         [self.view addSubview:iconView];
+        [self.view addSubview:seikoFesta];
         [self.view addSubview:designedBy];
         [self.view addSubview:designers];
         
@@ -95,7 +103,7 @@
         access.image = [UIImage imageNamed:@"Access.png"];
         
         UITextView *textView = [[UITextView alloc]init];
-        textView.text = @"聖光学院中学校高等学校\n\n〒231-0837\n横浜市中区滝之上100番地\n(Tel) 045-621-2051\nJR根岸線山手駅徒歩8分";
+        textView.text = @"4/30 - 5/1\n聖光学院中学校高等学校\n\n〒231-0837\n横浜市中区滝之上100番地\n(Tel) 045-621-2051\nJR根岸線山手駅徒歩8分";
         textView.font = [UIFont fontWithName:@"MyriadPro-Regular" size:16];
         textView.editable = NO;
         textView.selectable=NO;
