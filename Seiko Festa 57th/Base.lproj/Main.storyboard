@@ -179,11 +179,11 @@
             </objects>
             <point key="canvasLocation" x="4447" y="1028"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--ホーム-->
         <scene sceneID="ojU-gv-U6K">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I9R-Li-dhV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="zgH-Qv-don"/>
+                    <tabBarItem key="tabBarItem" title="ホーム" image="TabBar1" id="zgH-Qv-don"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ub2-49-M36">
@@ -220,11 +220,11 @@
             </objects>
             <point key="canvasLocation" x="2692" y="287"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--タイムテーブル-->
         <scene sceneID="TRv-5T-wDz">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J7F-Uo-pEd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" systemItem="recents" id="jFn-JB-Ugd"/>
+                    <tabBarItem key="tabBarItem" title="タイムテーブル" image="TabBar2" id="jFn-JB-Ugd"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bgN-U6-lZH">
@@ -240,11 +240,11 @@
             </objects>
             <point key="canvasLocation" x="3122" y="1028"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--インフォ-->
         <scene sceneID="sxb-Ei-PuW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FOF-Se-57I" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="more" id="JV0-Bf-eaf"/>
+                    <tabBarItem key="tabBarItem" title="インフォ" image="TabBar3" id="JV0-Bf-eaf"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="G9D-TJ-mXh">
@@ -261,6 +261,11 @@
             <point key="canvasLocation" x="3122" y="1735"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TabBar1" width="25" height="25"/>
+        <image name="TabBar2" width="25" height="25"/>
+        <image name="TabBar3" width="25" height="25"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="wgY-w8-4fA"/>
     </inferredMetricsTieBreakers>
