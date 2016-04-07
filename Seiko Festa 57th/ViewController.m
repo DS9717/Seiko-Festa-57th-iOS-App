@@ -1506,7 +1506,7 @@
     
     buttonFive11Label = [[UILabel alloc]initWithFrame:CGRectMake(space + (space + length) * 10, space + length + spaceBelow, length, buttonLabelFont + 1)];
     buttonFive11Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
-    buttonFive11Label.text = @"S.O.S";
+    buttonFive11Label.text = @"S-O-S";
     buttonFive11Label.numberOfLines = 0;
     [buttonFive11Label sizeToFit];
     [scrollView5 addSubview:buttonFive11Label];
