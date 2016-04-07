@@ -31,8 +31,6 @@
 		7E4FB5A91CB6870800A1547B /* Home@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4FB5A81CB6870800A1547B /* Home@3x.png */; };
 		7E4FB5B01CB689E400A1547B /* More@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4FB5AE1CB689E300A1547B /* More@2x.png */; };
 		7E4FB5B11CB689E400A1547B /* More@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4FB5AF1CB689E400A1547B /* More@3x.png */; };
-		7E4FB5B31CB68C1B00A1547B /* More-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4FB5B21CB68C1B00A1547B /* More-50.png */; };
-		7E4FB5BB1CB6963B00A1547B /* TimetableS@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4FB5BA1CB6963B00A1547B /* TimetableS@2x.png */; };
 		7E859F491CB00A4000EDB2E6 /* Flat Flight バナー1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E859F441CB00A4000EDB2E6 /* Flat Flight バナー1.jpg */; };
 		7E859F4A1CB00A4000EDB2E6 /* M&A バナー1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E859F451CB00A4000EDB2E6 /* M&A バナー1.jpg */; };
 		7E859F4C1CB00A4000EDB2E6 /* Яooz-Leef バナー1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E859F471CB00A4000EDB2E6 /* Яooz-Leef バナー1.jpg */; };
@@ -132,7 +130,6 @@
 		7E85A0371CB16CDC00EDB2E6 /* 恋愛偏差値-タイムテーブル2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A0341CB16CDC00EDB2E6 /* 恋愛偏差値-タイムテーブル2.png */; };
 		7E85A03B1CB16CE800EDB2E6 /* 少林寺拳法部演武会-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A0391CB16CE800EDB2E6 /* 少林寺拳法部演武会-タイムテーブル.png */; };
 		7E85A03D1CB16CF400EDB2E6 /* 剣道部-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A03C1CB16CF400EDB2E6 /* 剣道部-タイムテーブル.png */; };
-		7E85A03F1CB16E3C00EDB2E6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E85A03E1CB16E3C00EDB2E6 /* ViewController.m */; };
 		7E85A0411CB171EE00EDB2E6 /* S-O-S-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A0401CB171EE00EDB2E6 /* S-O-S-タイムテーブル.png */; };
 		7E85A0431CB1720200EDB2E6 /* S-O-S-タイムテーブル2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A0421CB1720200EDB2E6 /* S-O-S-タイムテーブル2.png */; };
 		7E85A0451CB2EB1600EDB2E6 /* とにかく明るいFes村.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A0441CB2EB1600EDB2E6 /* とにかく明るいFes村.png */; };
@@ -146,9 +143,14 @@
 		7E85A06D1CB4210D00EDB2E6 /* Access.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A06C1CB4210D00EDB2E6 /* Access.png */; };
 		7E85A06F1CB42C2D00EDB2E6 /* 英語劇 バナー1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A06E1CB42C2D00EDB2E6 /* 英語劇 バナー1.png */; };
 		7E85A0711CB42C5700EDB2E6 /* 英語劇 バナー2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A0701CB42C5700EDB2E6 /* 英語劇 バナー2.png */; };
-		7E9F1F6F1CB6994B000F8A0D /* TimetableSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E9F1F6E1CB6994B000F8A0D /* TimetableSelected.png */; };
 		7E9F1F721CB69BC8000F8A0D /* Timetable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E9F1F701CB69BC8000F8A0D /* Timetable@2x.png */; };
 		7E9F1F731CB69BC8000F8A0D /* Timetable@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E9F1F711CB69BC8000F8A0D /* Timetable@3x.png */; };
+		7E9F1F821CB6A9AA000F8A0D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9F1F811CB6A9AA000F8A0D /* ViewController.m */; };
+		7E9F1F8E1CB6B1EE000F8A0D /* Band icon vector enji3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7E9F1F891CB6B1EE000F8A0D /* Band icon vector enji3.pdf */; };
+		7E9F1F8F1CB6B1EE000F8A0D /* Display icon vector enji3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7E9F1F8A1CB6B1EE000F8A0D /* Display icon vector enji3.pdf */; };
+		7E9F1F901CB6B1EE000F8A0D /* Food icon vector enji3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7E9F1F8B1CB6B1EE000F8A0D /* Food icon vector enji3.pdf */; };
+		7E9F1F911CB6B1EE000F8A0D /* Performance icon vector enji3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7E9F1F8C1CB6B1EE000F8A0D /* Performance icon vector enji3.pdf */; };
+		7E9F1F921CB6B1EE000F8A0D /* Stage icon vector enji3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7E9F1F8D1CB6B1EE000F8A0D /* Stage icon vector enji3.pdf */; };
 		7EB62DF11CAAE28E0097FDB5 /* Blur.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB62DF01CAAE28E0097FDB5 /* Blur.png */; };
 		7EB62DF51CAAE70A0097FDB5 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB62DF41CAAE70A0097FDB5 /* line.png */; };
 		7EB62E001CAAEF540097FDB5 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB62DFF1CAAEF540097FDB5 /* ShareViewController.m */; };
@@ -310,8 +312,6 @@
 		7E4FB5A81CB6870800A1547B /* Home@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home@3x.png"; sourceTree = "<group>"; };
 		7E4FB5AE1CB689E300A1547B /* More@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "More@2x.png"; sourceTree = "<group>"; };
 		7E4FB5AF1CB689E400A1547B /* More@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "More@3x.png"; sourceTree = "<group>"; };
-		7E4FB5B21CB68C1B00A1547B /* More-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "More-50.png"; sourceTree = "<group>"; };
-		7E4FB5BA1CB6963B00A1547B /* TimetableS@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TimetableS@2x.png"; sourceTree = "<group>"; };
 		7E859F441CB00A4000EDB2E6 /* Flat Flight バナー1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Flat Flight バナー1.jpg"; sourceTree = "<group>"; };
 		7E859F451CB00A4000EDB2E6 /* M&A バナー1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "M&A バナー1.jpg"; sourceTree = "<group>"; };
 		7E859F471CB00A4000EDB2E6 /* Яooz-Leef バナー1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Яooz-Leef バナー1.jpg"; sourceTree = "<group>"; };
@@ -412,7 +412,6 @@
 		7E85A0341CB16CDC00EDB2E6 /* 恋愛偏差値-タイムテーブル2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "恋愛偏差値-タイムテーブル2.png"; sourceTree = "<group>"; };
 		7E85A0391CB16CE800EDB2E6 /* 少林寺拳法部演武会-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "少林寺拳法部演武会-タイムテーブル.png"; sourceTree = "<group>"; };
 		7E85A03C1CB16CF400EDB2E6 /* 剣道部-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "剣道部-タイムテーブル.png"; sourceTree = "<group>"; };
-		7E85A03E1CB16E3C00EDB2E6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7E85A0401CB171EE00EDB2E6 /* S-O-S-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "S-O-S-タイムテーブル.png"; sourceTree = "<group>"; };
 		7E85A0421CB1720200EDB2E6 /* S-O-S-タイムテーブル2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "S-O-S-タイムテーブル2.png"; sourceTree = "<group>"; };
 		7E85A0441CB2EB1600EDB2E6 /* とにかく明るいFes村.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "とにかく明るいFes村.png"; sourceTree = "<group>"; };
@@ -428,9 +427,14 @@
 		7E85A06C1CB4210D00EDB2E6 /* Access.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Access.png; sourceTree = "<group>"; };
 		7E85A06E1CB42C2D00EDB2E6 /* 英語劇 バナー1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "英語劇 バナー1.png"; sourceTree = "<group>"; };
 		7E85A0701CB42C5700EDB2E6 /* 英語劇 バナー2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "英語劇 バナー2.png"; sourceTree = "<group>"; };
-		7E9F1F6E1CB6994B000F8A0D /* TimetableSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimetableSelected.png; sourceTree = "<group>"; };
 		7E9F1F701CB69BC8000F8A0D /* Timetable@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Timetable@2x.png"; sourceTree = "<group>"; };
 		7E9F1F711CB69BC8000F8A0D /* Timetable@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Timetable@3x.png"; sourceTree = "<group>"; };
+		7E9F1F811CB6A9AA000F8A0D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7E9F1F891CB6B1EE000F8A0D /* Band icon vector enji3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Band icon vector enji3.pdf"; sourceTree = "<group>"; };
+		7E9F1F8A1CB6B1EE000F8A0D /* Display icon vector enji3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Display icon vector enji3.pdf"; sourceTree = "<group>"; };
+		7E9F1F8B1CB6B1EE000F8A0D /* Food icon vector enji3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Food icon vector enji3.pdf"; sourceTree = "<group>"; };
+		7E9F1F8C1CB6B1EE000F8A0D /* Performance icon vector enji3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Performance icon vector enji3.pdf"; sourceTree = "<group>"; };
+		7E9F1F8D1CB6B1EE000F8A0D /* Stage icon vector enji3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Stage icon vector enji3.pdf"; sourceTree = "<group>"; };
 		7EB62DF01CAAE28E0097FDB5 /* Blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blur.png; sourceTree = "<group>"; };
 		7EB62DF41CAAE70A0097FDB5 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
 		7EB62DFE1CAAEF540097FDB5 /* ShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
@@ -628,7 +632,7 @@
 				7E4D55B01C49315C00BFE19C /* AppDelegate.m */,
 				7E4D55B51C49315C00BFE19C /* Main.storyboard */,
 				7E4D55B21C49315C00BFE19C /* ViewController.h */,
-				7E85A03E1CB16E3C00EDB2E6 /* ViewController.m */,
+				7E9F1F811CB6A9AA000F8A0D /* ViewController.m */,
 				FABB0BDD1C560EEC0009ABAA /* ListView.h */,
 				FABB0BDE1C560EEC0009ABAA /* ListView.m */,
 				FABB0BE01C560F040009ABAA /* DetailView.h */,
@@ -679,15 +683,6 @@
 		7E4D55D11C4944F300BFE19C /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				7E4FB5A21CB6834900A1547B /* Home@2x.png */,
-				7E4FB5A81CB6870800A1547B /* Home@3x.png */,
-				7E9F1F701CB69BC8000F8A0D /* Timetable@2x.png */,
-				7E9F1F711CB69BC8000F8A0D /* Timetable@3x.png */,
-				7E4FB5BA1CB6963B00A1547B /* TimetableS@2x.png */,
-				7E9F1F6E1CB6994B000F8A0D /* TimetableSelected.png */,
-				7E4FB5AE1CB689E300A1547B /* More@2x.png */,
-				7E4FB5AF1CB689E400A1547B /* More@3x.png */,
-				7E4FB5B21CB68C1B00A1547B /* More-50.png */,
 				7EB62DF41CAAE70A0097FDB5 /* line.png */,
 				7E859FB01CB02C3B00EDB2E6 /* Right to List.pdf */,
 				7E85A06C1CB4210D00EDB2E6 /* Access.png */,
@@ -697,6 +692,7 @@
 				7EF2D8C81C9D4E6B008F76E8 /* タイムテーブル */,
 				7EB62EBD1CAEE4FC0097FDB5 /* Map */,
 				7EB62EBB1CAEE4A50097FDB5 /* SNS */,
+				7E9F1F741CB6A2E5000F8A0D /* Tab Bar Icons */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -919,6 +915,19 @@
 			name = "講堂";
 			sourceTree = "<group>";
 		};
+		7E9F1F741CB6A2E5000F8A0D /* Tab Bar Icons */ = {
+			isa = PBXGroup;
+			children = (
+				7E4FB5A21CB6834900A1547B /* Home@2x.png */,
+				7E4FB5A81CB6870800A1547B /* Home@3x.png */,
+				7E9F1F701CB69BC8000F8A0D /* Timetable@2x.png */,
+				7E9F1F711CB69BC8000F8A0D /* Timetable@3x.png */,
+				7E4FB5AE1CB689E300A1547B /* More@2x.png */,
+				7E4FB5AF1CB689E400A1547B /* More@3x.png */,
+			);
+			name = "Tab Bar Icons";
+			sourceTree = "<group>";
+		};
 		7EB62EBB1CAEE4A50097FDB5 /* SNS */ = {
 			isa = PBXGroup;
 			children = (
@@ -933,6 +942,11 @@
 		7EB62EBC1CAEE4E30097FDB5 /* Category Icons */ = {
 			isa = PBXGroup;
 			children = (
+				7E9F1F8B1CB6B1EE000F8A0D /* Food icon vector enji3.pdf */,
+				7E9F1F8A1CB6B1EE000F8A0D /* Display icon vector enji3.pdf */,
+				7E9F1F891CB6B1EE000F8A0D /* Band icon vector enji3.pdf */,
+				7E9F1F8C1CB6B1EE000F8A0D /* Performance icon vector enji3.pdf */,
+				7E9F1F8D1CB6B1EE000F8A0D /* Stage icon vector enji3.pdf */,
 				7E85A0511CB3FC7600EDB2E6 /* Food icon vector enji.pdf */,
 				7E85A0531CB3FD7E00EDB2E6 /* Display icon vector enji.pdf */,
 				7E85A0551CB3FE3900EDB2E6 /* Band icon vector enji.pdf */,
@@ -1320,7 +1334,7 @@
 				TargetAttributes = {
 					7E4D55A71C49315B00BFE19C = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = 3GKM8LRN87;
+						DevelopmentTeam = TAE9KC7SWK;
 					};
 					7E4D55C01C49315C00BFE19C = {
 						CreatedOnToolsVersion = 6.2;
@@ -1446,7 +1460,6 @@
 				7E85A03D1CB16CF400EDB2E6 /* 剣道部-タイムテーブル.png in Resources */,
 				7E85A01A1CB16CAE00EDB2E6 /* ギネスに挑戦！！-タイムテーブル2.png in Resources */,
 				7EB62E691CAEAF8D0097FDB5 /* 吹奏楽部.png in Resources */,
-				7E4FB5B31CB68C1B00A1547B /* More-50.png in Resources */,
 				FA8174211CB2961A0024C957 /* 魔女の卓球便.png in Resources */,
 				7E85A0191CB16CAE00EDB2E6 /* The-笑-1-GP-タイムテーブル2.png in Resources */,
 				7EB62E701CAEAFDD0097FDB5 /* 恋愛偏差値.png in Resources */,
@@ -1463,7 +1476,9 @@
 				FAE012F91CB0877800E43DFB /* Flapjack.png in Resources */,
 				7EB62E421CAEAE0A0097FDB5 /* 麺☆恋.png in Resources */,
 				7EB62E541CAEAF4D0097FDB5 /* WEAK-END.png in Resources */,
+				7E9F1F901CB6B1EE000F8A0D /* Food icon vector enji3.pdf in Resources */,
 				FAD7F5B01CAFB7470075883A /* ぶいえいす.png in Resources */,
+				7E9F1F8E1CB6B1EE000F8A0D /* Band icon vector enji3.pdf in Resources */,
 				7E859FDD1CB16BF000EDB2E6 /* のど自慢-タイムテーブル.png in Resources */,
 				7EB62E381CAEAE0A0097FDB5 /* クレープブレーク.png in Resources */,
 				7E859FC51CB15A1400EDB2E6 /* 春夜祭 バナー.jpg in Resources */,
@@ -1483,11 +1498,11 @@
 				FAD7F5B21CAFB7470075883A /* ボーカロイド研究会.png in Resources */,
 				7E85A0581CB3FEC900EDB2E6 /* Performance icon vector enji.pdf in Resources */,
 				7E4FB5821CB532E500A1547B /* Thank-you.png in Resources */,
-				7E9F1F6F1CB6994B000F8A0D /* TimetableSelected.png in Resources */,
 				FAD7F5C01CAFB7470075883A /* 聖光祭からの脱出.png in Resources */,
 				FA2E4FDD1CB69C5400578B12 /* Juicy-Juicerマップ.png in Resources */,
 				FA2E4FDC1CB69C5400578B12 /* chocolate-πマップ.png in Resources */,
 				7E4FB59A1CB5436200A1547B /* icon-60@3x.png in Resources */,
+				7E9F1F921CB6B1EE000F8A0D /* Stage icon vector enji3.pdf in Resources */,
 				7E4D55B91C49315C00BFE19C /* Images.xcassets in Resources */,
 				7EB62E4F1CAEAF4D0097FDB5 /* Addiction？.png in Resources */,
 				FAE012F71CB086EA00E43DFB /* chocolat-π.png in Resources */,
@@ -1518,12 +1533,14 @@
 				FA2E4FD41CB69C1D00578B12 /* 体育館マップ.png in Resources */,
 				7E859FCB1CB16BCA00EDB2E6 /* ミュージックサロン-タイムテーブル.png in Resources */,
 				7EB62E831CAEB0410097FDB5 /* Seiko-Dance-Performance.png in Resources */,
+				7E9F1F8F1CB6B1EE000F8A0D /* Display icon vector enji3.pdf in Resources */,
 				7E85A0061CB16CA000EDB2E6 /* Grand-Finale-タイムテーブル.png in Resources */,
 				7E4FB5B11CB689E400A1547B /* More@3x.png in Resources */,
 				7E85A00A1CB16CA000EDB2E6 /* 吹奏楽部-タイムテーブル.png in Resources */,
 				FAD7F5B41CAFB7470075883A /* リアル野球盤.png in Resources */,
 				7EB62E8A1CAEB0410097FDB5 /* 替え歌選手権.png in Resources */,
 				FA8174231CB296C70024C957 /* 数学研究会模擬講義.png in Resources */,
+				7E9F1F911CB6B1EE000F8A0D /* Performance icon vector enji3.pdf in Resources */,
 				7E85A0251CB16CBC00EDB2E6 /* M&A-タイムテーブル2.png in Resources */,
 				FAD7F5B71CAFB7470075883A /* 横浜漫才フィルム.png in Resources */,
 				7E859F771CB01DEE00EDB2E6 /* Grand Finale バナー.jpg in Resources */,
@@ -1533,7 +1550,6 @@
 				7EB62E6A1CAEAF8D0097FDB5 /* 天使の歌声.png in Resources */,
 				7E85A0301CB16CCD00EDB2E6 /* Яooz-Leef-タイムテーブル2.png in Resources */,
 				7E4FB5961CB5436200A1547B /* icon-40@2x.png in Resources */,
-				7E4FB5BB1CB6963B00A1547B /* TimetableS@2x.png in Resources */,
 				7EB62E561CAEAF4D0097FDB5 /* エストレーラ.png in Resources */,
 				7EB62E871CAEB0410097FDB5 /* のど自慢.png in Resources */,
 				7E85A01D1CB16CAE00EDB2E6 /* 替え劇〜赤ずきん〜-タイムテーブル2.png in Resources */,
@@ -1616,9 +1632,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E85A0691CB40F1A00EDB2E6 /* AboutViewController.m in Sources */,
-				7E85A03F1CB16E3C00EDB2E6 /* ViewController.m in Sources */,
 				FABB0BDF1C560EEC0009ABAA /* ListView.m in Sources */,
 				7E85A0481CB3EC9300EDB2E6 /* InfoViewController.m in Sources */,
+				7E9F1F821CB6A9AA000F8A0D /* ViewController.m in Sources */,
 				7E3EB47B1C79DAB900F3B2A0 /* TimetableViewController.m in Sources */,
 				FABB0BE21C560F040009ABAA /* DetailView.m in Sources */,
 				7EB62E001CAAEF540097FDB5 /* ShareViewController.m in Sources */,

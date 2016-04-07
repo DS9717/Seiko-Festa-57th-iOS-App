@@ -44,11 +44,11 @@
     featuredImageButton = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.width * 0.4)];
     featuredImageButton2 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.width * 0.4)];
     
-    if ((month == 4 && day < 6) || (month == 4 && day == 6 && hour <= 8)) {
+    if ((month == 4 && day < 8) || (month == 4 && day == 8 && hour <= 8)) {
         
         organizationFeaturedImages = @[@"英語劇 教室劇 バナー1.png", @"ミュージックサロン バナー1.JPG", @"S-O-S バナー1.png", @"恋愛偏差値 バナー1.jpg", @"Flat Flight バナー1.jpg", @"WEAK-END バナー1.png", @"聖光祭からの脱出 バナー1.JPG", @"M&A バナー1.jpg", @"コミュ力の窓 バナー1.png", @"Showtime! バナー1.JPG", @"Яooz-Leef バナー1.jpg", @"のど自慢 バナー1.JPG", @"ボールぽこぽこ バナー.jpg", @"英語劇 バナー1.png", @"ぽんでっくす バナー1.jpg", @"地学天文学部 バナー1.jpg", @"Mr.聖光 バナー1.jpg", @"春夜祭 バナー.jpg"];
         
-    }else if ((month == 4 && day == 6 && hour >= 17) || (month == 4 && day == 7 && hour <= 8)){
+    }else if ((month == 4 && day == 8 && hour >= 17) || (month == 4 && day == 9 && hour <= 8)){
         
         organizationFeaturedImages = @[@"英語劇 教室劇 バナー2.png", @"Million Dollars バナー.jpg", @"弦楽オーケストラ部 バナー.png", @"恋愛偏差値 バナー2.jpg", @"剣道部 バナー.jpg", @"コミュ力の窓 バナー2.png", @"ぽんでっくす バナー2.jpg", @"S-O-S バナー2.png", @"M&A バナー2.jpg", @"英語劇 バナー2.png", @"Showtime! バナー2.JPG", @"WEAK-END バナー2.png", @"聖光祭からの脱出 バナー2.JPG", @"Flat Flight バナー2.jpg", @"のど自慢 バナー2.JPG", @"Яooz-Leef バナー2.jpg", @"Mr.聖光 バナー2.jpg", @"吹奏楽部 バナー.jpg", @"地学天文学部 バナー2.jpg", @"フォークダンス バナー.jpg", @"Grand Finale バナー.jpg"];
         
@@ -56,7 +56,7 @@
         
     }
     
-    if ((month == 4 && day == 6 && hour == 16 && 30 <= minute && minute <= 59) || (month == 4 && day == 7 && hour >= 17)) {
+    if ((month == 4 && day == 8 && hour == 16 && 30 <= minute && minute <= 59) || (month == 4 && day == 9 && hour >= 17)) {
         
         welcomeBanner = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.width * 0.4)];
         welcomeBanner.image = [UIImage imageNamed:@"Thank-you.png"];
@@ -161,6 +161,7 @@
                                                      allButtonLength * 1.5,
                                                      allButtonLength)];
     [Food setImage:[UIImage imageNamed:@"Food-icon"] forState:UIControlStateNormal];
+   
     [Food addTarget:self action:@selector(viewAll1:) forControlEvents:UIControlEventTouchUpInside];
     [mainScrollView addSubview:Food];
     
@@ -1547,7 +1548,7 @@
     minute=[[dateString substringWithRange:NSMakeRange(14, 2)]intValue];
 
     
-    if (month == 4 && day == 6) {
+    if (month == 4 && day == 8) {
         
         if ((hour == 9) || (hour == 10 && 0 <= minute && minute <= 29)) {
             organizationFeaturedImages = @[@"英語劇 教室劇 バナー1.png", @"ミュージックサロン バナー1.JPG", @"S-O-S バナー1.png", @"恋愛偏差値 バナー1.jpg"];
@@ -1577,7 +1578,7 @@
         
         }
     
-    }else if (month == 4 && day == 7) {
+    }else if (month == 4 && day == 9) {
         
         if ((hour == 9) || (hour == 10 && 0 <= minute && minute <= 29)) {
             organizationFeaturedImages = @[@"英語劇 教室劇 バナー2.png", @"Million Dollars バナー.jpg", @"弦楽オーケストラ部 バナー.png", @"恋愛偏差値 バナー2.jpg", @"剣道部 バナー.jpg"];
@@ -1773,7 +1774,7 @@
 
 -(void)featuredDetail:(UIButton *)button{
     
-    if ((month == 4 && day < 6) || (month == 4 && day == 6 && hour <= 9)) {
+    if ((month == 4 && day < 8) || (month == 4 && day == 8 && hour <= 9)) {
         if (featuredImageButton.tag == 0) {
             whichList = @"display";
             flag = 1;
@@ -1829,7 +1830,7 @@
             whichList = @"stage";
             flag = 2;
         }
-    }else if ((month == 4 && day == 6) && (hour == 10 && 0 <= minute && minute <= 29)) {
+    }else if ((month == 4 && day == 8) && (hour == 10 && 0 <= minute && minute <= 29)) {
         if (featuredImageButton.tag == 0) {
             whichList = @"display";
             flag = 1;
@@ -1843,7 +1844,7 @@
             whichList = @"performance";
             flag = 6;
         }
-    }else if ((month == 4 && day == 6) && (hour == 10 && 30 <= minute && minute <= 59)) {
+    }else if ((month == 4 && day == 8) && (hour == 10 && 30 <= minute && minute <= 59)) {
         if (featuredImageButton.tag == 0) {
             whichList = @"display";
             flag = 1;
@@ -1857,7 +1858,7 @@
             whichList = @"band";
             flag = 2;
         }
-    }else if ((month == 4 && day == 6) && (hour == 11 && 0 <= minute && minute <= 29)) {
+    }else if ((month == 4 && day == 8) && (hour == 11 && 0 <= minute && minute <= 29)) {
         if (featuredImageButton.tag == 0) {
             whichList = @"display";
             flag = 1;
@@ -1871,7 +1872,7 @@
             whichList = @"band";
             flag = 7;
         }
-    }else if ((month == 4 && day == 6) && (hour == 11 && 30 <= minute && minute <= 59)) {
+    }else if ((month == 4 && day == 8) && (hour == 11 && 30 <= minute && minute <= 59)) {
         if (featuredImageButton.tag == 0) {
             whichList = @"display";
             flag = 1;
@@ -1885,7 +1886,7 @@
             whichList = @"band";
             flag = 1;
         }
-    }else if ((month == 4 && day == 6) && (hour == 12 && 0 <= minute && minute <= 29)) {
+    }else if ((month == 4 && day == 8) && (hour == 12 && 0 <= minute && minute <= 29)) {
         if (featuredImageButton.tag == 0) {
             whichList = @"performance";
             flag = 9;
@@ -1899,7 +1900,7 @@
             whichList = @"display";
             flag = 18;
         }
-    }else if ((month == 4 && day == 6) && (hour == 12 && 30 <= minute && minute <= 59)) {
+    }else if ((month == 4 && day == 8) && (hour == 12 && 30 <= minute && minute <= 59)) {
         if (featuredImageButton.tag == 0) {
             whichList = @"performance";
             flag = 9;
@@ -1913,7 +1914,7 @@
             whichList = @"display";
             flag = 18;
         }
-    }else if ((month == 4 && day == 6) && (hour == 13 && 0 <= minute && minute <= 29)) {
+    }else if ((month == 4 && day == 8) && (hour == 13 && 0 <= minute && minute <= 29)) {
         if (featuredImageButton.tag == 0) {
             whichList = @"performance";
             flag = 9;
@@ -1930,7 +1931,7 @@
             whichList = @"performance";
             flag = 3;
         }
-    }else if ((month == 4 && day == 6) && (hour == 13 && 30 <= minute && minute <= 59)) {
+    }else if ((month == 4 && day == 8) && (hour == 13 && 30 <= minute && minute <= 59)) {
         if (featuredImageButton.tag == 0) {
             whichList = @"performance";
             flag = 2;
@@ -1953,7 +1954,7 @@
             whichList = @"display";
             flag = 17;
         }
-    }else if ((month == 4 && day == 6) && (hour == 14 && 0 <= minute && minute <= 29)) {
+    }else if ((month == 4 && day == 8) && (hour == 14 && 0 <= minute && minute <= 29)) {
         if (featuredImageButton.tag == 0) {
             whichList = @"performance";
             flag = 2;
@@ -1973,7 +1974,7 @@
             whichList = @"stage";
             flag = 3;
         }
-    }else if ((month == 4 && day == 6) && (hour == 14 && 30 <= minute && minute <= 59)) {
+    }else if ((month == 4 && day == 8) && (hour == 14 && 30 <= minute && minute <= 59)) {
         if (featuredImageButton.tag == 0) {
             whichList = @"performance";
             flag = 2;
@@ -1987,7 +1988,7 @@
             whichList = @"stage";
             flag = 2;
         }
-    }else if ((month == 4 && day == 6) && (hour == 15 && 0 <= minute && minute <= 29)) {
+    }else if ((month == 4 && day == 8) && (hour == 15 && 0 <= minute && minute <= 29)) {
         if (featuredImageButton.tag == 0) {
             whichList = @"performance";
             flag = 2;
@@ -1995,7 +1996,7 @@
             whichList = @"stage";
             flag = 2;
         }
-    }else if ((month == 4 && day == 6) && ((hour == 15 && 30 <= minute && minute <= 59) || (hour == 16 && 0 <= minute && minute <= 29))) {
+    }else if ((month == 4 && day == 8) && ((hour == 15 && 30 <= minute && minute <= 59) || (hour == 16 && 0 <= minute && minute <= 29))) {
         if (featuredImageButton.tag == 0) {
             whichList = @"stage";
             flag = 2;
@@ -2003,11 +2004,11 @@
             whichList = @"stage";
             flag = 2;
         }
-    }else if ((month == 4 && day == 6) && (hour == 16 && 30 <= minute && minute <= 59)) {
+    }else if ((month == 4 && day == 8) && (hour == 16 && 30 <= minute && minute <= 59)) {
         
         
         
-    }else if ((month == 4 && day == 6 && hour >= 17) || (month == 4 && day == 7 && hour <= 9)){
+    }else if ((month == 4 && day == 8 && hour >= 17) || (month == 4 && day == 9 && hour <= 9)){
         if (featuredImageButton.tag == 0) {
             whichList = @"display";
             flag = 1;
@@ -2072,7 +2073,7 @@
             whichList = @"performance";
             flag = 1;
         }
-    }else if ((month == 4 && day == 7) && (hour == 10 && 0 <= minute && minute <= 29)) {
+    }else if ((month == 4 && day == 9) && (hour == 10 && 0 <= minute && minute <= 29)) {
         if (featuredImageButton.tag == 0) {
             whichList = @"display";
             flag = 1;
@@ -2089,7 +2090,7 @@
             whichList = @"performance";
             flag = 13;
         }
-    }else if ((month == 4 && day == 7) && (hour == 10 && 30 <= minute && minute <= 59)) {
+    }else if ((month == 4 && day == 9) && (hour == 10 && 30 <= minute && minute <= 59)) {
         if (featuredImageButton.tag == 0) {
             whichList = @"display";
             flag = 1;
@@ -2109,7 +2110,7 @@
             whichList = @"performance";
             flag = 13;
         }
-    }else if ((month == 4 && day == 7) && (hour == 11 && 0 <= minute && minute <= 29)) {
+    }else if ((month == 4 && day == 9) && (hour == 11 && 0 <= minute && minute <= 29)) {
         if (featuredImageButton.tag == 0) {
             whichList = @"display";
             flag = 1;
@@ -2129,7 +2130,7 @@
             whichList = @"performance";
             flag = 13;
         }
-    }else if ((month == 4 && day == 7) && (hour == 11 && 30 <= minute && minute <= 59)) {
+    }else if ((month == 4 && day == 9) && (hour == 11 && 30 <= minute && minute <= 59)) {
         if (featuredImageButton.tag == 0) {
             whichList = @"display";
             flag = 1;
@@ -2146,7 +2147,7 @@
             whichList = @"performance";
             flag = 13;
         }
-    }else if ((month == 4 && day == 7) && (hour == 12 && 0 <= minute && minute <= 29)) {
+    }else if ((month == 4 && day == 9) && (hour == 12 && 0 <= minute && minute <= 29)) {
         if (featuredImageButton.tag == 0) {
             whichList = @"performance";
             flag = 2;
@@ -2163,7 +2164,7 @@
             whichList = @"stage";
             flag = 11;
         }
-    }else if ((month == 4 && day == 7) && (hour == 12 && 30 <= minute && minute <= 59)) {
+    }else if ((month == 4 && day == 9) && (hour == 12 && 30 <= minute && minute <= 59)) {
         if (featuredImageButton.tag == 0) {
             whichList = @"performance";
             flag = 2;
@@ -2177,7 +2178,7 @@
             whichList = @"performance";
             flag = 13;
         }
-    }else if ((month == 4 && day == 7) && (hour == 13 && 0 <= minute && minute <= 29)) {
+    }else if ((month == 4 && day == 9) && (hour == 13 && 0 <= minute && minute <= 29)) {
         if (featuredImageButton.tag == 0) {
             whichList = @"performance";
             flag = 2;
@@ -2191,7 +2192,7 @@
             whichList = @"display";
             flag = 18;
         }
-    }else if ((month == 4 && day == 7) && (hour == 13 && 30 <= minute && minute <= 59)) {
+    }else if ((month == 4 && day == 9) && (hour == 13 && 30 <= minute && minute <= 59)) {
         if (featuredImageButton.tag == 0) {
             whichList = @"performance";
             flag = 2;
@@ -2211,7 +2212,7 @@
             whichList = @"display";
             flag = 17;
         }
-    }else if ((month == 4 && day == 7) && (hour == 14 && 0 <= minute && minute <= 29)) {
+    }else if ((month == 4 && day == 9) && (hour == 14 && 0 <= minute && minute <= 29)) {
         if (featuredImageButton.tag == 0) {
             whichList = @"stage";
             flag = 3;
@@ -2225,7 +2226,7 @@
             whichList = @"stage";
             flag = 1;
         }
-    }else if ((month == 4 && day == 7) && (hour == 14 && 30 <= minute && minute <= 59)) {
+    }else if ((month == 4 && day == 9) && (hour == 14 && 30 <= minute && minute <= 59)) {
         if (featuredImageButton.tag == 0) {
             whichList = @"stage";
             flag = 3;
@@ -2239,7 +2240,7 @@
             whichList = @"performance";
             flag = 1;
         }
-    }else if ((month == 4 && day == 7) && (hour == 15 || hour == 16)) {
+    }else if ((month == 4 && day == 9) && (hour == 15 || hour == 16)) {
         if (featuredImageButton.tag == 0) {
             whichList = @"performance";
             flag = 1;
@@ -2256,7 +2257,7 @@
 
 -(void)featuredDetail2:(UIButton *)button{
     
-    if ((month == 4 && day < 6) || (month == 4 && day == 6 && hour <= 9)) {
+    if ((month == 4 && day < 8) || (month == 4 && day == 8 && hour <= 9)) {
         if (featuredImageButton2.tag == 0) {
             whichList = @"display";
             flag = 1;
@@ -2312,7 +2313,7 @@
             whichList = @"stage";
             flag = 2;
         }
-    }else if ((month == 4 && day == 6) && (hour == 10 && 0 <= minute && minute <= 29)) {
+    }else if ((month == 4 && day == 8) && (hour == 10 && 0 <= minute && minute <= 29)) {
         if (featuredImageButton2.tag == 0) {
             whichList = @"display";
             flag = 1;
@@ -2326,7 +2327,7 @@
             whichList = @"performance";
             flag = 6;
         }
-    }else if ((month == 4 && day == 6) && (hour == 10 && 30 <= minute && minute <= 59)) {
+    }else if ((month == 4 && day == 8) && (hour == 10 && 30 <= minute && minute <= 59)) {
         if (featuredImageButton2.tag == 0) {
             whichList = @"display";
             flag = 1;
@@ -2340,7 +2341,7 @@
             whichList = @"band";
             flag = 2;
         }
-    }else if ((month == 4 && day == 6) && (hour == 11 && 0 <= minute && minute <= 29)) {
+    }else if ((month == 4 && day == 8) && (hour == 11 && 0 <= minute && minute <= 29)) {
         if (featuredImageButton2.tag == 0) {
             whichList = @"display";
             flag = 1;
@@ -2354,7 +2355,7 @@
             whichList = @"band";
             flag = 7;
         }
-    }else if ((month == 4 && day == 6) && (hour == 11 && 30 <= minute && minute <= 59)) {
+    }else if ((month == 4 && day == 8) && (hour == 11 && 30 <= minute && minute <= 59)) {
         if (featuredImageButton2.tag == 0) {
             whichList = @"display";
             flag = 1;
@@ -2368,7 +2369,7 @@
             whichList = @"band";
             flag = 1;
         }
-    }else if ((month == 4 && day == 6) && (hour == 12 && 0 <= minute && minute <= 29)) {
+    }else if ((month == 4 && day == 8) && (hour == 12 && 0 <= minute && minute <= 29)) {
         if (featuredImageButton2.tag == 0) {
             whichList = @"performance";
             flag = 9;
@@ -2382,7 +2383,7 @@
             whichList = @"display";
             flag = 18;
         }
-    }else if ((month == 4 && day == 6) && (hour == 12 && 30 <= minute && minute <= 59)) {
+    }else if ((month == 4 && day == 8) && (hour == 12 && 30 <= minute && minute <= 59)) {
         if (featuredImageButton2.tag == 0) {
             whichList = @"performance";
             flag = 9;
@@ -2396,7 +2397,7 @@
             whichList = @"display";
             flag = 18;
         }
-    }else if ((month == 4 && day == 6) && (hour == 13 && 0 <= minute && minute <= 29)) {
+    }else if ((month == 4 && day == 8) && (hour == 13 && 0 <= minute && minute <= 29)) {
         if (featuredImageButton2.tag == 0) {
             whichList = @"performance";
             flag = 9;
@@ -2413,7 +2414,7 @@
             whichList = @"performance";
             flag = 3;
         }
-    }else if ((month == 4 && day == 6) && (hour == 13 && 30 <= minute && minute <= 59)) {
+    }else if ((month == 4 && day == 8) && (hour == 13 && 30 <= minute && minute <= 59)) {
         if (featuredImageButton2.tag == 0) {
             whichList = @"performance";
             flag = 2;
@@ -2436,7 +2437,7 @@
             whichList = @"display";
             flag = 17;
         }
-    }else if ((month == 4 && day == 6) && (hour == 14 && 0 <= minute && minute <= 29)) {
+    }else if ((month == 4 && day == 8) && (hour == 14 && 0 <= minute && minute <= 29)) {
         if (featuredImageButton2.tag == 0) {
             whichList = @"performance";
             flag = 2;
@@ -2456,7 +2457,7 @@
             whichList = @"stage";
             flag = 3;
         }
-    }else if ((month == 4 && day == 6) && (hour == 14 && 30 <= minute && minute <= 59)) {
+    }else if ((month == 4 && day == 8) && (hour == 14 && 30 <= minute && minute <= 59)) {
         if (featuredImageButton2.tag == 0) {
             whichList = @"performance";
             flag = 2;
@@ -2470,7 +2471,7 @@
             whichList = @"stage";
             flag = 2;
         }
-    }else if ((month == 4 && day == 6) && (hour == 15 && 0 <= minute && minute <= 29)) {
+    }else if ((month == 4 && day == 8) && (hour == 15 && 0 <= minute && minute <= 29)) {
         if (featuredImageButton2.tag == 0) {
             whichList = @"performance";
             flag = 2;
@@ -2478,7 +2479,7 @@
             whichList = @"stage";
             flag = 2;
         }
-    }else if ((month == 4 && day == 6) && ((hour == 15 && 30 <= minute && minute <= 59) || (hour == 16 && 0 <= minute && minute <= 29))) {
+    }else if ((month == 4 && day == 8) && ((hour == 15 && 30 <= minute && minute <= 59) || (hour == 16 && 0 <= minute && minute <= 29))) {
         if (featuredImageButton2.tag == 0) {
             whichList = @"stage";
             flag = 2;
@@ -2486,11 +2487,11 @@
             whichList = @"stage";
             flag = 2;
         }
-    }else if ((month == 4 && day == 6) && (hour == 16 && 30 <= minute && minute <= 59)) {
+    }else if ((month == 4 && day == 8) && (hour == 16 && 30 <= minute && minute <= 59)) {
         
         
         
-    }else if ((month == 4 && day == 6 && hour >= 17) || (month == 4 && day == 7 && hour <= 9)){
+    }else if ((month == 4 && day == 8 && hour >= 17) || (month == 4 && day == 9 && hour <= 9)){
         if (featuredImageButton2.tag == 0) {
             whichList = @"display";
             flag = 1;
@@ -2555,7 +2556,7 @@
             whichList = @"performance";
             flag = 1;
         }
-    }else if ((month == 4 && day == 7) && (hour == 10 && 0 <= minute && minute <= 29)) {
+    }else if ((month == 4 && day == 9) && (hour == 10 && 0 <= minute && minute <= 29)) {
         if (featuredImageButton2.tag == 0) {
             whichList = @"display";
             flag = 1;
@@ -2572,7 +2573,7 @@
             whichList = @"performance";
             flag = 13;
         }
-    }else if ((month == 4 && day == 7) && (hour == 10 && 30 <= minute && minute <= 59)) {
+    }else if ((month == 4 && day == 9) && (hour == 10 && 30 <= minute && minute <= 59)) {
         if (featuredImageButton2.tag == 0) {
             whichList = @"display";
             flag = 1;
@@ -2592,7 +2593,7 @@
             whichList = @"performance";
             flag = 13;
         }
-    }else if ((month == 4 && day == 7) && (hour == 11 && 0 <= minute && minute <= 29)) {
+    }else if ((month == 4 && day == 9) && (hour == 11 && 0 <= minute && minute <= 29)) {
         if (featuredImageButton2.tag == 0) {
             whichList = @"display";
             flag = 1;
@@ -2612,7 +2613,7 @@
             whichList = @"performance";
             flag = 13;
         }
-    }else if ((month == 4 && day == 7) && (hour == 11 && 30 <= minute && minute <= 59)) {
+    }else if ((month == 4 && day == 9) && (hour == 11 && 30 <= minute && minute <= 59)) {
         if (featuredImageButton2.tag == 0) {
             whichList = @"display";
             flag = 1;
@@ -2629,7 +2630,7 @@
             whichList = @"performance";
             flag = 13;
         }
-    }else if ((month == 4 && day == 7) && (hour == 12 && 0 <= minute && minute <= 29)) {
+    }else if ((month == 4 && day == 9) && (hour == 12 && 0 <= minute && minute <= 29)) {
         if (featuredImageButton2.tag == 0) {
             whichList = @"performance";
             flag = 2;
@@ -2646,7 +2647,7 @@
             whichList = @"stage";
             flag = 11;
         }
-    }else if ((month == 4 && day == 7) && (hour == 12 && 30 <= minute && minute <= 59)) {
+    }else if ((month == 4 && day == 9) && (hour == 12 && 30 <= minute && minute <= 59)) {
         if (featuredImageButton2.tag == 0) {
             whichList = @"performance";
             flag = 2;
@@ -2660,7 +2661,7 @@
             whichList = @"performance";
             flag = 13;
         }
-    }else if ((month == 4 && day == 7) && (hour == 13 && 0 <= minute && minute <= 29)) {
+    }else if ((month == 4 && day == 9) && (hour == 13 && 0 <= minute && minute <= 29)) {
         if (featuredImageButton2.tag == 0) {
             whichList = @"performance";
             flag = 2;
@@ -2674,7 +2675,7 @@
             whichList = @"display";
             flag = 18;
         }
-    }else if ((month == 4 && day == 7) && (hour == 13 && 30 <= minute && minute <= 59)) {
+    }else if ((month == 4 && day == 9) && (hour == 13 && 30 <= minute && minute <= 59)) {
         if (featuredImageButton2.tag == 0) {
             whichList = @"performance";
             flag = 2;
@@ -2694,7 +2695,7 @@
             whichList = @"display";
             flag = 17;
         }
-    }else if ((month == 4 && day == 7) && (hour == 14 && 0 <= minute && minute <= 29)) {
+    }else if ((month == 4 && day == 9) && (hour == 14 && 0 <= minute && minute <= 29)) {
         if (featuredImageButton2.tag == 0) {
             whichList = @"stage";
             flag = 3;
@@ -2708,7 +2709,7 @@
             whichList = @"stage";
             flag = 1;
         }
-    }else if ((month == 4 && day == 7) && (hour == 14 && 30 <= minute && minute <= 59)) {
+    }else if ((month == 4 && day == 9) && (hour == 14 && 30 <= minute && minute <= 59)) {
         if (featuredImageButton2.tag == 0) {
             whichList = @"stage";
             flag = 3;
@@ -2722,7 +2723,7 @@
             whichList = @"performance";
             flag = 1;
         }
-    }else if ((month == 4 && day == 7) && (hour == 15 || hour == 16)) {
+    }else if ((month == 4 && day == 9) && (hour == 15 || hour == 16)) {
         if (featuredImageButton2.tag == 0) {
             whichList = @"performance";
             flag = 1;
