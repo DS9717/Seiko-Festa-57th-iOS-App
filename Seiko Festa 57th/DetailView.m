@@ -668,14 +668,14 @@
         else if (flag == 11) {
             detailImage = [UIImage imageNamed:@"S-O-S.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
-            _detailTitle.text = @"S.O.S.";
-            _explainSentence.text = @"イケメン、リッチ、天才、スポーツマンな聖光生は普通の感覚(sense)を失ってはいないだろうか…    彼らのセンスにご注目、、";
+            _detailTitle.text = @"S-O-S";
+            _explainSentence.text = @"イケメン、リッチ、天才、スポーツマンな聖光生は普通の感覚(sense)を失ってはいないだろうか…  彼らのセンスにご注目、、";
         }
     }
     
     detailImageview = [[UIImageView alloc] initWithFrame:CGRectMake(space, 0, self.view.bounds.size.width - space * 2, self.view.bounds.size.width - space * 2)];
     detailImageview.image = detailImage;
-    mapImageview = [[UIImageView alloc] initWithFrame:CGRectMake(self.view.bounds.size.width + space, 0, self.view.bounds.size.width - space * 2, self.view.bounds.size.width - space * 2)];
+    mapImageview = [[UIImageView alloc] initWithFrame:CGRectMake(self.view.bounds.size.width + space, 0, self.view.bounds.size.width - space * 1.2, self.view.bounds.size.width - space * 1.2)];
     mapImageview.image = mapImage;
     [imageScroll addSubview:mapImageview];
     [imageScroll addSubview:detailImageview];

@@ -1218,7 +1218,7 @@
         
         label11 = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + length + spaceH + (length + spaceH + fontSize + 29) * 5, length, fontSize + 5)];
         label11.font = [UIFont fontWithName:@"HelveticaNeue" size:fontSize];
-        label11.text = @"S.O.S";
+        label11.text = @"S-O-S";
         label11.textAlignment = NSTextAlignmentCenter;
         [scrollView addSubview:label11];
     }
