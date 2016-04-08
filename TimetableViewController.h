@@ -29,6 +29,8 @@
     UIButton *buttonOne2;
     UIButton *buttonOne3;
     UIButton *buttonOne4;
+    UIButton *buttonOne5;
+    UIButton *buttonOne6;
     
     UIButton *buttonTwo1;
     UIButton *buttonTwo2;
@@ -65,7 +67,11 @@
     int month;
     int day;
     
+    
+    
 }
 @property(nonatomic) int flag;
+- (IBAction)changeDate:(id)sender;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 
 @end

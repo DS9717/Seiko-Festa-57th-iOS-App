@@ -55,7 +55,7 @@
     mainScrollView.bounces = NO;
     mainScrollView.backgroundColor = [UIColor clearColor];
     
-    [mainScrollView setContentSize:CGSizeMake(7*(self.view.bounds.size.width), self.view.bounds.size.height-113)];
+    [mainScrollView setContentSize:CGSizeMake(5*(self.view.bounds.size.width), self.view.bounds.size.height-113)];
     
     scrollView1 = [[UIScrollView alloc]init];
     scrollView1.frame = CGRectMake(self.view.bounds.size.width * 0, 0, self.view.bounds.size.width, self.view.bounds.size.height-113);
@@ -151,7 +151,7 @@
     pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
     pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
     // ページ数を設定
-   pageControl.numberOfPages = 7;
+   pageControl.numberOfPages = 5;
     //現在のページを設定
     pageControl.currentPage = 0;
     //ページコントロールをタップされたときに呼ばれるメソッドを設定
@@ -571,4 +571,122 @@
     
 }
 
+- (IBAction)changeDate:(id)sender {
+    
+    if (self.segmentedControl.selectedSegmentIndex == 0) {
+        
+        [mainScrollView setContentSize:CGSizeMake(5*(self.view.bounds.size.width), self.view.bounds.size.height-113)];
+        pageControl.numberOfPages = 5;
+        
+        //講堂
+        [buttonOne1 setImage:[UIImage imageNamed:@"天使の歌声-タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonOne2 setImage:[UIImage imageNamed:@"ミュージックサロン-タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonOne3 setImage:[UIImage imageNamed:@"ボールぽこぽこ-タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonOne4 setImage:[UIImage imageNamed:@"英語劇-タイムテーブル.png"] forState:UIControlStateNormal];
+        
+        buttonOne4.frame = CGRectMake(0, (self.view.bounds.size.width * 19 / 32) * 3, self.view.bounds.size.width, self.view.bounds.size.width * 18 / 32);
+        
+        [buttonOne5 removeFromSuperview];
+        [buttonOne6 removeFromSuperview];
+        
+        [scrollView1 setContentSize:CGSizeMake(self.view.bounds.size.width, (self.view.bounds.size.width * 19 / 32) * 3 + (self.view.bounds.size.width * 18 / 32))];
+        
+        
+        //外ステージ
+        [buttonTwo1 setImage:[UIImage imageNamed:@"S-O-S-タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonTwo2 setImage:[UIImage imageNamed:@"ギネスに挑戦！！-タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonTwo3 setImage:[UIImage imageNamed:@"替え劇〜赤ずきん〜-タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonTwo4 setImage:[UIImage imageNamed:@"The-笑-1-GP-タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonTwo5 setImage:[UIImage imageNamed:@"コミュ力の窓-タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonTwo6 setImage:[UIImage imageNamed:@"○○男子No.1決定戦-タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonTwo7 setImage:[UIImage imageNamed:@"のど自慢-タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonTwo8 setImage:[UIImage imageNamed:@"Mr.聖光-タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonTwo9 setImage:[UIImage imageNamed:@"春夜祭-タイムテーブル.png"] forState:UIControlStateNormal];
+        
+        
+        //ライブハウス1
+        [buttonThree1 setImage:[UIImage imageNamed:@"Flat-Flight-タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonThree2 setImage:[UIImage imageNamed:@"M&A-タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonThree3 setImage:[UIImage imageNamed:@"蜃気楼-タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonThree4 setImage:[UIImage imageNamed:@"ぽんでっくす-タイムテーブル.png"] forState:UIControlStateNormal];
+        
+        
+        //ライブハウス2
+        [buttonFour1 setImage:[UIImage imageNamed:@"Chaos-Illusion-タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonFour2 setImage:[UIImage imageNamed:@"WEAK-END-タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonFour3 setImage:[UIImage imageNamed:@"Яooz-Leef-タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonFour4 setImage:[UIImage imageNamed:@"エストレーラ-タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonFour5 setImage:[UIImage imageNamed:@"奴等-タイムテーブル.png"] forState:UIControlStateNormal];
+        
+        
+        //小講堂
+        [buttonFive1 setImage:[UIImage imageNamed:@"恋愛偏差値-タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonFive2 setImage:[UIImage imageNamed:@"校長対談-タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonFive3 setImage:[UIImage imageNamed:@"数学研究会模擬講義-タイムテーブル.png"] forState:UIControlStateNormal];
+
+        [buttonFive4 setImage:[UIImage imageNamed:@"ミュージックサロン-タイムテーブル小講堂.png"] forState:UIControlStateNormal];
+
+    }else if (self.segmentedControl.selectedSegmentIndex == 1){
+        
+        [mainScrollView setContentSize:CGSizeMake(7*(self.view.bounds.size.width), self.view.bounds.size.height-113)];
+        pageControl.numberOfPages = 7;
+        
+        //講堂
+        [buttonOne1 setImage:[UIImage imageNamed:@"天使の歌声-タイムテーブル2.png"] forState:UIControlStateNormal];
+        [buttonOne2 setImage:[UIImage imageNamed:@"弦楽オーケストラ部-タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonOne3 setImage:[UIImage imageNamed:@"グリークラブ-タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonOne4 setImage:[UIImage imageNamed:@"英語劇-タイムテーブル2.png"] forState:UIControlStateNormal];
+        buttonOne4.frame = CGRectMake(0, (self.view.bounds.size.width * 19 / 32) * 3, self.view.bounds.size.width, self.view.bounds.size.width * 19 / 32);
+        
+        buttonOne5= [[UIButton alloc]initWithFrame:CGRectMake(0, (self.view.bounds.size.width * 19 / 32) * 4, self.view.bounds.size.width, self.view.bounds.size.width * 19 / 32)];
+        [buttonOne5 setImage:[UIImage imageNamed:@"吹奏楽部-タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonOne5 addTarget:self
+                       action:@selector(buttonOne5Detail:) forControlEvents:UIControlEventTouchUpInside];
+        [scrollView1 addSubview:buttonOne5];
+        
+        buttonOne6= [[UIButton alloc]initWithFrame:CGRectMake(0, (self.view.bounds.size.width * 19 / 32) * 5, self.view.bounds.size.width, self.view.bounds.size.width * 18 / 32)];
+        [buttonOne6 setImage:[UIImage imageNamed:@"Grand-Finale-タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonOne6 addTarget:self
+                       action:@selector(buttonOne6Detail:) forControlEvents:UIControlEventTouchUpInside];
+        [scrollView1 addSubview:buttonOne6];
+        
+        [scrollView1 setContentSize:CGSizeMake(self.view.bounds.size.width, (self.view.bounds.size.width * 19 / 32) * 5 + (self.view.bounds.size.width * 18 / 32))];
+        
+        
+        //外ステージ
+        [buttonTwo1 setImage:[UIImage imageNamed:@"○○男子No.1決定戦-タイムテーブル2.png"] forState:UIControlStateNormal];
+        [buttonTwo2 setImage:[UIImage imageNamed:@"コミュ力の窓-タイムテーブル2.png"] forState:UIControlStateNormal];
+        [buttonTwo3 setImage:[UIImage imageNamed:@"S-O-S-タイムテーブル2.png"] forState:UIControlStateNormal];
+        [buttonTwo4 setImage:[UIImage imageNamed:@"Seiko-Dance-Performance タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonTwo5 setImage:[UIImage imageNamed:@"ギネスに挑戦！！-タイムテーブル2.png"] forState:UIControlStateNormal];
+        [buttonTwo6 setImage:[UIImage imageNamed:@"The-笑-1-GP-タイムテーブル2.png"] forState:UIControlStateNormal];
+        [buttonTwo7 setImage:[UIImage imageNamed:@"のど自慢-タイムテーブル2.png"] forState:UIControlStateNormal];
+        [buttonTwo8 setImage:[UIImage imageNamed:@"Mr.聖光-タイムテーブル2.png"] forState:UIControlStateNormal];
+        [buttonTwo9 setImage:[UIImage imageNamed:@"フォークダンス-タイムテーブル.png"] forState:UIControlStateNormal];
+        
+        
+        //ライブハウス1
+        [buttonThree1 setImage:[UIImage imageNamed:@"ぽんでっくす-タイムテーブル2.png"] forState:UIControlStateNormal];
+        [buttonThree2 setImage:[UIImage imageNamed:@"M&A-タイムテーブル2.png"] forState:UIControlStateNormal];
+        [buttonThree3 setImage:[UIImage imageNamed:@"Flat-Flight-タイムテーブル2.png"] forState:UIControlStateNormal];
+        [buttonThree4 setImage:[UIImage imageNamed:@"蜃気楼-タイムテーブル2.png"] forState:UIControlStateNormal];
+        
+        
+        //ライブハウス2
+        [buttonFour1 setImage:[UIImage imageNamed:@"Million-Dollars-タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonFour2 setImage:[UIImage imageNamed:@"せいとんがかり タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonFour3 setImage:[UIImage imageNamed:@"WEAK-END-タイムテーブル2.png"] forState:UIControlStateNormal];
+        [buttonFour4 setImage:[UIImage imageNamed:@"Яooz-Leef-タイムテーブル2.png"] forState:UIControlStateNormal];
+        [buttonFour5 setImage:[UIImage imageNamed:@"Addiction?-タイムテーブル.png"] forState:UIControlStateNormal];
+        
+        
+        //小講堂
+        [buttonFive1 setImage:[UIImage imageNamed:@"恋愛偏差値-タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonFive2 setImage:[UIImage imageNamed:@"校長対談-タイムテーブル.png"] forState:UIControlStateNormal];
+        [buttonFive3 setImage:[UIImage imageNamed:@"数学研究会模擬講義-タイムテーブル.png"] forState:UIControlStateNormal];
+        
+        [buttonFive4 setImage:[UIImage imageNamed:@"ミュージックサロン-タイムテーブル小講堂.png"] forState:UIControlStateNormal];
+
+    }
+}
 @end
