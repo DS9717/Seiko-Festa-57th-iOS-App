@@ -29,6 +29,8 @@
     UIButton *buttonOne2;
     UIButton *buttonOne3;
     UIButton *buttonOne4;
+    UIButton *buttonOne5;
+    UIButton *buttonOne6;
     
     UIButton *buttonTwo1;
     UIButton *buttonTwo2;
@@ -58,14 +60,22 @@
     UIButton *buttonFive4;
     UIButton *buttonFive5;
     
+    UIButton *buttonSix1;
+    
+    UIButton *buttonSeven1;
+    
     NSString *whichList;
     
     UILabel *nav_title;
     
     int month;
     int day;
+    int hour;
+    int minute;
     
 }
 @property(nonatomic) int flag;
+- (IBAction)changeDate:(id)sender;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 
 @end

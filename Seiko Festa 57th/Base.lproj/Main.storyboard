@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HNp-Pa-RlB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1712" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HNp-Pa-RlB">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -42,9 +42,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="n0g-Mf-VGS"/>
+                    <navigationItem key="navigationItem" id="n0g-Mf-VGS">
+                        <barButtonItem key="rightBarButtonItem" id="uVi-Vj-s4d">
+                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="k0u-Mf-oeh">
+                                <rect key="frame" x="-61" y="-14" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="4/30"/>
+                                    <segment title="5/1"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeDate:" destination="iE3-Fi-Aau" eventType="valueChanged" id="xug-Fn-Bcj"/>
+                                </connections>
+                            </segmentedControl>
+                            <connections>
+                                <action selector="changeDate:" destination="iE3-Fi-Aau" id="TAh-ax-9cU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="segmentedControl" destination="k0u-Mf-oeh" id="tbI-DF-4ua"/>
                         <segue destination="G5V-YZ-OeK" kind="show" identifier="fromTimeTable" id="hmj-UO-meY"/>
                     </connections>
                 </viewController>
@@ -267,6 +285,6 @@
         <image name="TabBar3" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wgY-w8-4fA"/>
+        <segue reference="hmj-UO-meY"/>
     </inferredMetricsTieBreakers>
 </document>
