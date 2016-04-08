@@ -64,7 +64,7 @@
     
     //[imageScroll setContentSize:CGSizeMake(540, 220)];
     imageScroll = [[UIScrollView alloc]init];
-    imageScroll.frame = CGRectMake(0, space, self.view.bounds.size.width, self.view.bounds.size.width - space * 2);
+    imageScroll.frame = CGRectMake(0, space * 0.6, self.view.bounds.size.width, self.view.bounds.size.width - space * 0.6);
     //横スクロールのインジケータを非表示にする
     imageScroll.showsHorizontalScrollIndicator = NO;
     imageScroll.userInteractionEnabled = YES;
@@ -73,7 +73,7 @@
     imageScroll.pagingEnabled = YES;
     imageScroll.backgroundColor = [UIColor clearColor];
     //スクロールの範囲を設定
-    [imageScroll setContentSize:CGSizeMake(self.view.bounds.size.width * 2, self.view.bounds.size.width - space * 2)];
+    [imageScroll setContentSize:CGSizeMake(self.view.bounds.size.width * 2, self.view.bounds.size.width - space * 0.6)];
     
     //
     _detailTitle = [[UILabel alloc]initWithFrame:CGRectMake(16, self.view.bounds.size.width - space + spaceU, self.view.bounds.size.width - 32, titleSize)];    //CGRectMake(16, space + length + spaceU, self.view.bounds.size.width - 32, titleSize)
@@ -106,7 +106,7 @@
         
         if (flag == 1) {
             detailImage = [UIImage imageNamed:@"鉄板職人.png"];
-            mapImage = [UIImage imageNamed:@"map.jpg"];
+            mapImage = [UIImage imageNamed:@"鉄板職人マップ.png"];
             _detailTitle.text = @"鉄板職人";
             _explainSentence.text = @"従来の豚たまに加え、さらに新しい味が追加され進化した鉄板職人。ぜひ一度足をお運び下さい。";
         }
@@ -673,7 +673,7 @@
         }
     }
     
-    detailImageview = [[UIImageView alloc] initWithFrame:CGRectMake(space, 0, self.view.bounds.size.width - space * 2, self.view.bounds.size.width - space * 2)];
+    detailImageview = [[UIImageView alloc] initWithFrame:CGRectMake(space, space * 0.4, self.view.bounds.size.width - space * 2, self.view.bounds.size.width - space * 2)];
     detailImageview.image = detailImage;
     mapImageview = [[UIImageView alloc] initWithFrame:CGRectMake(self.view.bounds.size.width + space, 0, self.view.bounds.size.width - space * 1.2, self.view.bounds.size.width - space * 1.2)];
     mapImageview.image = mapImage;
@@ -708,14 +708,14 @@
     UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
     rootViewController.modalPresentationStyle = UIModalPresentationCurrentContext;
     
-    right = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - space, 0, space, self.view.bounds.size.width - space * 2)];
+    right = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - space, space * 0.4, space, self.view.bounds.size.width - space * 2)];
     [right setImage:[UIImage imageNamed:@"Right-to-Map"] forState:UIControlStateNormal];
     right.contentMode = UIViewContentModeScaleAspectFill;
     [right addTarget:self
               action:@selector(righton:) forControlEvents:UIControlEventTouchUpInside];
     [imageScroll addSubview:right];
     
-    left = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width, 0, space, self.view.bounds.size.width - space * 2)];
+    left = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width, space * 0.4, space, self.view.bounds.size.width - space * 2)];
     [left setImage:[UIImage imageNamed:@"Left-to-Map"] forState:UIControlStateNormal];
     left.contentMode = UIViewContentModeScaleAspectFill;
     [left addTarget:self
