@@ -60,14 +60,18 @@
     UIButton *buttonFive4;
     UIButton *buttonFive5;
     
+    UIButton *buttonSix1;
+    
+    UIButton *buttonSeven1;
+    
     NSString *whichList;
     
     UILabel *nav_title;
     
     int month;
     int day;
-    
-    
+    int hour;
+    int minute;
     
 }
 @property(nonatomic) int flag;

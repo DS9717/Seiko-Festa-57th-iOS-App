@@ -636,9 +636,9 @@
             _explainSentence.text = @"聖光祭と言ったらMr.の次にこれ！いや、次なんかじゃない。歌に秘められた力、皆さんを惚れさせます！";
         }
         else if (flag == 6) {
-            detailImage = [UIImage imageNamed:@"ギネスに挑戦!!.png"];
+            detailImage = [UIImage imageNamed:@"ギネスに挑戦！！.png"];
             mapImage = [UIImage imageNamed:@"map.jpg"];
-            _detailTitle.text = @"ギネスに挑戦!!";
+            _detailTitle.text = @"ギネスに挑戦！！";
             _explainSentence.text = @"ギネスに記録にあの聖光生が挑戦!?果敢に記録に挑戦する聖光生の勇姿をとくとご覧あれ!!";
         }
         else if (flag == 7) {
