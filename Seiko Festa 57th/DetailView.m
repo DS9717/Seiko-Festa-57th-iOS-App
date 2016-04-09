@@ -812,14 +812,21 @@
 -(void)viewWillAppear:(BOOL)animated {
     
     [super viewWillAppear:animated];
+    
     self.tabBarController.tabBar.barTintColor = [UIColor blackColor];
+
+    [blackView removeFromSuperview];
+    [blurView removeFromSuperview];
+
     
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
     
     [super viewWillDisappear:animated];
+    
     self.tabBarController.tabBar.barTintColor = [UIColor whiteColor];
+
     
 }
 
@@ -846,6 +853,39 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark -値を受け渡す
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"share"]) {
+        
+        //iOSのバージョンで分岐
+        iOSVersion = [[[UIDevice currentDevice] systemVersion] floatValue];
+        
+        //iOS8以降
+        if(iOSVersion < 8.0f){
+        
+        blackView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height + 64)];
+        blackView.backgroundColor = [UIColor colorWithRed:0.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:0.5];
+        [self.tabBarController.view addSubview:blackView];
+        
+        //ブラーをかける
+        
+        blurView = [[FXBlurView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height + 64)];
+        blurView.tintColor = [UIColor clearColor];
+        blurView.blurRadius = 40.0f;
+        blurView.alpha = 1.0f;
+        blurView.dynamic = NO;
+        [blurView updateAsynchronously:YES completion:^{
+        }];
+        
+        [self.tabBarController.view addSubview:blurView];
+            
+        }
+        
+    }
+    
+}
 
 
 @end

@@ -165,7 +165,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="TIg-bU-siw">
                             <connections>
                                 <action selector="shareButton:" destination="G5V-YZ-OeK" id="KDs-Qo-4EV"/>
-                                <segue destination="s1K-tB-jFh" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="lk8-aA-dW3"/>
+                                <segue destination="s1K-tB-jFh" kind="presentation" identifier="share" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="lk8-aA-dW3"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -285,6 +285,6 @@
         <image name="TabBar3" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hmj-UO-meY"/>
+        <segue reference="7qL-oO-efD"/>
     </inferredMetricsTieBreakers>
 </document>

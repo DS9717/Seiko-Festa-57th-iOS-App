@@ -10,8 +10,10 @@
 #import "ViewController.h"
 #import "ListView.h"
 #import "TimetableViewController.h"
+#import "FXBlurView.h"
+#import "ShareViewController.h"
 
-@interface DetailView : UIViewController{
+@interface DetailView : UIViewController {
     
     //画像左右余白
     int space;
@@ -42,6 +44,12 @@
     
     UILabel *_detailTitle;
     UITextView *_explainSentence;
+    
+    FXBlurView *blurView;
+    
+    UIView *blackView;
+    
+    float iOSVersion;
     
 }
 @property(nonatomic) int flag;

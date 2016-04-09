@@ -18,31 +18,75 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    facebookButton = [[UIButton alloc]initWithFrame:CGRectMake(0, self.view.bounds.size.height - 240, self.view.bounds.size.width, 60)];
+    //iOSのバージョンで分岐
+    iOSVersion = [[[UIDevice currentDevice] systemVersion] floatValue];
+    
+    //iOS8以降
+    if(iOSVersion >= 8.0f){
+        
+        //ブラースタイルの決定
+        UIVisualEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
+        //VisualEffectViewにVisualEffectを設定
+        UIVisualEffectView *effectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
+        //VisualEffectViewを_blurViewと同じサイズに設定
+        effectView.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
+        
+        //_blurViewにVisualEffectViewを追加
+        [self.view addSubview:effectView];
+        
+        self.tabBarController.tabBar.Hidden = YES;
+        
+    }else{
+        
+        
+    }
+    
+    facebookButton = [[UIButton alloc]init];
     [facebookButton setImage:[UIImage imageNamed:@"Facebook icon.png"] forState:UIControlStateNormal];
     [facebookButton addTarget:self
                        action:@selector(shareOnFacebook:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:facebookButton];
     
-    twitterButton = [[UIButton alloc]initWithFrame:CGRectMake(0, self.view.bounds.size.height - 180, self.view.bounds.size.width, 60)];
+    
+    twitterButton = [[UIButton alloc]init];
     [twitterButton setImage:[UIImage imageNamed:@"Twitter icon.png"] forState:UIControlStateNormal];
     [twitterButton addTarget:self
                       action:@selector(shareOnTwitter:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:twitterButton];
     
-    lineButton = [[UIButton alloc]initWithFrame:CGRectMake(0, self.view.bounds.size.height - 120, self.view.bounds.size.width, 60)];
+    lineButton = [[UIButton alloc]init];
     [lineButton setImage:[UIImage imageNamed:@"LINE icon.png"] forState:UIControlStateNormal];
     [lineButton addTarget:self
                    action:@selector(shareOnLINE:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:lineButton];
     
-    cancelButton = [[UIButton alloc]initWithFrame:CGRectMake(0, self.view.bounds.size.height - 60, self.view.bounds.size.width, 60)];
+    cancelButton = [[UIButton alloc]init];
     [cancelButton setImage:[UIImage imageNamed:@"cancel.png"] forState:UIControlStateNormal];
     [cancelButton addTarget:self
                      action:@selector(cancel:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:cancelButton];
     
+    //iOS8以降
+    if(iOSVersion >= 8.0f){
+        
+        facebookButton.frame = CGRectMake(0, self.view.bounds.size.height - self.view.bounds.size.width * 3 / 16 * 4 - 49, self.view.bounds.size.width, self.view.bounds.size.width * 3 / 16);
+        twitterButton.frame = CGRectMake(0, self.view.bounds.size.height - self.view.bounds.size.width * 3 / 16 * 3 - 49, self.view.bounds.size.width, self.view.bounds.size.width * 3 / 16);
+        lineButton.frame = CGRectMake(0, self.view.bounds.size.height - self.view.bounds.size.width * 3 / 16 * 2 - 49, self.view.bounds.size.width, self.view.bounds.size.width * 3 / 16);
+        cancelButton.frame = CGRectMake(0, self.view.bounds.size.height - self.view.bounds.size.width * 3 / 16 - 49, self.view.bounds.size.width, self.view.bounds.size.width * 3 / 16);
+        
+    }else {
+        
+        facebookButton.frame = CGRectMake(0, self.view.bounds.size.height - self.view.bounds.size.width * 3 / 16 * 4, self.view.bounds.size.width, self.view.bounds.size.width * 3 / 16);
+        twitterButton.frame = CGRectMake(0, self.view.bounds.size.height - self.view.bounds.size.width * 3 / 16 * 3, self.view.bounds.size.width, self.view.bounds.size.width * 3 / 16);
+        lineButton.frame = CGRectMake(0, self.view.bounds.size.height - self.view.bounds.size.width * 3 / 16 * 2, self.view.bounds.size.width, self.view.bounds.size.width * 3 / 16);
+        cancelButton.frame = CGRectMake(0, self.view.bounds.size.height - self.view.bounds.size.width * 3 / 16, self.view.bounds.size.width, self.view.bounds.size.width * 3 / 16);
+        
+    }
+    
     self.view.backgroundColor = [UIColor clearColor];
+    
+    //起動画面で非表示にしていたステータスバーを非表示
+    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
 
 }
 
@@ -60,6 +104,27 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+-(void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    
+    self.tabBarController.tabBar.barTintColor = [UIColor blackColor];
+    
+    self.view.backgroundColor = [UIColor clearColor];
+    
+    NSLog(@"nofein");
+    
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    
+    [super viewWillDisappear:animated];
+    
+    //起動画面で非表示にしていたステータスバーを表示
+    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
+    
+}
 
 -(void)shareOnFacebook:(UIButton *)button {
     
@@ -183,6 +248,5 @@ clickedButtonAtIndex:(NSInteger)buttonIndex{
             break;
     }
 }
-
 
 @end

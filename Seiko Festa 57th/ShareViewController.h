@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <Social/Social.h>
+#import "FXBlurView.h"
+#import "AppDelegate.h"
+#import "DetailView.h"
 
 @interface ShareViewController : UIViewController {
     
@@ -21,6 +24,8 @@
     
     NSString *line;
     NSString *LineUrlString;
+    
+    float iOSVersion;
     
 }
 
