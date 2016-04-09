@@ -70,6 +70,17 @@
         
         if (rect.size.height==480) {
             
+            iconView.frame = CGRectMake(110, 60, 100, 100);
+            
+            seikoFesta.frame = CGRectMake(0, 170, self.view.bounds.size.width, 22);
+            seikoFesta.font = designedBy.font = [UIFont fontWithName:@"MyriadPro-Regular" size:22];
+            
+            designedBy.frame = CGRectMake(0, 270, self.view.bounds.size.width, 20);
+            designedBy.font = [UIFont fontWithName:@"MyriadPro-Regular" size:18];
+            
+            designers.frame = CGRectMake(0, 300, self.view.bounds.size.width, 20);
+            designers.font = [UIFont fontWithName:@"MyriadPro-Regular" size:18];
+            
         }else if (rect.size.height==568) {
             
             iconView.frame = CGRectMake(110, 70, 100, 100);
@@ -86,8 +97,29 @@
             
         }else if (rect.size.height==667) {
             
+            iconView.frame = CGRectMake(130, 80, 115, 115);
+            
+            seikoFesta.frame = CGRectMake(0, 210, self.view.bounds.size.width, 25);
+            seikoFesta.font = designedBy.font = [UIFont fontWithName:@"MyriadPro-Regular" size:25];
+            
+            designedBy.frame = CGRectMake(0, 375, self.view.bounds.size.width, 23);
+            designedBy.font = [UIFont fontWithName:@"MyriadPro-Regular" size:21];
+            
+            designers.frame = CGRectMake(0, 410, self.view.bounds.size.width, 23);
+            designers.font = [UIFont fontWithName:@"MyriadPro-Regular" size:21];
+            
         }else if (rect.size.height==736) {
             
+            iconView.frame = CGRectMake(142, 90, 130, 130);
+            
+            seikoFesta.frame = CGRectMake(0, 235, self.view.bounds.size.width, 28);
+            seikoFesta.font = designedBy.font = [UIFont fontWithName:@"MyriadPro-Regular" size:28];
+            
+            designedBy.frame = CGRectMake(0, 410, self.view.bounds.size.width, 26);
+            designedBy.font = [UIFont fontWithName:@"MyriadPro-Regular" size:23];
+            
+            designers.frame = CGRectMake(0, 450, self.view.bounds.size.width, 26);
+            designers.font = [UIFont fontWithName:@"MyriadPro-Regular" size:23];
         }
         
         [self.view addSubview:iconView];
@@ -104,23 +136,36 @@
         
         UITextView *textView = [[UITextView alloc]init];
         textView.text = @"4/30 - 5/1\n聖光学院中学校高等学校\n\n〒231-0837\n横浜市中区滝之上100番地\n(Tel) 045-621-2051\nJR根岸線山手駅徒歩8分";
-        textView.font = [UIFont fontWithName:@"MyriadPro-Regular" size:16];
         textView.editable = NO;
         textView.selectable=NO;
         
         if (rect.size.height==480) {
             
+            access.frame = CGRectMake(40, 20, 240, 240 * 13 / 16);
+            
+            textView.frame = CGRectMake(30, 220, 260, 210);
+            textView.font = [UIFont fontWithName:@"MyriadPro-Regular" size:13];
         
         }else if (rect.size.height==568) {
             
             access.frame = CGRectMake(30, 30, 260, 260 * 13 / 16);
             
             textView.frame = CGRectMake(30, 270, 260, 260);
+            textView.font = [UIFont fontWithName:@"MyriadPro-Regular" size:16];
             
         }else if (rect.size.height==667) {
             
+            access.frame = CGRectMake(35, 35, 300, 300 * 13 / 16);
+            
+            textView.frame = CGRectMake(35, 315, 300, 300);
+            textView.font = [UIFont fontWithName:@"MyriadPro-Regular" size:16];
+            
         }else if (rect.size.height==736) {
             
+            access.frame = CGRectMake(40, 40, 334, 334 * 13 / 16);
+            
+            textView.frame = CGRectMake(40, 350, 334, 334);
+            textView.font = [UIFont fontWithName:@"MyriadPro-Regular" size:16];
         }
         
         [self.view addSubview:access];

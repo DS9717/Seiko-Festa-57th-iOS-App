@@ -13,12 +13,12 @@
 
 @interface DetailView : UIViewController{
     
-    //画像上左右余白
+    //画像左右余白
     int space;
     //画像サイズ
     int length;
     //画像下余白
-    int spaceU;
+    int spaceBelow;
     //タイトルフォントサイズ
     int titleSize;
     //白線太さ

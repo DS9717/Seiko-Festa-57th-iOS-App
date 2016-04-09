@@ -116,7 +116,7 @@
         allButtonLength = 90;
         space = 16;
         length = 73 ;
-        spaceAllBelow = -16;
+        spaceAllBelow = -8;
         spaceBelow = 8;
         buttonLabelFont = 13;
     } else if (r.size.width == 375) {
@@ -125,7 +125,7 @@
         allButtonLength = 102;
         space = 16;
         length = 89;
-        spaceAllBelow = -16;
+        spaceAllBelow = -8;
         spaceBelow = 9;
         buttonLabelFont = 15;
     } else if (r.size.width == 414) {
@@ -134,7 +134,7 @@
         allButtonLength = 114;
         space = 16;
         length = 100;
-        spaceAllBelow = -16;
+        spaceAllBelow = -8;
         spaceBelow = 10;
         buttonLabelFont = 17;
     }
@@ -153,7 +153,7 @@
     mainScrollView.backgroundColor = [UIColor clearColor];
     //スクロールの範囲を設定
     [mainScrollView setContentSize:CGSizeMake(self.view.bounds.size.width,
-                                              spaceAllAbove + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove) * 5)];
+                                              spaceAllAbove + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove) * 5 + buttonLabelFont)];
     [mainScrollView setContentOffset:CGPointMake(0.0, contentOffsetY) animated:NO];
     
     Food = [[UIButton alloc]initWithFrame:CGRectMake((self.view.bounds.size.width - allButtonLength * 1.5) / 2,
@@ -1360,11 +1360,11 @@
     scrollView5.frame = CGRectMake(0,
                                    spaceAllAbove + allButtonLength + spaceAllBelow + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove) * 4,
                                    self.view.bounds.size.width,
-                                   space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove);
+                                   space + length + spaceBelow + buttonLabelFont * 3 + 1 + spaceAllAbove);
     scrollView5.showsHorizontalScrollIndicator = NO;
     scrollView5.userInteractionEnabled = YES;
     scrollView5.bounces = YES;
-    [scrollView5 setContentSize:CGSizeMake(space + (space + length) * 11, space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove)];
+    [scrollView5 setContentSize:CGSizeMake(space + (space + length) * 11, space + length + spaceBelow + buttonLabelFont * 3 + 1 + spaceAllAbove)];
     [scrollView5 setContentOffset:CGPointMake(contentOffsetX5, 0.0) animated:NO];
     scrollView5.backgroundColor=[UIColor clearColor];
     [mainScrollView addSubview:scrollView5];
