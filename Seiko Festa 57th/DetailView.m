@@ -155,7 +155,7 @@
         }
         else if (flag == 2) {
             detailImage = [UIImage imageNamed:@"塩焼きそば-麺’sRUNRUN.png"];
-            mapImage = [UIImage imageNamed:@"塩焼きそば-麺'sRUNRUN.png"];
+            mapImage = [UIImage imageNamed:@"麺'sRUNRUNマップ.png"];
             _detailTitle.text = @"麺’sRUNRUN";
             _explainSentence.text = @"3年連続売り上げ1位を獲得した職人達の、魂の込もった1皿を召し上がれ。この味は、裏切らない。";
         }
