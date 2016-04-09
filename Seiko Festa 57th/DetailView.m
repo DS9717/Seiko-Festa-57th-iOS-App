@@ -866,7 +866,7 @@
         if(iOSVersion < 8.0f){
         
         blackView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height + 64)];
-        blackView.backgroundColor = [UIColor colorWithRed:0.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:0.5];
+        blackView.backgroundColor = [UIColor colorWithRed:0.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:0.6];
         [self.tabBarController.view addSubview:blackView];
         
         //ブラーをかける

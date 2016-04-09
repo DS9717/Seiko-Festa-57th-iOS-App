@@ -36,6 +36,8 @@
         
         self.tabBarController.tabBar.Hidden = YES;
         
+        [self.view bringSubviewToFront:effectView];
+        
     }else{
         
         
@@ -112,8 +114,6 @@
     self.tabBarController.tabBar.barTintColor = [UIColor blackColor];
     
     self.view.backgroundColor = [UIColor clearColor];
-    
-    NSLog(@"nofein");
     
 }
 
