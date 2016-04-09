@@ -27,6 +27,8 @@
     
     float iOSVersion;
     
+    UIView *onTabBarView;
+    
 }
 
 @end

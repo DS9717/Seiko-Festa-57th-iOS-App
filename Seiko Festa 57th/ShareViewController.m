@@ -34,12 +34,10 @@
         //_blurViewにVisualEffectViewを追加
         [self.view addSubview:effectView];
         
-        self.tabBarController.tabBar.Hidden = YES;
-        
-        [self.view bringSubviewToFront:effectView];
-        
-    }else{
-        
+        onTabBarView = [[UIView alloc]initWithFrame:CGRectMake(0, self.view.bounds.size.height - 49, self.view.bounds.size.width, 49)];
+        onTabBarView.backgroundColor = [UIColor clearColor];
+        AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+        [appDelegate.window addSubview:onTabBarView];
         
     }
     
@@ -120,6 +118,8 @@
 -(void)viewWillDisappear:(BOOL)animated {
     
     [super viewWillDisappear:animated];
+    
+    [onTabBarView removeFromSuperview];
     
     //起動画面で非表示にしていたステータスバーを表示
     [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
