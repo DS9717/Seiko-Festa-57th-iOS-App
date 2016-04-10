@@ -1194,7 +1194,7 @@
         
         label9 = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft, 16 + length + spaceH + (length + spaceH + fontSize + 29) * 4, length, fontSize + 5)];
         label9.font = [UIFont fontWithName:@"HelveticaNeue" size:fontSize];
-        label9.text = @"替え歌選手権";
+        label9.text = @"替え劇 〜赤ずきん〜";
         label9.textAlignment = NSTextAlignmentCenter;
         [scrollView addSubview:label9];
         

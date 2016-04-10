@@ -285,6 +285,7 @@
     UIButton *Performance;
     UIButton *Stage;
     
+    int year;
     int month;
     int day;
     int hour;
@@ -298,6 +299,9 @@
     UIImageView *welcomeBanner;
     
     NSTimer *timer;
+    
+    UIButton *bannerButton;
+    UIImageView *bannerView;
     
 }
 

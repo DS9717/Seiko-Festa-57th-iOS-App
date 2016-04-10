@@ -211,6 +211,7 @@
 		7ED21AB61C79986D00AA9E83 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED21AB51C79986D00AA9E83 /* QuartzCore.framework */; };
 		7ED21AB81C7998B900AA9E83 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED21AB71C7998B900AA9E83 /* CoreGraphics.framework */; };
 		7ED21ABB1C79998200AA9E83 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED21ABA1C79998200AA9E83 /* AVFoundation.framework */; };
+		7EF9B1211CBA901A00EA1692 /* インターアクトマップ.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EF9B1201CBA901A00EA1692 /* インターアクトマップ.png */; };
 		FA2BE5D51CB54A32007C0B48 /* 交通研究部マップ.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2BE5D41CB54A32007C0B48 /* 交通研究部マップ.png */; };
 		FA2E4FCA1CB69BFC00578B12 /* 外ステージマップ.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2E4FC91CB69BFC00578B12 /* 外ステージマップ.png */; };
 		FA2E4FCD1CB69C0500578B12 /* ライブハウス1マップ.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2E4FCB1CB69C0500578B12 /* ライブハウス1マップ.png */; };
@@ -549,6 +550,7 @@
 		7ED21AB51C79986D00AA9E83 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7ED21AB71C7998B900AA9E83 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7ED21ABA1C79998200AA9E83 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7EF9B1201CBA901A00EA1692 /* インターアクトマップ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "インターアクトマップ.png"; sourceTree = "<group>"; };
 		FA2BE5D41CB54A32007C0B48 /* 交通研究部マップ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "交通研究部マップ.png"; sourceTree = "<group>"; };
 		FA2E4FC91CB69BFC00578B12 /* 外ステージマップ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "外ステージマップ.png"; sourceTree = "<group>"; };
 		FA2E4FCB1CB69C0500578B12 /* ライブハウス1マップ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ライブハウス1マップ.png"; sourceTree = "<group>"; };
@@ -1231,6 +1233,7 @@
 				FA6A8C0F1CB9379500C4B7A3 /* Showtime!マップ.png */,
 				FA6A8C101CB9379500C4B7A3 /* Trick×Harkマップ.png */,
 				FA6A8C111CB9379500C4B7A3 /* アニメ研究会マップ.png */,
+				7EF9B1201CBA901A00EA1692 /* インターアクトマップ.png */,
 				FA6A8C121CB9379500C4B7A3 /* かるた会マップ.png */,
 				FA6A8C131CB9379500C4B7A3 /* ぎゃんぶる。マップ.png */,
 				FA6A8C141CB9379500C4B7A3 /* クイズ研究会マップ.png */,
@@ -1492,7 +1495,7 @@
 				TargetAttributes = {
 					7E4D55A71C49315B00BFE19C = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = 3GKM8LRN87;
+						DevelopmentTeam = TAE9KC7SWK;
 					};
 					7E4D55C01C49315C00BFE19C = {
 						CreatedOnToolsVersion = 6.2;
@@ -1774,6 +1777,7 @@
 				7EB62E3B1CAEAE0A0097FDB5 /* 俺のケバブ.png in Resources */,
 				7E859F551CB00A5700EDB2E6 /* コミュ力の窓 バナー1.png in Resources */,
 				7E85A02D1CB16CCD00EDB2E6 /* Addiction?-タイムテーブル.png in Resources */,
+				7EF9B1211CBA901A00EA1692 /* インターアクトマップ.png in Resources */,
 				7E859F981CB01E8F00EDB2E6 /* ぽんでっくす バナー2.jpg in Resources */,
 				FA2E4FCE1CB69C0500578B12 /* ライブハウス2マップ.png in Resources */,
 				7E859FDE1CB16BF000EDB2E6 /* 春夜祭-タイムテーブル.png in Resources */,

@@ -131,9 +131,8 @@
     //Facebookに投稿
     facebook = [SLComposeViewController
                 composeViewControllerForServiceType:SLServiceTypeFacebook];
-    [facebook setInitialText:[NSString stringWithFormat:@""]];
-    [facebook addImage:[UIImage imageNamed:@""]];
-    [facebook addURL:[NSURL URLWithString:@""]];
+    [facebook setInitialText:[NSString stringWithFormat:@"#聖光祭"]];
+    [facebook addURL:[NSURL URLWithString:@"https://itunes.apple.com/jp/app/seiko-festa-57th-sheng-guang/id1097079958?l=ja&ls=1&mt=8"]];
     [self presentViewController:facebook animated:YES completion:nil];
     
 }
@@ -143,9 +142,8 @@
     //Twitterに投稿
     twitter = [SLComposeViewController
                composeViewControllerForServiceType:SLServiceTypeTwitter];
-    [twitter setInitialText:[NSString stringWithFormat:@""]];
-    [twitter addImage:[UIImage imageNamed:@""]];
-    [twitter addURL:[NSURL URLWithString:@""]];
+    [twitter setInitialText:[NSString stringWithFormat:@"#聖光祭"]];
+    [twitter addURL:[NSURL URLWithString:@"https://itunes.apple.com/jp/app/seiko-festa-57th-sheng-guang/id1097079958?l=ja&ls=1&mt=8"]];
     [self presentViewController:twitter animated:YES completion:nil];
     
 }
@@ -153,7 +151,7 @@
 -(void)shareOnLINE:(UIButton *)button {
     
     //LINEに投稿
-    line = [NSString stringWithFormat:@""];
+    line = [NSString stringWithFormat:@"https://itunes.apple.com/jp/app/seiko-festa-57th-sheng-guang/id1097079958?l=ja&ls=1&mt=8"];
     
     //エンコード
     line = [line

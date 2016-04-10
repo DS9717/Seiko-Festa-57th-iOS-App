@@ -352,7 +352,7 @@
     hour=[[dateString substringWithRange:NSMakeRange(11, 2)]intValue];
     minute=[[dateString substringWithRange:NSMakeRange(14, 2)]intValue];
     
-    if (month == 4 && day <= 8 && hour < 17) {
+    if ((month == 4 && day < 30) || (month == 4 && day == 30 && hour < 17)) {
         
         _segmentedControl.selectedSegmentIndex = 0;
         
@@ -470,15 +470,21 @@
             
             
             //外ステージ
-            [buttonTwo1 setImage:[UIImage imageNamed:@"○○男子No.1決定戦-タイムテーブル2.png"] forState:    UIControlStateNormal];
-            [buttonTwo2 setImage:[UIImage imageNamed:@"コミュ力の窓-タイムテーブル2.png"] forState:UIControlStateNormal];
-            [buttonTwo3 setImage:[UIImage imageNamed:@"S-O-S-タイムテーブル2.png"] forState:UIControlStateNormal];
-            [buttonTwo4 setImage:[UIImage imageNamed:@"Seiko-Dance-Performance タイムテーブル.png"] forState:UIControlStateNormal];
-            [buttonTwo5 setImage:[UIImage imageNamed:@"ギネスに挑戦！！-タイムテーブル2.png"] forState:UIControlStateNormal];
-            [buttonTwo6 setImage:[UIImage imageNamed:@"The-笑-1-GP-タイムテーブル2.png"] forState:UIControlStateNormal];
-            [buttonTwo7 setImage:[UIImage imageNamed:@"のど自慢-タイムテーブル2.png"] forState:UIControlStateNormal];
-            [buttonTwo8 setImage:[UIImage imageNamed:@"Mr.聖光-タイムテーブル2.png"] forState:UIControlStateNormal];
-            [buttonTwo9 setImage:[UIImage imageNamed:@"フォークダンス-タイムテーブル.png"] forState:UIControlStateNormal];
+            [buttonTwo1 setImage:[UIImage imageNamed:@"替え劇〜赤ずきん〜-タイムテーブル2.png"] forState:    UIControlStateNormal];
+            [buttonTwo2 setImage:[UIImage imageNamed:@"○○男子No.1決定戦-タイムテーブル2.png"] forState:UIControlStateNormal];
+            [buttonTwo3 setImage:[UIImage imageNamed:@"コミュ力の窓-タイムテーブル2.png"] forState:UIControlStateNormal];
+            [buttonTwo4 setImage:[UIImage imageNamed:@"S-O-S-タイムテーブル2.png"] forState:UIControlStateNormal];
+            [buttonTwo5 setImage:[UIImage imageNamed:@"Seiko-Dance-Performance タイムテーブル.png"] forState:UIControlStateNormal];
+            [buttonTwo6 setImage:[UIImage imageNamed:@"ギネスに挑戦！！-タイムテーブル2.png"] forState:UIControlStateNormal];
+            [buttonTwo7 setImage:[UIImage imageNamed:@"The-笑-1-GP-タイムテーブル2.png"] forState:UIControlStateNormal];
+            [buttonTwo8 setImage:[UIImage imageNamed:@"のど自慢-タイムテーブル2.png"] forState:UIControlStateNormal];
+            [buttonTwo9 setImage:[UIImage imageNamed:@"Mr.聖光-タイムテーブル2.png"] forState:UIControlStateNormal];
+            buttonTwo9.frame = CGRectMake(0, (self.view.bounds.size.width * 19 / 32) * 8, self.view.bounds.size.width, self.view.bounds.size.width * 19 / 32);
+            buttonTwo10= [[UIButton alloc]initWithFrame:CGRectMake(0, (self.view.bounds.size.width * 19 / 32) * 9, self.view.bounds.size.width, self.view.bounds.size.width * 18 / 32)];
+            [buttonTwo10 setImage:[UIImage imageNamed:@"フォークダンス-タイムテーブル.png"] forState:UIControlStateNormal];
+            [buttonTwo10 addTarget:self
+                           action:@selector(buttonTwo10Detail2:) forControlEvents:UIControlEventTouchUpInside];
+            [scrollView2 addSubview:buttonTwo10];
             
             
             //ライブハウス1
@@ -838,53 +844,59 @@
 
 -(void)buttonTwo1Detail2:(UIButton *)button{
     whichList = @"stage";
-    flag = 10;
+    flag = 9;
     [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonTwo2Detail2:(UIButton *)button{
     whichList = @"stage";
-    flag = 7;
+    flag = 10;
     [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonTwo3Detail2:(UIButton *)button{
     whichList = @"stage";
-    flag = 11;
+    flag = 7;
     [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonTwo4Detail2:(UIButton *)button{
     whichList = @"stage";
-    flag = 4;
+    flag = 11;
     [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonTwo5Detail2:(UIButton *)button{
     whichList = @"stage";
-    flag = 6;
+    flag = 4;
     [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonTwo6Detail2:(UIButton *)button{
     whichList = @"stage";
-    flag = 8;
+    flag = 6;
     [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonTwo7Detail2:(UIButton *)button{
     whichList = @"stage";
-    flag = 5;
+    flag = 8;
     [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonTwo8Detail2:(UIButton *)button{
     whichList = @"stage";
-    flag = 3;
+    flag = 5;
     [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonTwo9Detail2:(UIButton *)button{
+    whichList = @"stage";
+    flag = 3;
+    [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
+}
+
+-(void)buttonTwo10Detail2:(UIButton *)button{
     whichList = @"stage";
     flag = 1;
     [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
@@ -1227,15 +1239,21 @@
         
         
             //外ステージ
-            [buttonTwo1 setImage:[UIImage imageNamed:@"○○男子No.1決定戦-タイムテーブル2.png"] forState:    UIControlStateNormal];
-            [buttonTwo2 setImage:[UIImage imageNamed:@"コミュ力の窓-タイムテーブル2.png"] forState:UIControlStateNormal];
-            [buttonTwo3 setImage:[UIImage imageNamed:@"S-O-S-タイムテーブル2.png"] forState:UIControlStateNormal];
-            [buttonTwo4 setImage:[UIImage imageNamed:@"Seiko-Dance-Performance タイムテーブル.png"] forState:UIControlStateNormal];
-            [buttonTwo5 setImage:[UIImage imageNamed:@"ギネスに挑戦！！-タイムテーブル2.png"] forState:UIControlStateNormal];
-            [buttonTwo6 setImage:[UIImage imageNamed:@"The-笑-1-GP-タイムテーブル2.png"] forState:UIControlStateNormal];
-            [buttonTwo7 setImage:[UIImage imageNamed:@"のど自慢-タイムテーブル2.png"] forState:UIControlStateNormal];
-            [buttonTwo8 setImage:[UIImage imageNamed:@"Mr.聖光-タイムテーブル2.png"] forState:UIControlStateNormal];
-            [buttonTwo9 setImage:[UIImage imageNamed:@"フォークダンス-タイムテーブル.png"] forState:UIControlStateNormal];
+            [buttonTwo1 setImage:[UIImage imageNamed:@"替え劇〜赤ずきん〜-タイムテーブル2.png"] forState:    UIControlStateNormal];
+            [buttonTwo2 setImage:[UIImage imageNamed:@"○○男子No.1決定戦-タイムテーブル2.png"] forState:UIControlStateNormal];
+            [buttonTwo3 setImage:[UIImage imageNamed:@"コミュ力の窓-タイムテーブル2.png"] forState:UIControlStateNormal];
+            [buttonTwo4 setImage:[UIImage imageNamed:@"S-O-S-タイムテーブル2.png"] forState:UIControlStateNormal];
+            [buttonTwo5 setImage:[UIImage imageNamed:@"Seiko-Dance-Performance タイムテーブル.png"] forState:UIControlStateNormal];
+            [buttonTwo6 setImage:[UIImage imageNamed:@"ギネスに挑戦！！-タイムテーブル2.png"] forState:UIControlStateNormal];
+            [buttonTwo7 setImage:[UIImage imageNamed:@"The-笑-1-GP-タイムテーブル2.png"] forState:UIControlStateNormal];
+            [buttonTwo8 setImage:[UIImage imageNamed:@"のど自慢-タイムテーブル2.png"] forState:UIControlStateNormal];
+            [buttonTwo9 setImage:[UIImage imageNamed:@"Mr.聖光-タイムテーブル2.png"] forState:UIControlStateNormal];
+            buttonTwo9.frame = CGRectMake(0, (self.view.bounds.size.width * 19 / 32) * 8, self.view.bounds.size.width, self.view.bounds.size.width * 19 / 32);
+            buttonTwo10= [[UIButton alloc]initWithFrame:CGRectMake(0, (self.view.bounds.size.width * 19 / 32) * 9, self.view.bounds.size.width, self.view.bounds.size.width * 18 / 32)];
+            [buttonTwo10 setImage:[UIImage imageNamed:@"フォークダンス-タイムテーブル.png"] forState:UIControlStateNormal];
+            [buttonTwo10 addTarget:self
+                            action:@selector(buttonTwo10Detail2:) forControlEvents:UIControlEventTouchUpInside];
+            [scrollView2 addSubview:buttonTwo10];
         
         
             //ライブハウス1

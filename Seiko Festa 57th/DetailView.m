@@ -699,8 +699,8 @@
         else if (flag == 9) {
             detailImage = [UIImage imageNamed:@"替え歌選手権.png"];
             mapImage = [UIImage imageNamed:@"外ステージマップ.png"];
-            _detailTitle.text = @"替え歌選手権";
-            _explainSentence.text = @"歌は思いを伝えてこそ歌である！聖光生が思いを自らの歌詞に込めた「替え歌」とくとご鑑賞あれ！";
+            _detailTitle.text = @"替え劇 〜赤ずきん〜";
+            _explainSentence.text = @"昔むかし赤ずきんという少女がいました。その赤ずきんに狼は恋してた！？あなたの知らない赤ずきんの世界をお届けします";
         }
         else if (flag == 10) {
             detailImage = [UIImage imageNamed:@"○○男子No.1決定戦.png"];
