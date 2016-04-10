@@ -1036,7 +1036,7 @@
             [buttonTwo8 setImage:[UIImage imageNamed:@"Mr.聖光-タイムテーブル.png"] forState:UIControlStateNormal];
             [buttonTwo9 setImage:[UIImage imageNamed:@"春夜祭-タイムテーブル.png"] forState:UIControlStateNormal];
             
-            buttonTwo9.frame = CGRectMake(0, (self.view.bounds.size.width * 19 / 32) * 8, self.view.bounds.size.width, self.view.bounds.size.width * 19 / 32);
+            buttonTwo9.frame = CGRectMake(0, (self.view.bounds.size.width * 19 / 32) * 8, self.view.bounds.size.width, self.view.bounds.size.width * 18 / 32);
             
             [buttonTwo10 removeFromSuperview];
             
