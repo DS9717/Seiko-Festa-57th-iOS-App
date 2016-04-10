@@ -486,6 +486,7 @@
                            action:@selector(buttonTwo10Detail2:) forControlEvents:UIControlEventTouchUpInside];
             [scrollView2 addSubview:buttonTwo10];
             
+            [scrollView2 setContentSize:CGSizeMake(self.view.bounds.size.width, (self.view.bounds.size.width * 19 / 32) * 9 + (self.view.bounds.size.width * 18 / 32))];
             
             //ライブハウス1
             [buttonThree1 setImage:[UIImage imageNamed:@"ぽんでっくす-タイムテーブル2.png"] forState:UIControlStateNormal];
@@ -1254,6 +1255,8 @@
             [buttonTwo10 addTarget:self
                             action:@selector(buttonTwo10Detail2:) forControlEvents:UIControlEventTouchUpInside];
             [scrollView2 addSubview:buttonTwo10];
+            
+            [scrollView2 setContentSize:CGSizeMake(self.view.bounds.size.width, (self.view.bounds.size.width * 19 / 32) * 9 + (self.view.bounds.size.width * 18 / 32))];
         
         
             //ライブハウス1
