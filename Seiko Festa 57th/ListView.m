@@ -731,7 +731,7 @@
         button40= [[UIButton alloc]initWithFrame:CGRectMake(spaceLeft + self.view.bounds.size.width / 2, 16 + (length + spaceH + fontSize + 29) * 19, length, length)];
         [button40 setImage:[UIImage imageNamed:@"数学研究会.png"] forState:UIControlStateNormal];
         [button40 addTarget:self
-                     action:@selector(buttonTwo38Detail:) forControlEvents:UIControlEventTouchUpInside];
+                     action:@selector(buttonTwo40Detail:) forControlEvents:UIControlEventTouchUpInside];
         [scrollView addSubview:button40];
         
         label40 = [[UILabel alloc]initWithFrame:CGRectMake(spaceLeft + self.view.bounds.size.width / 2, 16 + length + spaceH + (length + spaceH + fontSize + 29) * 19, length, fontSize + 5)];
