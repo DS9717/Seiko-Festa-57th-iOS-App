@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7E0046FB1CB9402800061AC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E0046FA1CB9402800061AC3 /* Foundation.framework */; };
-		7E0046FD1CB9419B00061AC3 /* iOS Simulator Screen Shot 2016.04.09 22.56.27.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0046FC1CB9419B00061AC3 /* iOS Simulator Screen Shot 2016.04.09 22.56.27.png */; };
 		7E3EB47B1C79DAB900F3B2A0 /* TimetableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3EB47A1C79DAB900F3B2A0 /* TimetableViewController.m */; };
 		7E3FE6E81CA0278D000E0281 /* MyriadPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7E3FE6E71CA02782000E0281 /* MyriadPro-Regular.otf */; };
 		7E4D55AE1C49315C00BFE19C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4D55AD1C49315C00BFE19C /* main.m */; };
@@ -335,7 +334,6 @@
 
 /* Begin PBXFileReference section */
 		7E0046FA1CB9402800061AC3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		7E0046FC1CB9419B00061AC3 /* iOS Simulator Screen Shot 2016.04.09 22.56.27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iOS Simulator Screen Shot 2016.04.09 22.56.27.png"; path = "../../iOS Simulator Screen Shot 2016.04.09 22.56.27.png"; sourceTree = "<group>"; };
 		7E3EB4791C79DAB900F3B2A0 /* TimetableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimetableViewController.h; path = ../TimetableViewController.h; sourceTree = "<group>"; };
 		7E3EB47A1C79DAB900F3B2A0 /* TimetableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimetableViewController.m; path = ../TimetableViewController.m; sourceTree = "<group>"; };
 		7E3FE6E71CA02782000E0281 /* MyriadPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Regular.otf"; sourceTree = "<group>"; };
@@ -794,7 +792,6 @@
 			isa = PBXGroup;
 			children = (
 				7EB62DF41CAAE70A0097FDB5 /* line.png */,
-				7E0046FC1CB9419B00061AC3 /* iOS Simulator Screen Shot 2016.04.09 22.56.27.png */,
 				7E85A06C1CB4210D00EDB2E6 /* Access.png */,
 				7EB62EBC1CAEE4E30097FDB5 /* Category Icons */,
 				FAA39B001C9D093200A1B697 /* 丸アイコン */,
@@ -1495,7 +1492,7 @@
 				TargetAttributes = {
 					7E4D55A71C49315B00BFE19C = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = TAE9KC7SWK;
+						DevelopmentTeam = 3GKM8LRN87;
 					};
 					7E4D55C01C49315C00BFE19C = {
 						CreatedOnToolsVersion = 6.2;
@@ -1647,7 +1644,6 @@
 				FA6A8C331CB9379500C4B7A3 /* Shockersマップ.png in Resources */,
 				FAD7F5AB1CAFB7470075883A /* かるた会.png in Resources */,
 				7EB62E631CAEAF8D0097FDB5 /* Grand-Finale.png in Resources */,
-				7E0046FD1CB9419B00061AC3 /* iOS Simulator Screen Shot 2016.04.09 22.56.27.png in Resources */,
 				7E85A0151CB16CAE00EDB2E6 /* ○○男子No.1決定戦-タイムテーブル2.png in Resources */,
 				7E859FDA1CB16BF000EDB2E6 /* The-笑-1-GP-タイムテーブル.png in Resources */,
 				FAD7F5C81CAFB7470075883A /* 物理科学部.png in Resources */,
@@ -1973,7 +1969,7 @@
 				INFOPLIST_FILE = "Seiko Festa 57th/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.Seiko-Festa-57th-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "ed.self.Seiko-Festa-57th-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -1989,7 +1985,7 @@
 				INFOPLIST_FILE = "Seiko Festa 57th/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.Seiko-Festa-57th-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "ed.self.Seiko-Festa-57th-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

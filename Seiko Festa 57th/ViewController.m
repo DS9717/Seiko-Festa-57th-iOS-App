@@ -56,7 +56,7 @@
         
     }
     
-    if ((month == 4 && day == 8 && hour == 16 && 30 <= minute && minute <= 59) || (month == 4 && day == 9 && hour >= 17)) {
+    if ((month == 4 && day == 8 && hour == 16 && 30 <= minute && minute <= 59) || (month == 4 && day == 9 && hour == 16 && 30 <= minute && minute <= 59) || (month == 4 && day == 9 && hour >= 17) || (month == 4 && day > 9) || (month > 5)) {
         
         welcomeBanner = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.width * 0.4)];
         welcomeBanner.image = [UIImage imageNamed:@"Thank-you.png"];
@@ -121,7 +121,7 @@
         buttonLabelFont = 13;
     } else if (r.size.width == 375) {
         //iPhone 6/6s
-        spaceAllAbove = 9;
+        spaceAllAbove = 8;
         allButtonLength = 102;
         space = 16;
         length = 89;
@@ -130,7 +130,7 @@
         buttonLabelFont = 15;
     } else if (r.size.width == 414) {
         //iPhone 6 plus/6s plus
-        spaceAllAbove = 10;
+        spaceAllAbove = 8;
         allButtonLength = 114;
         space = 16;
         length = 100;
@@ -153,7 +153,7 @@
     mainScrollView.backgroundColor = [UIColor clearColor];
     //スクロールの範囲を設定
     [mainScrollView setContentSize:CGSizeMake(self.view.bounds.size.width,
-                                              spaceAllAbove + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove) * 5 + buttonLabelFont)];
+                                              spaceAllAbove + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove + 8) * 5 + buttonLabelFont - 8)];
     [mainScrollView setContentOffset:CGPointMake(0.0, contentOffsetY) animated:NO];
     
     Food = [[UIButton alloc]initWithFrame:CGRectMake((self.view.bounds.size.width - allButtonLength * 1.5) / 2,
@@ -376,7 +376,7 @@
     
     //趣味研
     Display = [[UIButton alloc]initWithFrame:CGRectMake((self.view.bounds.size.width - allButtonLength * 1.5) / 2,
-                                                        spaceAllAbove + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove) * 1,
+                                                        spaceAllAbove + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove + 8) * 1,
                                                         allButtonLength * 1.5,
                                                         allButtonLength)];
     [Display setImage:[UIImage imageNamed:@"Display-icon"] forState:UIControlStateNormal];
@@ -384,7 +384,7 @@
     [mainScrollView addSubview:Display];
     
     viewAllButton2 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - allButtonLength * 2 / 3,
-                                                               spaceAllAbove + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove) * 1,
+                                                               spaceAllAbove + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove + 8) * 1,
                                                                allButtonLength * 2 / 3,
                                                                allButtonLength)];
     [viewAllButton2 setImage:[UIImage imageNamed:@"Right-to-List"] forState:UIControlStateNormal];
@@ -394,7 +394,7 @@
     
     scrollView2 = [[UIScrollView alloc]init];
     scrollView2.frame = CGRectMake(0,
-                                   spaceAllAbove + allButtonLength + spaceAllBelow + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove) * 1,
+                                   spaceAllAbove + allButtonLength + spaceAllBelow + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove + 8) * 1,
                                    self.view.bounds.size.width,
                                    space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove);
     scrollView2.showsHorizontalScrollIndicator = NO;
@@ -945,7 +945,7 @@
     
     //バンド
     Band = [[UIButton alloc]initWithFrame:CGRectMake((self.view.bounds.size.width - allButtonLength * 1.5) / 2,
-                                                     spaceAllAbove + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove) * 2,
+                                                     spaceAllAbove + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove + 8) * 2,
                                                      allButtonLength * 1.5,
                                                      allButtonLength)];
     [Band setImage:[UIImage imageNamed:@"Band-icon"] forState:UIControlStateNormal];
@@ -953,7 +953,7 @@
     [mainScrollView addSubview:Band];
     
     viewAllButton3 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - allButtonLength * 2 / 3,
-                                                               spaceAllAbove + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove) * 2,
+                                                               spaceAllAbove + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove + 8) * 2,
                                                                allButtonLength * 2 / 3,
                                                                allButtonLength)];
     [viewAllButton3 setImage:[UIImage imageNamed:@"Right-to-List"] forState:UIControlStateNormal];
@@ -963,7 +963,7 @@
     
     scrollView3 = [[UIScrollView alloc]init];
     scrollView3.frame = CGRectMake(0,
-                                   spaceAllAbove + allButtonLength + spaceAllBelow + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove) * 2,
+                                   spaceAllAbove + allButtonLength + spaceAllBelow + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove + 8) * 2,
                                    self.view.bounds.size.width,
                                    space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove);
     scrollView3.showsHorizontalScrollIndicator = NO;
@@ -1137,7 +1137,7 @@
     
     //講堂･小講堂
     Performance = [[UIButton alloc]initWithFrame:CGRectMake((self.view.bounds.size.width - allButtonLength * 1.5) / 2,
-                                                            spaceAllAbove + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove) * 3,
+                                                            spaceAllAbove + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove + 8) * 3,
                                                             allButtonLength * 1.5,
                                                             allButtonLength)];
     [Performance setImage:[UIImage imageNamed:@"Performance-icon"] forState:UIControlStateNormal];
@@ -1145,7 +1145,7 @@
     [mainScrollView addSubview:Performance];
     
     viewAllButton4 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - allButtonLength * 2 / 3,
-                                                               spaceAllAbove + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove) * 3,
+                                                               spaceAllAbove + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove + 8) * 3,
                                                                allButtonLength* 2 / 3,
                                                                allButtonLength )];
     [viewAllButton4 setImage:[UIImage imageNamed:@"Right-to-List"] forState:UIControlStateNormal];
@@ -1155,7 +1155,7 @@
     
     scrollView4 = [[UIScrollView alloc]init];
     scrollView4.frame = CGRectMake(0,
-                                   spaceAllAbove + allButtonLength + spaceAllBelow + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove) * 3,
+                                   spaceAllAbove + allButtonLength + spaceAllBelow + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove + 8) * 3,
                                    self.view.bounds.size.width,
                                    space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove);
     scrollView4.showsHorizontalScrollIndicator = NO;
@@ -1340,7 +1340,7 @@
     
     //ステージ
     Stage = [[UIButton alloc]initWithFrame:CGRectMake((self.view.bounds.size.width - allButtonLength * 1.5) / 2,
-                                                      spaceAllAbove + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove) * 4,
+                                                      spaceAllAbove + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove + 8) * 4,
                                                       allButtonLength * 1.5,
                                                       allButtonLength)];
     [Stage setImage:[UIImage imageNamed:@"Stage-icon.png"] forState:UIControlStateNormal];
@@ -1348,7 +1348,7 @@
     [mainScrollView addSubview:Stage];
     
     viewAllButton5 = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width - allButtonLength * 2 / 3,
-                                                               spaceAllAbove + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove) * 4,
+                                                               spaceAllAbove + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove + 8) * 4,
                                                                allButtonLength* 2 / 3,
                                                                allButtonLength )];
     [viewAllButton5 setImage:[UIImage imageNamed:@"Right-to-List"] forState:UIControlStateNormal];
@@ -1358,7 +1358,7 @@
     
     scrollView5 = [[UIScrollView alloc]init];
     scrollView5.frame = CGRectMake(0,
-                                   spaceAllAbove + allButtonLength + spaceAllBelow + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove) * 4,
+                                   spaceAllAbove + allButtonLength + spaceAllBelow + (allButtonLength + spaceAllBelow + space + length + spaceBelow + buttonLabelFont * 2 + 1 + spaceAllAbove + 8) * 4,
                                    self.view.bounds.size.width,
                                    space + length + spaceBelow + buttonLabelFont * 3 + 1 + spaceAllAbove);
     scrollView5.showsHorizontalScrollIndicator = NO;
@@ -1573,7 +1573,7 @@
         }else if (hour == 15 && 0 <= minute && minute <= 29) {
             organizationFeaturedImages = @[@"英語劇 バナー1.png", @"春夜祭 バナー.jpg"];
         }else if ((hour == 15 && 30 <= minute && minute <= 59) || (hour == 16 && 0 <= minute && minute <= 29)) {
-
+            organizationFeaturedImages = @[@"春夜祭 バナー.jpg"];
         }else if (hour == 16 && 30 <= minute && minute <= 59){
         
         }
@@ -1599,13 +1599,12 @@
         }else if (hour == 14 && 0 <= minute && minute <= 29) {
             organizationFeaturedImages = @[@"Mr.聖光 バナー2.jpg", @"吹奏楽部 バナー.jpg", @"地学天文学部 バナー2.jpg", @"フォークダンス バナー.jpg"];
         }else if (hour == 14 && 30 <= minute && minute <= 59) {
-            organizationFeaturedImages = @[@"Mr.聖光 バナー2.jpg", @"吹奏楽部 バナー.jpg", @"フォークダンス バナー.jpg", @"Grand Finale バナー.jpg"];
-        }else if (hour == 15 || hour == 16) {
-        
-        }else if (hour >= 17) {
+            organizationFeaturedImages = @[@"フォークダンス バナー.jpg", @"Grand Finale バナー.jpg", @"吹奏楽部 バナー.jpg"];
+        }else if (hour == 15 || (hour == 16 && 0 <= minute && minute <= 29)) {
+            organizationFeaturedImages = @[@"Grand Finale バナー.jpg"];
+        }else{
             
         }
-        
     }
     
     if (month == monthC && day == dayC && hour == hourC && minute == minuteC) {
@@ -1622,16 +1621,19 @@
         
     }
     
-    if ((month == 4 && day == 5) && ((hour == 15 && 30 <= minute && minute <= 59) || (hour == 16 && 0 <= minute && minute <= 59))) {
+    
+    if ((month == 4 && day == 8) && ((hour == 15 && 30 <= minute && minute <= 59) || (hour == 16))) {
         
         [self oneBanner];
         
-    }else if ((month == 4 && day == 6) && (hour == 15 || hour == 16)) {
+    }else if ((month == 4 && day == 9) && (hour >= 15)) {
         
         [self oneBanner];
+     
         
     }else {
     
+     
     
     if (imageNumber == organizationFeaturedImages.count) {
         
@@ -2000,13 +2002,8 @@
         if (featuredImageButton.tag == 0) {
             whichList = @"stage";
             flag = 2;
-        }else if (featuredImageButton.tag == 1) {
-            whichList = @"stage";
-            flag = 2;
         }
     }else if ((month == 4 && day == 8) && (hour == 16 && 30 <= minute && minute <= 59)) {
-        
-        
         
     }else if ((month == 4 && day == 8 && hour >= 17) || (month == 4 && day == 9 && hour <= 9)){
         if (featuredImageButton.tag == 0) {
@@ -2232,23 +2229,17 @@
             flag = 3;
         }else if (featuredImageButton.tag == 1) {
             whichList = @"performance";
-            flag = 8;
+            flag = 1;
         }else if (featuredImageButton.tag == 2) {
-            whichList = @"stage";
-            flag = 1;
-        }else if (featuredImageButton.tag == 3) {
             whichList = @"performance";
-            flag = 1;
+            flag = 8;
         }
-    }else if ((month == 4 && day == 9) && (hour == 15 || hour == 16)) {
+    }else if ((month == 4 && day == 9) && (hour == 15 || (hour == 16 && 0 <= minute && minute <= 29))) {
         if (featuredImageButton.tag == 0) {
             whichList = @"performance";
             flag = 1;
-        }else if (featuredImageButton.tag == 1) {
-            whichList = @"performance";
-            flag = 2;
         }
-    }else if (hour >= 17) {
+    }else{
         
     }
     
@@ -2483,13 +2474,8 @@
         if (featuredImageButton2.tag == 0) {
             whichList = @"stage";
             flag = 2;
-        }else if (featuredImageButton2.tag == 1) {
-            whichList = @"stage";
-            flag = 2;
         }
     }else if ((month == 4 && day == 8) && (hour == 16 && 30 <= minute && minute <= 59)) {
-        
-        
         
     }else if ((month == 4 && day == 8 && hour >= 17) || (month == 4 && day == 9 && hour <= 9)){
         if (featuredImageButton2.tag == 0) {
@@ -2715,28 +2701,21 @@
             flag = 3;
         }else if (featuredImageButton2.tag == 1) {
             whichList = @"performance";
-            flag = 8;
+            flag = 1;
         }else if (featuredImageButton2.tag == 2) {
-            whichList = @"stage";
-            flag = 1;
-        }else if (featuredImageButton2.tag == 3) {
             whichList = @"performance";
-            flag = 1;
+            flag = 8;
         }
-    }else if ((month == 4 && day == 9) && (hour == 15 || hour == 16)) {
+    }else if ((month == 4 && day == 9) && (hour == 15 || (hour == 16 && 0 <= minute && minute <= 29))) {
         if (featuredImageButton2.tag == 0) {
             whichList = @"performance";
             flag = 1;
-        }else if (featuredImageButton2.tag == 1) {
-            whichList = @"performance";
-            flag = 2;
         }
-    }else if (hour >= 17) {
+    }else{
         
     }
     
     [self performSegueWithIdentifier:@"showDirect" sender:self];
-    
 }
 
 -(void)buttonOne1Detail:(UIButton *)button{
