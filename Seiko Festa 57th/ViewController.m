@@ -117,7 +117,7 @@
         allButtonLength = 90;
         space = 16;
         length = 73 ;
-        spaceAllBelow = -8;
+        spaceAllBelow = -16;
         spaceBelow = 8;
         buttonLabelFont = 13;
     } else if (r.size.width == 375) {
@@ -126,7 +126,7 @@
         allButtonLength = 102;
         space = 16;
         length = 89;
-        spaceAllBelow = -8;
+        spaceAllBelow = -16;
         spaceBelow = 9;
         buttonLabelFont = 15;
     } else if (r.size.width == 414) {
@@ -135,7 +135,7 @@
         allButtonLength = 114;
         space = 16;
         length = 100;
-        spaceAllBelow = -8;
+        spaceAllBelow = -16;
         spaceBelow = 10;
         buttonLabelFont = 17;
     }
@@ -147,7 +147,6 @@
     mainScrollView.frame = CGRectMake(0, self.view.bounds.size.width * 0.4, self.view.bounds.size.width, self.view.bounds.size.height - self.view.bounds.size.width * 0.4 - 49);
     //横スクロールのインジケータを非表示にする
     mainScrollView.showsHorizontalScrollIndicator = NO;
-    
     mainScrollView.userInteractionEnabled = YES;
     mainScrollView.directionalLockEnabled = YES;
     mainScrollView.bounces = YES;
