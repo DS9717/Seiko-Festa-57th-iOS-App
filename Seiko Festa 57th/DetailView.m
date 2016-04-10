@@ -116,7 +116,6 @@
         imageScroll.backgroundColor = [UIColor clearColor];
         //スクロールの範囲を設定
         [imageScroll setContentSize:CGSizeMake(self.view.bounds.size.width * 2, self.view.bounds.size.width - space * 0.6)];
-        
         //
         _detailTitle = [[UILabel alloc]initWithFrame:CGRectMake(16, self.view.bounds.size.width - space + spaceBelow, self.view.bounds.size.width - 32, titleSize)];    //CGRectMake(16, space + length + spaceBelow, self.view.bounds.size.width - 32, titleSize)
         _detailTitle.textAlignment = NSTextAlignmentCenter;
@@ -141,7 +140,27 @@
         self.navigationItem.titleView=nav_title;
     }
     
-
+    
+    floor = [[UILabel alloc]initWithFrame:CGRectMake(imageScroll.bounds.size.width, 0, imageScroll.bounds.size.width, 20)];
+    floor.text = @"1F";
+    floor.textAlignment = NSTextAlignmentCenter;
+    floor.textColor = [UIColor whiteColor];
+    [imageScroll addSubview:floor];
+    
+    if (r.size.height == 480) {
+        //iPhone4s
+        floor.font = [UIFont fontWithName:@"HelveticaNeue" size:20];
+    }else if (r.size.height == 568) {
+        //iPhone5/5c/5s
+        floor.font = [UIFont fontWithName:@"HelveticaNeue" size:20];
+    } else if (r.size.height == 667) {
+        //iPhone 6/6s
+        floor.font = [UIFont fontWithName:@"HelveticaNeue" size:22];
+    } else if (r.size.height == 736) {
+        //iPhone 6 plus/6s plus
+        floor.font = [UIFont fontWithName:@"HelveticaNeue" size:24];
+    }
+    
     
     if ([_whatList isEqualToString:@"food"]) {
         

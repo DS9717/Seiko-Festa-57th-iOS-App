@@ -30,6 +30,7 @@
 		7E4FB59D1CB5463B00A1547B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4FB59C1CB5463B00A1547B /* Icon.png */; };
 		7E4FB5A31CB6834900A1547B /* Home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4FB5A21CB6834900A1547B /* Home@2x.png */; };
 		7E4FB5A91CB6870800A1547B /* Home@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4FB5A81CB6870800A1547B /* Home@3x.png */; };
+		7E52F8CE1CBAA4B000D36EA2 /* Facebook icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E52F8CD1CBAA4B000D36EA2 /* Facebook icon.png */; };
 		7E6950AA1CB92E0D008940F7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6950A91CB92E0D008940F7 /* Accelerate.framework */; };
 		7E859F491CB00A4000EDB2E6 /* Flat Flight バナー1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E859F441CB00A4000EDB2E6 /* Flat Flight バナー1.jpg */; };
 		7E859F4A1CB00A4000EDB2E6 /* M&A バナー1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E859F451CB00A4000EDB2E6 /* M&A バナー1.jpg */; };
@@ -158,7 +159,6 @@
 		7EB62DF51CAAE70A0097FDB5 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB62DF41CAAE70A0097FDB5 /* line.png */; };
 		7EB62E001CAAEF540097FDB5 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB62DFF1CAAEF540097FDB5 /* ShareViewController.m */; };
 		7EB62E101CAAFD1F0097FDB5 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EB62E0F1CAAFD1F0097FDB5 /* Social.framework */; };
-		7EB62E141CAB01C80097FDB5 /* Facebook icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB62E131CAB01C80097FDB5 /* Facebook icon.png */; };
 		7EB62E161CAB021E0097FDB5 /* Twitter icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB62E151CAB021E0097FDB5 /* Twitter icon.png */; };
 		7EB62E181CAB02EF0097FDB5 /* LINE icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB62E171CAB02EF0097FDB5 /* LINE icon.png */; };
 		7EB62E1A1CAB030D0097FDB5 /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB62E191CAB030D0097FDB5 /* cancel.png */; };
@@ -364,6 +364,7 @@
 		7E4FB59C1CB5463B00A1547B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		7E4FB5A21CB6834900A1547B /* Home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home@2x.png"; sourceTree = "<group>"; };
 		7E4FB5A81CB6870800A1547B /* Home@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home@3x.png"; sourceTree = "<group>"; };
+		7E52F8CD1CBAA4B000D36EA2 /* Facebook icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Facebook icon.png"; sourceTree = "<group>"; };
 		7E6950A91CB92E0D008940F7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		7E859F441CB00A4000EDB2E6 /* Flat Flight バナー1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Flat Flight バナー1.jpg"; sourceTree = "<group>"; };
 		7E859F451CB00A4000EDB2E6 /* M&A バナー1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "M&A バナー1.jpg"; sourceTree = "<group>"; };
@@ -495,7 +496,6 @@
 		7EB62DFE1CAAEF540097FDB5 /* ShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
 		7EB62DFF1CAAEF540097FDB5 /* ShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
 		7EB62E0F1CAAFD1F0097FDB5 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		7EB62E131CAB01C80097FDB5 /* Facebook icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Facebook icon.png"; sourceTree = "<group>"; };
 		7EB62E151CAB021E0097FDB5 /* Twitter icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twitter icon.png"; sourceTree = "<group>"; };
 		7EB62E171CAB02EF0097FDB5 /* LINE icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LINE icon.png"; sourceTree = "<group>"; };
 		7EB62E191CAB030D0097FDB5 /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
@@ -1041,7 +1041,7 @@
 		7EB62EBB1CAEE4A50097FDB5 /* SNS */ = {
 			isa = PBXGroup;
 			children = (
-				7EB62E131CAB01C80097FDB5 /* Facebook icon.png */,
+				7E52F8CD1CBAA4B000D36EA2 /* Facebook icon.png */,
 				7EB62E151CAB021E0097FDB5 /* Twitter icon.png */,
 				7EB62E171CAB02EF0097FDB5 /* LINE icon.png */,
 				7EB62E191CAB030D0097FDB5 /* cancel.png */,
@@ -1729,6 +1729,7 @@
 				7E9F1F8F1CB6B1EE000F8A0D /* Display icon vector enji3.pdf in Resources */,
 				7E85A0061CB16CA000EDB2E6 /* Grand-Finale-タイムテーブル.png in Resources */,
 				7E85A00A1CB16CA000EDB2E6 /* 吹奏楽部-タイムテーブル.png in Resources */,
+				7E52F8CE1CBAA4B000D36EA2 /* Facebook icon.png in Resources */,
 				FA85FBA01CB7E6AC001429E3 /* Crepe-Breakマップ.png in Resources */,
 				FAD7F5B41CAFB7470075883A /* リアル野球盤.png in Resources */,
 				7EB62E8A1CAEB0410097FDB5 /* 替え歌選手権.png in Resources */,
@@ -1769,7 +1770,6 @@
 				FAD7F5A71CAFB7470075883A /* Showtime!.png in Resources */,
 				FA6A8C4E1CB9379500C4B7A3 /* 地学天文学部マップ.png in Resources */,
 				7EB62E3D1CAEAE0A0097FDB5 /* 題名のない音楽喫茶.png in Resources */,
-				7EB62E141CAB01C80097FDB5 /* Facebook icon.png in Resources */,
 				FAD7F5C21CAFB7470075883A /* 聖書研究会.png in Resources */,
 				FA6A8C351CB9379500C4B7A3 /* Trick×Harkマップ.png in Resources */,
 				FAD7F5AC1CAFB7470075883A /* ぎゃんぶる。.png in Resources */,

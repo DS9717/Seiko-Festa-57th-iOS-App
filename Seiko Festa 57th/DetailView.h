@@ -51,6 +51,8 @@
     
     float iOSVersion;
     
+    UILabel *floor;
+    
 }
 @property(nonatomic) int flag;
 @property (weak, nonatomic) IBOutlet UINavigationItem *navigationBar;
