@@ -147,7 +147,6 @@
     mainScrollView.frame = CGRectMake(0, self.view.bounds.size.width * 0.4, self.view.bounds.size.width, self.view.bounds.size.height - self.view.bounds.size.width * 0.4 - 49);
     //横スクロールのインジケータを非表示にする
     mainScrollView.showsHorizontalScrollIndicator = NO;
-    
     mainScrollView.userInteractionEnabled = YES;
     mainScrollView.directionalLockEnabled = YES;
     mainScrollView.bounces = YES;
