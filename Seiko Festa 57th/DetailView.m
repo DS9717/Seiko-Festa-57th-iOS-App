@@ -141,27 +141,6 @@
     }
     
     
-    floor = [[UILabel alloc]initWithFrame:CGRectMake(imageScroll.bounds.size.width, 0, imageScroll.bounds.size.width, 20)];
-    floor.text = @"1F";
-    floor.textAlignment = NSTextAlignmentCenter;
-    floor.textColor = [UIColor whiteColor];
-    [imageScroll addSubview:floor];
-    
-    if (r.size.height == 480) {
-        //iPhone4s
-        floor.font = [UIFont fontWithName:@"HelveticaNeue" size:20];
-    }else if (r.size.height == 568) {
-        //iPhone5/5c/5s
-        floor.font = [UIFont fontWithName:@"HelveticaNeue" size:20];
-    } else if (r.size.height == 667) {
-        //iPhone 6/6s
-        floor.font = [UIFont fontWithName:@"HelveticaNeue" size:22];
-    } else if (r.size.height == 736) {
-        //iPhone 6 plus/6s plus
-        floor.font = [UIFont fontWithName:@"HelveticaNeue" size:24];
-    }
-    
-    
     if ([_whatList isEqualToString:@"food"]) {
         
         nav_title.text=@"Food";
@@ -843,6 +822,24 @@
         [imageScroll addSubview:detailImageview];
     }
     
+    floor = [[UILabel alloc]initWithFrame:CGRectMake(imageScroll.bounds.size.width, 0, imageScroll.bounds.size.width, 20)];
+    floor.textAlignment = NSTextAlignmentCenter;
+    floor.textColor = [UIColor whiteColor];
+    [imageScroll addSubview:floor];
+    
+    if (r.size.height == 480) {
+        //iPhone4s
+        floor.font = [UIFont fontWithName:@"HelveticaNeue" size:20];
+    }else if (r.size.height == 568) {
+        //iPhone5/5c/5s
+        floor.font = [UIFont fontWithName:@"HelveticaNeue" size:20];
+    } else if (r.size.height == 667) {
+        //iPhone 6/6s
+        floor.font = [UIFont fontWithName:@"HelveticaNeue" size:22];
+    } else if (r.size.height == 736) {
+        //iPhone 6 plus/6s plus
+        floor.font = [UIFont fontWithName:@"HelveticaNeue" size:24];
+    }
     
     self.navigationController.navigationBar.translucent = NO;
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:140.0/255.0 green:23.0/255.0 blue:26.0/255.0 alpha:1.0];
