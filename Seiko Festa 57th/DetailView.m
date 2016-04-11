@@ -140,6 +140,28 @@
         self.navigationItem.titleView=nav_title;
     }
     
+    floor = [[UILabel alloc]init];
+    
+    if (r.size.height == 480) {
+        //iPhone4s
+        floor.frame = CGRectMake(imageScroll.bounds.size.width, 0, imageScroll.bounds.size.width, 27);
+        floor.font = [UIFont fontWithName:@"MyriadPro-Regular" size:22];
+    }else if (r.size.height == 568) {
+        //iPhone5/5c/5s
+        floor.frame = CGRectMake(imageScroll.bounds.size.width, 0, imageScroll.bounds.size.width, 27);
+        floor.font = [UIFont fontWithName:@"MyriadPro-Regular" size:22];
+    } else if (r.size.height == 667) {
+        //iPhone 6/6s
+        floor.frame = CGRectMake(imageScroll.bounds.size.width, 0, imageScroll.bounds.size.width, 29);
+        floor.font = [UIFont fontWithName:@"MyriadPro-Regular" size:24];
+    } else if (r.size.height == 736) {
+        //iPhone 6 plus/6s plus
+        floor.frame = CGRectMake(imageScroll.bounds.size.width, 0, imageScroll.bounds.size.width, 31);
+        floor.font = [UIFont fontWithName:@"MyriadPro-Regular" size:26];
+    }
+    
+    floor.textAlignment = NSTextAlignmentCenter;
+    floor.textColor = [UIColor whiteColor];
     
     if ([_whatList isEqualToString:@"food"]) {
         
@@ -295,6 +317,19 @@
             _detailTitle.text = @"高3英語劇";
             _explainSentence.text = @"サスペンス劇の金字塔を最高学年が熱演！刻一刻と迫る運命、明かされる驚愕の真実！";
             floor.text = @"4F";
+            if (r.size.height == 480) {
+                //iPhone4s
+                floor.frame = CGRectMake(imageScroll.bounds.size.width + 200, 0, imageScroll.bounds.size.width - 200, 27);
+            }else if (r.size.height == 568) {
+                //iPhone5/5c/5s
+                floor.frame = CGRectMake(imageScroll.bounds.size.width + 200, 0, imageScroll.bounds.size.width - 200, 27);
+            } else if (r.size.height == 667) {
+                //iPhone 6/6s
+                floor.frame = CGRectMake(imageScroll.bounds.size.width + 200, 0, imageScroll.bounds.size.width - 200, 29);
+            } else if (r.size.height == 736) {
+                //iPhone 6 plus/6s plus
+                floor.frame = CGRectMake(imageScroll.bounds.size.width + 200, 0, imageScroll.bounds.size.width - 200, 31);
+            }
         }
         else if (flag == 8) {
             detailImage = [UIImage imageNamed:@"交通研究部.png"];
@@ -822,24 +857,8 @@
         [imageScroll addSubview:detailImageview];
     }
     
-    floor = [[UILabel alloc]initWithFrame:CGRectMake(imageScroll.bounds.size.width, 0, imageScroll.bounds.size.width, 20)];
-    floor.textAlignment = NSTextAlignmentCenter;
-    floor.textColor = [UIColor whiteColor];
-    [imageScroll addSubview:floor];
     
-    if (r.size.height == 480) {
-        //iPhone4s
-        floor.font = [UIFont fontWithName:@"HelveticaNeue" size:20];
-    }else if (r.size.height == 568) {
-        //iPhone5/5c/5s
-        floor.font = [UIFont fontWithName:@"HelveticaNeue" size:20];
-    } else if (r.size.height == 667) {
-        //iPhone 6/6s
-        floor.font = [UIFont fontWithName:@"HelveticaNeue" size:22];
-    } else if (r.size.height == 736) {
-        //iPhone 6 plus/6s plus
-        floor.font = [UIFont fontWithName:@"HelveticaNeue" size:24];
-    }
+    [imageScroll addSubview:floor];
     
     self.navigationController.navigationBar.translucent = NO;
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:140.0/255.0 green:23.0/255.0 blue:26.0/255.0 alpha:1.0];
