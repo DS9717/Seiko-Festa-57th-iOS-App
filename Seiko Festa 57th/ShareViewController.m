@@ -69,10 +69,24 @@
     //iOS8以降
     if(iOSVersion >= 8.0f){
         
-        facebookButton.frame = CGRectMake(0, self.view.bounds.size.height - self.view.bounds.size.width * 3 / 16 * 4 - 49, self.view.bounds.size.width, self.view.bounds.size.width * 3 / 16);
-        twitterButton.frame = CGRectMake(0, self.view.bounds.size.height - self.view.bounds.size.width * 3 / 16 * 3 - 49, self.view.bounds.size.width, self.view.bounds.size.width * 3 / 16);
-        lineButton.frame = CGRectMake(0, self.view.bounds.size.height - self.view.bounds.size.width * 3 / 16 * 2 - 49, self.view.bounds.size.width, self.view.bounds.size.width * 3 / 16);
-        cancelButton.frame = CGRectMake(0, self.view.bounds.size.height - self.view.bounds.size.width * 3 / 16 - 49, self.view.bounds.size.width, self.view.bounds.size.width * 3 / 16);
+        //画面サイズ
+        CGRect r = [[UIScreen mainScreen] bounds];
+        
+        if (r.size.width == 375) {
+            
+            facebookButton.frame = CGRectMake(0, (self.view.bounds.size.height+1) - (self.view.bounds.size.width+1) * 3 / 16 * 4 - 49, self.view.bounds.size.width, self.view.bounds.size.width * 3 / 16);
+            twitterButton.frame = CGRectMake(0, (self.view.bounds.size.height+1) - (self.view.bounds.size.width+1) * 3 / 16 * 3 - 49, self.view.bounds.size.width, self.view.bounds.size.width * 3 / 16);
+            lineButton.frame = CGRectMake(0, (self.view.bounds.size.height+1) - (self.view.bounds.size.width+1) * 3 / 16 * 2 - 49, self.view.bounds.size.width, self.view.bounds.size.width * 3 / 16);
+            cancelButton.frame = CGRectMake(0, (self.view.bounds.size.height+1) - (self.view.bounds.size.width+1) * 3 / 16 - 49, self.view.bounds.size.width, self.view.bounds.size.width * 3 / 16);
+            
+        } else {
+            
+            facebookButton.frame = CGRectMake(0, self.view.bounds.size.height+1 - self.view.bounds.size.width * 3 / 16 * 4 - 49, self.view.bounds.size.width, self.view.bounds.size.width * 3 / 16);
+            twitterButton.frame = CGRectMake(0, self.view.bounds.size.height - self.view.bounds.size.width * 3 / 16 * 3 - 49, self.view.bounds.size.width, self.view.bounds.size.width * 3 / 16);
+            lineButton.frame = CGRectMake(0, self.view.bounds.size.height - self.view.bounds.size.width * 3 / 16 * 2 - 49, self.view.bounds.size.width, self.view.bounds.size.width * 3 / 16);
+            cancelButton.frame = CGRectMake(0, self.view.bounds.size.height - self.view.bounds.size.width * 3 / 16 - 49, self.view.bounds.size.width, self.view.bounds.size.width * 3 / 16);
+            
+        }
         
     }else {
         
