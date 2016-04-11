@@ -325,10 +325,10 @@
                 floor.frame = CGRectMake(imageScroll.bounds.size.width + 200, 0, imageScroll.bounds.size.width - 200, 27);
             } else if (r.size.height == 667) {
                 //iPhone 6/6s
-                floor.frame = CGRectMake(imageScroll.bounds.size.width + 200, 0, imageScroll.bounds.size.width - 200, 29);
+                floor.frame = CGRectMake(imageScroll.bounds.size.width + 210, 0, imageScroll.bounds.size.width - 200, 29);
             } else if (r.size.height == 736) {
                 //iPhone 6 plus/6s plus
-                floor.frame = CGRectMake(imageScroll.bounds.size.width + 200, 0, imageScroll.bounds.size.width - 200, 31);
+                floor.frame = CGRectMake(imageScroll.bounds.size.width + 230, 0, imageScroll.bounds.size.width - 200, 31);
             }
         }
         else if (flag == 8) {
