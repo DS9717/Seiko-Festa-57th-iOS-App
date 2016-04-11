@@ -1495,7 +1495,7 @@
 				TargetAttributes = {
 					7E4D55A71C49315B00BFE19C = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = 3GKM8LRN87;
+						DevelopmentTeam = TAE9KC7SWK;
 					};
 					7E4D55C01C49315C00BFE19C = {
 						CreatedOnToolsVersion = 6.2;
@@ -1991,7 +1991,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ed.self.Seiko-Festa-57th-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "82de6b03-740d-4b89-83a1-f1d82eaae331";
 			};
 			name = Release;
 		};
