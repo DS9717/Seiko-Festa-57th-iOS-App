@@ -324,7 +324,7 @@
     //店名は｢chocolate π｣(フランス語"chocolate")
     buttonOne8Label = [[UILabel alloc]initWithFrame:CGRectMake(space + (space + length) * 7, space + length + spaceBelow, length, buttonLabelFont + 1)];
     buttonOne8Label.font = [UIFont fontWithName:@"HelveticaNeue" size:buttonLabelFont];
-    buttonOne8Label.text = @"chocolate π";
+    buttonOne8Label.text = @"chocolat π";
     buttonOne8Label.numberOfLines = 0;
     [buttonOne8Label sizeToFit];
     [scrollView1 addSubview:buttonOne8Label];

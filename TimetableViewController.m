@@ -287,13 +287,13 @@
     [scrollView4 addSubview:buttonFour2];
     
     buttonFour3= [[UIButton alloc]initWithFrame:CGRectMake(0, (self.view.bounds.size.width * 19 / 32) * 2, self.view.bounds.size.width, self.view.bounds.size.width * 19 / 32)];
-    [buttonFour3 setImage:[UIImage imageNamed:@"Яooz-Leef-タイムテーブル.png"] forState:UIControlStateNormal];
+    [buttonFour3 setImage:[UIImage imageNamed:@"エストレーラ-タイムテーブル.png"] forState:UIControlStateNormal];
     [buttonFour3 addTarget:self
-                     action:@selector(buttonFour3Detail:) forControlEvents:UIControlEventTouchUpInside];
+                    action:@selector(buttonFour3Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView4 addSubview:buttonFour3];
     
     buttonFour4= [[UIButton alloc]initWithFrame:CGRectMake(0, (self.view.bounds.size.width * 19 / 32) * 3, self.view.bounds.size.width, self.view.bounds.size.width * 19 / 32)];
-    [buttonFour4 setImage:[UIImage imageNamed:@"エストレーラ-タイムテーブル.png"] forState:UIControlStateNormal];
+    [buttonFour4 setImage:[UIImage imageNamed:@"Яooz-Leef-タイムテーブル.png"] forState:UIControlStateNormal];
     [buttonFour4 addTarget:self
                      action:@selector(buttonFour4Detail:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView4 addSubview:buttonFour4];
@@ -766,13 +766,13 @@
 
 -(void)buttonFour3Detail:(UIButton *)button{
     whichList = @"band";
-    flag = 6;
+    flag = 5;
     [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
 -(void)buttonFour4Detail:(UIButton *)button{
     whichList = @"band";
-    flag = 5;
+    flag = 6;
     [self performSegueWithIdentifier:@"fromTimeTable" sender:self];
 }
 
@@ -1053,8 +1053,8 @@
             //ライブハウス2
             [buttonFour1 setImage:[UIImage imageNamed:@"Chaos-Illusion-タイムテーブル.png"] forState:UIControlStateNormal];
             [buttonFour2 setImage:[UIImage imageNamed:@"WEAK-END-タイムテーブル.png"] forState:UIControlStateNormal];
-            [buttonFour3 setImage:[UIImage imageNamed:@"Яooz-Leef-タイムテーブル.png"] forState:UIControlStateNormal];
-            [buttonFour4 setImage:[UIImage imageNamed:@"エストレーラ-タイムテーブル.png"] forState:UIControlStateNormal];
+            [buttonFour3 setImage:[UIImage imageNamed:@"エストレーラ-タイムテーブル.png"] forState:UIControlStateNormal];
+            [buttonFour4 setImage:[UIImage imageNamed:@"Яooz-Leef-タイムテーブル.png"] forState:UIControlStateNormal];
             [buttonFour5 setImage:[UIImage imageNamed:@"奴等-タイムテーブル.png"] forState:UIControlStateNormal];
         
         

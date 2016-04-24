@@ -218,7 +218,7 @@
         else if (flag == 8) {
             detailImage = [UIImage imageNamed:@"chocolat-π.png"];
             mapImage = [UIImage imageNamed:@"chocolate-πマップ.png"];
-            _detailTitle.text = @"chocolate π";
+            _detailTitle.text = @"chocolat π";
             _explainSentence.text = @"πなのにパイは三角!?人生そんなに甘くない…でもチョコは甘い！これを食べればあなたも元気いっπ!!";
             floor.text = @"中学棟 3F";
         }
