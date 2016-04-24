@@ -1973,7 +1973,7 @@
 				INFOPLIST_FILE = "Seiko Festa 57th/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.Seiko-Festa-57th-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "ed.self.Seiko-Festa-57th-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -1989,7 +1989,7 @@
 				INFOPLIST_FILE = "Seiko Festa 57th/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.Seiko-Festa-57th-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "ed.self.Seiko-Festa-57th-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "82de6b03-740d-4b89-83a1-f1d82eaae331";
 			};
