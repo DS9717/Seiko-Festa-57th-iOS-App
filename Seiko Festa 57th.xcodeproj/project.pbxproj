@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7E0046FB1CB9402800061AC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E0046FA1CB9402800061AC3 /* Foundation.framework */; };
+		7E0DD66F1CCFB28C00948893 /* 英語劇-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0DD66E1CCFB28C00948893 /* 英語劇-タイムテーブル.png */; };
+		7E0DD6711CCFB2A500948893 /* 英語劇-タイムテーブル2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0DD6701CCFB2A500948893 /* 英語劇-タイムテーブル2.png */; };
 		7E3EB47B1C79DAB900F3B2A0 /* TimetableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3EB47A1C79DAB900F3B2A0 /* TimetableViewController.m */; };
 		7E3FE6E81CA0278D000E0281 /* MyriadPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7E3FE6E71CA02782000E0281 /* MyriadPro-Regular.otf */; };
 		7E4D55AE1C49315C00BFE19C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4D55AD1C49315C00BFE19C /* main.m */; };
@@ -79,7 +81,6 @@
 		7E859FC51CB15A1400EDB2E6 /* 春夜祭 バナー.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E859FC41CB15A1400EDB2E6 /* 春夜祭 バナー.jpg */; };
 		7E859FCA1CB16BCA00EDB2E6 /* ボールぽこぽこ-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E859FC61CB16BCA00EDB2E6 /* ボールぽこぽこ-タイムテーブル.png */; };
 		7E859FCB1CB16BCA00EDB2E6 /* ミュージックサロン-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E859FC71CB16BCA00EDB2E6 /* ミュージックサロン-タイムテーブル.png */; };
-		7E859FCC1CB16BCA00EDB2E6 /* 英語劇-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E859FC81CB16BCA00EDB2E6 /* 英語劇-タイムテーブル.png */; };
 		7E859FCD1CB16BCA00EDB2E6 /* 天使の歌声-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E859FC91CB16BCA00EDB2E6 /* 天使の歌声-タイムテーブル.png */; };
 		7E859FD71CB16BF000EDB2E6 /* ○○男子No.1決定戦-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E859FCE1CB16BF000EDB2E6 /* ○○男子No.1決定戦-タイムテーブル.png */; };
 		7E859FDA1CB16BF000EDB2E6 /* The-笑-1-GP-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E859FD11CB16BF000EDB2E6 /* The-笑-1-GP-タイムテーブル.png */; };
@@ -103,7 +104,6 @@
 		7E859FF91CB16C4400EDB2E6 /* 恋愛偏差値-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E859FF51CB16C4400EDB2E6 /* 恋愛偏差値-タイムテーブル.png */; };
 		7E85A0061CB16CA000EDB2E6 /* Grand-Finale-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A0001CB16CA000EDB2E6 /* Grand-Finale-タイムテーブル.png */; };
 		7E85A0071CB16CA000EDB2E6 /* グリークラブ-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A0011CB16CA000EDB2E6 /* グリークラブ-タイムテーブル.png */; };
-		7E85A0081CB16CA000EDB2E6 /* 英語劇-タイムテーブル2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A0021CB16CA000EDB2E6 /* 英語劇-タイムテーブル2.png */; };
 		7E85A0091CB16CA000EDB2E6 /* 弦楽オーケストラ部-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A0031CB16CA000EDB2E6 /* 弦楽オーケストラ部-タイムテーブル.png */; };
 		7E85A00A1CB16CA000EDB2E6 /* 吹奏楽部-タイムテーブル.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A0041CB16CA000EDB2E6 /* 吹奏楽部-タイムテーブル.png */; };
 		7E85A00B1CB16CA000EDB2E6 /* 天使の歌声-タイムテーブル2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E85A0051CB16CA000EDB2E6 /* 天使の歌声-タイムテーブル2.png */; };
@@ -335,6 +335,8 @@
 
 /* Begin PBXFileReference section */
 		7E0046FA1CB9402800061AC3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7E0DD66E1CCFB28C00948893 /* 英語劇-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "英語劇-タイムテーブル.png"; sourceTree = "<group>"; };
+		7E0DD6701CCFB2A500948893 /* 英語劇-タイムテーブル2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "英語劇-タイムテーブル2.png"; sourceTree = "<group>"; };
 		7E3EB4791C79DAB900F3B2A0 /* TimetableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimetableViewController.h; path = ../TimetableViewController.h; sourceTree = "<group>"; };
 		7E3EB47A1C79DAB900F3B2A0 /* TimetableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimetableViewController.m; path = ../TimetableViewController.m; sourceTree = "<group>"; };
 		7E3FE6E71CA02782000E0281 /* MyriadPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Regular.otf"; sourceTree = "<group>"; };
@@ -413,7 +415,6 @@
 		7E859FC41CB15A1400EDB2E6 /* 春夜祭 バナー.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "春夜祭 バナー.jpg"; sourceTree = "<group>"; };
 		7E859FC61CB16BCA00EDB2E6 /* ボールぽこぽこ-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ボールぽこぽこ-タイムテーブル.png"; sourceTree = "<group>"; };
 		7E859FC71CB16BCA00EDB2E6 /* ミュージックサロン-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ミュージックサロン-タイムテーブル.png"; sourceTree = "<group>"; };
-		7E859FC81CB16BCA00EDB2E6 /* 英語劇-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "英語劇-タイムテーブル.png"; sourceTree = "<group>"; };
 		7E859FC91CB16BCA00EDB2E6 /* 天使の歌声-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天使の歌声-タイムテーブル.png"; sourceTree = "<group>"; };
 		7E859FCE1CB16BF000EDB2E6 /* ○○男子No.1決定戦-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "○○男子No.1決定戦-タイムテーブル.png"; sourceTree = "<group>"; };
 		7E859FD11CB16BF000EDB2E6 /* The-笑-1-GP-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The-笑-1-GP-タイムテーブル.png"; sourceTree = "<group>"; };
@@ -437,7 +438,6 @@
 		7E859FF51CB16C4400EDB2E6 /* 恋愛偏差値-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "恋愛偏差値-タイムテーブル.png"; sourceTree = "<group>"; };
 		7E85A0001CB16CA000EDB2E6 /* Grand-Finale-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Grand-Finale-タイムテーブル.png"; sourceTree = "<group>"; };
 		7E85A0011CB16CA000EDB2E6 /* グリークラブ-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "グリークラブ-タイムテーブル.png"; sourceTree = "<group>"; };
-		7E85A0021CB16CA000EDB2E6 /* 英語劇-タイムテーブル2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "英語劇-タイムテーブル2.png"; sourceTree = "<group>"; };
 		7E85A0031CB16CA000EDB2E6 /* 弦楽オーケストラ部-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "弦楽オーケストラ部-タイムテーブル.png"; sourceTree = "<group>"; };
 		7E85A0041CB16CA000EDB2E6 /* 吹奏楽部-タイムテーブル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "吹奏楽部-タイムテーブル.png"; sourceTree = "<group>"; };
 		7E85A0051CB16CA000EDB2E6 /* 天使の歌声-タイムテーブル2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天使の歌声-タイムテーブル2.png"; sourceTree = "<group>"; };
@@ -1015,9 +1015,9 @@
 		7E859FFF1CB16C8800EDB2E6 /* 講堂 */ = {
 			isa = PBXGroup;
 			children = (
+				7E0DD6701CCFB2A500948893 /* 英語劇-タイムテーブル2.png */,
 				7E85A0001CB16CA000EDB2E6 /* Grand-Finale-タイムテーブル.png */,
 				7E85A0011CB16CA000EDB2E6 /* グリークラブ-タイムテーブル.png */,
-				7E85A0021CB16CA000EDB2E6 /* 英語劇-タイムテーブル2.png */,
 				7E85A0031CB16CA000EDB2E6 /* 弦楽オーケストラ部-タイムテーブル.png */,
 				7E85A0041CB16CA000EDB2E6 /* 吹奏楽部-タイムテーブル.png */,
 				7E85A0051CB16CA000EDB2E6 /* 天使の歌声-タイムテーブル2.png */,
@@ -1114,9 +1114,9 @@
 		7EF2D8C91C9D4E77008F76E8 /* 講堂 */ = {
 			isa = PBXGroup;
 			children = (
+				7E0DD66E1CCFB28C00948893 /* 英語劇-タイムテーブル.png */,
 				7E859FC61CB16BCA00EDB2E6 /* ボールぽこぽこ-タイムテーブル.png */,
 				7E859FC71CB16BCA00EDB2E6 /* ミュージックサロン-タイムテーブル.png */,
-				7E859FC81CB16BCA00EDB2E6 /* 英語劇-タイムテーブル.png */,
 				7E859FC91CB16BCA00EDB2E6 /* 天使の歌声-タイムテーブル.png */,
 			);
 			name = "講堂";
@@ -1596,6 +1596,7 @@
 				7E85A00B1CB16CA000EDB2E6 /* 天使の歌声-タイムテーブル2.png in Resources */,
 				7E85A0561CB3FE3900EDB2E6 /* Band icon vector enji.pdf in Resources */,
 				7E4FB5831CB532E500A1547B /* Welcome.png in Resources */,
+				7E0DD66F1CCFB28C00948893 /* 英語劇-タイムテーブル.png in Resources */,
 				FA2E4FCD1CB69C0500578B12 /* ライブハウス1マップ.png in Resources */,
 				7E859F941CB01E8F00EDB2E6 /* M&A バナー2.jpg in Resources */,
 				7E859FEE1CB16C2D00EDB2E6 /* WEAK-END-タイムテーブル.png in Resources */,
@@ -1613,7 +1614,6 @@
 				FA85FBA11CB7E6AC001429E3 /* Flapjackマップ.png in Resources */,
 				FAD7F5A81CAFB7470075883A /* Trick×Hark.png in Resources */,
 				FA6A8C4A1CB9379500C4B7A3 /* 聖光祭からの脱出マップ.png in Resources */,
-				7E85A0081CB16CA000EDB2E6 /* 英語劇-タイムテーブル2.png in Resources */,
 				7EB62E841CAEB0410097FDB5 /* The 笑-1 GP.png in Resources */,
 				7E859F931CB01E8F00EDB2E6 /* Flat Flight バナー2.jpg in Resources */,
 				7E859F8C1CB01E7B00EDB2E6 /* フォークダンス バナー.jpg in Resources */,
@@ -1700,6 +1700,7 @@
 				7EB62E551CAEAF4D0097FDB5 /* Яooz-Leef.png in Resources */,
 				FA2E4FD01CB69C0F00578B12 /* 講堂マップ.png in Resources */,
 				7E859F791CB01DEE00EDB2E6 /* 弦楽オーケストラ部 バナー.png in Resources */,
+				7E0DD6711CCFB2A500948893 /* 英語劇-タイムテーブル2.png in Resources */,
 				FAD7F5B61CAFB7470075883A /* 英語劇.png in Resources */,
 				7EB62E891CAEB0410097FDB5 /* 春夜祭.png in Resources */,
 				7EB62E851CAEB0410097FDB5 /* ギネスに挑戦！！.png in Resources */,
@@ -1765,7 +1766,6 @@
 				7E85A06F1CB42C2D00EDB2E6 /* 英語劇 バナー1.png in Resources */,
 				FA85FBAA1CB7E6AC001429E3 /* 氷菓マップ.png in Resources */,
 				7EB62E531CAEAF4D0097FDB5 /* Million-Dollars.png in Resources */,
-				7E859FCC1CB16BCA00EDB2E6 /* 英語劇-タイムテーブル.png in Resources */,
 				7EB62E661CAEAF8D0097FDB5 /* ミュージックサロン.png in Resources */,
 				FAD7F5A71CAFB7470075883A /* Showtime!.png in Resources */,
 				FA6A8C4E1CB9379500C4B7A3 /* 地学天文学部マップ.png in Resources */,
